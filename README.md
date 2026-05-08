@@ -8,15 +8,15 @@
 
 **Ingeniería de Software**
 
-**5to Ciclo**
+**7mo Ciclo**
 
-**Código del curso:** 1ASI0729
+**Código del curso:** 1ASI0732
 
-**Nombre del curso:** Desarrollo de aplicaciones Open Source
+**Nombre del curso:** Diseño de Experimentos de Ingenieria de Software 
 
 **NRC:** 4289
 
-**Nombre del profesor:** BAUTISTA UBILLÚS, EFRAIN RICARDO
+**Nombre del profesor:** Flores Moroco, Juan Antonio
 
 **Nombre del Startup:** BioPafi
 
@@ -26,11 +26,12 @@
 
 | **Código** | **Apellidos y Nombres**             |
 | ---------- | ----------------------------------- |
+| U20221G068|Almerco Rojas, Jocelyn Damaly|
+| U202318814 | Castañeda Llanos , Kevin Alexander |
 | U20231A500 | Palomino Fiestas, Erick Leonardo    |
-| U202312966 | Gonzales Alvarado, Javier Sebastian |
 | U20231D974 | Rivera Ratachi, Renzo Sebastian     |
-
-**Julio 2025**
+| U20231 |Coca Lavado, Carlos Andres|
+**Mayo 2026**
 
 ---
 
