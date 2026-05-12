@@ -7329,6 +7329,48 @@ Para garantizar que el sistema cumpla con los flujos de negocio esperados por el
 
 #### 7.3.1 Tools and Practices
 
+En esta sección se describen las herramientas y convenciones adoptadas por el equipo para garantizar un proceso de Continuous Deployment (CD) 
+automatizado, confiable y estandarizado.
+
+#### Herramientas de automatización y Despliegue:
+
+El ecosistema de despliegue se basa en la orquestación de servicios en la nube y herramientas de automatización de ciclo de vida:
+
+- Jenkins: Actúa como el motor principal de integración y despliegue continuo (CI/CD), automatizando la ejecución de pruebas y el flujo de entrega hacia los entornos de producción.  
+
+- Azure App Service: Se utiliza como proveedor de nube para el despliegue del RESTful API (Backend), aprovechando su escalabilidad y compatibilidad con el entorno de ejecución de la solución.  
+
+- Firebase Hosting: Se emplea para el despliegue y distribución del Frontend-Web Application, garantizando baja latencia y alta disponibilidad para el usuario final. 
+
+- Docker & Docker-Compose: Se utilizan para la containerización de los servicios, permitiendo que el entorno de producción sea idéntico al de desarrollo y facilitando el despliegue consistente de la arquitectura de microservicios.  
+
+#### Prácticas de Prueba y Validación
+
+Para asegurar que solo el código de alta calidad llegue a producción, se aplican las siguientes tecnologías en el pipeline:
+
+- JUnit 5 & Mockito: Herramientas base para la ejecución de Core Entities Unit Tests y Core Integration Tests, permitiendo aislar comportamientos y validar la lógica de negocio antes de cada despliegue.  
+- Karate DSL: Utilizado para las pruebas de comportamiento (BDD), asegurando que los flujos de extremo a extremo cumplan con los criterios de aceptación. 
+
+#### Flujos de Trabajo y Control de Versiones
+
+El equipo aplica estándares estrictos de gestión de código fuente para mantener la integridad de la rama de producción:
+
+- GitFlow: Se utiliza como modelo de ramificación, empleando ramas main para el código productivo, develop para la integración de características y ramas feature/ para el desarrollo de nuevas funcionalidades.
+
+- Conventional Commits: Se obliga el uso de prefijos estandarizados en los mensajes de commit (feat, fix, chore, refactor, style) para facilitar la generación automática de registros de cambios y el seguimiento de versiones.
+
+- Semantic Versioning (SemVer): Se aplica la nomenclatura vX.Y.Z para identificar los lanzamientos oficiales en el pipeline de despliegue.
+
+#### Configuración del Entorno
+
+La configuración para el despliegue satisfactorio incluye los siguientes aspectos:  
+
+- Gestión de Variables de Entorno: Configuración de secretos y llaves de conexión a base de datos dentro de las plataformas de Azure y Firebase para proteger información sensible.
+
+- Orquestación con Docker-Compose: Definición de archivos de configuración que describen cómo deben interactuar los contenedores de la API, la base de datos y otros servicios de soporte durante el despliegue.
+
+- Scripts de Despliegue: Uso de comandos automatizados dentro de Jenkins para disparar el build y la posterior publicación en los servicios de hosting seleccionados.
+
 #### 7.3.2 Production Deployment Pipeline Components
 
 ## Conclusiones
