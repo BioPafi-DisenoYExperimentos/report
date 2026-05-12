@@ -7290,9 +7290,13 @@ Enlace en Youtube: <a href="https://youtu.be/6dQiL5Xb8GU" target="_blank">upc-pr
 
 Este apartado detalla el conjunto de pruebas y procesos de verificación diseñados para garantizar la robustez, fiabilidad y correcto funcionamiento del sistema. A través de la implementación de Testing Suites que abarcan desde pruebas unitarias hasta de integración, se valida que cada componente cumpla con los requisitos técnicos y funcionales establecidos, asegurando que el software sea resiliente ante errores y esté listo para su despliegue en un entorno de producción.
 
-#### 6.1.1 Core Entities Unit Tests.
+#### 6.1.1 Core Entities Unit Tests
 
 Las pruebas unitarias nos permiten evaluar componentes individuales de la aplicación de forma aislada, sin depender de una base de datos real. A continuación, se detallan los tests realizados y el motivo de cada uno:
+
+Se implementaron pruebas unitarias utilizando Mockito y JUnit 5. El objetivo fue aislar la lógica de negocio en los servicios de comandos. Mediante el uso de *mocks*, se simuló el comportamiento de los repositorios y servicios externos para validar la correcta creación de usuarios, asignación de roles y flujos de autenticación sin depender de la base de datos real.
+
+<img src="images/TestsImages/UnitTest.png" alt="Unit Test" width="1000">
 
 **PlantGuides:**
 
@@ -7332,9 +7336,13 @@ Se realizo para confirmar la precisión del sistema al buscar información espec
 
 Simulamos la búsqueda de una guía utilizando su número de identificación único (ID). Comprobamos que el sistema busque y devuelva con éxito la información que le corresponde a ese ID específico.
 
-#### 6.1.2 Core Integration Tests.
+#### 6.1.2 Core Integration Tests
 
 Las pruebas de integración aseguran que las diferentes piezas de nuestro sistema trabajen juntas correctamente. A continuación, se detallan las pruebas realizadas:
+
+Se implementaron pruebas de integración las cuales se encargan de levantar el contexto de Spring Boot completo y utilizar una base de datos en memoria para validar que todas las capas y se integren de manera correcta. Esto asegura que la configuración de seguridad, la inyección de dependencias y el flujo de registro e inicio de sesión funcionen correctamente en un entorno similar al real.
+
+<img src="images/TestsImages/IntegrationTest.png" alt="Unit Test" width="1000">
 
 **PlantGuides:**
 
@@ -7356,11 +7364,24 @@ Se realizo para comprobar que la base de datos puede almacenar múltiples regist
 
 El sistema guarda dos guías diferentes, una seguida de la otra. Luego, ejecuta una consulta para listar absolutamente todo lo que hay guardado y verifica que el resultado contenga exactamente esas dos guías que acabamos de registrar.
 
-### 7.1. Continuous Integration
+
+#### 6.1.3 Core Behavior-Driven Development
+
+Para garantizar que el sistema cumpla con los flujos de negocio esperados por el usuario final, se implementó Behavior-Driven Development utilizando el framework Karate. Esta herramienta permite realizar pruebas automatizadas a nivel de API escribiendo escenarios en lenguaje natural, lo que facilita su lectura.
+
+<img src="images/TestsImages/KarateTest.png" alt="Unit Test" width="1000">
+
+<img src="images/TestsImages/KarateReport.png" alt="Unit Test" width="1000">
+
+#### 6.1.4 Core System Tests
+
+## Capítulo VII: DevOps Practices
+
+### 7.1 Continuous Integration
 
 La Integración Continua (CI) en el proyecto PlantSync se ha establecido para automatizar la compilación, las pruebas y la verificación de la calidad del código fuente cada vez que se realizan cambios. Esto garantiza que la rama principal del proyecto se mantenga estable y libre de errores.
 
-#### 7.1.1. Tools and Practices
+#### 7.1.1 Tools and Practices
 
 Para asegurar la calidad del código y la detección temprana de errores en el proyecto, por lo que se implementado un enfoque de Integración Continua (CI). Esta práctica permite que los cambios realizados en el repositorio sean integrados, construidos y evaluados automáticamente mediante la ejecución de pruebas.
 
@@ -7384,7 +7405,7 @@ Una vez configurado, el proyecto se integra al dashboard principal, permitiendo 
 
 <img src="images/tests/jenkins/visualizacion del proyecto en el menu principal.png" alt="screenshot about the product" width="1000">
 
-#### 7.1.2. Build & Test Suite Pipeline Components
+#### 7.1.2 Build & Test Suite Pipeline Components
 
 El núcleo de nuestra automatización reside en el Jenkinsfile, el cual define de manera declarativa las etapas (stages) que el código debe superar para considerarse válido. En paralelo, el archivo pom.xml define las reglas estrictas de validación.
 
@@ -7427,6 +7448,90 @@ Como resultado de la automatización de la etapa Validate Unit Tests, Jenkins re
 Finalmente, gracias a la naturaleza continua de esta práctica, Jenkins mantiene un historial visual de todas las integraciones. Esto asegura que cualquier regresión o fallo en el código introducido en futuros commits sea detectado inmediatamente, manteniendo el pipeline en verde como indicador de estabilidad.
 
 <img src="images/tests/jenkins/stages de todos los buildeos hechos.png" alt="screenshot about the product" width="1000">
+
+### 7.2 Continuous Delivery
+
+#### 7.2.1 Tools and Practices
+
+#### 7.2.2 Stages Deployment Pipeline Components
+
+### 7.3 Continuous deployment
+
+#### 7.3.1 Tools and Practices
+
+En esta sección se describen las herramientas y convenciones adoptadas por el equipo para garantizar un proceso de Continuous Deployment (CD) 
+automatizado, confiable y estandarizado.
+
+#### Herramientas de automatización y Despliegue:
+
+El ecosistema de despliegue se basa en la orquestación de servicios en la nube y herramientas de automatización de ciclo de vida:
+
+- Jenkins: Actúa como el motor principal de integración y despliegue continuo (CI/CD), automatizando la ejecución de pruebas y el flujo de entrega hacia los entornos de producción.  
+
+- Azure App Service: Se utiliza como proveedor de nube para el despliegue del RESTful API (Backend), aprovechando su escalabilidad y compatibilidad con el entorno de ejecución de la solución.  
+
+- Firebase Hosting: Se emplea para el despliegue y distribución del Frontend-Web Application, garantizando baja latencia y alta disponibilidad para el usuario final. 
+
+- Docker & Docker-Compose: Se utilizan para la containerización de los servicios, permitiendo que el entorno de producción sea idéntico al de desarrollo y facilitando el despliegue consistente de la arquitectura de microservicios.  
+
+#### Prácticas de Prueba y Validación
+
+Para asegurar que solo el código de alta calidad llegue a producción, se aplican las siguientes tecnologías en el pipeline:
+
+- JUnit 5 & Mockito: Herramientas base para la ejecución de Core Entities Unit Tests y Core Integration Tests, permitiendo aislar comportamientos y validar la lógica de negocio antes de cada despliegue.  
+- Karate DSL: Utilizado para las pruebas de comportamiento (BDD), asegurando que los flujos de extremo a extremo cumplan con los criterios de aceptación. 
+
+#### Flujos de Trabajo y Control de Versiones
+
+El equipo aplica estándares estrictos de gestión de código fuente para mantener la integridad de la rama de producción:
+
+- GitFlow: Se utiliza como modelo de ramificación, empleando ramas main para el código productivo, develop para la integración de características y ramas feature/ para el desarrollo de nuevas funcionalidades.
+
+- Conventional Commits: Se obliga el uso de prefijos estandarizados en los mensajes de commit (feat, fix, chore, refactor, style) para facilitar la generación automática de registros de cambios y el seguimiento de versiones.
+
+- Semantic Versioning (SemVer): Se aplica la nomenclatura vX.Y.Z para identificar los lanzamientos oficiales en el pipeline de despliegue.
+
+#### Configuración del Entorno
+
+La configuración para el despliegue satisfactorio incluye los siguientes aspectos:  
+
+- Gestión de Variables de Entorno: Configuración de secretos y llaves de conexión a base de datos dentro de las plataformas de Azure y Firebase para proteger información sensible.
+
+- Orquestación con Docker-Compose: Definición de archivos de configuración que describen cómo deben interactuar los contenedores de la API, la base de datos y otros servicios de soporte durante el despliegue.
+
+- Scripts de Despliegue: Uso de comandos automatizados dentro de Jenkins para disparar el build y la posterior publicación en los servicios de hosting seleccionados.
+
+#### 7.3.2 Production Deployment Pipeline Components
+
+En esta sección se detallan los componentes técnicos del pipeline de despliegue hacia el entorno de producción, así como las evidencias de su ejecución exitosa.
+
+Definición de Etapas del Pipeline (Jenkins Pipeline Stages)
+El proceso de despliegue automatizado en Jenkins se divide en las siguientes etapas críticas para asegurar una transición sin errores hacia producción:
+
+- Source Checkout: El pipeline se dispara automáticamente al detectar un nuevo tag de versión o un merge exitoso en la rama main, descargando el código fuente desde GitHub.
+
+- Environment Preparation: Configuración de las variables de entorno y descarga de dependencias necesarias para el entorno de producción.
+
+- Build & Containerization: Se genera el artefacto (JAR para el backend y archivos estáticos para el frontend) y se construye la imagen de Docker utilizando docker-compose.
+
+- Security & Vulnerability Scan: Verificación final de que no existen vulnerabilidades críticas en las imágenes de los contenedores antes de ser publicadas.
+
+- Production Deployment:
+
+  - Backend: Se realiza el empuje (push) de la imagen al registro de Azure y se reinicia el servicio en Azure App Service.
+
+  - Frontend: Se despliegan los archivos estáticos hacia Firebase Hosting utilizando el CLI de Firebase.
+
+
+#### Evidencias de Ejecución
+
+- Evidencias de Ejecución Pipeline en Jenkins: A continuación, se muestra el historial de ejecución donde se observa que todas las etapas (Build, Test, Deploy) finalizaron satisfactoriamente (color verde).
+
+
+- Evidencias de Ejecución de Karate: A continuación, se muestra una ejecución de una prueba de Karate, donde se observa dos escenarios que han pasado correctamente el proceso de QA.
+
+<img src="images/TestsImages/KarateReport.png" alt="Unit Test" width="1000">
+
 
 ## Conclusiones
 
