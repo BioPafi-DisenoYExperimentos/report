@@ -7283,6 +7283,151 @@ Duración: 1:44 min
 Enlace en Microsoft Stream: <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a500_upc_edu_pe/EShR7gJEGgJMm4jF_jg-Ni8B0HCTbWFB_yz4i1iLny9aIw?e=bOy90v&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D" target="_blank">upc-pre-202510-1asi0729-4289-biopafi-aboutthe-product-sprint-3</a>
 
 Enlace en Youtube: <a href="https://youtu.be/6dQiL5Xb8GU" target="_blank">upc-pre-202510-1asi0729-4289-biopafi-aboutthe-product-sprint-3</a>
+
+## Capítulo VI: Product Verification & Validation
+
+### 6.1 Testing Suites & Validation
+
+Este apartado detalla el conjunto de pruebas y procesos de verificación diseñados para garantizar la robustez, fiabilidad y correcto funcionamiento del sistema. A través de la implementación de Testing Suites que abarcan desde pruebas unitarias hasta de integración, se valida que cada componente cumpla con los requisitos técnicos y funcionales establecidos, asegurando que el software sea resiliente ante errores y esté listo para su despliegue en un entorno de producción.
+
+#### 6.1.1 Core Entities Unit Tests.
+
+Las pruebas unitarias nos permiten evaluar componentes individuales de la aplicación de forma aislada, sin depender de una base de datos real. A continuación, se detallan los tests realizados y el motivo de cada uno:
+
+**PlantGuides:**
+
+**GuideCommandServiceImplTest:**
+
+Test: handleCreateGuideCommandShouldSaveGuideAndReturnGeneratedId:
+
+Se realizo para asegurarnos de que, en condiciones normales, la lógica de nuestro sistema es capaz de recibir los datos de una nueva guía (título, autor, tema) y enviarlos correctamente para ser guardados.
+
+<img src="images/tests/plantguides/1.png" alt="screenshot about the product" width="1000">
+
+Simulamos el envío de datos de una guía nueva y confirmamos que el sistema procesa la información sin alterar ninguno de los campos antes de enviarla a guardar.
+
+Test: handleCreateGuideCommandShouldThrowGuideCreationExceptionWhenSaveFails:
+
+Se realizo para garantizar que el sistema sepa cómo reaccionar ante una emergencia. Si la base de datos se desconecta o falla, la aplicación no debe colapsar por completo.
+
+<img src="images/tests/plantguides/2.png" alt="screenshot about the product" width="1000">
+
+Simulamos un escenario de desastre donde el guardado falla intencionalmente. Verificamos que el sistema detecte este fallo y lance una advertencia controlada, en lugar de quedarse congelado.
+
+**GuideQueryServiceImplTest:**
+
+Test: handleGetAllGuidesQueryShouldReturnAllGuides:
+
+Se realizo para validar que el sistema responsable de las búsquedas cumpla con su función de pedir y entregar listas completas de información sin perder datos en el camino.
+
+<img src="images/tests/plantguides/3.png" alt="screenshot about the product" width="1000">
+
+Simulamos que la base de datos tiene una lista de guías guardadas y verificamos que, cuando pedimos "todas las guías", el sistema nos entregue esa misma lista completa y sin modificaciones.
+
+Test: handleGetGuideByIdQueryShouldReturnGuideWhenItExists:
+
+Se realizo para confirmar la precisión del sistema al buscar información específica. Si un usuario quiere ver solo una guía, el sistema debe saber encontrar exactamente esa y no otra.
+
+<img src="images/tests/plantguides/4.png" alt="screenshot about the product" width="1000">
+
+Simulamos la búsqueda de una guía utilizando su número de identificación único (ID). Comprobamos que el sistema busque y devuelva con éxito la información que le corresponde a ese ID específico.
+
+#### 6.1.2 Core Integration Tests.
+
+Las pruebas de integración aseguran que las diferentes piezas de nuestro sistema trabajen juntas correctamente. A continuación, se detallan las pruebas realizadas:
+
+**PlantGuides:**
+
+**PlantGuidesIntegrationTest:**
+
+Test: createGuideShouldPersistGuideAndAllowQueryById:
+
+Se realizo para demostrar que el ciclo completo de la información funciona. Para comprobar que funcione en teoría; necesitamos probar que realmente se puede escribir y leer en una base de datos para obtener las guias.
+
+<img src="images/tests/plantguides/5.png" alt="screenshot about the product" width="1000">
+
+En este test, el sistema guarda una guía real en una base de datos temporal de prueba. Inmediatamente después, el mismo sistema busca la guía que acaba de crear utilizando su ID. Esto comprueba que la información viajó a la base de datos, se guardó, y se pudo recuperar intacta.
+
+Test: getAllGuidesShouldReturnAllCreatedGuides:
+
+Se realizo para comprobar que la base de datos puede almacenar múltiples registros a lo largo del tiempo y que nuestro sistema puede recopilarlos todos de manera conjunta cuando se le solicita el catálogo completo.
+
+<img src="images/tests/plantguides/6.png" alt="screenshot about the product" width="1000">
+
+El sistema guarda dos guías diferentes, una seguida de la otra. Luego, ejecuta una consulta para listar absolutamente todo lo que hay guardado y verifica que el resultado contenga exactamente esas dos guías que acabamos de registrar.
+
+### 7.1. Continuous Integration
+
+La Integración Continua (CI) en el proyecto PlantSync se ha establecido para automatizar la compilación, las pruebas y la verificación de la calidad del código fuente cada vez que se realizan cambios. Esto garantiza que la rama principal del proyecto se mantenga estable y libre de errores.
+
+#### 7.1.1. Tools and Practices
+
+Para asegurar la calidad del código y la detección temprana de errores en el proyecto, por lo que se implementado un enfoque de Integración Continua (CI). Esta práctica permite que los cambios realizados en el repositorio sean integrados, construidos y evaluados automáticamente mediante la ejecución de pruebas.
+
+Las herramientas principales seleccionadas para este propósito son:
+
+Jenkins: Actúa como el orquestador principal de nuestra CI. Se ha configurado un proyecto de tipo Pipeline ("plantsync") que lee las instrucciones de construcción directamente desde el repositorio, asegurando que el proceso sea reproducible y versionable.
+
+Apache Maven: Utilizado como la herramienta principal de construcción (Build Tool) y gestión de dependencias del backend. Maven se encarga de compilar el código Java, ejecutar las pruebas y empaquetar la aplicación.
+
+JaCoCo (Java Code Coverage): Herramienta integrada como plugin en Maven para medir la cobertura de las pruebas unitarias y asegurar que se cumplan los estándares de calidad definidos por el equipo.
+
+Para dar inicio a este proceso, se configuró un servidor local de Jenkins.
+
+<img src="images/tests/jenkins/Menu principal de jenkins.png" alt="screenshot about the product" width="1000">
+
+Posteriormente, se configuró el proyecto seleccionando la opción de Pipeline, lo cual permite definir toda la infraestructura de integración continua como código (Pipeline as Code) a través de un archivo Jenkinsfile.
+
+<img src="images/tests/jenkins/creacion del proyecto en jenkins eligiendo pipeline.png" alt="screenshot about the product" width="1000">
+
+Una vez configurado, el proyecto se integra al dashboard principal, permitiendo al equipo monitorear el historial y el estado de éxito o fallo de los builds.
+
+<img src="images/tests/jenkins/visualizacion del proyecto en el menu principal.png" alt="screenshot about the product" width="1000">
+
+#### 7.1.2. Build & Test Suite Pipeline Components
+
+El núcleo de nuestra automatización reside en el Jenkinsfile, el cual define de manera declarativa las etapas (stages) que el código debe superar para considerarse válido. En paralelo, el archivo pom.xml define las reglas estrictas de validación.
+
+Configuración de Cobertura:
+
+Para garantizar la fiabilidad del software, se configuró el plugin de JaCoCo en el archivo pom.xml. Se estableció una regla estricta que exige un mínimo del 80% de cobertura de instrucciones.
+
+<img src="images/tests/jenkins/plugins.png" alt="screenshot about the product" width="1000">
+
+Estructura del Pipeline:
+
+El pipeline está diseñado para ejecutarse en cualquier agente disponible y provisiona automáticamente las herramientas necesarias: MAVEN_3_9_15 y JDK_21.
+
+<img src="images/tests/jenkins/jenkinsfile.png" alt="screenshot about the product" width="1000">
+
+El proceso automatizado se divide en las siguientes etapas secuenciales:
+
+Checkout SCM & Tool Install: Etapas implícitas gestionadas por Jenkins donde se descarga la última versión del código desde el repositorio y se preparan las variables de entorno para Java y Maven.
+
+Compile Project: Se ejecuta el comando mvn clean compile para limpiar construcciones previas y compilar el código fuente. Si hay errores de sintaxis, el pipeline se detiene aquí.
+
+Validate Unit Tests: Esta etapa es crucial para la automatización de las pruebas. Mediante el comando mvn test, Jenkins ejecuta toda la suite de pruebas unitarias del proyecto. No es necesaria la intervención manual; el pipeline valida que la lógica de negocio funcione según lo esperado.
+
+Validate Test Coverage: Se ejecutan los comandos mvn clean verify jacoco:report y mvn jacoco:check. Aquí, el pipeline verifica automáticamente si los tests ejecutados en el paso anterior cumplen con el 80% de cobertura mínima establecida. Si la cobertura es menor, el build falla automáticamente, impidiendo la integración de código no probado.
+
+Package Project: Como etapa final del pipeline, se ejecuta el comando mvn package. Este proceso se encarga de compilar y empaquetar el código fuente junto con sus recursos en un formato ejecutable. Al ejecutar el comando de manera estándar, se asegura que el artefacto final generado sea el resultado de un ciclo de vida de construcción completo, garantizando la integridad y consistencia del entregable antes de su distribución o despliegue.
+
+A continuación, se puede observar la representación visual de estas etapas ejecutándose exitosamente de forma secuencial:
+
+<img src="images/tests/jenkins/stages del buildeo.png" alt="screenshot about the product" width="1000">
+
+Jenkins provee un desglose detallado de cada paso interno (Pipeline Steps), lo que permite a los desarrolladores auditar los argumentos pasados a Maven y el tiempo de ejecución exacto de cada validación.
+
+<img src="images/tests/jenkins/pipeline steps de un build.png" alt="screenshot about the product" width="1000">
+
+Como resultado de la automatización de la etapa Validate Unit Tests, Jenkins recopila los resultados y proporciona un reporte visual.
+
+<img src="images/tests/jenkins/resultados de los tests.png" alt="screenshot about the product" width="1000">
+
+Finalmente, gracias a la naturaleza continua de esta práctica, Jenkins mantiene un historial visual de todas las integraciones. Esto asegura que cualquier regresión o fallo en el código introducido en futuros commits sea detectado inmediatamente, manteniendo el pipeline en verde como indicador de estabilidad.
+
+<img src="images/tests/jenkins/stages de todos los buildeos hechos.png" alt="screenshot about the product" width="1000">
+
 ## Conclusiones
 
 ### Conclusiones y recomendaciones
