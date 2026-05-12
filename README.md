@@ -7283,6 +7283,57 @@ Duración: 1:44 min
 Enlace en Microsoft Stream: <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a500_upc_edu_pe/EShR7gJEGgJMm4jF_jg-Ni8B0HCTbWFB_yz4i1iLny9aIw?e=bOy90v&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D" target="_blank">upc-pre-202510-1asi0729-4289-biopafi-aboutthe-product-sprint-3</a>
 
 Enlace en Youtube: <a href="https://youtu.be/6dQiL5Xb8GU" target="_blank">upc-pre-202510-1asi0729-4289-biopafi-aboutthe-product-sprint-3</a>
+
+## Capítulo VI: Product Verification & Validation
+
+### 6.1 Testing Suites & Validation
+
+#### 6.1.1 Core Entities Unit Tests
+
+Se implementaron pruebas unitarias utilizando Mockito y JUnit 5. El objetivo fue aislar la lógica de negocio en los servicios de comandos. Mediante el uso de *mocks*, se simuló el comportamiento de los repositorios y servicios externos para validar la correcta creación de usuarios, asignación de roles y flujos de autenticación sin depender de la base de datos real.
+
+<img src="images/TestsImages/UnitTest.png" alt="Unit Test" width="1000">
+
+#### 6.1.2 Core Integration Tests
+
+Se implementaron pruebas de integración las cuales se encargan de levantar el contexto de Spring Boot completo y utilizar una base de datos en memoria para validar que todas las capas y se integren de manera correcta. Esto asegura que la configuración de seguridad, la inyección de dependencias y el flujo de registro e inicio de sesión funcionen correctamente en un entorno similar al real.
+
+<img src="images/TestsImages/IntegrationTest.png" alt="Unit Test" width="1000">
+
+
+#### 6.1.3 Core Behavior-Driven Development
+
+Para garantizar que el sistema cumpla con los flujos de negocio esperados por el usuario final, se implementó Behavior-Driven Development utilizando el framework Karate. Esta herramienta permite realizar pruebas automatizadas a nivel de API escribiendo escenarios en lenguaje natural, lo que facilita su lectura.
+
+<img src="images/TestsImages/KarateTest.png" alt="Unit Test" width="1000">
+
+<img src="images/TestsImages/KarateReport.png" alt="Unit Test" width="1000">
+
+#### 6.1.4 Core System Tests
+
+## Capítulo VII: DevOps Practices
+
+### 7.1 Continuous Integration
+
+#### 7.1.1 Tools and Practices
+
+#### 7.1.2 Build & Test Suite Pipeline Components
+
+### 7.2 Continuous Delivery
+
+#### 7.2.1 Tools and Practices
+
+#### 7.2.2 Stages Deployment Pipeline Components
+
+### 7.3 Continuous deployment
+
+
+#### 7.3.1 Tools and Practices
+
+
+
+#### 7.3.2 Production Deployment Pipeline Components
+
 ## Conclusiones
 
 ### Conclusiones y recomendaciones
