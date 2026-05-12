@@ -7492,6 +7492,37 @@ La configuración para el despliegue satisfactorio incluye los siguientes aspect
 
 #### 7.3.2 Production Deployment Pipeline Components
 
+En esta sección se detallan los componentes técnicos del pipeline de despliegue hacia el entorno de producción, así como las evidencias de su ejecución exitosa.
+
+Definición de Etapas del Pipeline (Jenkins Pipeline Stages)
+El proceso de despliegue automatizado en Jenkins se divide en las siguientes etapas críticas para asegurar una transición sin errores hacia producción:
+
+- Source Checkout: El pipeline se dispara automáticamente al detectar un nuevo tag de versión o un merge exitoso en la rama main, descargando el código fuente desde GitHub.
+
+- Environment Preparation: Configuración de las variables de entorno y descarga de dependencias necesarias para el entorno de producción.
+
+- Build & Containerization: Se genera el artefacto (JAR para el backend y archivos estáticos para el frontend) y se construye la imagen de Docker utilizando docker-compose.
+
+- Security & Vulnerability Scan: Verificación final de que no existen vulnerabilidades críticas en las imágenes de los contenedores antes de ser publicadas.
+
+- Production Deployment:
+
+  - Backend: Se realiza el empuje (push) de la imagen al registro de Azure y se reinicia el servicio en Azure App Service.
+
+  - Frontend: Se despliegan los archivos estáticos hacia Firebase Hosting utilizando el CLI de Firebase.
+
+
+#### Evidencias de Ejecución
+
+- Evidencias de Ejecución Pipeline en Jenkins: A continuación, se muestra el historial de ejecución donde se observa que todas las etapas (Build, Test, Deploy) finalizaron satisfactoriamente (color verde).
+
+
+- Evidencias de Ejecución de Karate: A continuación, se muestra una ejecución de una prueba de Karate, donde se observa dos escenarios que han pasado correctamente el proceso de QA.
+
+<img src="images/TestsImages/KarateReport.png" alt="Unit Test" width="1000">
+
+
+
 ## Conclusiones
 
 ### Conclusiones y recomendaciones
