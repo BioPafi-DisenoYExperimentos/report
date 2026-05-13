@@ -7364,6 +7364,34 @@ Se realizo para comprobar que la base de datos puede almacenar múltiples regist
 
 El sistema guarda dos guías diferentes, una seguida de la otra. Luego, ejecuta una consulta para listar absolutamente todo lo que hay guardado y verifica que el resultado contenga exactamente esas dos guías que acabamos de registrar.
 
+**Profiles:**
+
+**ProfilesIntegrationTest:**
+
+Test: createProfileShouldPersistProfileAndAllowQueryById:
+
+Este test se realizó para demostrar que el ciclo de vida inicial de un perfil de usuario funciona correctamente. Necesitamos comprobar que, al momento de que un usuario ingresa sus datos, estos se guardan realmente en la base de datos y pueden ser consultados posteriormente para mostrar su perfil en la aplicación.
+
+<img src="images/tests/profiles/Profiles4.png" alt="screenshot about the product" width="1000">
+
+COn ello confirmamos que el sistema guarda un perfil nuevo. Inmediatamente después, el mismo sistema busca este perfil utilizando el ID que se acaba de generar. Esto comprueba que la información viajó a la base de datos, se almacenó con un estado inicial, y se pudo recuperar intacta.
+
+Test: updateProfileShouldModifyPersistedProfile:
+
+Se realizo para comprobar que los usuarios pueden modificar la información de su perfil con éxito, para asi garantizar que los cambios importantes como actualizar un nombre o mejorar el plan de suscripción se vean reflejados correctamente en el sistema sin alterar la identidad del usuario.
+
+<img src="images/tests/profiles/Profiles5.png" alt="screenshot about the product" width="1000">
+
+Con ello, confirmamos que el sistema primero guarda un perfil con información básica. Seguido, envía una orden para actualizar esos datos por unos nuevos. Y finalmente, recupera el perfil y verifica que la información mostrada sea la actualizada, comprobando que los cambios se aplicaron sobre el registro original sin crear duplicados.
+
+Test: getAllProfilesShouldReturnAllCreatedProfiles:
+
+Se realizo para verificar que la base de datos pueda almacenar múltiples perfiles de usuarios a lo largo del tiempo y que el sistema puede listarlos todos de manera conjunta y correcta cuando sea necesario.
+
+<img src="images/tests/profiles/Profiles6.png" alt="screenshot about the product" width="1000">
+
+Esto confirma que el sistema registra dos perfiles pertenecientes a diferentes usuarios, uno seguido del otro. Luego, ejecuta una consulta para listar absolutamente todos los perfiles guardados y comprueba que el resultado contenga exactamente esos dos perfiles que acabamos de registrar.
+
 
 #### 6.1.3 Core Behavior-Driven Development
 
