@@ -7375,6 +7375,82 @@ Para garantizar que el sistema cumpla con los flujos de negocio esperados por el
 
 #### 6.1.4 Core System Tests
 
+### 6.2 Static Testing and Verification
+
+Las pruebas estáticas y la verificación son pilares fundamentales en el ciclo de vida de desarrollo de software (SDLC) del proyecto. A diferencia de las pruebas dinámicas, estas se realizan sin ejecutar el código fuente, permitiendo identificar errores en etapas tempranas, reducir la deuda técnica y asegurar que el equipo siga un estándar de desarrollo unificado.
+
+El objetivo primordial es garantizar que el código no solo sea funcional, sino también mantenible, seguro y legible. Para ello, se han implementado herramientas de análisis automatizado que evalúan el cumplimiento de reglas predefinidas y detectan vulnerabilidades que podrían pasar desapercibidas en una revisión manual.
+
+#### 6.2.1 Static Code Analysis
+
+Dentro de esta subsección, verificaremos si el código cumple con los estándares de codificación, la identificación de código confuso o ineficiente y la detección de errores potenciales (variables no usadas, posibles nulos).
+
+Dentro de las herramientas utilizadas tenemos:
+
+- Checkstyle: Usado para mejorar la calidad de código, usaremos para el proyecto el estándar de Google Java Style.
+- SonarQube: Se usará para detectar métricas de alto nivel como duplicación de código y vulnerabilidades de seguridad.
+
+#### 6.2.1.1 Coding Standard & Code Conventions
+
+En esta sección detallaremos el uso de Checkstyle con el estándar de Google Java Style.
+
+**Proceso de integración:**
+
+La integración se realizó a través del maven-checkstyle-plugin en el archivo pom.xml. Este plugin está configurado para ejecutarse automáticamente durante la fase de validate del ciclo de vida de Maven, lo que garantiza que cualquier cambio que no cumpla con los estándares detenga la construcción del proyecto
+
+```
+<plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-checkstyle-plugin</artifactId>
+    <version>3.6.0</version>
+    <configuration>
+        <configLocation>checkstyle.xml</configLocation>
+        <consoleOutput>true</consoleOutput>
+        <failsOnError>true</failsOnError>
+        <linkXRef>false</linkXRef>
+    </configuration>
+    <executions>
+        <execution>
+            <id>validate</id>
+            <phase>validate</phase>
+            <goals>
+                <goal>check</goal>
+            </goals>
+        </execution>
+    </executions>
+</plugin>
+```
+
+Dentro de las reglas críticas establecidas en nuestro archivo checkstyle.xml, destacamos:
+
+- Javadoc (Documentación):
+
+    - JavadocMethod: Se exige documentación para todos los métodos public y protected. Es obligatorio incluir los tags @param y @return para asegurar que la API sea comprensible.
+    - JavadocType: Se requiere Javadoc en todas las clases e interfaces públicas, describiendo su responsabilidad dentro del sistema.
+    - JavadocStyle: Valida que los comentarios sigan un formato profesional y gramaticalmente correcto.
+
+- Complejidad de Código:
+
+    - CyclomaticComplexity: Se ha establecido un límite de 10 para la complejidad ciclomática por método. Esto reduce el número de caminos lógicos, facilitando el mantenimiento y las pruebas.
+    - JavaNCSS: Se limita el número de sentencias de código no comentadas a un máximo de 50 por método, promoviendo la creación de funciones pequeñas y modulares.
+
+**Ejecución y Verificación:** 
+
+El equipo puede validar el cumplimiento de estas reglas localmente con el comando:
+
+```
+mvn checkstyle:check
+```
+
+A continuación, se muestra una imágen del Checkstyle con **Build Success**:
+
+<img src="images/TestsImages/checkstyle.jpg" alt="Checkstyle Test" width="1000">
+
+
+
+#### 6.2.1.2 Code Quality & Code Security
+
+
 ## Capítulo VII: DevOps Practices
 
 ### 7.1 Continuous Integration
