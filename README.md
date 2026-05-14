@@ -7336,6 +7336,166 @@ Se realizo para confirmar la precisión del sistema al buscar información espec
 
 Simulamos la búsqueda de una guía utilizando su número de identificación único (ID). Comprobamos que el sistema busque y devuelva con éxito la información que le corresponde a ese ID específico.
 
+**Profiles:**
+
+**ProfileCommandServiceImplTest:**
+
+Test: handleCreateProfileCommandShouldSaveAndReturnProfile:
+
+Se realizo para comprobar que, al recibir la instrucción de crear un perfil, el sistema procese y guarde correctamente los datos iniciales del usuario.
+
+<img src="images/tests/profiles/unitest/ProfileUnit1.png" alt="screenshot about the product" width="1000">
+
+Simulamos el envío de los datos de un perfil nuevo y confirmamos que el servicio interactúa con la base de datos para persistirlos exitosamente sin alterar la información.
+
+Test: handleUpdateProfileCommandShouldUpdateAndReturnProfileWhenItExists:
+
+Se realizo para garantizar que los perfiles existentes puedan ser modificados de forma segura si el usuario decide cambiar su nombre o actualizar su plan de suscripción.
+
+<img src="images/tests/profiles/unitest/ProfileUnit2.png" alt="screenshot about the product" width="1000">
+
+Simulamos una petición de actualización sobre un perfil ya existente y verificamos que los datos internos del sistema se reemplacen y guarden correctamente.
+
+**ProfileQueryServiceImplTest:**
+
+Test: handleGetProfileByIdQueryShouldReturnProfileWhenItExists:
+
+Se realizo para confirmar que la búsqueda por identificador principal (ID) sea exacta y confiable, asegurando que el sistema pueda mostrar el perfil solicitado.
+
+<img src="images/tests/profiles/unitest/ProfileUnit3.png" alt="screenshot about the product" width="1000">
+
+Simulamos la petición de un perfil específico usando su ID y comprobamos que el sistema busque y devuelva con éxito la información correspondiente.
+
+Test: handleGetAllProfilesQueryShouldReturnAllProfiles:
+
+Se realizo para validar que el sistema responsable de las búsquedas cumpla con su función de entregar listas completas de los perfiles registrados sin perder datos en el camino.
+
+<img src="images/tests/profiles/unitest/ProfileUnit4.png" alt="screenshot about the product" width="1000">
+
+Simulamos que la base de datos contiene varios perfiles guardados y verificamos que, cuando pedimos todos los perfiles, el sistema nos entregue esa misma lista completa.
+
+**Tasks:**
+
+**TaskCommandServiceImplTest:**
+
+Test: handleCreateTaskCommandShouldSaveTaskAndReturnGeneratedId:
+
+Se realizo para demostrar que el sistema es capaz de recibir los datos de un nuevo recordatorio o tarea (como la fecha y acción) y enviarlos correctamente a la base de datos.
+
+<img src="images/tests/Tasks/unitest/TaskUnit1.png" alt="screenshot about the product" width="1000">
+
+Simulamos el envío de una tarea nueva y confirmamos que el servicio procesa la instrucción y la guarda exitosamente a través del repositorio simulado, sin alterar la información original.
+
+Test: handleDeleteTaskCommandShouldDeleteTaskById:
+
+Se realizo para garantizar que el sistema sepa ejecutar de manera segura la orden de eliminar tareas cuando estas ya han sido completadas o no son necesarias.
+
+<img src="images/tests/Tasks/unitest/TaskUnit2.png" alt="screenshot about the product" width="1000">
+
+Simulamos la existencia de tareas guardadas en la base de datos y verificamos que el sistema las recopile en su totalidad y las entregue sin omitir ninguna al solicitar la lista completa.
+
+**TaskQueryServiceImplTest:**
+
+Test: handleGetAllTasksQueryShouldReturnAllTasks:
+
+Se realizo para confirmar que la aplicación pueda listar todas las tareas o recordatorios programados por el usuario de forma íntegra.
+
+<img src="images/tests/Tasks/unitest/TaskUnit3.png" alt="screenshot about the product" width="1000">
+
+Simulamos la existencia de tareas guardadas en la base de datos y verificamos que el sistema las recopile en su totalidad y las entregue sin omitir ninguna al solicitar la lista completa.
+
+Test: handleGetTaskByIdQueryShouldReturnTaskWhenItExists:
+
+Se realizo para asegurar que los usuarios puedan consultar los datos exactos de un recordatorio puntual.
+
+<img src="images/tests/Tasks/unitest/TaskUnit4.png" alt="screenshot about the product" width="1000">
+
+Simulamos la búsqueda de una tarea por su número de ID único y comprobamos que el sistema la encuentre y la devuelva exitosamente.
+
+**PlantProfiles:**
+
+**PlantCommandServiceImplTest:**
+
+Test: handleCreatePlantCommandShouldSavePlantAndReturnGeneratedId:
+
+Se realizo para asegurarnos de que la información técnica de una nueva planta (especie, humedad, fotos) se procese y guarde adecuadamente en el inventario del usuario.
+
+<img src="images/tests/plantprofile/unitest/PlantProfileUnit1.png" alt="screenshot about the product" width="1000">
+
+Simulamos la creación de una planta y verificamos que el sistema reciba la instrucción y envíe los datos al repositorio simulado para su almacenamiento seguro.
+
+**PlantHistoryCommandServiceImplTest:**
+
+Test: handleCreatePlantHistoryCommandShouldSaveHistoryAndReturnGeneratedId:
+
+Se realizo para verificar que los registros históricos de las plantas (como eventos de riego o lecturas de sensores) se guarden exitosamente, permitiendo el seguimiento temporal del cuidado.
+
+<img src="images/tests/plantprofile/unitest/PlantProfileUnit2.png alt="screenshot about the product" width="1000">
+
+Simulamos la llegada de un nuevo dato para el historial y comprobamos que el sistema lo reciba y lo registre asociado a la planta correcta sin alterar la información.
+
+**PlantQueryServiceImplTest:**
+
+Test: handleGetPlantByIdQueryShouldReturnPlantWhenItExists:
+
+Se realizo para confirmar la precisión del sistema al consultar los detalles e información específica de una planta en particular desde el catálogo.
+
+<img src="images/tests/plantprofile/unitest/PlantProfileUnit3.png alt="screenshot about the product" width="1000">
+
+Simulamos la solicitud del estado de una planta mediante su número de identificación (ID) y verificamos que el sistema encuentre y entregue la información solicitada de forma íntegra.
+
+**PlantHistoryQueryServiceImplTest:**
+
+Test: handleGetAllPlantHistoriesByPlantIdQueryShouldReturnHistoriesForPlant:
+
+Se realizo para validar que la aplicación pueda recuperar de manera conjunta todo el historial de eventos que le pertenece a una planta en específico.
+
+<img src="images/tests/plantprofile/unitest/PlantProfileUnit4.png alt="screenshot about the product" width="1000">
+
+Simulamos la consulta del historial vinculada al ID de una planta y verificamos que el sistema busque, liste y devuelva todos los eventos registrados para la misma.
+
+**IAM:**
+
+**RoleCommandServiceImplTest:**
+
+Test: handleSeedRolesCommandShouldSaveMissingRoles:
+
+Se realizo para asegurar que el sistema pueda inicializar y guardar automáticamente los roles de seguridad necesarios (como el rol básico de usuario) si detecta que aún no existen en la base de datos.
+
+<img src="images/tests/IAM/unitest/IAMUnit1.png alt="screenshot about the product" width="1000">
+
+Simulamos el arranque del sistema y verificamos que este detecte la ausencia de roles por defecto, procediendo a crearlos y guardarlos exitosamente sin generar duplicado
+
+**UserCommandServiceImplTest:**
+
+Test: handleSignUpCommandShouldCreateUserAndProfileWhenEmailIsAvailable:
+
+Se realizo para asegurarnos de que la lógica de registro procese credenciales nuevas de forma segura y se comunique correctamente con el módulo de perfiles para inicializar la cuenta completa del usuario.
+
+<img src="images/tests/IAM/unitest/IAMUnit2.png alt="screenshot about the product" width="1000">
+
+Simulamos el envío de datos de un usuario nuevo y confirmamos que el sistema valide la disponibilidad del correo, encripte la contraseña y registre la cuenta exitosamente.
+
+**RoleQueryServiceImplTest:**
+
+Test: handleGetRoleByNameQueryShouldReturnRoleWhenItExists:
+
+Se realizo para confirmar la precisión del sistema al buscar y recuperar niveles de permiso o roles de seguridad específicos que son requeridos para autorizar acciones dentro de la plataforma.
+
+<img src="images/tests/IAM/unitest/IAMUnit3.png alt="screenshot about the product" width="1000">
+
+Simulamos la búsqueda de un rol de usuario por su nombre y comprobamos que el sistema lo encuentre y lo devuelva correctamente para su uso.
+
+**UserQueryServiceImplTest:**
+
+Test: handleGetUserByIdQueryShouldReturnUserWhenItExists:
+
+Se realizo para asegurar que la aplicación pueda localizar y exponer internamente los datos de seguridad de una cuenta específica mediante su código de identificación único.
+
+<img src="images/tests/IAM/unitest/IAMUnit4.png alt="screenshot about the product" width="1000">
+
+Simulamos la búsqueda de un usuario mediante su ID y verificamos que la aplicación procese la solicitud y retorne los datos exactos de la cuenta.
+
 #### 6.1.2 Core Integration Tests
 
 Las pruebas de integración aseguran que las diferentes piezas de nuestro sistema trabajen juntas correctamente. A continuación, se detallan las pruebas realizadas:
@@ -7480,9 +7640,51 @@ El sistema primero crea el registro de una planta y posteriormente genera un eve
 
 Para garantizar que el sistema cumpla con los flujos de negocio esperados por el usuario final, se implementó Behavior-Driven Development utilizando el framework Karate. Esta herramienta permite realizar pruebas automatizadas a nivel de API escribiendo escenarios en lenguaje natural, lo que facilita su lectura.
 
-<img src="images/TestsImages/KarateTest.png" alt="Unit Test" width="1000">
+<img src="images/TestsImages/KarateJava.jpg" alt="Unit Test" width="1000">
 
-<img src="images/TestsImages/KarateReport.png" alt="Unit Test" width="1000">
+<br>
+<br>
+
+**Codigos Gherkin:**
+
+IAM:
+
+Su función principal es administrar el registro y la autenticación de los usuarios en la plataforma. El módulo valida la creación de nuevas cuentas y otorga acceso al sistema únicamente mediante credenciales válidas (correo electrónico y contraseña). Asimismo, garantiza la seguridad del sistema bloqueando cualquier intento de ingreso no autorizado, ya sea por falta de registro o por el uso de credenciales incorrectas.
+
+<br>
+
+<img src="images/TestsImages/Gherkin/Sign-inGherkin.png" alt="Unit Test" width="1000">
+
+<br>
+
+Plants:
+
+Este módulo permite al usuario administrar su inventario botánico mediante operaciones integrales de creación, lectura, actualización y eliminación de registros. Además, implementa controles de seguridad y privacidad a nivel de base de datos, garantizando que cada usuario únicamente tenga los permisos necesarios para visualizar, modificar o eliminar la información correspondiente a su propio catálogo de plantas.
+
+<br>
+
+<img src="images/TestsImages/Gherkin/PlantsGherkin.png" alt="Unit Test" width="1000">
+
+<br>
+
+Tasks:
+
+Facilita la programación y el seguimiento de actividades de mantenimiento específicas asociadas a cada planta, tales como los ciclos de riego. El sistema permite al usuario registrar nuevas actividades, consultar los estados pendientes y eliminar las tareas completadas. Para mantener la integridad de la información, el módulo valida de forma estricta la propiedad de la planta antes de autorizar cualquier creación o modificación de una tarea.
+
+<br>
+
+<img src="images/TestsImages/Gherkin/TasksGherkin.png" alt="Unit Test" width="1000">
+
+<br>
+
+Wheather:
+
+Proporciona información meteorológica en tiempo real, como la temperatura y la humedad, directamente dentro de la interfaz para optimizar la toma de decisiones sobre el cuidado botánico sin requerir servicios externos. El acceso a las consultas de este servicio está restringido exclusivamente a los usuarios debidamente registrados y autenticados en la plataforma.
+
+<br>
+
+<img src="images/TestsImages/Gherkin/WheatherGherkin.png" alt="Unit Test" width="1000">
+
 
 #### 6.1.4 Core System Tests
 
