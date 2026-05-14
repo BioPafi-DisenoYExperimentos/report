@@ -7316,62 +7316,21 @@ El proceso de despliegue automatizado en Jenkins se divide en las siguientes eta
 <img src="images/TestsImages/KarateReport.png" alt="Unit Test" width="1000">
 
 
-## Conclusiones
+## Conclusiones y Recomendaciones
 
-### Conclusiones y recomendaciones
+### **TP**
 
-*TB1*
----
+**Conclusiones:**
+- La implementación de un pipeline de CI/CD mediante Jenkins ha optimizado significativamente el ciclo de vida del desarrollo, permitiendo una detección temprana de errores y asegurando que cada incremento de software cumpla con los estándares de calidad definidos antes de su despliegue en entornos de Azure y Firebase.
+- El uso de Karate DSL para las pruebas de integración ha fortalecido la validación de las APIs del sistema, garantizando que la comunicación entre el frontend y el backend sea robusta y que las funcionalidades críticas del producto, como el monitoreo y alertas de plantas, operen correctamente bajo diversos escenarios de uso.
 
-- Se puede concluir que existe una gran cantidad de personas que no tiene mucha experiencia en el cuidado de plantas, lo cual conlleva a que sus plantas sufran enfermedades o en el peor de los casos se mueran por la falta de cuidado.
+**Recomendaciones:**
+- Se recomienda expandir la cobertura de pruebas de SonarQube integrando reglas personalizadas que aborden vulnerabilidades de seguridad específicas, asegurando no solo la mantenibilidad del código sino también la protección de los datos de los usuarios frente a posibles ataques.
+- Es aconsejable implementar monitoreo en tiempo real sobre el entorno de producción en Azure para recolectar métricas de rendimiento post-despliegue, lo que permitirá identificar cuellos de botella y optimizar la escalabilidad del sistema PlantSync conforme crezca la base de usuarios.
 
-- El uso de los repositorios y funcionalidades de GitHub incrementó la eficiencia, calidad y colaboración del equipo en el desarrollo de software. Además, permitió una gestión rigurosa de activos y versiones, asegurando el control del código fuente y la documentación, lo que facilitó el cumplimiento de las expectativas del público objetivo.
+- La planificación y ejecución de pruebas técnicas han sido fundamentales para validar los requisitos y asegurar la calidad del producto. El uso de herramientas de automatización permitió identificar y corregir errores de forma temprana, garantizando una mejor experiencia para el usuario final.
 
-- La planificación y ejecución de entrevistas fueron clave para comprender, comunicar y validar los requisitos y expectativas de los stakeholders. Esto permitió identificar frustraciones, metas, pensamientos y percepciones relacionados con el problema que la solución busca atender, logrando así una mejor satisfacción de sus necesidades.
-
-- Los artefactos de Needfinding resultan esenciales para obtener una aproximación precisa y auténtica al público objetivo.
-
-- El desarrollo de las Style Guidelines contribuyó a mantener la coherencia y la calidad visual del contenido en la plataforma, consolidando una identidad sólida y consistente para la startup.
-
-- La elaboración de los User Stories y del Product Backlog permitió priorizar las funcionalidades de la solución de software, orientando al equipo de desarrollo sobre qué debía ser entregado primero.
-
-- La creación de Wireframes sentó bases firmes para el desarrollo de la plataforma interactiva, ya que ayudó a definir los aspectos visuales antes de iniciar la codificación, logrando un producto final más efectivo y atractivo para el usuario.
-
-- El trabajo por sprints es fundamental para avanzar de manera constante y organizada. Definir un límite de user story points evita la sobrecarga de tareas, permitiendo un desarrollo adecuado del Landing Page.
-
-- El Sprint 1 resultó ser una excelente estrategia para integrar los User Stories priorizados en el primer entregable. Cada integrante del equipo participó activamente en el desarrollo colaborativo del Landing Page en el repositorio, complementado con reuniones de retroalimentación grupal.
-
-
-*TP*
----
-- Además, se corrigieron los errores identificados en el primer entregable, lo que permitió mejorar tanto la estructura como la funcionalidad inicial del proyecto. Estos ajustes se realizaron en base a las observaciones recibidas, lo que reflejó una actitud proactiva del equipo frente a la mejora continua del producto.
-
-- Durante el Sprint 2 se logró desarrollar de manera satisfactoria el front-end de la aplicación web, utilizando Angular Material para asegurar una interfaz moderna, accesible y consistente. Esta tecnología permitió integrar componentes reutilizables que mejoraron la experiencia de usuario y optimizaron los tiempos de desarrollo.
-
-- Asimismo, se implementó un entorno en la nube con Azure para desplegar la aplicación web, lo que facilitó la visualización remota del proyecto, fortaleciendo su disponibilidad y permitiendo una mayor visibilidad del avance frente a los stakeholders.
-
-- Finalmente, se utilizó una Mock API para simular la carga de datos desde la red, lo que permitió validar el funcionamiento dinámico de los componentes desarrollados, asegurando la integración adecuada del front-end con una futura API real. Esto proporcionó una base sólida para continuar con las siguientes etapas del desarrollo.
-
-
-*TB2*
----
-- El desarrollo del Sprint 3 permitió consolidar la estructura base del sistema web, con la primera versión del backend RESTful API implementado con Spring Boot.
-
-- La publicación del Landing Page actualizado, ha mejorado la visibilidad del proyecto y su alineación con los objetivos del modelo de negocio. Esto facilita que los stakeholders puedan acceder fácilmente a los avances del producto.
-
-- La creación del Video About-The-Product y el Video About-The-Team sirvieron como evidencia audiovisual del proceso de desarrollo, resaltando no solo las funcionalidades implementadas, sino también el compromiso y colaboración efectiva del equipo.
-
-- Las entrevistas de validación permitieron contrastar nuestras hipótesis de diseño e interacción frente al comportamiento real de los usuarios. Estas sesiones fueron fundamentales para identificar aspectos de mejora en la usabilidad, accesibilidad e interacción general de la solución.
-
-- La evaluación heurística aplicada a los flujos de usuario y vistas clave de la aplicación evidenció aspectos que deben ser priorizados en el siguiente sprint, relacionados con la claridad de los botones, el flujo de navegación, y la inclusión de más contenido útil en secciones como Rootbot y guías.
-
-*TF*
----
-- Durante el desarrollo del TF1, el equipo demostró habilidades sólidas de comunicación oral al presentar avances semanales tanto al docente como entre compañeros de equipo, adaptando el lenguaje técnico según la audiencia. Las reuniones de planificación, retrospectiva y revisión fueron espacios clave para compartir ideas de forma clara, estructurada y colaborativa, lo que favoreció una ejecución alineada con los objetivos del proyecto.
-
-
-- La documentación técnica elaborada a lo largo del trabajo, incluyendo los diagramas C4, la definición de User Stories y la organización de actividades en Trello y GitHub, evidenció una comunicación escrita precisa y estructurada. El equipo redactó informes comprensibles para personas técnicas y no técnicas, lo cual fue fundamental para transmitir el propósito, progreso y funcionalidades del sistema de forma efectiva.
-
+- La integración de procesos de calidad y despliegue continuo ha fortalecido la colaboración del equipo y la confiabilidad de las entregas. Estos estándares técnicos aseguran que PlantSync sea una solución escalable y mantenible a largo plazo.
 
 ## Video about the Team
 
@@ -7412,13 +7371,13 @@ https://www.serpar.gob.pe/noticias/10-cosas-que-debes-aprender-sobre-el-cuidado-
 
 **Repositorio de Github**
 
-+ **Respositorio de la startup:** [Link Repositorio BioPafi](https://github.com/BioPafi-OpenSource)
++ **Respositorio de la startup:** [Link Repositorio BioPafi](https://github.com/BioPafi-DisenoYExperimentos)
 
 + **Repositorio de la landing page:** [Link Repositorio Landing Page](https://github.com/BioPafi-OpenSource/plantSync-LandingPage)
 
 + **Repositorio del frontend:** [Link Repositorio Frontend](https://github.com/BioPafi-OpenSource/PlantSync_Frontend)
 
-+ **Repositorio del backend:** [Link Repositorio Backend](https://github.com/BioPafi-OpenSource/PlantSync_Platform)
++ **Repositorio del backend:** [Link Repositorio Backend](https://github.com/BioPafi-DisenoYExperimentos/Plantsync_Backend)
 
 **Deploy de la aplicación**
 
