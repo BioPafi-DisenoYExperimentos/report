@@ -7364,6 +7364,117 @@ Se realizo para comprobar que la base de datos puede almacenar múltiples regist
 
 El sistema guarda dos guías diferentes, una seguida de la otra. Luego, ejecuta una consulta para listar absolutamente todo lo que hay guardado y verifica que el resultado contenga exactamente esas dos guías que acabamos de registrar.
 
+**Profiles:**
+
+**ProfilesIntegrationTest:**
+
+Test: createProfileShouldPersistProfileAndAllowQueryById:
+
+Este test se realizó para demostrar que el ciclo de vida inicial de un perfil de usuario funciona correctamente. Necesitamos comprobar que, al momento de que un usuario ingresa sus datos, estos se guardan realmente en la base de datos y pueden ser consultados posteriormente para mostrar su perfil en la aplicación.
+
+<img src="images/tests/profiles/Profiles4.png" alt="screenshot about the product" width="1000">
+
+COn ello confirmamos que el sistema guarda un perfil nuevo. Inmediatamente después, el mismo sistema busca este perfil utilizando el ID que se acaba de generar. Esto comprueba que la información viajó a la base de datos, se almacenó con un estado inicial, y se pudo recuperar intacta.
+
+Test: updateProfileShouldModifyPersistedProfile:
+
+Se realizo para comprobar que los usuarios pueden modificar la información de su perfil con éxito, para asi garantizar que los cambios importantes como actualizar un nombre o mejorar el plan de suscripción se vean reflejados correctamente en el sistema sin alterar la identidad del usuario.
+
+<img src="images/tests/profiles/Profiles5.png" alt="screenshot about the product" width="1000">
+
+Con ello, confirmamos que el sistema primero guarda un perfil con información básica. Seguido, envía una orden para actualizar esos datos por unos nuevos. Y finalmente, recupera el perfil y verifica que la información mostrada sea la actualizada, comprobando que los cambios se aplicaron sobre el registro original sin crear duplicados.
+
+Test: getAllProfilesShouldReturnAllCreatedProfiles:
+
+Se realizo para verificar que la base de datos pueda almacenar múltiples perfiles de usuarios a lo largo del tiempo y que el sistema puede listarlos todos de manera conjunta y correcta cuando sea necesario.
+
+<img src="images/tests/profiles/Profiles6.png" alt="screenshot about the product" width="1000">
+
+Esto confirma que el sistema registra dos perfiles pertenecientes a diferentes usuarios, uno seguido del otro. Luego, ejecuta una consulta para listar absolutamente todos los perfiles guardados y comprueba que el resultado contenga exactamente esos dos perfiles que acabamos de registrar.
+
+**IAM:**
+
+**IamIntegrationTest:**
+
+Test: signUpShouldPersistUserAndAllowQueryByEmailAndId:
+
+Se realizo para demostrar la funcionalidad del flujo de registro de un nuevo usuario. Necesitamos asegurar que, al registrarse, el usuario se guarde en la base de datos con su rol correspondiente y, de manera simultánea, el sistema se comunique exitosamente con el módulo de "Perfiles" para generarle un perfil básico.
+
+<img src="images/tests/IAM/IAM4.png" alt="screenshot about the product" width="1000">
+
+La finalidad de este test, fue demostrar que el sistema simula el registro de un nuevo usuario. Luego, busca a este usuario utilizando tanto su correo electrónico. Adicionalmente, verifica que se le haya asignado el rol por defecto y comprueba que se haya enviado la orden correcta para crear su perfil asociado, confirmando la integración entre diferentes módulos.
+
+Test: signInShouldAuthenticatePersistedUserAndReturnToken:
+
+Se realizo para comprobar que al momento que el usuario inicia sesión se valida correctamente las credenciales y permite el acceso al sistema y que el usuario pueda navegar por la aplicación.
+
+<img src="images/tests/IAM/IAM5.png" alt="screenshot about the product" width="1000">
+
+El sistema primero registra un usuario con su respectiva contraseña. Luego, simula un inicio de sesión utilizando ese mismo correo y contraseña. Finalmente, el test verifica que el sistema reconozca al usuario y no rechace su inicio de sesión, el cual es indispensable para la seguridad del sistema.
+
+Test: updateUserShouldChangeEmailAndAllowQueryByNewEmail:
+
+Se realizo para validar que el sistema permite la actualización del correo electrónico del usuario, para asi garantizar que el sistema reconozca el nuevo correo.
+
+<img src="images/tests/IAM/IAM6.png" alt="screenshot about the product" width="1000">
+
+Con esto comprobamos que el sistema crea un usuario con un correo inicial. Luego, envía una orden para actualizar ese correo por uno nuevo y al finalizar, el sistema se asegura que el reemplazo fue total y seguro.
+
+Test: getAllUsersShouldIncludeUsersCreatedThroughCommands:
+
+Se realizo para comprobar que el sistema es capaz de recuperar una lista completa de todos los usuarios registrados, lo cual es vital para funciones administrativas dentro de la aplicación.
+
+<img src="images/tests/IAM/IAM7.png" alt="screenshot about the product" width="1000">
+
+El sistema registra dos usuarios de prueba distintos, uno tras otro. Luego, ejecuta una consulta general para obtener todos los usuarios del sistema. El test verifica que la lista devuelta contenga, como mínimo, a esos dos usuarios recién creados, validando sus IDs únicos.
+
+**Tasks:**
+
+**TaskIntegrationTests:**
+
+Test: createTask_ShouldReturnCreatedAndPersistInDatabase:
+
+Se realizo para demostrar como se realiza la creación de una nueva tarea. Para ello necesitamos asegurar que, cuando la aplicación envía los datos, el servidor los reciba, los valide y los guarde en la base de datos, respondiendo con éxito.
+
+<img src="images/tests/Tasks/Tasks4.png" alt="screenshot about the product" width="1000">
+
+En este test, el sistema simula ser un cliente que hace una petición enviando la información de una tarea. Luego, verifica dos cosas fundamentales, que la API responda correctamente y que al revisar directamente la base de datos, la tarea se haya registrado de manera real con los datos enviados.
+
+Test: getAllTasks_ShouldReturnTasksList:
+
+Se realizo para validar que la aplicación es capaz de consultar y exponer correctamente la lista de tareas almacenadas, asegurando que la interfaz del usuario siempre pueda obtener el catálogo actualizado de tareas pendientes.
+
+<img src="images/tests/Tasks/Tasks5.png" alt="screenshot about the product" width="1000">
+
+El sistema primero utiliza el propio endpoint de creación para registrar previamente una tarea. Inmediatamente después, simula una petición de lectura para solicitar todas las tareas. El test verifica que la respuesta del servidor sea éxitosa, que el formato devuelto sea una lista válida y que contenga exactamente los datos de la tarea creada en el paso anterior.
+
+**PlantsProfile:**
+
+**PlantProfileIntegrationTests:**
+
+Test: createPlantShouldPersistPlantAndAllowQueryById:
+
+Se realizo para demostrar como se registra una nueva planta asociada a un perfil. Para ello necesitamos validar que, al ingresar la información técnica, esta se almacene de forma permanente y pueda ser recuperada para mostrarse en la aplicación.
+
+<img src="images/tests/plantprofile/PlantProfile4.png" alt="screenshot about the product" width="1000">
+
+En este test, el sistema registra una planta. Inmediatamente después, realiza una búsqueda por el ID generado automáticamente. El test confirma que los datos de nombre y humedad coinciden exactamente con lo registrado, validando la base de datos.
+
+Test: updatePlantShouldModifyPersistedPlant:
+
+Se realizo para asegurar que los usuarios puedan actualizar la información de sus plantas en cualquier momento, como cambiar el nombre personalizado o ajustar los parámetros de humedad si el ambiente cambia.
+
+<img src="images/tests/plantprofile/PlantProfile5.png" alt="screenshot about the product" width="1000">
+
+El sistema primero guarda una planta con datos iniciales. Luego, envía un comando para actualizar esos datos. El test verifica que la base de datos devuelva la entidad con los datos modificados correctamente sobre el mismo registro.
+
+Test: createPlantHistoryShouldPersistEntryAndAllowQueryByPlantId:
+
+Se realizo para validar el flujo de datos del historial técnico de la planta. Necesitamos comprobar que el sistema puede recibir y almacenar registros individuales (como lecturas de humedad) vinculándolos correctamente a una planta específica.
+
+<img src="images/tests/plantprofile/PlantProfile6.png" alt="screenshot about the product" width="1000">
+
+El sistema primero crea el registro de una planta y posteriormente genera un evento en su historial indicando que fue regada. Finalmente, consulta todo el historial vinculado y verifica que el evento se haya guardado con precisión.
 
 #### 6.1.3 Core Behavior-Driven Development
 
