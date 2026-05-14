@@ -277,11 +277,10 @@ Facilitar el cuidado de plantas en el hogar mediante soluciones tecnológicas in
 </td>
     </tr>
     <tr>
-      <td><img src="" alt="" width="500"></td>
+      <td><img src="images/perfil_Jocelyn.jpg" alt="" width="500"></td>
       <td>Almerco Rojas, Jocelyn Damaly</td>
-      <td> U20221G068
-      </td>
-      <td></td>
+      <td> U20221G068</td>
+      <td>Soy estudiante de Ingeniería de Software. Tengo buen dominio en la elaboración de diagramas en C++ y manejo lenguajes como C++, SQL, CSS, HTML y JavaScript. Además, poseo conocimientos básicos en frameworks como Angular y Vue.js para el desarrollo frontend. Aporto al equipo con habilidades en análisis lógico, documentación técnica y diseño estructurado de software, contribuyendo a mantener la coherencia y calidad del proyecto.</td>
     </tr>
   </tbody>
 </table>
@@ -7177,6 +7176,8 @@ Apache Maven: Utilizado como la herramienta principal de construcción (Build To
 
 JaCoCo (Java Code Coverage): Herramienta integrada como plugin en Maven para medir la cobertura de las pruebas unitarias y asegurar que se cumplan los estándares de calidad definidos por el equipo.
 
+SonarQube: Plataforma de análisis estático de código utilizada para evaluar la calidad, mantenibilidad y seguridad del software. 
+
 Para dar inicio a este proceso, se configuró un servidor local de Jenkins.
 
 <img src="images/tests/jenkins/Menu principal de jenkins.png" alt="screenshot about the product" width="1000">
@@ -7188,6 +7189,29 @@ Posteriormente, se configuró el proyecto seleccionando la opción de Pipeline, 
 Una vez configurado, el proyecto se integra al dashboard principal, permitiendo al equipo monitorear el historial y el estado de éxito o fallo de los builds.
 
 <img src="images/tests/jenkins/visualizacion del proyecto en el menu principal.png" alt="screenshot about the product" width="1000">
+
+
+**SonarQube**
+
+SonarQube permitió identificar errores potenciales, vulnerabilidades, duplicación de código y malas prácticas de programación en el backend desarrollado con Spring Boot.
+
+<img src="images/sonarqubeCrearLocarProject.png" alt="screenshot about the product" width="1000">
+
+Se muestra el proceso de creación del proyecto “Plantsync” dentro de SonarQube Community Edition. Durante esta configuración se definieron parámetros iniciales como el nombre del proyecto, la clave identificadora (*Project Key*) y la rama principal (*Main Branch Name*). Esta etapa permitió conectar el análisis estático del código con el repositorio del backend para posteriormente ejecutar evaluaciones automáticas de calidad.
+
+<img src="images/sonarqubeInicial.png" alt="screenshot about the product" width="1000">
+
+Se observa el panel de análisis de issues detectados por SonarQube. La herramienta identificó problemas de mantenibilidad asociados principalmente a métodos vacíos y clases utilitarias mal definidas. Cada issue muestra información detallada sobre la severidad, ubicación y recomendación de corrección, facilitando la mejora continua del código fuente.
+
+
+<img src="images/sonarqubeProyectoLocal.png" alt="screenshot about the product" width="1000">
+
+Se presenta el dashboard principal del proyecto “Plantsync” luego de ejecutar el análisis de código. En este panel se visualizan métricas generales de calidad como seguridad, confiabilidad, mantenibilidad, cobertura de pruebas y duplicación de código. Asimismo, se observa el estado del *Quality Gate*, indicador que permite validar si el proyecto cumple con los estándares mínimos definidos para continuar con el flujo de integración continua.
+
+<img src="images/sonarqubeIssues.png" alt="screenshot about the product" width="1000">
+
+Se muestra nuevamente el panel de issues, enfocándose en problemas relacionados con clases vacías y estructuras incompletas detectadas automáticamente por SonarQube. Estas observaciones permitieron aplicar correcciones orientadas a mejorar la estructura del backend, reducir deuda técnica y fortalecer las buenas prácticas de desarrollo en Java y Spring Boot.
+
 
 #### 7.1.2 Build & Test Suite Pipeline Components
 
@@ -7232,6 +7256,7 @@ Como resultado de la automatización de la etapa Validate Unit Tests, Jenkins re
 Finalmente, gracias a la naturaleza continua de esta práctica, Jenkins mantiene un historial visual de todas las integraciones. Esto asegura que cualquier regresión o fallo en el código introducido en futuros commits sea detectado inmediatamente, manteniendo el pipeline en verde como indicador de estabilidad.
 
 <img src="images/tests/jenkins/stages de todos los buildeos hechos.png" alt="screenshot about the product" width="1000">
+
 
 ### 7.2 Continuous Delivery
 
