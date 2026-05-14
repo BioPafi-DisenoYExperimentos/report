@@ -7306,7 +7306,7 @@ Test: handleCreateGuideCommandShouldSaveGuideAndReturnGeneratedId:
 
 Se realizo para asegurarnos de que, en condiciones normales, la lógica de nuestro sistema es capaz de recibir los datos de una nueva guía (título, autor, tema) y enviarlos correctamente para ser guardados.
 
-<img src="images/tests/plantguides/1.png" alt="screenshot about the product" width="1000">
+<img src="images/tests/plantguides/change.png" alt="screenshot about the product" width="1000">
 
 Simulamos el envío de datos de una guía nueva y confirmamos que el sistema procesa la información sin alterar ninguno de los campos antes de enviarla a guardar.
 
