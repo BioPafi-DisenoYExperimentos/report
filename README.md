@@ -49,317 +49,38 @@
 
 ## Project Report Collaboration Insights
 
-Link del documento en GitHub: https://github.com/BioPafi-OpenSource/project-report-plantsync
+Link del documento en GitHub: https://github.com/BioPafi-DisenoYExperimentos/report
 
-## **TB1**
+## **TP**
 
-<table align="center">
-  <tr>
-    <td><strong>Integrante</strong></td>
-    <td><strong>Tareas Asignadas</strong></td>
-  </tr>
-  <tr>
-    <td>
-      Erick Palomino
-    </td>
-    <td>
-      Startup Profile, Style Guidelines, User Stories, Landing Page UI Desing, Web Application Prototyping, Landing Page Code.
-    </td>
-  </tr>
-  <tr>
-    <td>
-      Javier Gonzales
-    </td>
-    <td>
-      Lean Ux Problem Statement, Assumptions, Desarrollo de entrevistas, Arquitectura de informacion, Wireframes y Wireflows, Desarrollo de la Landing Page
-    </td>
-  </tr>
-  <tr>
-    <td>
-      Renzo Rivera
-    </td>
-    <td>
-      Competitive Analysis, User Personas, User Journey Mapping, User Task Matrix, User Stories, User Flow Diagrams, Plan Section Landing Page
-    </td>
-  </tr>
-  <tr>
-    <td>
-      Sean Palomares
-    </td>
-    <td>
-     Lean UX Hypothesis Statements y Canvas, Segmentos Objetivo, To-Be Scenario Mapping, Impact Mapping, Product Backlog, Software Object-Oriented Design, Database Design, Software Configuration Management
-    </td>
-  </tr>
-  <tr>
-    <td>
-      Giovany Torres
-    </td>
-    <td>
-      Antecedentes y Problemática, Empathy Mapping , As-is scenario mapping, Ubiquitous Language, Domain driven software architecture, Sprint planning 1, Sprint Backlog 1, Landing page, Conclusiones
-    </td>
-  </tr>
-</table>
-
-## **TP1**
-
-<table align="center">
-  <tr>
-    <td><strong>Integrante</strong></td>
-    <td><strong>Tareas Asignadas</strong></td>
-  </tr>
-  <tr>
-    <td>
-      Erick Palomino
-    </td>
-    <td>
-      Implementación de la sección login y register, levantamiento de errores del informe, Student Outcome, project Collaboration Insight, landing Page V2 y Sprint 2
-    </td>
-  </tr>
-  <tr>
-    <td>
-      Javier Gonzales
-    </td>
-    <td>
-      Implementación de la sección de mis plantas, ver historial, recomendaciones del clima y deployment del front end y Sprint 2
-    </td>
-  </tr>
-  <tr>
-    <td>
-      Renzo Rivera
-    </td>
-    <td>
-      Implementacion del FrontEnd de Chatbot, FrontEnd de Tareas y Sprint 2
-    </td>
-  </tr>
-  <tr>
-    <td>
-      Giovany Torres
-    </td>
-    <td>
-      FrontEnd de Guías, corrección del diagrama de clases, realización de conclusiones del entregable TP1 y Sprint 2
-    </td>
-  </tr>
-</table>
-
-## **TB2**
-
-<table align="center">
-  <tr>
-    <td><strong>Integrante</strong></td>
-    <td><strong>Tareas Asignadas</strong></td>
-  </tr>
-  <tr>
-    <td>
-      Erick Palomino
-    </td>
-    <td>
-      Realización del Profiles Bounded Context en el backend, entrevista de validación, añadio heuristicas, video about the product , video about the team , Sprint 3 y conclusiones.
-    </td>
-  </tr>
-  <tr>
-    <td>
-      Javier Gonzales
-    </td>
-    <td>
-      Realización de la Migración a base de datos en el backend, entrevista de validación, añadio heuristicas, video about the team, Sprint 3, mejora del frontend y conclusiones.
-    </td>
-  </tr>
-  <tr>
-    <td>
-      Renzo Rivera
-    </td>
-    <td>
-      Realización del Plant Profiles y Tasks Bounded Context en el backend, realizo el deploy del backend , realización del diagrama del backend,video about the team, mejora del frontend y Sprint 3.
-    </td>
-  </tr>
-  <tr>
-    <td>
-      Giovany Torres
-    </td>
-    <td>
-      Realización de Guides Bounded Context en el backend, entrevista de validación, realización del diagrama del frontend, añadio heuristicas, video about the team, Sprint 3 y conclusiones.
-    </td>
-  </tr>
-</table>
-
-## **TP1**
-
-<table align="center">
-  <tr>
-    <td><strong>Integrante</strong></td>
-    <td><strong>Tareas Asignadas</strong></td>
-  </tr>
-  <tr>
-    <td>
-      Erick Palomino
-    </td>
-    <td>
-      Reelaboración y perfeccionamiento de los diagramas C4 y de clases, como parte del proceso de mejora continua, con el fin de representar de manera más clara y precisa la arquitectura y los componentes del sistema.
-    </td>
-  </tr>
-  <tr>
-    <td>
-      Javier Gonzales
-    </td>
-    <td>
-      Verificación integral del cumplimiento de las funcionalidades definidas en las User Stories dentro del frontend de la aplicación web, complementado con la integración de un componente de inteligencia artificial orientado al asesoramiento en el cuidado de plantas.
-    </td>
-  </tr>
-  <tr>
-    <td>
-      Renzo Rivera
-    </td>
-    <td>
-      Implementación de las conexiones finales entre el backend y frontend, acompañada del despliegue completo de la aplicación, la creación de los endpoints de inicio de sesión y registro de usuario, así como la incorporación del registro de un método de pago al flujo inicial de uso.
-    </td>
-  </tr>
-</table>
+| **Integrante** | **Tareas Asignadas** |
+| :--- | :--- |
+| Almerco Rojas, Jocelyn Damaly | SonarQube. |
+| Castañeda Llanos, Kevin Alexander | Tests unitarios, integrales y Checkstyle. |
+| Palomino Fiestas, Erick Leonardo | Jenkins y pruebas de integración. |
+| Rivera Ratachi, Renzo Sebastian | Karate, pruebas de integración y tests unitarios. |
+| Coca Lavado, Carlos Andres | Pruebas de integración y Karate. |
 
 **GitHub Collaboration Insights**
 
 **Integrantes:**
-+ Erick Palomino (ErickLeo13)
-+ Javier Gonzales (WoodsDos)
-+ Renzo Rivera (renzor11)
-+ Giovany Torres (Giovany7x)
-+ Sean Palomares (SeanPalomares)
-
-## **TB1**
++ Almerco Rojas, Jocelyn Damaly
++ Castañeda Llanos, Kevin Alexander
++ Palomino Fiestas, Erick Leonardo
++ Rivera Ratachi, Renzo Sebastian
++ Coca Lavado, Carlos Andres
 
 <p align="center">
-  <img src="images/insight-github/branch1-plantsync.png" alt="evidencia-sprint" width="800">
-</p>
-<br><br>
-
-<p align="center">
-  <img src="images/insight-github/contributors1-plantsync.png" alt="evidencia-sprint" width="800">
-</p>
-<br><br>
-
-<p align="center">
-  <img src="images/insight-github/overview1-plantsync.png" alt="evidencia-sprint" width="800">
-</p>
-<br><br>
-
-## **TP1**
-
-Repositorio Aplicacion Web:
-
-<p align="center">
-  <img src="images/insight-github/branch-appweb-plantsync.png" alt="evidencia-sprint" width="800">
-</p>
-<br><br>
-
-<p align="center">
-  <img src="images/evidencia-sprint2/evidencia2-team-sprint2.png" alt="evidencia-sprint" width="1000">
+  <img src="images/insight-github/branch-report-tp.png" alt="evidencia-tp" width="1000">
 </p>
 
 <p align="center">
-  <img src="images/evidencia-sprint2/evidencia1-team-sprint2.png" alt="evidencia-sprint" width="1000">
-</p>
-
-Repositorio Landing Page:
-
-<p align="center">
-  <img src="images/insight-github/branch-landingpage-plantsync.png" alt="evidencia-sprint" width="800">
-</p>
-<br><br>
-
-<p align="center">
-  <img src="images/evidencia-sprint2/evidencia4-team-sprint2.png" alt="evidencia-sprint" width="1000">
+  <img src="images/insight-github/contributors-report-tp.png" alt="evidencia-tp" width="1000">
 </p>
 
 <p align="center">
-  <img src="images/evidencia-sprint2/evidencia3-team-sprint2.png" alt="evidencia-sprint" width="1000">
+  <img src="images/insight-github/overview-report-tp.png" alt="evidencia-tp" width="1000">
 </p>
-
-Repositorio Informe:
-
-<p align="center">
-  <img src="images/insight-github/branch2-plantsync.png" alt="evidencia-sprint" width="1000">
-</p>
-
-<p align="center">
-  <img src="images/insight-github/contributors2-plantsync.png" alt="evidencia-sprint" width="1000">
-</p>
-
-<p align="center">
-  <img src="images/insight-github/overview2-plantsync.png" alt="evidencia-sprint" width="1000">
-</p>
-
-## **TB2**
-
-+ Informe:
-
-<br>
-
-<p align="center">
-  <img src="images/evidenciareporte1.jpg" alt="evidencia-sprint-3" width="1000">
-</p>
-
-<br>
-
-<p align="center">
-  <img src="images/evidenciareporte2.jpg" alt="evidencia-sprint-3" width="1000">
-</p>
-
-<p align="center">
-  <img src="images/evidenciareporte3.jpg" alt="evidencia-sprint-3" width="1000">
-</p>
-
-<br><br>
-
-+ Backend:
-
-<br>
-
-<p align="center">
-  <img src="images/evidencia-sprint3/evidence-github-backend1.jpg" alt="evidencia-sprint-3" width="1000">
-</p>
-
-<br>
-
-<p align="center">
-  <img src="images/evidenciabackend2.jpg" alt="evidencia-sprint-3" width="1000">
-</p>
-
-<p align="center">
-  <img src="images/evidenciabackend3.jpg" alt="evidencia-sprint-3" width="1000">
-</p>
-
-<br><br>
-
-+ Frontend:
-
-<br>
-
-<p align="center">
-  <img src="images/evidencia-sprint2/evidencia2-team-sprint2.png" alt="evidencia-sprint" width="1000">
-</p>
-
-<br>
-
-<p align="center">
-  <img src="images/evidencia-sprint2/evidencia1-team-sprint2.png" alt="evidencia-sprint" width="1000">
-</p>
-
-<br><br>
-
-+ LandingPage:
-
-<br>
-
-<p align="center">
-  <img src="images/evidencia-sprint3/evidencia-github-landing1.jpg" alt="evidencia-sprint" width="1000">
-</p>
-
-<br>
-
-<p align="center">
-  <img src="images/evidencia-sprint3/evidencia-github-landing2.jpg" alt="evidencia-sprint" width="1000">
-</p>
-
-<br>
 
 ---
 
@@ -495,119 +216,10 @@ Repositorio Informe:
 
 ## Student Outcome
 
-<table align="center">
-  <tr>
-    <td><strong>Criterio</strong></td>
-    <td><strong>Acciones Realizadas</strong></td>
-    <td><strong>Conclusiones</strong></td>
-  </tr>
-  <tr>
-    <td>
-      Comunica oralmente con efectividad a diferentes rangos de audiencia.
-    </td>
-    <td>
-      <strong>Erick Palomino:</strong>
-      TB1 - Participación en la presentación oral de la propuesta inicial del proyecto, explicación de Startup Profile y Lineamientos de Estilo.
-      <br><br>
-      TP1 - Presentó avances técnicos relacionados a la autenticación del sistema (login y register), además de explicar el funcionamiento de la Landing Page V2 y el módulo de colaboración.
-      <br><br>
-      TB2 - Participó en la entrevista de validación del sistema y presentó el video “About the Product” y “About the Team”, explicando funcionalidades y roles.
-      <br><br>
-      TF1 - Explicó en reuniones grupales la reestructuración propuesta de los diagramas C4 y de clases, detallando su impacto en la arquitectura del sistema.
-      <br><br>
-      <strong>Javier Gonzales:</strong>
-      TB1 - Presentación oral de los resultados de entrevistas y de la estructura de la Landing Page.
-      <br><br>
-      TP1- Comunicó de forma clara las funcionalidades desarrolladas en la sección "Mis Plantas", el historial y recomendaciones climáticas en reuniones grupales.
-      <br><br>
-      TB2 - Expuso durante la entrevista de validación y en el video grupal, mostrando mejoras del frontend e integración con base de datos.
-      <br><br>
-      TF1 - Expuso la integración de la inteligencia artificial y verificó el cumplimiento de funcionalidades frente al equipo.
-      <br><br>
-      <strong>Renzo Rivera:</strong>
-      TB1 – Exposición de análisis competitivo y explicación de los User Flow Diagrams durante la reunión grupal.
-      <br><br>
-      TP1- Expuso el diseño y lógica del FrontEnd del Chatbot y la sección de tareas, explicando su integración y mejoras.
-      <br><br>
-      TB2 - Contribuyó en la presentación del video “About the Team” y explicó los cambios realizados en el backend y en el proceso de despliegue.
-      <br><br>
-      TF1 - Presentó el flujo de conexión entre backend y frontend, así como las mejoras realizadas en el despliegue de la app, adaptando su comunicación al equipo técnico.
-      <br><br>
-      <strong>Sean Palomares:</strong>
-      TB1 - Explicación oral de los mapas de impacto y segmentación de objetivos en reuniones grupales.
-      <br><br>
-      <strong>Giovany Torres</strong>
-      TB1 –  Presentación oral de los antecedentes, problemática y mapeos de escenarios en el desarrollo inicial del proyecto.
-      <br><br>
-      TP1 - Participó en la presentación oral del FrontEnd de Guías, así como en la explicación de cambios en la arquitectura de clases y conclusiones del entregable.
-      <br><br>
-      TB2 - Comunicó verbalmente el diseño del frontend y del módulo de guías en entrevistas y en el video del equipo.
-      <br><br>
-    </td>
-    <td>
-      TB1:Como grupo, logramos una comunicación oral efectiva que facilitó la comprensión de las distintas etapas del proyecto. La coordinación de presentaciones y la exposición clara de ideas fortalecieron nuestro trabajo en equipo y permitieron que cada integrante aportara de forma precisa en su área asignada.
-      <br><br>
-      TP1:La comunicación oral fue fundamental para coordinar las tareas del proyecto y asegurar una comprensión común. Cada integrante presentó con claridad sus avances y propuestas, lo que permitió una integración efectiva del trabajo. Se logró una interacción fluida y profesional dentro del equipo.
-      <br><br>
-      TB2: La comunicación oral del equipo se fortaleció mediante entrevistas y videos explicativos donde se expresaron con claridad las funciones desarrolladas, lo que facilitó la validación del producto y la comprensión del progreso por parte de los usuarios. Las presentaciones mostraron cohesión, claridad y un dominio del trabajo individual y colectivo.
-      <br><br>
-      TF1: Como equipo, demostramos una comunicación oral efectiva al presentar de manera clara y estructurada nuestras propuestas y avances técnicos durante las reuniones. Cada integrante adaptó su lenguaje a las necesidades del equipo, facilitando el entendimiento común y fomentando la toma de decisiones informadas para avanzar como grupo.
-    </td>
-  </tr>
-  <tr>
-    <td>
-      Comunica por escrito con efectividad a diferentes rangos de audiencia 
-    </td>
-    <td>
-      <strong>Erick Palomino:</strong>
-      TB1 – Redacción del Startup Profile, Style Guidelines, User Stories y contenido de la Landing Page.
-      <br><br>
-      TP1 - Documentó los procesos implementados para login/register, colaboró en la redacción del Student Outcome y el informe técnico del Sprint 2.
-      <br><br>
-      TB2 - Documentó el Profiles Bounded Context del backend, agregó contenido escrito en heurísticas y elaboró las conclusiones del entregable.
-      <br><br>
-      TF1 - Redactó los nuevos diagramas técnicos documentando claramente los elementos y relaciones del sistema para facilitar su comprensión.
-      <br><br>
-      <strong>Javier Gonzales:</strong>
-      TB1 –  Redacción del Lean UX Problem Statement, Assumptions y desarrollo de wireframes documentados.
-      <br><br>
-      TP1 - Describió por escrito las funcionalidades del historial, recomendaciones y deployment del sistema, contribuyendo a la documentación del TP1.
-      <br><br>
-      TB2 - Redactó los cambios realizados en la migración a base de datos y en la mejora del frontend, contribuyendo también en las heurísticas y conclusiones.
-      <br><br>
-      TF1 - Elaboró reportes detallados de avance con base en las User Stories e incluyó la documentación del componente de inteligencia artificial.
-      <br><br>
-      <strong>Renzo Rivera:</strong>
-      TB1 –  Documentación escrita de análisis competitivo, User Personas, User Journey Mapping y Task Matrix.
-      <br><br>
-      TP1 - Elaboró descripciones técnicas del Chatbot y la sección de tareas, detallando los retos y soluciones en el informe parcial.
-      <br><br>
-      TB2 - Escribió la documentación técnica del Plant Profiles, Tasks Bounded Context y el diagrama del backend.
-      <br><br>
-      TF1 - Documentó los endpoints implementados, describiendo su funcionamiento y los pasos del despliegue final de la aplicación.
-      <br><br>
-      <strong>Sean Palomares:</strong>
-      TB1 – Elaboración escrita de Hypothesis Statements, Product Backlog y base de diseño orientado a objetos.
-      <br><br>
-      <strong>Giovany Torres:</strong>
-      TB1 –  Redacción de antecedentes, problemática, Empathy Mapping y documentos de arquitectura de software, incluyendo la conclusión escrita del reporte.
-      <br><br>
-      TP1 - Redactó el contenido del FrontEnd de Guías, corrigió el diagrama de clases y formuló las conclusiones del informe TP1.
-      <br><br>
-      TB2 - Documentó el Guides Bounded Context, redactó la estructura del frontend, las heurísticas y las conclusiones del informe.
-      <br><br>
-    </td>
-    <td>
-      TB1:Como equipo, fuimos capaces de producir documentos escritos claros y adaptados al público objetivo, asegurando la coherencia y calidad de la información entregada. Esto facilitó la comprensión del proyecto tanto para el equipo como para los revisores externos. El trabajo colaborativo en los entregables escritos fue clave para mantener una línea de comunicación efectiva en todo el desarrollo del proyecto.
-      <br><br>
-      TP1: La documentación escrita del trabajo parcial fue clara, precisa y permitió dejar registro estructurado de cada avance. Se cuidó el lenguaje técnico y la redacción, haciendo posible una comprensión adecuada tanto para el equipo como para evaluadores externos. La distribución de redacción fue equilibrada y colaborativa.
-      <br><br>
-      TB2: La producción escrita durante esta etapa del proyecto reflejó claridad técnica, estructuración adecuada de los avances y coherencia con los objetivos planteados. Todos los integrantes aportaron en la documentación técnica y reflexiva del proyecto, generando entregables de calidad con contenido relevante y bien argumentado.
-      <br><br>
-      TF1: La documentación técnica generada por el equipo fue precisa, coherente y orientada tanto a públicos técnicos como académicos. La calidad de los diagramas, reportes funcionales y descripciones de endpoints refleja nuestra capacidad de comunicar por escrito de forma efectiva, asegurando trazabilidad y comprensión de los avances en el desarrollo del proyecto.
-    </td>
-  </tr>
-</table>
+| **Criterio** | **Acciones Realizadas** | **Conclusiones** |
+| :--- | :--- | :--- |
+| **Comunica oralmente con efectividad a diferentes rangos de audiencia.** | **Almerco Rojas, Jocelyn Damaly:** Expuso la configuración y resultados de SonarQube, detallando las métricas de calidad y deuda técnica identificadas en el proyecto.<br><br>**Castañeda Llanos, Kevin Alexander:** Presentó los avances en la creación de tests unitarios e integrales, así como la implementación de Checkstyle para asegurar los estándares de código.<br><br>**Palomino Fiestas, Erick Leonardo:** Explicó el flujo de trabajo en Jenkins para la integración continua y la ejecución de pruebas de integración.<br><br>**Rivera Ratachi, Renzo Sebastian:** Comunicó los resultados de las pruebas realizadas con Karate, detallando la cobertura de tests unitarios e integrales.<br><br>**Coca Lavado, Carlos Andres:** Expuso la lógica detrás de los scripts de Karate y los resultados de las pruebas de integración en el sistema. | TP: Como equipo, logramos una comunicación oral efectiva que facilitó la coordinación técnica para la implementación de pruebas y la automatización con Jenkins. La exposición clara de los avances diarios permitió una integración fluida de las herramientas de calidad en el proyecto, asegurando que todos los integrantes estuvieran alineados con los objetivos técnicos. |
+| **Comunica por escrito con efectividad a diferentes rangos de audiencia.** | **Almerco Rojas, Jocelyn Damaly:** Redactó los informes de calidad generados por SonarQube, documentando los puntos de mejora y la calidad del código.<br><br>**Castañeda Llanos, Kevin Alexander:** Elaboró la documentación técnica de los tests unitarios, integrales y las reglas configuradas en Checkstyle.<br><br>**Palomino Fiestas, Erick Leonardo:** Documentó los procesos de automatización en Jenkins y colaboró en la redacción de los reportes de pruebas de integración.<br><br>**Rivera Ratachi, Renzo Sebastian:** Redactó la documentación de los tests unitarios e integrales realizados con Karate, asegurando la trazabilidad de las pruebas.<br><br>**Coca Lavado, Carlos Andres:** Elaboró la documentación técnica de los escenarios de prueba en Karate y los resultados de integración. | TP: Se logró una documentación técnica precisa y estructurada sobre los procesos de testing, despliegue continuo y calidad de software. La redacción clara de los reportes y guías facilitó la trazabilidad del desarrollo del TP, permitiendo que la información fuera accesible y comprensible para todos los evaluadores. |
 
 ---
 
