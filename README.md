@@ -258,10 +258,10 @@ Facilitar el cuidado de plantas en el hogar mediante soluciones tecnológicas in
       <td>Hola, Soy Erick Leonardo Palomino Fiestas, un estudiante entusiasta de quinto ciclo en Ingeniería de Software. Mi conjunto de habilidades técnicas incluye C++, HTML, CSS, fundamentos de JavaScript y experiencia con bases de datos SQL y MongoDB. Me considero una persona responsable, con sólidas habilidades de comunicación para trabajar en equipo y una perspectiva optimista. También tengo un nivel básico de inglés. </td>
     </tr>
     <tr>
-      <td><img src="images/fotointegrante-javier.jpg" alt="foto-javier" width="500"></td>
-      <td>Javier Sebastian Gonzales Alvarado</td>
-      <td>U202312966</td>
-      <td>Mi nombre es Javier Gonzales, soy estudiante de la carrera Ingeniería de Software. Mi código es U202312966. Tengo conocimientos en los lenguajes C++ y Java. Además me considero una persona responsable y disponible para ayudar a los demás si presentan dificultades. </td>
+      <td><img src="images/kevin-foto.png" alt="foto-kevin" width="500"></td>
+      <td>Kevin ALexander Castañeda Llanos</td>
+      <td>U202318814</td>
+      <td>Mi nombre es Kevin Alexander Castañeda Llanos y soy estudiante de la carrera de ingeniería de software.Me gusta la programación web y el uso de soluciones impulsadas por IA (GenAI, Rag Systems y Agentic AI) usando Python,Java, Next.js, TailwindCSS y typescript</td>
     </tr>
     <tr>
       <td><img src="images/fotointegrante-renzo.jpg" alt="foto-renzo" width="500"></td>
@@ -270,10 +270,17 @@ Facilitar el cuidado de plantas en el hogar mediante soluciones tecnológicas in
       <td>Soy Renzo Sebastian Rivera Ratachi y soy estudiante de la carrera de Ingeniería de Software. Actualmente estoy cursando el 5to ciclo de mi carrera y tengo conocimientos intermedios de HTML, CSS, JavaScript y C++. Me considero una persona responsable y puntual. </td>
     </tr>
     <tr>
-      <td><img src="images/fotointegrante-giovany.jpeg" alt="foto-giovany" width="500"></td>
-      <td>Giovany Smith Torres Apolinario </td>
-      <td>U202311601</td>
-      <td>Estoy cursando el quinto ciclo de mi carrera Ingeniería de Software, soy una persona responsable que le gusta resolver desafíos a la par con el trabajo responsable y en equipo tengo la capacidad de líder y me gusta aprender nuevas cosas dia a dia.</td>
+      <td><img src="" alt="" width="500"></td>
+      <td>Javier Sebastian Gonzales Alvarado</td>
+      <td>U202312966</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><img src="" alt="" width="500"></td>
+      <td>Almerco Rojas, Jocelyn Damaly</td>
+      <td> U20221G068
+      </td>
+      <td></td>
     </tr>
   </tbody>
 </table>
