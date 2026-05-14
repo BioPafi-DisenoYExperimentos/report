@@ -30,7 +30,7 @@
 | U202318814 | Castañeda Llanos , Kevin Alexander |
 | U20231A500 | Palomino Fiestas, Erick Leonardo    |
 | U20231D974 | Rivera Ratachi, Renzo Sebastian     |
-| U20231 |Coca Lavado, Carlos Andres|
+| U202313172 |Coca Lavado, Carlos Andres|
 **Mayo 2026**
 
 ---
@@ -270,10 +270,11 @@ Facilitar el cuidado de plantas en el hogar mediante soluciones tecnológicas in
       <td>Soy Renzo Sebastian Rivera Ratachi y soy estudiante de la carrera de Ingeniería de Software. Actualmente estoy cursando el 5to ciclo de mi carrera y tengo conocimientos intermedios de HTML, CSS, JavaScript y C++. Me considero una persona responsable y puntual. </td>
     </tr>
     <tr>
-      <td><img src="" alt="" width="500"></td>
-      <td>Javier Sebastian Gonzales Alvarado</td>
+      <td><img src="images/foto-cr7.jpg" alt="" width="500"></td>
+      <td>Coca Lavado, Carlos Andrés</td>
       <td>U202312966</td>
-      <td> </td>
+      <td>Mi Nombre es Carlos Andrés Coca, tengo 20 años, actualmente me encuentro cursando el septimo ciclo de la carrera de Ingeniería de Software. Cuento con conocimientos en C++, Python y HTML. y desde muy joven me ha interesado el desarrollo Web. Teniendo en cuenta el gran impacto que presentan a día de hoy las novedosas soluciones presentadas.
+</td>
     </tr>
     <tr>
       <td><img src="" alt="" width="500"></td>
