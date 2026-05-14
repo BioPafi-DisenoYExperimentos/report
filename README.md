@@ -7157,6 +7157,25 @@ A continuación, se muestra una imágen del Checkstyle con **Build Success**:
 
 #### 6.2.1.2 Code Quality & Code Security
 
+La calidad y seguridad del código fueron aseguradas mediante herramientas de análisis estático y buenas prácticas de desarrollo. Para ello, se utilizó SonarQube con el objetivo de identificar errores potenciales, vulnerabilidades, problemas de mantenibilidad y deuda técnica dentro del backend desarrollado en Spring Boot. Esto permitió mejorar la estabilidad, seguridad y escalabilidad del proyecto antes de su integración y despliegue.
+
+<img src="images/sonarqubeCrearLocarProject.png" alt="screenshot about the product" width="1000">
+
+Se muestra el proceso de creación del proyecto “Plantsync” dentro de SonarQube Community Edition. Durante esta configuración se definieron parámetros iniciales como el nombre del proyecto, la clave identificadora (*Project Key*) y la rama principal (*Main Branch Name*). Esta etapa permitió conectar el análisis estático del código con el repositorio del backend para posteriormente ejecutar evaluaciones automáticas de calidad.
+
+<img src="images/sonarqubeInicial.png" alt="screenshot about the product" width="1000">
+
+Se observa el panel de análisis de issues detectados por SonarQube. La herramienta identificó problemas de mantenibilidad asociados principalmente a métodos vacíos y clases utilitarias mal definidas. Cada issue muestra información detallada sobre la severidad, ubicación y recomendación de corrección, facilitando la mejora continua del código fuente.
+
+
+<img src="images/sonarqubeProyectoLocal.png" alt="screenshot about the product" width="1000">
+
+Se presenta el dashboard principal del proyecto “Plantsync” luego de ejecutar el análisis de código. En este panel se visualizan métricas generales de calidad como seguridad, confiabilidad, mantenibilidad, cobertura de pruebas y duplicación de código. Asimismo, se observa el estado del *Quality Gate*, indicador que permite validar si el proyecto cumple con los estándares mínimos definidos para continuar con el flujo de integración continua.
+
+<img src="images/sonarqubeIssues.png" alt="screenshot about the product" width="1000">
+
+Se muestra nuevamente el panel de issues, enfocándose en problemas relacionados con clases vacías y estructuras incompletas detectadas automáticamente por SonarQube. Estas observaciones permitieron aplicar correcciones orientadas a mejorar la estructura del backend, reducir deuda técnica y fortalecer las buenas prácticas de desarrollo en Java y Spring Boot.
+
 
 ## Capítulo VII: DevOps Practices
 
@@ -7189,28 +7208,6 @@ Posteriormente, se configuró el proyecto seleccionando la opción de Pipeline, 
 Una vez configurado, el proyecto se integra al dashboard principal, permitiendo al equipo monitorear el historial y el estado de éxito o fallo de los builds.
 
 <img src="images/tests/jenkins/visualizacion del proyecto en el menu principal.png" alt="screenshot about the product" width="1000">
-
-
-**SonarQube**
-
-SonarQube permitió identificar errores potenciales, vulnerabilidades, duplicación de código y malas prácticas de programación en el backend desarrollado con Spring Boot.
-
-<img src="images/sonarqubeCrearLocarProject.png" alt="screenshot about the product" width="1000">
-
-Se muestra el proceso de creación del proyecto “Plantsync” dentro de SonarQube Community Edition. Durante esta configuración se definieron parámetros iniciales como el nombre del proyecto, la clave identificadora (*Project Key*) y la rama principal (*Main Branch Name*). Esta etapa permitió conectar el análisis estático del código con el repositorio del backend para posteriormente ejecutar evaluaciones automáticas de calidad.
-
-<img src="images/sonarqubeInicial.png" alt="screenshot about the product" width="1000">
-
-Se observa el panel de análisis de issues detectados por SonarQube. La herramienta identificó problemas de mantenibilidad asociados principalmente a métodos vacíos y clases utilitarias mal definidas. Cada issue muestra información detallada sobre la severidad, ubicación y recomendación de corrección, facilitando la mejora continua del código fuente.
-
-
-<img src="images/sonarqubeProyectoLocal.png" alt="screenshot about the product" width="1000">
-
-Se presenta el dashboard principal del proyecto “Plantsync” luego de ejecutar el análisis de código. En este panel se visualizan métricas generales de calidad como seguridad, confiabilidad, mantenibilidad, cobertura de pruebas y duplicación de código. Asimismo, se observa el estado del *Quality Gate*, indicador que permite validar si el proyecto cumple con los estándares mínimos definidos para continuar con el flujo de integración continua.
-
-<img src="images/sonarqubeIssues.png" alt="screenshot about the product" width="1000">
-
-Se muestra nuevamente el panel de issues, enfocándose en problemas relacionados con clases vacías y estructuras incompletas detectadas automáticamente por SonarQube. Estas observaciones permitieron aplicar correcciones orientadas a mejorar la estructura del backend, reducir deuda técnica y fortalecer las buenas prácticas de desarrollo en Java y Spring Boot.
 
 
 #### 7.1.2 Build & Test Suite Pipeline Components
