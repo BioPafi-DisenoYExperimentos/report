@@ -1,4 +1,4 @@
-<h1 align="center">Informe de Trabajo Final</h1>
+<h1 align="center">Informe de Trabajo Parcial</h1>
 
 <p align="center">
   <img src="images/logoupc.png" alt="UPC logo" width="150">
@@ -7172,7 +7172,7 @@ mvn checkstyle:check
 
 A continuación, se muestra una imágen del Checkstyle con **Build Success**:
 
-<img src="images/TestsImages/checkstyle.jpg" alt="Checkstyle Test" width="1000">
+<img src="images/checkstyle.jpg" alt="Checkstyle Test" width="1000">
 
 
 
