@@ -215,6 +215,7 @@ Link del documento en GitHub: https://github.com/BioPafi-DisenoYExperimentos/rep
     - [6.2.1. Static Code Analysis](#621-static-code-analysis)
       - [6.2.1.1. Coding Standard & Code Conventions](#6211-coding-standard--code-conventions)
       - [6.2.1.2. Code Quality & Code Security](#6212-code-quality--code-security)
+    - [6.2.2. Reviews](#622-reviews)
 
 - [Capítulo VII: DevOps Practices](#capítulo-vii-devops-practices)
 
@@ -227,6 +228,31 @@ Link del documento en GitHub: https://github.com/BioPafi-DisenoYExperimentos/rep
   - [7.3. Continuous deployment](#73-continuous-deployment)
     - [7.3.1. Tools and Practices](#731-tools-and-practices)
     - [7.3.2. Production Deployment Pipeline Components](#732-production-deployment-pipeline-components)
+  - [7.4. Continuous Monitoring](#74-continuous-monitoring)
+    - [7.4.1. Tools and Practices](#741-tools-and-practices)
+    - [7.4.2. Monitoring Pipeline Components](#742-monitoring-pipeline-components)
+    - [7.4.3. Alerting Pipeline Components](#743-alerting-pipeline-components)
+    - [7.4.4. Notification Pipeline Components](#744-notification-pipeline-components)
+
+- [Capítulo VIII: Experiment-Driven Development](#capítulo-viii-experiment-driven-development)
+  - [8.1. Experiment Planning](#81-experiment-planning)
+    - [8.1.1. As-Is Summary](#811-as-is-summary)
+    - [8.1.2. Raw Material: Assumptions, Knowledge Gaps, Ideas, Claims](#812-raw-material-assumptions-knowledge-gaps-ideas-claims)
+    - [8.1.3. Experiment-Ready Questions](#813-experiment-ready-questions)
+    - [8.1.4. Question Backlog](#814-question-backlog)
+    - [8.1.5. Experiment Cards](#815-experiment-cards)
+  - [8.2. Experiment Design](#82-experiment-design)
+    - [8.2.1. Hypotheses](#821-hypotheses)
+    - [8.2.2. Domain Business Metrics](#822-domain-business-metrics)
+    - [8.2.3. Measures](#823-measures)
+    - [8.2.4. Conditions](#824-conditions)
+    - [8.2.5. Scale Calculations and Decisions](#825-scale-calculations-and-decisions)
+    - [8.2.6. Methods Selection](#826-methods-selection)
+    - [8.2.7. Data Analytics: Goals, KPIs and Metrics Selection](#827-data-analytics-goals-kpis-and-metrics-selection)
+    - [8.2.8. Web and Mobile Tracking Plan](#828-web-and-mobile-tracking-plan)
+  - [8.3. Experimentation](#83-experimentation)
+    - [8.3.1. To-Be User Stories](#831-to-be-user-stories)
+    - [8.3.2. To-Be Product Backlog](#832-to-be-product-backlog)
 
 - [Conclusiones y Recomendaciones](#conclusiones-y-recomendaciones)
 - [Video about the Team](#video-about-the-team)
@@ -7197,6 +7223,8 @@ Se presenta el dashboard principal del proyecto “Plantsync” luego de ejecuta
 
 Se muestra nuevamente el panel de issues, enfocándose en problemas relacionados con clases vacías y estructuras incompletas detectadas automáticamente por SonarQube. Estas observaciones permitieron aplicar correcciones orientadas a mejorar la estructura del backend, reducir deuda técnica y fortalecer las buenas prácticas de desarrollo en Java y Spring Boot.
 
+#### 6.2.2 Reviews
+
 
 ## Capítulo VII: DevOps Practices
 
@@ -7358,6 +7386,54 @@ El proceso de despliegue automatizado en Jenkins se divide en las siguientes eta
 - Evidencias de Ejecución de Karate: A continuación, se muestra una ejecución de una prueba de Karate, donde se observa dos escenarios que han pasado correctamente el proceso de QA.
 
 <img src="images/TestsImages/KarateReport.png" alt="Unit Test" width="1000">
+
+### 7.4 Continuous Monitoring
+
+#### 7.4.1 Tools and Practices
+
+#### 7.4.2 Monitoring Pipeline Components
+
+#### 7.4.3 Alerting Pipeline Components
+
+#### 7.4.4 Notification Pipeline Components
+
+## Capítulo VIII: Experiment-Driven Development
+
+### 8.1 Experiment Planning
+
+#### 8.1.1 As-Is Summary
+
+#### 8.1.2 Raw Material: Assumptions, Knowledge Gaps, Ideas, Claims
+
+#### 8.1.3 Experiment-Ready Questions
+
+#### 8.1.4 Question Backlog
+
+#### 8.1.5 Experiment Cards
+
+### 8.2 Experiment Design
+
+#### 8.2.1 Hypotheses
+
+#### 8.2.2 Domain Business Metrics
+
+#### 8.2.3 Measures
+
+#### 8.2.4 Conditions
+
+#### 8.2.5 Scale Calculations and Decisions
+
+#### 8.2.6 Methods Selection
+
+#### 8.2.7 Data Analytics: Goals, KPIs and Metrics Selection
+
+#### 8.2.8 Web and Mobile Tracking Plan
+
+### 8.3 Experimentation
+
+#### 8.3.1 To-Be User Stories
+
+#### 8.3.2 To-Be Product Backlog
 
 
 ## Conclusiones y Recomendaciones
