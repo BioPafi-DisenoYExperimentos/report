@@ -7407,6 +7407,30 @@ El proceso de despliegue automatizado en Jenkins se divide en las siguientes eta
 
 #### 8.1.3 Experiment-Ready Questions
 
+En esta sección se definen las preguntas de experimento (Experiment-Ready Questions), las cuales son formulaciones precisas y cuantificables derivadas de las suposiciones clave del negocio (5W y 2H). Estas preguntas están diseñadas para ser evaluadas empíricamente mediante pruebas y métricas claras, permitiendo validar el comportamiento de los usuarios y la viabilidad técnica del producto.
+
+A continuación, se presentan las preguntas formuladas en base a cada una de las dimensiones del marco 5W2H:
+
+* **Who (¿Quién?):** ¿Cuál es el género y el rango de edad promedio de los usuarios interesados en usar la plataforma PlantSync para el cuidado de sus plantas?
+* **What (¿Qué?):** ¿Qué tanto mejorará la usabilidad percibida y la retención del usuario cuando se implementen recordatorios automáticos de riego frente a la configuración manual de tareas?
+* **Where (¿Dónde?):** ¿Qué tanto mejora la experiencia del usuario si la aplicación sincroniza las alertas de riego y fertilización con los datos climáticos en tiempo real de su ubicación específica?
+* **When (¿Cuándo?):** ¿Con qué frecuencia y en qué momento del día interactuarán los usuarios con la plataforma tras recibir notificaciones automáticas sobre el cuidado de sus plantas?
+* **Why (¿Por qué?):** ¿Por qué los usuarios elegirían utilizar PlantSync en lugar de buscar información botánica directamente en motores de búsqueda tradicionales o redes sociales?
+* **How (¿Cómo?):** ¿Cómo será el proceso mediante el cual el chatbot inteligente Rootbot asistirá al usuario para registrar y diagnosticar una planta con síntomas de deterioro?
+* **How much (¿Cuánto?):** ¿Cuánto estarían dispuestos a pagar mensualmente los usuarios aficionados por acceder a planes de suscripción premium con soporte de sensores IoT y guías botánicas avanzadas?
+
+Para priorizar estas preguntas, se ha elaborado una matriz de puntuación basada en los criterios de **Confidence (Confianza)**, **Risk (Riesgo)**, **Impact (Impacto)** e **Interest (Interés)**, obteniendo un **Total Score** que define el orden de ejecución de los experimentos:
+
+| Question | Confidence | Risk | Impact | Interest | Total Score |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| ¿Cuál es el género y el rango de edad promedio de los usuarios interesados en usar la plataforma PlantSync para el cuidado de sus plantas? (Who) | 8 | 8 | 9 | 9 | **34** |
+| ¿Qué tanto mejora la experiencia del usuario si la aplicación sincroniza las alertas de riego y fertilización con los datos climáticos en tiempo real de su ubicación específica? (Where) | 8 | 7 | 8 | 9 | **32** |
+| ¿Cuánto estarían dispuestos a pagar mensualmente los usuarios aficionados por acceder a planes de suscripción premium con soporte de sensores IoT y guías botánicas avanzadas? (How much) | 8 | 6 | 8 | 9 | **31** |
+| ¿Qué tanto mejorará la usabilidad percibida y la retención del usuario cuando se implementen recordatorios automáticos de riego frente a la configuración manual de tareas? (What) | 8 | 7 | 7 | 8 | **30** |
+| ¿Por qué los usuarios elegirían utilizar PlantSync en lugar de buscar información botánica directamente en motores de búsqueda tradicionales o redes sociales? (Why) | 8 | 7 | 8 | 7 | **30** |
+| ¿Con qué frecuencia y en qué momento del día interactuarán los usuarios con la plataforma tras recibir notificaciones automáticas sobre el cuidado de sus plantas? (When) | 7 | 6 | 7 | 8 | **28** |
+| ¿Cómo será el proceso mediante el cual el chatbot inteligente Rootbot asistirá al usuario para registrar y diagnosticar una planta con síntomas de deterioro? (How) | 6 | 6 | 9 | 6 | **27** |
+
 #### 8.1.4 Question Backlog
 
 #### 8.1.5 Experiment Cards
