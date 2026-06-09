@@ -7433,6 +7433,18 @@ Para priorizar estas preguntas, se ha elaborado una matriz de puntuación basada
 
 #### 8.1.4 Question Backlog
 
+El Question Backlog representa nuestro repositorio ordenado de preguntas de experimento para el desarrollo de PlantSync. Para priorizar estas preguntas, hemos utilizado la escala de Fibonacci (1, 2, 3, 5, 8) para evaluar la criticidad, el nivel de incertidumbre y el riesgo que representa cada suposición para el éxito de la plataforma (donde 8 representa la prioridad más alta y urgente):
+
+| Prioridad (1 / 2 / 3 / 5 / 8) | Pregunta | Métrica Clave |
+| :---: | :--- | :--- |
+| **8** | ¿Cuál es el género y el rango de edad promedio de los usuarios interesados en usar la plataforma PlantSync para el cuidado de sus plantas? (Who) | Distribución demográfica de usuarios registrados (%) |
+| **8** | ¿Qué tanto mejora la experiencia del usuario si la aplicación sincroniza las alertas de riego y fertilización con los datos climáticos en tiempo real de su ubicación específica? (Where) | Tasa de retención semanal / Click-Through Rate (CTR) de alertas |
+| **5** | ¿Cuánto estarían dispuestos a pagar mensualmente los usuarios aficionados por acceder a planes de suscripción premium con soporte de sensores IoT y guías botánicas avanzadas? (How much) | Tasa de conversión a planes de pago (%) |
+| **5** | ¿Qué tanto mejorará la usabilidad percibida y la retención del usuario cuando se implementen recordatorios automáticos de riego frente a la configuración manual de tareas? (What) | Tasa de completitud de tareas diarias / Retention Rate |
+| **5** | ¿Por qué los usuarios elegirían utilizar PlantSync en lugar de buscar información botánica directamente en motores de búsqueda tradicionales o redes sociales? (Why) | Net Promoter Score (NPS) / Tasa de rebote de la plataforma |
+| **3** | ¿Con qué frecuencia y en qué momento del día interactuarán los usuarios con la plataforma tras recibir notificaciones automáticas sobre el cuidado de sus plantas? (When) | Sesiones por día por usuario / Horas de actividad de la sesión |
+| **3** | ¿Cómo será el proceso mediante el cual el chatbot inteligente Rootbot asistirá al usuario para registrar y diagnosticar una planta con síntomas de deterioro? (How) | Tasa de resolución de chatbot (%) / CSAT Score (satisfacción) |
+
 #### 8.1.5 Experiment Cards
 
 ### 8.2 Experiment Design
