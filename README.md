@@ -7447,6 +7447,76 @@ El Question Backlog representa nuestro repositorio ordenado de preguntas de expe
 
 #### 8.1.5 Experiment Cards
 
+A continuación, se presentan las Tarjetas de Experimento (Experiment Cards) diseñadas para validar las suposiciones más críticas y con mayor prioridad en nuestro backlog:
+
+### Tarjeta de Experimento 1: Perfil Demográfico de Adopción (Who)
+| Elemento | Descripción |
+| :--- | :--- |
+| **Question** | ¿Cuál es el género y el rango de edad promedio de los usuarios interesados en usar la plataforma PlantSync para el cuidado de sus plantas? |
+| **Why** | <ul><li>Definir con precisión el perfil demográfico (buyer persona) del usuario de PlantSync.</li><li>Ajustar el tono de comunicación, copy y diseño de la interfaz a los grupos de edad predominantes.</li><li>Identificar si existe una correlación entre el rango de edad y la adopción de tecnologías inteligentes para el hogar.</li></ul> |
+| **What** | <ul><li>Analizar los datos de registro demográfico recopilados en el formulario de registro de la plataforma durante las primeras 3 semanas de lanzamiento.</li><li>Implementar encuestas breves y voluntarias en la aplicación para perfilar a los nuevos usuarios.</li><li>Segmentar el comportamiento de uso (frecuencia de visitas) agrupado por edad y género en las herramientas de analítica.</li></ul> |
+| **Hypothesis** | Se espera que la mayoría de los usuarios interesados pertenezcan a un rango de edad de entre 25 y 45 años, con una distribución equilibrada de géneros, lo que validará que el diseño visual moderno de la plataforma es atractivo para un público joven-adulto urbano. |
+
+<br>
+
+### Tarjeta de Experimento 2: Sincronización Climática de Alertas (Where)
+| Elemento | Descripción |
+| :--- | :--- |
+| **Question** | ¿Qué tanto mejora la experiencia del usuario si la aplicación sincroniza las alertas de riego y fertilización con los datos climáticos en tiempo real de su ubicación específica? |
+| **Why** | <ul><li>Evaluar la viabilidad y el valor de la integración de la API del clima con las notificaciones de cuidado de plantas en PlantSync.</li><li>Medir si los recordatorios inteligentes adaptados al clima reducen el exceso de riego por parte del usuario.</li><li>Identificar si la personalización climática incrementa la retención activa y el engagement semanal en la aplicación.</li></ul> |
+| **What** | <ul><li>Implementar la funcionalidad de sincronización climática en tiempo real con la API de clima y adaptarla al calendario de alertas de los usuarios.</li><li>Habilitar la funcionalidad para un grupo de prueba de 50 usuarios y mantener un grupo de control de 50 usuarios con alertas manuales fijas.</li><li>Recopilar métricas de cumplimiento de riego, porcentaje de salud autopercibida de las plantas y retención semanal.</li><li>Realizar una encuesta de satisfacción y facilidad de uso (CSAT/NPS) tras un periodo de prueba de 2 semanas.</li></ul> |
+| **Hypothesis** | Se espera que la sincronización de alertas con datos climáticos en tiempo real preocupe y proporcione recomendaciones de cuidado más acertadas y contextualizadas, reduciendo los errores de riego por exceso en un 30% y aumentando la confianza de los usuarios en la plataforma. |
+
+<br>
+
+### Tarjeta de Experimento 3: Monetización y Suscripción Premium (How much)
+| Elemento | Descripción |
+| :--- | :--- |
+| **Question** | ¿Cuánto estarían dispuestos a pagar mensualmente los usuarios aficionados por acceder a planes de suscripción premium con soporte de sensores IoT y guías botánicas avanzadas? |
+| **Why** | <ul><li>Validar la viabilidad comercial y la elasticidad del precio de los planes de suscripción de PlantSync.</li><li>Medir el interés real de los usuarios en adquirir el kit físico de sensores IoT en lugar del registro puramente manual.</li><li>Estimar los ingresos proyectados para las fases de escalabilidad del negocio.</li></ul> |
+| **What** | <ul><li>Diseñar una sección en el Landing Page que simule las opciones de suscripción de pago (Básico, Premium y PRO) con pasarela de pago simulada (Stripe Sandbox).</li><li>Lanzar campañas de marketing dirigido para atraer usuarios al Landing Page de precios durante 10 días.</li><li>Medir los clics en el botón "Adquirir Plan Premium/PRO" y la tasa de conversión en las diferentes opciones de precios expuestas.</li><li>Enviar una encuesta a los usuarios interesados para validar el rango de precio ideal y los extras de valor esperados.</li></ul> |
+| **Hypothesis** | Se espera que al menos el 5% de los visitantes interesados del Landing Page haga clic en el botón de suscripción para el plan Premium ($10.99) o PRO ($16.99), lo que validará el interés comercial por las características avanzadas y el kit de sensores IoT. |
+
+<br>
+
+### Tarjeta de Experimento 4: Recordatorios Automáticos de Riego (What)
+| Elemento | Descripción |
+| :--- | :--- |
+| **Question** | ¿Qué tanto mejorará la usabilidad percibida y la retención del usuario cuando se implementen recordatorios automáticos de riego frente a la configuración manual de tareas? |
+| **Why** | <ul><li>Validar si la automatización reduce la carga cognitiva y de esfuerzo del usuario para mantener la aplicación al día.</li><li>Medir el impacto de los recordatorios automáticos en la retención semanal de los usuarios en comparación con la gestión de tareas manuales.</li><li>Identificar puntos de fricción durante la configuración de recordatorios.</li></ul> |
+| **What** | <ul><li>Implementar recordatorios automatizados preconfigurados por especie y habilitarlos para 50 usuarios (Grupo A), dejando a 50 usuarios (Grupo B) con la creación de tareas 100% manual.</li><li>Medir la tasa de apertura de notificaciones por correo electrónico y el porcentaje de tareas marcadas como completadas en el dashboard.</li><li>Monitorear la tasa de retorno de los usuarios (cohortes de retención) en ambas muestras durante 3 semanas.</li><li>Evaluar la facilidad de uso del módulo a través de una prueba System Usability Scale (SUS).</li></ul> |
+| **Hypothesis** | Se espera que los recordatorios automáticos reduzcan a la mitad el tiempo dedicado a registrar tareas y mejoren la retención de los usuarios en un 25% respecto al grupo que realiza la configuración manual. |
+
+<br>
+
+### Tarjeta de Experimento 5: Propuesta de Valor Centralizada (Why)
+| Elemento | Descripción |
+| :--- | :--- |
+| **Question** | ¿Por qué los usuarios elegirían utilizar PlantSync en lugar de buscar información botánica directamente en motores de búsqueda tradicionales o redes sociales? |
+| **Why** | <ul><li>Validar la propuesta de valor diferenciadora de centralizar los perfiles y el historial de las plantas en una aplicación dedicada.</li><li>Comprender los hábitos actuales de búsqueda de información de cuidado de plantas en internet.</li><li>Identificar cuáles son las principales fuentes de insatisfacción en las búsquedas en Google o redes sociales.</li></ul> |
+| **What** | <ul><li>Habilitar una sección de feedback interactivo y encuestas dentro de la aplicación para preguntar a los nuevos usuarios sobre su principal motivo de adopción de la herramienta.</li><li>Realizar entrevistas cualitativas breves a 15 usuarios que hayan completado al menos 5 tareas en su primera semana.</li><li>Medir el Net Promoter Score (NPS) del dashboard centralizado y del catálogo personalizado de plantas de los usuarios.</li></ul> |
+| **Hypothesis** | Se espera que los usuarios elijan PlantSync porque centraliza las necesidades específicas de sus plantas en un solo panel con alertas activas, lo que representaría un ahorro de tiempo y mayor tranquilidad, logrando un NPS superior a 40 puntos. |
+
+<br>
+
+### Tarjeta de Experimento 6: Optimización de Horarios de Notificaciones (When)
+| Elemento | Descripción |
+| :--- | :--- |
+| **Question** | ¿Con qué frecuencia y en qué momento del día interactuarán los usuarios con la plataforma tras recibir notificaciones automáticas sobre el cuidado de sus plantas? |
+| **Why** | <ul><li>Optimizar el horario de envío de notificaciones automáticas de cuidado para maximizar las tasas de apertura y cumplimiento.</li><li>Comprender las rutinas diarias de los usuarios de cara a sus interacciones con las plantas domésticas.</li><li>Reducir el riesgo de saturación o molestia por alertas enviadas en horarios inoportunos.</li></ul> |
+| **What** | <ul><li>Programar el envío de alertas de riego en tres horarios diferentes (mañana: 8:00 AM, tarde: 2:00 PM y noche: 8:00 PM) repartidos equitativamente entre los usuarios activos.</li><li>Registrar las horas de inicio de sesión de los usuarios tras la recepción del recordatorio usando herramientas de analítica y logs de base de datos.</li><li>Medir el tiempo transcurrido (delay) entre el envío de la notificación y el cumplimiento/registro de la tarea por parte del usuario.</li></ul> |
+| **Hypothesis** | Se espera que los usuarios interactúen con mayor frecuencia y registren sus tareas de riego en horarios de mañana (8:00 AM a 10:00 AM) y noche (7:00 PM a 9:00 PM), que corresponden a sus horas de permanencia y rutina doméstica en el hogar. |
+
+<br>
+
+### Tarjeta de Experimento 7: Asistencia Conversacional de Rootbot (How)
+| Elemento | Descripción |
+| :--- | :--- |
+| **Question** | ¿Cómo será el proceso mediante el cual el chatbot inteligente Rootbot asistirá al usuario para registrar y diagnosticar una planta con síntomas de deterioro? |
+| **Why** | <ul><li>Validar si el chatbot botánico impulsado por NLP puede diagnosticar con precisión síntomas comunes ingresados por usuarios novatos.</li><li>Evaluar la facilidad de uso y la tasa de finalización de conversaciones de diagnóstico en comparación con búsquedas manuales de plagas/enfermedades.</li><li>Registrar el nivel de satisfacción de los usuarios principiantes con la empatía y claridad de las respuestas del chatbot.</li></ul> |
+| **What** | <ul><li>Lanzar el módulo conversacional de Rootbot entrenado en base de datos botánica para un grupo piloto de 50 usuarios principiantes con plantas en deterioro.</li><li>Registrar y clasificar las preguntas, palabras clave e imágenes ingresadas por los usuarios durante sus consultas.</li><li>Evaluar el porcentaje de consultas que finalizaron con un diagnóstico exitoso y recomendación práctica.</li><li>Solicitar feedback rápido (estrellas/satisfacción) a los usuarios inmediatamente al finalizar cada sesión de chat.</li></ul> |
+| **Hypothesis** | Se espera que los usuarios que utilicen Rootbot completen un diagnóstico preciso de su planta en menos de 2 minutos, logrando una tasa de satisfacción (CSAT) superior al 85% y una reducción en la frustración por no entender los síntomas de su planta. |
+
 ### 8.2 Experiment Design
 
 #### 8.2.1 Hypotheses
