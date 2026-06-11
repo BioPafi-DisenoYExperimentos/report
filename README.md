@@ -7521,6 +7521,58 @@ A continuación, se presentan las Tarjetas de Experimento (Experiment Cards) dis
 
 #### 8.2.1 Hypotheses
 
+
+
+### Hypothesis 1
+
+| **Question** | ¿Cuál es el género y el rango de edad promedio de los usuarios interesados en usar la plataforma PlantSync para el cuidado de sus plantas? |
+|:---|:---|
+| **Belief** | Creemos que la mayoría de los usuarios interesados en PlantSync serán adultos jóvenes de entre 25 y 45 años, con una distribución equilibrada entre géneros, quienes buscan soluciones tecnológicas prácticas para gestionar el cuidado de sus plantas desde el hogar. |
+| **Hypothesis** | Creemos que al analizar el perfil demográfico de los usuarios registrados en PlantSync, se identificará que el rango de edad predominante es de 25 a 45 años con distribución equilibrada de géneros, mediante el análisis de los datos de registro y encuestas voluntarias en la plataforma durante las primeras 3 semanas de lanzamiento, cuando los usuarios completen su perfil al registrarse por primera vez. |
+| **Null Hypothesis** | No existirá diferencia significativa en la distribución de edad o género entre los usuarios registrados en PlantSync y la población general de usuarios de aplicaciones móviles de productividad del hogar, por lo que el perfil demográfico no permitirá identificar un segmento predominante. |
+
+
+### Hypothesis 3
+
+| **Question** | ¿Cuánto estarían dispuestos a pagar mensualmente los usuarios aficionados por acceder a planes de suscripción premium con soporte de sensores IoT y guías botánicas avanzadas? |
+|:---|:---|
+| **Belief** | Creemos que existe un segmento de usuarios aficionados al cuidado de plantas dispuesto a pagar por un plan de suscripción mensual que incluya soporte de sensores IoT y guías botánicas avanzadas, y que el rango de precio entre $10.99 y $16.99 resulta atractivo para captar ese segmento. |
+| **Hypothesis** | Creemos que al menos el 5% de los visitantes interesados del Landing Page elegirán el plan Premium ($10.99) o PRO ($16.99) al interactuar con la sección de precios simulada, mediante una campaña de marketing dirigido y una pasarela de pago simulada (Stripe Sandbox) habilitada durante 10 días, cuando el usuario visualice las características diferenciadas de cada plan y evalúe su disposición real de pago. |
+| **Null Hypothesis** | No habrá diferencia significativa en la tasa de conversión entre los distintos planes de suscripción ofrecidos, indicando que los usuarios no perciben suficiente valor diferencial en las funcionalidades premium para justificar un pago mensual por encima del plan básico. |
+
+### Hypothesis 4
+
+| **Question** | ¿Qué tanto mejorará la usabilidad percibida y la retención del usuario cuando se implementen recordatorios automáticos de riego frente a la configuración manual de tareas? |
+|:---|:---|
+| **Belief** | Creemos que los recordatorios automáticos de riego preconfigurados por especie reducirán la carga cognitiva del usuario y aumentarán tanto la tasa de completitud de tareas como la retención semanal en comparación con el grupo que gestiona sus tareas manualmente. |
+| **Hypothesis** | Creemos que los usuarios que reciban recordatorios automáticos de riego preconfigurados reducirán a la mitad el tiempo dedicado a registrar tareas y mostrarán una mejora del 25% en retención semanal, mediante un experimento A/B de 3 semanas entre 50 usuarios con recordatorios automáticos (Grupo A) y 50 usuarios con configuración manual (Grupo B), evaluado con la escala SUS, cuando los usuarios deban registrar el cumplimiento de sus rutinas de cuidado de plantas dentro de la plataforma. |
+| **Null Hypothesis** | No habrá diferencia significativa en la tasa de retención semanal, el tiempo de registro de tareas ni la usabilidad percibida entre los usuarios que utilizan recordatorios automáticos y aquellos que configuran sus tareas de forma manual. |
+
+### Hypothesis 5
+
+| **Question** | ¿Por qué los usuarios elegirían utilizar PlantSync en lugar de buscar información botánica directamente en motores de búsqueda tradicionales o redes sociales? |
+|:---|:---|
+| **Belief** | Creemos que los usuarios preferirán PlantSync sobre buscadores y redes sociales porque la plataforma centraliza el historial, las alertas y las guías específicas de cada planta en un solo lugar, reduciendo el tiempo y la frustración que genera buscar información dispersa en internet. |
+| **Hypothesis** | Creemos que los usuarios adoptarán PlantSync como herramienta principal de referencia botánica sobre Google o redes sociales, logrando un Net Promoter Score (NPS) superior a 40 puntos, mediante encuestas de adopción dentro de la aplicación, entrevistas cualitativas a 15 usuarios activos y medición del NPS del dashboard centralizado, cuando los usuarios hayan completado al menos 5 tareas de cuidado en su primera semana activa en la plataforma. |
+| **Null Hypothesis** | No habrá diferencia significativa en la preferencia de los usuarios entre PlantSync y los motores de búsqueda tradicionales o redes sociales para obtener información botánica, resultando en un NPS igual o inferior a 40 puntos. |
+
+### Hypothesis 6
+
+| **Question** | ¿Con qué frecuencia y en qué momento del día interactuarán los usuarios con la plataforma tras recibir notificaciones automáticas sobre el cuidado de sus plantas? |
+|:---|:---|
+| **Belief** | Creemos que los usuarios de PlantSync interactuarán con mayor frecuencia con la plataforma en las franjas horarias de mañana (8:00–10:00 AM) y noche (7:00–9:00 PM), que corresponden a los momentos del día en que permanecen en casa y desarrollan sus rutinas domésticas. |
+| **Hypothesis** | Creemos que los usuarios registrarán un mayor índice de apertura de notificaciones y cumplimiento de tareas de cuidado en los horarios de mañana (8:00 AM) y noche (8:00 PM) en comparación con el horario de tarde (2:00 PM), mediante el envío de alertas en tres franjas horarias distintas distribuidas equitativamente entre los usuarios activos y el análisis de logs de sesión y tiempos de respuesta a las notificaciones, cuando el sistema envíe automáticamente los recordatorios de riego programados. |
+| **Null Hypothesis** | No habrá diferencia significativa en la tasa de apertura de notificaciones ni en el tiempo de respuesta al cumplimiento de tareas entre los distintos horarios de envío evaluados, indicando que el momento del día no influye en el comportamiento de interacción del usuario. |
+
+### Hypothesis 7
+
+| **Question** | ¿Cómo será el proceso mediante el cual el chatbot inteligente Rootbot asistirá al usuario para registrar y diagnosticar una planta con síntomas de deterioro? |
+|:---|:---|
+| **Belief** | Creemos que el chatbot Rootbot, entrenado en una base de datos botánica especializada, será capaz de guiar a usuarios novatos a través de un proceso conversacional claro y empático que concluya en un diagnóstico preciso y una recomendación accionable en menos de 2 minutos. |
+| **Hypothesis** | Creemos que los usuarios que utilicen Rootbot para diagnosticar síntomas de deterioro en sus plantas completarán el proceso en menos de 2 minutos con una tasa de satisfacción (CSAT) superior al 85%, mediante la habilitación del módulo conversacional para un grupo piloto de 50 usuarios principiantes y el registro de palabras clave, imágenes y tasas de finalización de cada sesión de diagnóstico, cuando el usuario reporte síntomas visibles de deterioro en alguna de sus plantas registradas en la plataforma. |
+| **Null Hypothesis** | No habrá diferencia significativa en el tiempo de diagnóstico ni en la tasa de satisfacción (CSAT) entre los usuarios que utilicen Rootbot y aquellos que realicen búsquedas manuales de síntomas en motores de búsqueda tradicionales, indicando que el chatbot no representa una mejora perceptible en el proceso de diagnóstico. |
+
+
 #### 8.2.2 Domain Business Metrics
 
 #### 8.2.3 Measures
