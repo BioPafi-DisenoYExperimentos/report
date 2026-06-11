@@ -7584,7 +7584,7 @@ Esta sección describe los indicadores del negocio que se someterán al proceso 
 
 
 
-#### Measure 1 
+
 
 | Pregunta | ¿Cuál es el género y el rango de edad promedio de los usuarios interesados en usar la plataforma PlantSync para el cuidado de sus plantas? |
 |:---|:---|
@@ -7593,35 +7593,34 @@ Esta sección describe los indicadores del negocio que se someterán al proceso 
 
 
 
-#### Measure 2
+
 | Pregunta | ¿Qué tanto mejora la experiencia del usuario si la aplicación sincroniza las alertas de riego y fertilización con los datos climáticos en tiempo real de su ubicación específica? |
 |:---|:---|
 | **Medida** | Tasa de retención semanal y Click-Through Rate (CTR) de alertas de riego, comparada entre el grupo experimental (alertas climáticas sincronizadas) y el grupo de control (alertas manuales fijas) durante un periodo de 2 semanas. |
 
-#### Measure 3 
+
 | Pregunta | ¿Cuánto estarían dispuestos a pagar mensualmente los usuarios aficionados por acceder a planes de suscripción premium con soporte de sensores IoT y guías botánicas avanzadas? |
 |:---|:---|
 | **Medida** | Tasa de conversión a planes de pago (%), medida como el porcentaje de visitantes del Landing Page que hacen clic en el botón de suscripción Premium ($10.99) o PRO ($16.99) durante los 10 días de campaña. |
 
 
-#### Measure 4
+
 | Pregunta | ¿Qué tanto mejorará la usabilidad percibida y la retención del usuario cuando se implementen recordatorios automáticos de riego frente a la configuración manual de tareas? |
 |:---|:---|
 | **Medida** | Tasa de completitud de tareas diarias de cuidado (%) y tasa de retención semanal por cohorte, comparadas entre el Grupo A (recordatorios automáticos) y el Grupo B (configuración manual) durante 3 semanas, complementadas con el puntaje SUS de usabilidad. |
 
 
-#### Measure 5
+
 | Pregunta | ¿Por qué los usuarios elegirían utilizar PlantSync en lugar de buscar información botánica directamente en motores de búsqueda tradicionales o redes sociales? |
 |:---|:---|
 | **Medida** | Net Promoter Score (NPS) del dashboard centralizado y tasa de rebote de la plataforma, obtenidos mediante encuestas dentro de la aplicación y entrevistas cualitativas a usuarios que hayan completado al menos 5 tareas en su primera semana activa. |
 
 
-#### Measure 6
+
 | Pregunta | ¿Con qué frecuencia y en qué momento del día interactuarán los usuarios con la plataforma tras recibir notificaciones automáticas sobre el cuidado de sus plantas? |
 |:---|:---|
 | **Medida** | Número de sesiones por día por usuario y tiempo de respuesta (delay) entre el envío de la notificación y el registro de cumplimiento de la tarea, segmentados por franja horaria (8:00 AM, 2:00 PM y 8:00 PM) mediante logs de analítica. |
 
-#### Measure 7 
 | Pregunta | ¿Cómo será el proceso mediante el cual el chatbot inteligente Rootbot asistirá al usuario para registrar y diagnosticar una planta con síntomas de deterioro? |
 |:---|:---|
 | **Medida** | Tasa de resolución exitosa de diagnósticos por sesión (%) y puntaje de satisfacción CSAT, registrados automáticamente al finalizar cada conversación del chatbot con el grupo piloto de 50 usuarios principiantes. |
@@ -7632,6 +7631,54 @@ Esta sección describe los indicadores del negocio que se someterán al proceso 
 
 
 #### 8.2.4 Conditions
+
+
+
+| Pregunta | ¿Cuál es el género y el rango de edad promedio de los usuarios interesados en usar la plataforma PlantSync para el cuidado de sus plantas? |
+|:---|:---|
+| **Condición Experimental** | El 60% o más de los usuarios registrados pertenece al rango de edad de 25 a 45 años, confirmando que el diseño visual y la propuesta de valor de PlantSync son atractivos para el público joven-adulto urbano. |
+| **Condición de Control** | Menos del 60% de los usuarios registrados pertenece al rango de edad de 25 a 45 años, indicando que el perfil demográfico real no coincide con el buyer persona proyectado y que se requieren ajustes en la estrategia de comunicación y diseño. |
+
+
+| Pregunta | ¿Qué tanto mejora la experiencia del usuario si la aplicación sincroniza las alertas de riego y fertilización con los datos climáticos en tiempo real de su ubicación específica? |
+|:---|:---|
+| **Condición Experimental** | La tasa de retención semanal del grupo con alertas climáticas sincronizadas es al menos un 15% mayor que la del grupo de control, y el CTR de alertas supera el 50%, confirmando que la personalización climática incrementa el engagement y reduce los errores de riego. |
+| **Condición de Control** | La diferencia en retención semanal entre ambos grupos es menor al 15% y el CTR de alertas no supera el 50%, indicando que la sincronización climática no genera un impacto perceptible en el comportamiento del usuario respecto a los recordatorios fijos. |
+
+
+| Pregunta | ¿Cuánto estarían dispuestos a pagar mensualmente los usuarios aficionados por acceder a planes de suscripción premium con soporte de sensores IoT y guías botánicas avanzadas? |
+|:---|:---|
+| **Condición Experimental** | Al menos el 5% de los visitantes del Landing Page hace clic en el botón de suscripción del plan Premium ($10.99) o PRO ($16.99), validando la viabilidad comercial del modelo de monetización y el interés real en las funcionalidades avanzadas. |
+| **Condición de Control** | Menos del 5% de los visitantes del Landing Page interactúa con los botones de suscripción de pago, indicando que el precio o la propuesta de valor de los planes premium no es suficientemente atractiva para el segmento objetivo actual. |
+
+
+| Pregunta | ¿Qué tanto mejorará la usabilidad percibida y la retención del usuario cuando se implementen recordatorios automáticos de riego frente a la configuración manual de tareas? |
+|:---|:---|
+| **Condición Experimental** | El Grupo A (recordatorios automáticos) presenta una tasa de retención semanal al menos 25% superior a la del Grupo B (configuración manual) y un puntaje SUS igual o mayor a 75, confirmando que la automatización reduce la fricción y mejora la experiencia del usuario. |
+| **Condición de Control** | La diferencia de retención semanal entre el Grupo A y el Grupo B es menor al 25% o el puntaje SUS del Grupo A es inferior a 75, indicando que los recordatorios automáticos no generan una ventaja significativa sobre la gestión manual de tareas. |
+
+
+
+| Pregunta | ¿Por qué los usuarios elegirían utilizar PlantSync en lugar de buscar información botánica directamente en motores de búsqueda tradicionales o redes sociales? |
+|:---|:---|
+| **Condición Experimental** | El NPS obtenido del dashboard centralizado es superior a 40 puntos y la tasa de rebote de la plataforma es inferior al 40%, confirmando que PlantSync ofrece una propuesta de valor diferenciada y percibida como superior frente a las búsquedas tradicionales. |
+| **Condición de Control** | El NPS es igual o inferior a 40 puntos o la tasa de rebote supera el 40%, indicando que los usuarios no perciben una ventaja clara en PlantSync respecto a los motores de búsqueda y redes sociales para resolver sus necesidades botánicas. |
+
+
+
+| Pregunta | ¿Con qué frecuencia y en qué momento del día interactuarán los usuarios con la plataforma tras recibir notificaciones automáticas sobre el cuidado de sus plantas? |
+|:---|:---|
+| **Condición Experimental** | Las franjas horarias de mañana (8:00 AM) y noche (8:00 PM) registran una tasa de apertura de notificaciones al menos 20% superior a la franja de tarde (2:00 PM) y un tiempo de respuesta al cumplimiento de tareas inferior a 30 minutos, confirmando que esos horarios son óptimos para el envío de alertas. |
+| **Condición de Control** | La diferencia en tasa de apertura entre las tres franjas horarias es menor al 20% o el tiempo de respuesta supera los 30 minutos en todas las franjas, indicando que el horario de envío no influye significativamente en el comportamiento de interacción del usuario. |
+
+
+
+| Pregunta | ¿Cómo será el proceso mediante el cual el chatbot inteligente Rootbot asistirá al usuario para registrar y diagnosticar una planta con síntomas de deterioro? |
+|:---|:---|
+| **Condición Experimental** | El 80% o más de las sesiones de diagnóstico con Rootbot concluyen exitosamente en menos de 2 minutos y el puntaje CSAT promedio es superior al 85%, confirmando que el chatbot representa una herramienta eficaz y satisfactoria para usuarios novatos. |
+| **Condición de Control** | Menos del 80% de las sesiones concluyen exitosamente en menos de 2 minutos o el puntaje CSAT promedio es igual o inferior al 85%, indicando que el chatbot aún presenta fricciones en el flujo conversacional o limitaciones en su base de conocimiento botánico. |
+
+
 
 #### 8.2.5 Scale Calculations and Decisions
 
