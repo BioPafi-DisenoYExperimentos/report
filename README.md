@@ -1,4 +1,4 @@
-<h1 align="center">Informe de Trabajo Final</h1>
+<h1 align="center">Informe de Trabajo Parcial</h1>
 
 <p align="center">
   <img src="images/logoupc.png" alt="UPC logo" width="150">
@@ -8,15 +8,15 @@
 
 **Ingeniería de Software**
 
-**5to Ciclo**
+**7mo Ciclo**
 
-**Código del curso:** 1ASI0729
+**Código del curso:** 1ASI0732
 
-**Nombre del curso:** Desarrollo de aplicaciones Open Source
+**Nombre del curso:** Diseño de Experimentos de Ingenieria de Software 
 
 **NRC:** 4289
 
-**Nombre del profesor:** BAUTISTA UBILLÚS, EFRAIN RICARDO
+**Nombre del profesor:** Flores Moroco, Juan Antonio
 
 **Nombre del Startup:** BioPafi
 
@@ -26,603 +26,61 @@
 
 | **Código** | **Apellidos y Nombres**             |
 | ---------- | ----------------------------------- |
+| U20221G068|Almerco Rojas, Jocelyn Damaly|
+| U202318814 | Castañeda Llanos , Kevin Alexander |
 | U20231A500 | Palomino Fiestas, Erick Leonardo    |
-| U202312966 | Gonzales Alvarado, Javier Sebastian |
 | U20231D974 | Rivera Ratachi, Renzo Sebastian     |
-
-**Julio 2025**
+| U202313172 |Coca Lavado, Carlos Andres|
+**Mayo 2026**
 
 ---
 
 ## Registro de Versiones del Informe
 
-<table align="center">
-  <tr>
-    <td><strong>Versión</strong></td>
-    <td><strong>Fecha</strong></td>
-    <td><strong>Autor(es)</strong></td>
-    <td><strong>Descripción de cambios</strong></td>
-  </tr>
-    <tr>
-    <td>1.0</td>
-    <td>06/04/25</td>
-    <td>
-    Palomino,<br>
-    Gonzales,<br>
-    Rivera,<br>
-    Palomares, Torres
-    </td>
-    <td>Creación del documento en repositorio compartido en GitHub</td>
-  </tr>
-  </tr>
-  <tr>
-    <td>1.1</td>
-    <td>9/04/25</td>
-    <td>
-    Palomino,<br>
-    Gonzales,<br>
-    Rivera,<br>
-    Palomares, Torres
-    </td>
-    <td>Realizacion del Startup Profile, Perfiles de integrantes del equipo y Antecedentes y Problematicas </td>
-  </tr>
-  <tr>
-    <td>1.2</td>
-    <td>10/04/25</td>
-    <td>
-    Gonzales,<br>
-    Palomares
-    </td>
-    <td>Realizacion del Lean UX Procces</td>
-  </tr>
-  <tr>
-    <td>1.3</td>
-    <td>12/04/25</td>
-    <td>
-    Renzo<br>
-    </td>
-    <td>Realización de Competidores, analisis y estrategias</td>
-  </tr>
-  <tr>
-    <td>1.4</td>
-    <td>14/04/25</td>
-    <td>
-    Palomino,<br>
-    Gonzales,<br>
-    Rivera,<br>
-    Palomares, Torres
-    </td>
-    <td>Realizacion de diseño de entrevistas, registro y analisis</td>
-  </tr>
-  <tr>
-    <td>1.5</td>
-    <td>15/04/25</td>
-    <td>
-    Rivera,<br>
-    Torres
-    </td>
-    <td>Realización del Needfinding segun las entrevistas</td>
-  </tr>
-  <tr>
-    <td>1.6</td>
-    <td>17/04/25</td>
-    <td>
-    Palomino,<br>
-    Gonzales,<br>
-    Rivera,<br>
-    Palomares, Torres
-    </td>
-    <td>Realización de los to-be scenario Mapping, User Stories, Impact Mapping y Product Backlog</td>
-  </tr>
-  <tr>
-    <td>1.7</td>
-    <td>18/04/25</td>
-    <td>
-    Palomino,<br>
-    Gonzales
-    </td>
-    <td>Realización de los style guidelines y Information Architecture</td>
-  </tr>
-  <tr>
-    <td>1.9</td>
-    <td>24/04/25</td>
-    <td>
-    Palomino,<br>
-    Gonzales,<br>
-    Rivera,<br>
-    Palomares, Torres
-    </td>
-    <td>Realización de la Landing Page UI Desing, Web Application UX/UI Desing, Web Application Prototyping, Domain Driven Software Architecture, Class Diagram, Database Diagram</td>
-  </tr>
-  <tr>
-    <td>1.10</td>
-    <td>26/04/25</td>
-    <td>
-    Palomino,<br>
-    Gonzales,<br>
-    Rivera,<br>
-    Palomares, Torres
-    </td>
-    <td>Realización del Software Configuration Managmente, Landing Page, Service & Application Implementation, Sprint 1 y Conclusiones</td>
-  </tr>
-  <tr>
-    <td>2.1</td>
-    <td>05/05/25</td>
-    <td>
-    Palomino
-    </td>
-    <td>Mejora continua, correcion de user stories, product backlog, cambio de errores de formato</td>
-  </tr>
-  <tr>
-    <td>2.2</td>
-    <td>07/05/25</td>
-    <td>
-    Torres
-    </td>
-    <td>Mejora continua, correccion del diagrama de clases y diagrama DDD</td>
-  </tr>
-  <tr>
-    <td>2.3</td>
-    <td>15/05/25</td>
-    <td>
-    Palomino,<br>
-    Gonzales,<br>
-    Rivera,<br>
-    Torres
-    </td>
-    <td>Realización de todo el Sprint 2</td>
-  </tr>
-  <tr>
-    <td>2.4</td>
-    <td>16/05/25</td>
-    <td>
-    Palomino,<br>
-    Gonzales,<br>
-    Rivera,<br>
-    Torres
-    </td>
-    <td>Conclusiones, Link del exposicion TP1, studen outcome TP1 y Report Collaboration Insight, mejora continua, conversion a PDF</td>
-  </tr>
-  <tr>
-    <td>3.1</td>
-    <td>05/06/25</td>
-    <td>
-    Rivera,<br>
-    Torres
-    </td>
-    <td>Mejora Continua. Mejoras en el diagrama del frontend</td>
-  </tr>
-  </tr>
-  <tr>
-    <td>3.2</td>
-    <td>09/06/25</td>
-    <td>
-    Rivera,<br>
-    Torres
-    </td>
-    <td>Mejora continua. Mejoras en el diagrama de base de datos</td>
-  </tr>
-  </tr>
-  <tr>
-    <td>3.3</td>
-    <td>19/06/25</td>
-    <td>
-    Rivera,<br>
-    Torres
-    </td>
-    <td>Realización del diagrama del backend</td>
-  </tr>
-  <tr>
-    <td>3.4</td>
-    <td>21/06/25</td>
-    <td>
-    Palomino,<br>
-    Gonzales,<br>
-    Torres
-    </td>
-    <td>Realizacion de las entrevistas de validación, más las heuristicas</td>
-  </tr>
-  <tr>
-    <td>3.5</td>
-    <td>22/06/25</td>
-    <td>
-    Palomino,<br>
-    Gonzales,<br>
-    Rivera,<br>
-    Torres
-    </td>
-    <td>Realización del Sprint 3, con todos sus apartados</td>
-  </tr>
-  <tr>
-    <td>3.6</td>
-    <td>22/06/25</td>
-    <td>
-    Palomino,<br>
-    Gonzales,<br>
-    </td>
-    <td>Se añadieron los videos de About The Product y About the Team, más las conclusiones y recomendaciones</td>
-  </tr>
-  <tr>
-    <td>4.1</td>
-    <td>01/07/25</td>
-    <td>
-    Palomino,<br>
-    Gonzales,<br>
-    </td>
-    <td>Inicio de la documentacion del sprint 4</td>
-  </tr>
-  <tr>
-    <td>4.2</td>
-    <td>01/07/25</td>
-    <td>
-    Palomino,<br>
-    </td>
-    <td>Mejora continua de diagramas de clases y c4</td>
-  </tr>
-  <tr>
-    <td>4.2</td>
-    <td>01/07/25</td>
-    <td>
-    Rivera<br>
-    </td>
-    <td>Elaboración de conclusiones</td>
-  </tr>
-</table>
+| **Versión** | **Fecha** | **Autor(es)** | **Descripción de cambios** |
+| :--- | :--- | :--- | :--- |
+| 1.0 | 09/05/26 | Almerco, Castañeda, Palomino, Rivera, Coca | Creación de test unitarios e integrales con Karate y documentación de unit test, karate y pruebas de integración. |
+| 1.1 | 10/05/26 | Almerco, Castañeda, Palomino, Rivera, Coca | Creación de test unitarios e integrales con Karate y documentación de unit test, karate y pruebas de integración. |
+| 1.2 | 11/05/26 | Almerco, Castañeda, Palomino, Rivera, Coca | Creación de test unitarios e integrales con Karate, uso de Jenkins y documentación de integración. |
+| 1.3 | 12/05/26 | Almerco, Castañeda, Palomino, Rivera, Coca | Uso de Jenkins y documentación de Jenkins y checklist. |
+| 1.4 | 13/05/26 | Almerco, Castañeda, Palomino, Rivera, Coca | Creación de Checkstyle y SonarQube, y documentación de Jenkins y checklist. |
+| 2.1 | 09/06/26 | Almerco, Castañeda, Palomino, Rivera, Coca | Añadir nuevos items del TB2, experiment cards, question backlogs y experiment ready questions |
+| 2.2 | 11/06/26 | Almerco, Castañeda, Palomino, Rivera, Coca | Añadir measures, conditions, hipothesis y domain business metrics.s |
 
 ---
 
 ## Project Report Collaboration Insights
 
-Link del documento en GitHub: https://github.com/BioPafi-OpenSource/project-report-plantsync
+Link del documento en GitHub: https://github.com/BioPafi-DisenoYExperimentos/report
 
-## **TB1**
+## **TP**
 
-<table align="center">
-  <tr>
-    <td><strong>Integrante</strong></td>
-    <td><strong>Tareas Asignadas</strong></td>
-  </tr>
-  <tr>
-    <td>
-      Erick Palomino
-    </td>
-    <td>
-      Startup Profile, Style Guidelines, User Stories, Landing Page UI Desing, Web Application Prototyping, Landing Page Code.
-    </td>
-  </tr>
-  <tr>
-    <td>
-      Javier Gonzales
-    </td>
-    <td>
-      Lean Ux Problem Statement, Assumptions, Desarrollo de entrevistas, Arquitectura de informacion, Wireframes y Wireflows, Desarrollo de la Landing Page
-    </td>
-  </tr>
-  <tr>
-    <td>
-      Renzo Rivera
-    </td>
-    <td>
-      Competitive Analysis, User Personas, User Journey Mapping, User Task Matrix, User Stories, User Flow Diagrams, Plan Section Landing Page
-    </td>
-  </tr>
-  <tr>
-    <td>
-      Sean Palomares
-    </td>
-    <td>
-     Lean UX Hypothesis Statements y Canvas, Segmentos Objetivo, To-Be Scenario Mapping, Impact Mapping, Product Backlog, Software Object-Oriented Design, Database Design, Software Configuration Management
-    </td>
-  </tr>
-  <tr>
-    <td>
-      Giovany Torres
-    </td>
-    <td>
-      Antecedentes y Problemática, Empathy Mapping , As-is scenario mapping, Ubiquitous Language, Domain driven software architecture, Sprint planning 1, Sprint Backlog 1, Landing page, Conclusiones
-    </td>
-  </tr>
-</table>
-
-## **TP1**
-
-<table align="center">
-  <tr>
-    <td><strong>Integrante</strong></td>
-    <td><strong>Tareas Asignadas</strong></td>
-  </tr>
-  <tr>
-    <td>
-      Erick Palomino
-    </td>
-    <td>
-      Implementación de la sección login y register, levantamiento de errores del informe, Student Outcome, project Collaboration Insight, landing Page V2 y Sprint 2
-    </td>
-  </tr>
-  <tr>
-    <td>
-      Javier Gonzales
-    </td>
-    <td>
-      Implementación de la sección de mis plantas, ver historial, recomendaciones del clima y deployment del front end y Sprint 2
-    </td>
-  </tr>
-  <tr>
-    <td>
-      Renzo Rivera
-    </td>
-    <td>
-      Implementacion del FrontEnd de Chatbot, FrontEnd de Tareas y Sprint 2
-    </td>
-  </tr>
-  <tr>
-    <td>
-      Giovany Torres
-    </td>
-    <td>
-      FrontEnd de Guías, corrección del diagrama de clases, realización de conclusiones del entregable TP1 y Sprint 2
-    </td>
-  </tr>
-</table>
-
-## **TB2**
-
-<table align="center">
-  <tr>
-    <td><strong>Integrante</strong></td>
-    <td><strong>Tareas Asignadas</strong></td>
-  </tr>
-  <tr>
-    <td>
-      Erick Palomino
-    </td>
-    <td>
-      Realización del Profiles Bounded Context en el backend, entrevista de validación, añadio heuristicas, video about the product , video about the team , Sprint 3 y conclusiones.
-    </td>
-  </tr>
-  <tr>
-    <td>
-      Javier Gonzales
-    </td>
-    <td>
-      Realización de la Migración a base de datos en el backend, entrevista de validación, añadio heuristicas, video about the team, Sprint 3, mejora del frontend y conclusiones.
-    </td>
-  </tr>
-  <tr>
-    <td>
-      Renzo Rivera
-    </td>
-    <td>
-      Realización del Plant Profiles y Tasks Bounded Context en el backend, realizo el deploy del backend , realización del diagrama del backend,video about the team, mejora del frontend y Sprint 3.
-    </td>
-  </tr>
-  <tr>
-    <td>
-      Giovany Torres
-    </td>
-    <td>
-      Realización de Guides Bounded Context en el backend, entrevista de validación, realización del diagrama del frontend, añadio heuristicas, video about the team, Sprint 3 y conclusiones.
-    </td>
-  </tr>
-</table>
-
-## **TF**
-
-<table align="center">
-  <tr>
-    <td><strong>Integrante</strong></td>
-    <td><strong>Tareas Asignadas</strong></td>
-  </tr>
-  <tr>
-    <td>
-      Erick Palomino
-    </td>
-    <td>
-      Documentación del sprint 4, Corrección de diagramas c4 y de clases y Apoyo en los diversos apartados del frontend y backend
-    </td>
-  </tr>
-  <tr>
-    <td>
-      Javier Gonzales
-    </td>
-    <td>
-      Implementación de la IA para nuestro ChatBot, Documentación del sprint 4 y Completar los features faltantes
-    </td>
-  </tr>
-  <tr>
-    <td>
-      Renzo Rivera
-    </td>
-    <td>
-      IAM Bounded Context, Apartado de Configuración Frontend y Apartado de Tareas Frontend
-    </td>
-  </tr>
-</table>
+| **Integrante** | **Tareas Asignadas** |
+| :--- | :--- |
+| Almerco Rojas, Jocelyn Damaly | SonarQube. |
+| Castañeda Llanos, Kevin Alexander | Tests unitarios, integrales y Checkstyle. |
+| Palomino Fiestas, Erick Leonardo | Jenkins y pruebas de integración. |
+| Rivera Ratachi, Renzo Sebastian | Karate, pruebas de integración y tests unitarios. |
+| Coca Lavado, Carlos Andres | Pruebas de integración y Karate. |
 
 **GitHub Collaboration Insights**
 
 **Integrantes:**
-+ Erick Palomino (ErickLeo13)
-+ Javier Gonzales (WoodsDos)
-+ Renzo Rivera (renzor11)
-+ Giovany Torres (Giovany7x)
-+ Sean Palomares (SeanPalomares)
-
-## **TB1**
++ Almerco Rojas, Jocelyn Damaly
++ Castañeda Llanos, Kevin Alexander
++ Palomino Fiestas, Erick Leonardo
++ Rivera Ratachi, Renzo Sebastian
++ Coca Lavado, Carlos Andres
 
 <p align="center">
-  <img src="images/insight-github/branch1-plantsync.png" alt="evidencia-sprint" width="800">
-</p>
-<br><br>
-
-<p align="center">
-  <img src="images/insight-github/contributors1-plantsync.png" alt="evidencia-sprint" width="800">
-</p>
-<br><br>
-
-<p align="center">
-  <img src="images/insight-github/overview1-plantsync.png" alt="evidencia-sprint" width="800">
-</p>
-<br><br>
-
-## **TP1**
-
-Repositorio Aplicacion Web:
-
-<p align="center">
-  <img src="images/insight-github/branch-appweb-plantsync.png" alt="evidencia-sprint" width="800">
-</p>
-<br><br>
-
-<p align="center">
-  <img src="images/evidencia-sprint2/evidencia2-team-sprint2.png" alt="evidencia-sprint" width="1000">
+  <img src="images/insight-github/network-graph-insights.jpg" alt="evidencia-tp" width="1000">
 </p>
 
 <p align="center">
-  <img src="images/evidencia-sprint2/evidencia1-team-sprint2.png" alt="evidencia-sprint" width="1000">
-</p>
-
-Repositorio Landing Page:
-
-<p align="center">
-  <img src="images/insight-github/branch-landingpage-plantsync.png" alt="evidencia-sprint" width="800">
-</p>
-<br><br>
-
-<p align="center">
-  <img src="images/evidencia-sprint2/evidencia4-team-sprint2.png" alt="evidencia-sprint" width="1000">
-</p>
-
-<p align="center">
-  <img src="images/evidencia-sprint2/evidencia3-team-sprint2.png" alt="evidencia-sprint" width="1000">
-</p>
-
-Repositorio Informe:
-
-<p align="center">
-  <img src="images/insight-github/branch2-plantsync.png" alt="evidencia-sprint" width="1000">
-</p>
-
-<p align="center">
-  <img src="images/insight-github/contributors2-plantsync.png" alt="evidencia-sprint" width="1000">
-</p>
-
-<p align="center">
-  <img src="images/insight-github/overview2-plantsync.png" alt="evidencia-sprint" width="1000">
-</p>
-
-## **TB2**
-
-<br>
-
-<p align="center">
-  <img src="images/evidencia-sprint3/evidence-github-backend1.jpg" alt="evidencia-sprint-3" width="1000">
-</p>
-
-<br>
-
-<p align="center">
-  <img src="images/evidenciabackend2.jpg" alt="evidencia-sprint-3" width="1000">
-</p>
-
-<br><br>
-
- + PlantSync_Frontend:
-
- <br>
-
-<p align="center">
-  <img src="images/evidencia-sprint2/evidencia2-team-sprint2.png" alt="evidencia-sprint" width="1000">
-</p>
-
-<br>
-
-<p align="center">
-  <img src="images/evidencia-sprint2/evidencia1-team-sprint2.png" alt="evidencia-sprint" width="1000">
-</p>
-
-<br><br>
-
-+ plantSync-LandingPage:
-
-<br>
-
-<p align="center">
-  <img src="images/evidencia-sprint3/evidencia-github-landing1.jpg" alt="evidencia-sprint" width="1000">
-</p>
-
-<br>
-
-<p align="center">
-  <img src="images/evidencia-sprint3/evidencia-github-landing2.jpg" alt="evidencia-sprint" width="1000">
-</p>
-
-## **TF**
-
-+ Informe:
-
-<br>
-
-<p align="center">
-  <img src="images/insights1-report-tf1.jpg" alt="evidencia-sprint-3" width="1000">
-</p>
-
-<br>
-
-<p align="center">
-  <img src="images/insights2-report-tf1.jpg" alt="evidencia-sprint-3" width="1000">
-</p>
-
-<br><br>
-
-+ Backend:
-
-<br>
-
-<p align="center">
-  <img src="images/insights1-backend-tf1.jpg" alt="evidencia-sprint-3" width="1000">
-</p>
-
-<br>
-
-<p align="center">
-  <img src="images/insights2-backend-tf1.jpg" alt="evidencia-sprint-3" width="1000">
+  <img src="images/insight-github/test-backend-insights.jpg" alt="evidencia-tp" width="1000">
 </p>
 
 
-<br><br>
-
-+ Frontend:
-
-<br>
-
-<p align="center">
-  <img src="images/evidencia-sprint2/evidencia2-team-sprint2.png" alt="evidencia-sprint" width="1000">
-</p>
-
-<br>
-
-<p align="center">
-  <img src="images/insights1-frontend-tf1.jpg" alt="evidencia-sprint" width="1000">
-</p>
-
-<br><br>
-
-+ LandingPage:
-
-<br>
-
-<p align="center">
-  <img src="images/insight-landingpage-tf.jpg" alt="evidencia-sprint" width="1000">
-</p>
-
-<br>
-
-<p align="center">
-  <img src="images/insight2-landingpage-tf.jpg" alt="evidencia-sprint" width="1000">
-</p>
-
-<br>
 
 ---
 
@@ -745,9 +203,59 @@ Repositorio Informe:
       - [5.2.4.8. Team Collaboration Insights during Sprint](#5248-team-collaboration-insights-during-sprint)  
   - [5.3. Validation Interviews](#53-validation-interviews)
     - [5.3.1. Diseño de Entrevistas](#531-diseño-de-entrevistas)  
-    - [5.3.1. Registro de Entrevistas](#532-registro-de-entrevistas) 
-    - [5.3.1. Evaluaciones según heurísticas](#533-evaluacion-según-heurísticas) 
-  - [5.4. Video About-the-Product](#54-validation-interviews) 
+    - [5.3.2. Registro de Entrevistas](#532-registro-de-entrevistas) 
+    - [5.3.3. Evaluaciones según heurísticas](#533-evaluacion-según-heurísticas) 
+  - [5.4. Video About-the-Product](#54-video-about-the-product) 
+
+- [Capítulo VI: Product Verification & Validation](#capítulo-vi-product-verification--validation)
+
+  - [6.1. Testing Suites & Validation](#61-testing-suites--validation)
+    - [6.1.1. Core Entities Unit Tests](#611-core-entities-unit-tests)
+    - [6.1.2. Core Integration Tests](#612-core-integration-tests)
+    - [6.1.3. Core Behavior-Driven Development](#613-core-behavior-driven-development)
+    - [6.1.4. Core System Tests](#614-core-system-tests)
+  - [6.2. Static Testing and Verification](#62-static-testing-and-verification)
+    - [6.2.1. Static Code Analysis](#621-static-code-analysis)
+      - [6.2.1.1. Coding Standard & Code Conventions](#6211-coding-standard--code-conventions)
+      - [6.2.1.2. Code Quality & Code Security](#6212-code-quality--code-security)
+    - [6.2.2. Reviews](#622-reviews)
+
+- [Capítulo VII: DevOps Practices](#capítulo-vii-devops-practices)
+
+  - [7.1. Continuous Integration](#71-continuous-integration)
+    - [7.1.1. Tools and Practices](#711-tools-and-practices)
+    - [7.1.2. Build & Test Suite Pipeline Components](#712-build--test-suite-pipeline-components)
+  - [7.2. Continuous Delivery](#72-continuous-delivery)
+    - [7.2.1. Tools and Practices](#721-tools-and-practices)
+    - [7.2.2. Stages Deployment Pipeline Components](#722-stages-deployment-pipeline-components)
+  - [7.3. Continuous deployment](#73-continuous-deployment)
+    - [7.3.1. Tools and Practices](#731-tools-and-practices)
+    - [7.3.2. Production Deployment Pipeline Components](#732-production-deployment-pipeline-components)
+  - [7.4. Continuous Monitoring](#74-continuous-monitoring)
+    - [7.4.1. Tools and Practices](#741-tools-and-practices)
+    - [7.4.2. Monitoring Pipeline Components](#742-monitoring-pipeline-components)
+    - [7.4.3. Alerting Pipeline Components](#743-alerting-pipeline-components)
+    - [7.4.4. Notification Pipeline Components](#744-notification-pipeline-components)
+
+- [Capítulo VIII: Experiment-Driven Development](#capítulo-viii-experiment-driven-development)
+  - [8.1. Experiment Planning](#81-experiment-planning)
+    - [8.1.1. As-Is Summary](#811-as-is-summary)
+    - [8.1.2. Raw Material: Assumptions, Knowledge Gaps, Ideas, Claims](#812-raw-material-assumptions-knowledge-gaps-ideas-claims)
+    - [8.1.3. Experiment-Ready Questions](#813-experiment-ready-questions)
+    - [8.1.4. Question Backlog](#814-question-backlog)
+    - [8.1.5. Experiment Cards](#815-experiment-cards)
+  - [8.2. Experiment Design](#82-experiment-design)
+    - [8.2.1. Hypotheses](#821-hypotheses)
+    - [8.2.2. Domain Business Metrics](#822-domain-business-metrics)
+    - [8.2.3. Measures](#823-measures)
+    - [8.2.4. Conditions](#824-conditions)
+    - [8.2.5. Scale Calculations and Decisions](#825-scale-calculations-and-decisions)
+    - [8.2.6. Methods Selection](#826-methods-selection)
+    - [8.2.7. Data Analytics: Goals, KPIs and Metrics Selection](#827-data-analytics-goals-kpis-and-metrics-selection)
+    - [8.2.8. Web and Mobile Tracking Plan](#828-web-and-mobile-tracking-plan)
+  - [8.3. Experimentation](#83-experimentation)
+    - [8.3.1. To-Be User Stories](#831-to-be-user-stories)
+    - [8.3.2. To-Be Product Backlog](#832-to-be-product-backlog)
 
 - [Conclusiones y Recomendaciones](#conclusiones-y-recomendaciones)
 - [Video about the Team](#video-about-the-team)
@@ -758,119 +266,10 @@ Repositorio Informe:
 
 ## Student Outcome
 
-<table align="center">
-  <tr>
-    <td><strong>Criterio</strong></td>
-    <td><strong>Acciones Realizadas</strong></td>
-    <td><strong>Conclusiones</strong></td>
-  </tr>
-  <tr>
-    <td>
-      Comunica oralmente con efectividad a diferentes rangos de audiencia.
-    </td>
-    <td>
-      <strong>Erick Palomino:</strong>
-      TB1 - Participación en la presentación oral de la propuesta inicial del proyecto, explicación de Startup Profile y Lineamientos de Estilo.
-      <br><br>
-      TP1 - Presentó avances técnicos relacionados a la autenticación del sistema (login y register), además de explicar el funcionamiento de la Landing Page V2 y el módulo de colaboración.
-      <br><br>
-      TB2 - Participó en la entrevista de validación del sistema y presentó el video “About the Product” y “About the Team”, explicando funcionalidades y roles.
-      <br><br>
-      TF1 - Explicó en reuniones grupales la reestructuración propuesta de los diagramas C4 y de clases, detallando su impacto en la arquitectura del sistema.
-      <br><br>
-      <strong>Javier Gonzales:</strong>
-      TB1 - Presentación oral de los resultados de entrevistas y de la estructura de la Landing Page.
-      <br><br>
-      TP1- Comunicó de forma clara las funcionalidades desarrolladas en la sección "Mis Plantas", el historial y recomendaciones climáticas en reuniones grupales.
-      <br><br>
-      TB2 - Expuso durante la entrevista de validación y en el video grupal, mostrando mejoras del frontend e integración con base de datos.
-      <br><br>
-      TF1 - Expuso la integración de la inteligencia artificial y verificó el cumplimiento de funcionalidades frente al equipo.
-      <br><br>
-      <strong>Renzo Rivera:</strong>
-      TB1 – Exposición de análisis competitivo y explicación de los User Flow Diagrams durante la reunión grupal.
-      <br><br>
-      TP1- Expuso el diseño y lógica del FrontEnd del Chatbot y la sección de tareas, explicando su integración y mejoras.
-      <br><br>
-      TB2 - Contribuyó en la presentación del video “About the Team” y explicó los cambios realizados en el backend y en el proceso de despliegue.
-      <br><br>
-      TF1 - Presentó el flujo de conexión entre backend y frontend, así como las mejoras realizadas en el despliegue de la app, adaptando su comunicación al equipo técnico.
-      <br><br>
-      <strong>Sean Palomares:</strong>
-      TB1 - Explicación oral de los mapas de impacto y segmentación de objetivos en reuniones grupales.
-      <br><br>
-      <strong>Giovany Torres</strong>
-      TB1 –  Presentación oral de los antecedentes, problemática y mapeos de escenarios en el desarrollo inicial del proyecto.
-      <br><br>
-      TP1 - Participó en la presentación oral del FrontEnd de Guías, así como en la explicación de cambios en la arquitectura de clases y conclusiones del entregable.
-      <br><br>
-      TB2 - Comunicó verbalmente el diseño del frontend y del módulo de guías en entrevistas y en el video del equipo.
-      <br><br>
-    </td>
-    <td>
-      TB1:Como grupo, logramos una comunicación oral efectiva que facilitó la comprensión de las distintas etapas del proyecto. La coordinación de presentaciones y la exposición clara de ideas fortalecieron nuestro trabajo en equipo y permitieron que cada integrante aportara de forma precisa en su área asignada.
-      <br><br>
-      TP1:La comunicación oral fue fundamental para coordinar las tareas del proyecto y asegurar una comprensión común. Cada integrante presentó con claridad sus avances y propuestas, lo que permitió una integración efectiva del trabajo. Se logró una interacción fluida y profesional dentro del equipo.
-      <br><br>
-      TB2: La comunicación oral del equipo se fortaleció mediante entrevistas y videos explicativos donde se expresaron con claridad las funciones desarrolladas, lo que facilitó la validación del producto y la comprensión del progreso por parte de los usuarios. Las presentaciones mostraron cohesión, claridad y un dominio del trabajo individual y colectivo.
-      <br><br>
-      TF1: Como equipo, demostramos una comunicación oral efectiva al presentar de manera clara y estructurada nuestras propuestas y avances técnicos durante las reuniones. Cada integrante adaptó su lenguaje a las necesidades del equipo, facilitando el entendimiento común y fomentando la toma de decisiones informadas para avanzar como grupo.
-    </td>
-  </tr>
-  <tr>
-    <td>
-      Comunica por escrito con efectividad a diferentes rangos de audiencia 
-    </td>
-    <td>
-      <strong>Erick Palomino:</strong>
-      TB1 – Redacción del Startup Profile, Style Guidelines, User Stories y contenido de la Landing Page.
-      <br><br>
-      TP1 - Documentó los procesos implementados para login/register, colaboró en la redacción del Student Outcome y el informe técnico del Sprint 2.
-      <br><br>
-      TB2 - Documentó el Profiles Bounded Context del backend, agregó contenido escrito en heurísticas y elaboró las conclusiones del entregable.
-      <br><br>
-      TF1 - Redactó los nuevos diagramas técnicos documentando claramente los elementos y relaciones del sistema para facilitar su comprensión.
-      <br><br>
-      <strong>Javier Gonzales:</strong>
-      TB1 –  Redacción del Lean UX Problem Statement, Assumptions y desarrollo de wireframes documentados.
-      <br><br>
-      TP1 - Describió por escrito las funcionalidades del historial, recomendaciones y deployment del sistema, contribuyendo a la documentación del TP1.
-      <br><br>
-      TB2 - Redactó los cambios realizados en la migración a base de datos y en la mejora del frontend, contribuyendo también en las heurísticas y conclusiones.
-      <br><br>
-      TF1 - Elaboró reportes detallados de avance con base en las User Stories e incluyó la documentación del componente de inteligencia artificial.
-      <br><br>
-      <strong>Renzo Rivera:</strong>
-      TB1 –  Documentación escrita de análisis competitivo, User Personas, User Journey Mapping y Task Matrix.
-      <br><br>
-      TP1 - Elaboró descripciones técnicas del Chatbot y la sección de tareas, detallando los retos y soluciones en el informe parcial.
-      <br><br>
-      TB2 - Escribió la documentación técnica del Plant Profiles, Tasks Bounded Context y el diagrama del backend.
-      <br><br>
-      TF1 - Documentó los endpoints implementados, describiendo su funcionamiento y los pasos del despliegue final de la aplicación.
-      <br><br>
-      <strong>Sean Palomares:</strong>
-      TB1 – Elaboración escrita de Hypothesis Statements, Product Backlog y base de diseño orientado a objetos.
-      <br><br>
-      <strong>Giovany Torres:</strong>
-      TB1 –  Redacción de antecedentes, problemática, Empathy Mapping y documentos de arquitectura de software, incluyendo la conclusión escrita del reporte.
-      <br><br>
-      TP1 - Redactó el contenido del FrontEnd de Guías, corrigió el diagrama de clases y formuló las conclusiones del informe TP1.
-      <br><br>
-      TB2 - Documentó el Guides Bounded Context, redactó la estructura del frontend, las heurísticas y las conclusiones del informe.
-      <br><br>
-    </td>
-    <td>
-      TB1:Como equipo, fuimos capaces de producir documentos escritos claros y adaptados al público objetivo, asegurando la coherencia y calidad de la información entregada. Esto facilitó la comprensión del proyecto tanto para el equipo como para los revisores externos. El trabajo colaborativo en los entregables escritos fue clave para mantener una línea de comunicación efectiva en todo el desarrollo del proyecto.
-      <br><br>
-      TP1: La documentación escrita del trabajo parcial fue clara, precisa y permitió dejar registro estructurado de cada avance. Se cuidó el lenguaje técnico y la redacción, haciendo posible una comprensión adecuada tanto para el equipo como para evaluadores externos. La distribución de redacción fue equilibrada y colaborativa.
-      <br><br>
-      TB2: La producción escrita durante esta etapa del proyecto reflejó claridad técnica, estructuración adecuada de los avances y coherencia con los objetivos planteados. Todos los integrantes aportaron en la documentación técnica y reflexiva del proyecto, generando entregables de calidad con contenido relevante y bien argumentado.
-      <br><br>
-      TF1: La documentación técnica generada por el equipo fue precisa, coherente y orientada tanto a públicos técnicos como académicos. La calidad de los diagramas, reportes funcionales y descripciones de endpoints refleja nuestra capacidad de comunicar por escrito de forma efectiva, asegurando trazabilidad y comprensión de los avances en el desarrollo del proyecto.
-    </td>
-  </tr>
-</table>
+| **Criterio** | **Acciones Realizadas** | **Conclusiones** |
+| :--- | :--- | :--- |
+| **Comunica oralmente con efectividad a diferentes rangos de audiencia.** | **Almerco Rojas, Jocelyn Damaly:** Expuso la configuración y resultados de SonarQube, detallando las métricas de calidad y deuda técnica identificadas en el proyecto.<br><br>**Castañeda Llanos, Kevin Alexander:** Presentó los avances en la creación de tests unitarios e integrales, así como la implementación de Checkstyle para asegurar los estándares de código.<br><br>**Palomino Fiestas, Erick Leonardo:** Explicó el flujo de trabajo en Jenkins para la integración continua y la ejecución de pruebas de integración.<br><br>**Rivera Ratachi, Renzo Sebastian:** Comunicó los resultados de las pruebas realizadas con Karate, detallando la cobertura de tests unitarios e integrales.<br><br>**Coca Lavado, Carlos Andres:** Expuso la lógica detrás de los scripts de Karate y los resultados de las pruebas de integración en el sistema. | TP: Como equipo, logramos una comunicación oral efectiva que facilitó la coordinación técnica para la implementación de pruebas y la automatización con Jenkins. La exposición clara de los avances diarios permitió una integración fluida de las herramientas de calidad en el proyecto, asegurando que todos los integrantes estuvieran alineados con los objetivos técnicos. <br><br> TB2: Se implementó la fase de experimentación, logramos comunicarnos de manera efectiva para finalizar todos los items necesarios para cumplir con los objetivos propuestos.
+| **Comunica por escrito con efectividad a diferentes rangos de audiencia.** | **Almerco Rojas, Jocelyn Damaly:** Redactó los informes de calidad generados por SonarQube, documentando los puntos de mejora y la calidad del código.<br><br>**Castañeda Llanos, Kevin Alexander:** Elaboró la documentación técnica de los tests unitarios, integrales y las reglas configuradas en Checkstyle.<br><br>**Palomino Fiestas, Erick Leonardo:** Documentó los procesos de automatización en Jenkins y colaboró en la redacción de los reportes de pruebas de integración.<br><br>**Rivera Ratachi, Renzo Sebastian:** Redactó la documentación de los tests unitarios e integrales realizados con Karate, asegurando la trazabilidad de las pruebas.<br><br>**Coca Lavado, Carlos Andres:** Elaboró la documentación técnica de los escenarios de prueba en Karate y los resultados de integración. | TP: Se logró una documentación técnica precisa y estructurada sobre los procesos de testing, despliegue continuo y calidad de software. La redacción clara de los reportes y guías facilitó la trazabilidad del desarrollo del TP, permitiendo que la información fuera accesible y comprensible para todos los evaluadores. <br><br> TB2: Se documentó de forma escrita de forma correcta los puntos a seguir en la fase de la experimentación para poder validar la idea de negocio. |
 
 ---
 
@@ -909,10 +308,10 @@ Facilitar el cuidado de plantas en el hogar mediante soluciones tecnológicas in
       <td>Hola, Soy Erick Leonardo Palomino Fiestas, un estudiante entusiasta de quinto ciclo en Ingeniería de Software. Mi conjunto de habilidades técnicas incluye C++, HTML, CSS, fundamentos de JavaScript y experiencia con bases de datos SQL y MongoDB. Me considero una persona responsable, con sólidas habilidades de comunicación para trabajar en equipo y una perspectiva optimista. También tengo un nivel básico de inglés. </td>
     </tr>
     <tr>
-      <td><img src="images/fotointegrante-javier.jpg" alt="foto-javier" width="500"></td>
-      <td>Javier Sebastian Gonzales Alvarado</td>
-      <td>U202312966</td>
-      <td>Mi nombre es Javier Gonzales, soy estudiante de la carrera Ingeniería de Software. Mi código es U202312966. Tengo conocimientos en los lenguajes C++ y Java. Además me considero una persona responsable y disponible para ayudar a los demás si presentan dificultades. </td>
+      <td><img src="images/kevin-foto.png" alt="foto-kevin" width="500"></td>
+      <td>Kevin ALexander Castañeda Llanos</td>
+      <td>U202318814</td>
+      <td>Mi nombre es Kevin Alexander Castañeda Llanos y soy estudiante de la carrera de ingeniería de software.Me gusta la programación web y el uso de soluciones impulsadas por IA (GenAI, Rag Systems y Agentic AI) usando Python,Java, Next.js, TailwindCSS y typescript</td>
     </tr>
     <tr>
       <td><img src="images/fotointegrante-renzo.jpg" alt="foto-renzo" width="500"></td>
@@ -921,10 +320,17 @@ Facilitar el cuidado de plantas en el hogar mediante soluciones tecnológicas in
       <td>Soy Renzo Sebastian Rivera Ratachi y soy estudiante de la carrera de Ingeniería de Software. Actualmente estoy cursando el 5to ciclo de mi carrera y tengo conocimientos intermedios de HTML, CSS, JavaScript y C++. Me considero una persona responsable y puntual. </td>
     </tr>
     <tr>
-      <td><img src="images/fotointegrante-giovany.jpeg" alt="foto-giovany" width="500"></td>
-      <td>Giovany Smith Torres Apolinario </td>
-      <td>U202311601</td>
-      <td>Estoy cursando el quinto ciclo de mi carrera Ingeniería de Software, soy una persona responsable que le gusta resolver desafíos a la par con el trabajo responsable y en equipo tengo la capacidad de líder y me gusta aprender nuevas cosas dia a dia.</td>
+      <td><img src="images/foto-cr7.jpg" alt="" width="500"></td>
+      <td>Coca Lavado, Carlos Andrés</td>
+      <td>U202312966</td>
+      <td>Mi Nombre es Carlos Andrés Coca, tengo 20 años, actualmente me encuentro cursando el septimo ciclo de la carrera de Ingeniería de Software. Cuento con conocimientos en C++, Python y HTML. y desde muy joven me ha interesado el desarrollo Web. Teniendo en cuenta el gran impacto que presentan a día de hoy las novedosas soluciones presentadas.
+</td>
+    </tr>
+    <tr>
+      <td><img src="images/perfil_Jocelyn.jpg" alt="" width="500"></td>
+      <td>Almerco Rojas, Jocelyn Damaly</td>
+      <td> U20221G068</td>
+      <td>Soy estudiante de Ingeniería de Software. Tengo buen dominio en la elaboración de diagramas en C++ y manejo lenguajes como C++, SQL, CSS, HTML y JavaScript. Además, poseo conocimientos básicos en frameworks como Angular y Vue.js para el desarrollo frontend. Aporto al equipo con habilidades en análisis lógico, documentación técnica y diseño estructurado de software, contribuyendo a mantener la coherencia y calidad del proyecto.</td>
     </tr>
   </tbody>
 </table>
@@ -7148,62 +6554,1015 @@ Duración: 1:44 min
 Enlace en Microsoft Stream: <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a500_upc_edu_pe/EShR7gJEGgJMm4jF_jg-Ni8B0HCTbWFB_yz4i1iLny9aIw?e=bOy90v&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D" target="_blank">upc-pre-202510-1asi0729-4289-biopafi-aboutthe-product-sprint-3</a>
 
 Enlace en Youtube: <a href="https://youtu.be/6dQiL5Xb8GU" target="_blank">upc-pre-202510-1asi0729-4289-biopafi-aboutthe-product-sprint-3</a>
-## Conclusiones
 
-### Conclusiones y recomendaciones
+## Capítulo VI: Product Verification & Validation
 
-*TB1*
----
+### 6.1 Testing Suites & Validation
 
-- Se puede concluir que existe una gran cantidad de personas que no tiene mucha experiencia en el cuidado de plantas, lo cual conlleva a que sus plantas sufran enfermedades o en el peor de los casos se mueran por la falta de cuidado.
+Este apartado detalla el conjunto de pruebas y procesos de verificación diseñados para garantizar la robustez, fiabilidad y correcto funcionamiento del sistema. A través de la implementación de Testing Suites que abarcan desde pruebas unitarias hasta de integración, se valida que cada componente cumpla con los requisitos técnicos y funcionales establecidos, asegurando que el software sea resiliente ante errores y esté listo para su despliegue en un entorno de producción.
 
-- El uso de los repositorios y funcionalidades de GitHub incrementó la eficiencia, calidad y colaboración del equipo en el desarrollo de software. Además, permitió una gestión rigurosa de activos y versiones, asegurando el control del código fuente y la documentación, lo que facilitó el cumplimiento de las expectativas del público objetivo.
+#### 6.1.1 Core Entities Unit Tests
 
-- La planificación y ejecución de entrevistas fueron clave para comprender, comunicar y validar los requisitos y expectativas de los stakeholders. Esto permitió identificar frustraciones, metas, pensamientos y percepciones relacionados con el problema que la solución busca atender, logrando así una mejor satisfacción de sus necesidades.
+Las pruebas unitarias nos permiten evaluar componentes individuales de la aplicación de forma aislada, sin depender de una base de datos real. A continuación, se detallan los tests realizados y el motivo de cada uno:
 
-- Los artefactos de Needfinding resultan esenciales para obtener una aproximación precisa y auténtica al público objetivo.
+Se implementaron pruebas unitarias utilizando Mockito y JUnit 5. El objetivo fue aislar la lógica de negocio en los servicios de comandos. Mediante el uso de *mocks*, se simuló el comportamiento de los repositorios y servicios externos para validar la correcta creación de usuarios, asignación de roles y flujos de autenticación sin depender de la base de datos real.
 
-- El desarrollo de las Style Guidelines contribuyó a mantener la coherencia y la calidad visual del contenido en la plataforma, consolidando una identidad sólida y consistente para la startup.
+<img src="images/TestsImages/UnitTest.png" alt="Unit Test" width="1000">
 
-- La elaboración de los User Stories y del Product Backlog permitió priorizar las funcionalidades de la solución de software, orientando al equipo de desarrollo sobre qué debía ser entregado primero.
+**PlantGuides:**
 
-- La creación de Wireframes sentó bases firmes para el desarrollo de la plataforma interactiva, ya que ayudó a definir los aspectos visuales antes de iniciar la codificación, logrando un producto final más efectivo y atractivo para el usuario.
+**GuideCommandServiceImplTest:**
 
-- El trabajo por sprints es fundamental para avanzar de manera constante y organizada. Definir un límite de user story points evita la sobrecarga de tareas, permitiendo un desarrollo adecuado del Landing Page.
+Test: handleCreateGuideCommandShouldSaveGuideAndReturnGeneratedId:
 
-- El Sprint 1 resultó ser una excelente estrategia para integrar los User Stories priorizados en el primer entregable. Cada integrante del equipo participó activamente en el desarrollo colaborativo del Landing Page en el repositorio, complementado con reuniones de retroalimentación grupal.
+Se realizo para asegurarnos de que, en condiciones normales, la lógica de nuestro sistema es capaz de recibir los datos de una nueva guía (título, autor, tema) y enviarlos correctamente para ser guardados.
+
+<img src="images/tests/plantguides/change.png" alt="screenshot about the product" width="1000">
+
+Simulamos el envío de datos de una guía nueva y confirmamos que el sistema procesa la información sin alterar ninguno de los campos antes de enviarla a guardar.
+
+Test: handleCreateGuideCommandShouldThrowGuideCreationExceptionWhenSaveFails:
+
+Se realizo para garantizar que el sistema sepa cómo reaccionar ante una emergencia. Si la base de datos se desconecta o falla, la aplicación no debe colapsar por completo.
+
+<img src="images/tests/plantguides/2.png" alt="screenshot about the product" width="1000">
+
+Simulamos un escenario de desastre donde el guardado falla intencionalmente. Verificamos que el sistema detecte este fallo y lance una advertencia controlada, en lugar de quedarse congelado.
+
+**GuideQueryServiceImplTest:**
+
+Test: handleGetAllGuidesQueryShouldReturnAllGuides:
+
+Se realizo para validar que el sistema responsable de las búsquedas cumpla con su función de pedir y entregar listas completas de información sin perder datos en el camino.
+
+<img src="images/tests/plantguides/3.png" alt="screenshot about the product" width="1000">
+
+Simulamos que la base de datos tiene una lista de guías guardadas y verificamos que, cuando pedimos "todas las guías", el sistema nos entregue esa misma lista completa y sin modificaciones.
+
+Test: handleGetGuideByIdQueryShouldReturnGuideWhenItExists:
+
+Se realizo para confirmar la precisión del sistema al buscar información específica. Si un usuario quiere ver solo una guía, el sistema debe saber encontrar exactamente esa y no otra.
+
+<img src="images/tests/plantguides/4.png" alt="screenshot about the product" width="1000">
+
+Simulamos la búsqueda de una guía utilizando su número de identificación único (ID). Comprobamos que el sistema busque y devuelva con éxito la información que le corresponde a ese ID específico.
+
+**Profiles:**
+
+**ProfileCommandServiceImplTest:**
+
+Test: handleCreateProfileCommandShouldSaveAndReturnProfile:
+
+Se realizo para comprobar que, al recibir la instrucción de crear un perfil, el sistema procese y guarde correctamente los datos iniciales del usuario.
+
+<img src="images/tests/profiles/unitest/ProfileUnit1.png" alt="screenshot about the product" width="1000">
+
+Simulamos el envío de los datos de un perfil nuevo y confirmamos que el servicio interactúa con la base de datos para persistirlos exitosamente sin alterar la información.
+
+Test: handleUpdateProfileCommandShouldUpdateAndReturnProfileWhenItExists:
+
+Se realizo para garantizar que los perfiles existentes puedan ser modificados de forma segura si el usuario decide cambiar su nombre o actualizar su plan de suscripción.
+
+<img src="images/tests/profiles/unitest/ProfileUnit2.png" alt="screenshot about the product" width="1000">
+
+Simulamos una petición de actualización sobre un perfil ya existente y verificamos que los datos internos del sistema se reemplacen y guarden correctamente.
+
+**ProfileQueryServiceImplTest:**
+
+Test: handleGetProfileByIdQueryShouldReturnProfileWhenItExists:
+
+Se realizo para confirmar que la búsqueda por identificador principal (ID) sea exacta y confiable, asegurando que el sistema pueda mostrar el perfil solicitado.
+
+<img src="images/tests/profiles/unitest/ProfileUnit3.png" alt="screenshot about the product" width="1000">
+
+Simulamos la petición de un perfil específico usando su ID y comprobamos que el sistema busque y devuelva con éxito la información correspondiente.
+
+Test: handleGetAllProfilesQueryShouldReturnAllProfiles:
+
+Se realizo para validar que el sistema responsable de las búsquedas cumpla con su función de entregar listas completas de los perfiles registrados sin perder datos en el camino.
+
+<img src="images/tests/profiles/unitest/ProfileUnit4.png" alt="screenshot about the product" width="1000">
+
+Simulamos que la base de datos contiene varios perfiles guardados y verificamos que, cuando pedimos todos los perfiles, el sistema nos entregue esa misma lista completa.
+
+**Tasks:**
+
+**TaskCommandServiceImplTest:**
+
+Test: handleCreateTaskCommandShouldSaveTaskAndReturnGeneratedId:
+
+Se realizo para demostrar que el sistema es capaz de recibir los datos de un nuevo recordatorio o tarea (como la fecha y acción) y enviarlos correctamente a la base de datos.
+
+<img src="images/tests/Tasks/unitest/TaskUnit1.png" alt="screenshot about the product" width="1000">
+
+Simulamos el envío de una tarea nueva y confirmamos que el servicio procesa la instrucción y la guarda exitosamente a través del repositorio simulado, sin alterar la información original.
+
+Test: handleDeleteTaskCommandShouldDeleteTaskById:
+
+Se realizo para garantizar que el sistema sepa ejecutar de manera segura la orden de eliminar tareas cuando estas ya han sido completadas o no son necesarias.
+
+<img src="images/tests/Tasks/unitest/TaskUnit2.png" alt="screenshot about the product" width="1000">
+
+Simulamos la existencia de tareas guardadas en la base de datos y verificamos que el sistema las recopile en su totalidad y las entregue sin omitir ninguna al solicitar la lista completa.
+
+**TaskQueryServiceImplTest:**
+
+Test: handleGetAllTasksQueryShouldReturnAllTasks:
+
+Se realizo para confirmar que la aplicación pueda listar todas las tareas o recordatorios programados por el usuario de forma íntegra.
+
+<img src="images/tests/Tasks/unitest/TaskUnit3.png" alt="screenshot about the product" width="1000">
+
+Simulamos la existencia de tareas guardadas en la base de datos y verificamos que el sistema las recopile en su totalidad y las entregue sin omitir ninguna al solicitar la lista completa.
+
+Test: handleGetTaskByIdQueryShouldReturnTaskWhenItExists:
+
+Se realizo para asegurar que los usuarios puedan consultar los datos exactos de un recordatorio puntual.
+
+<img src="images/tests/Tasks/unitest/TaskUnit4.png" alt="screenshot about the product" width="1000">
+
+Simulamos la búsqueda de una tarea por su número de ID único y comprobamos que el sistema la encuentre y la devuelva exitosamente.
+
+**PlantProfiles:**
+
+**PlantCommandServiceImplTest:**
+
+Test: handleCreatePlantCommandShouldSavePlantAndReturnGeneratedId:
+
+Se realizo para asegurarnos de que la información técnica de una nueva planta (especie, humedad, fotos) se procese y guarde adecuadamente en el inventario del usuario.
+
+<img src="images/tests/plantprofile/unitest/PlantProfileUnit1.png" alt="screenshot about the product" width="1000">
+
+Simulamos la creación de una planta y verificamos que el sistema reciba la instrucción y envíe los datos al repositorio simulado para su almacenamiento seguro.
+
+**PlantHistoryCommandServiceImplTest:**
+
+Test: handleCreatePlantHistoryCommandShouldSaveHistoryAndReturnGeneratedId:
+
+Se realizo para verificar que los registros históricos de las plantas (como eventos de riego o lecturas de sensores) se guarden exitosamente, permitiendo el seguimiento temporal del cuidado.
+
+<img src="images/tests/plantprofile/unitest/PlantProfileUnit2.png alt="screenshot about the product" width="1000">
+
+Simulamos la llegada de un nuevo dato para el historial y comprobamos que el sistema lo reciba y lo registre asociado a la planta correcta sin alterar la información.
+
+**PlantQueryServiceImplTest:**
+
+Test: handleGetPlantByIdQueryShouldReturnPlantWhenItExists:
+
+Se realizo para confirmar la precisión del sistema al consultar los detalles e información específica de una planta en particular desde el catálogo.
+
+<img src="images/tests/plantprofile/unitest/PlantProfileUnit3.png alt="screenshot about the product" width="1000">
+
+Simulamos la solicitud del estado de una planta mediante su número de identificación (ID) y verificamos que el sistema encuentre y entregue la información solicitada de forma íntegra.
+
+**PlantHistoryQueryServiceImplTest:**
+
+Test: handleGetAllPlantHistoriesByPlantIdQueryShouldReturnHistoriesForPlant:
+
+Se realizo para validar que la aplicación pueda recuperar de manera conjunta todo el historial de eventos que le pertenece a una planta en específico.
+
+<img src="images/tests/plantprofile/unitest/PlantProfileUnit4.png alt="screenshot about the product" width="1000">
+
+Simulamos la consulta del historial vinculada al ID de una planta y verificamos que el sistema busque, liste y devuelva todos los eventos registrados para la misma.
+
+**IAM:**
+
+**RoleCommandServiceImplTest:**
+
+Test: handleSeedRolesCommandShouldSaveMissingRoles:
+
+Se realizo para asegurar que el sistema pueda inicializar y guardar automáticamente los roles de seguridad necesarios (como el rol básico de usuario) si detecta que aún no existen en la base de datos.
+
+<img src="images/tests/IAM/unitest/IAMUnit1.png alt="screenshot about the product" width="1000">
+
+Simulamos el arranque del sistema y verificamos que este detecte la ausencia de roles por defecto, procediendo a crearlos y guardarlos exitosamente sin generar duplicado
+
+**UserCommandServiceImplTest:**
+
+Test: handleSignUpCommandShouldCreateUserAndProfileWhenEmailIsAvailable:
+
+Se realizo para asegurarnos de que la lógica de registro procese credenciales nuevas de forma segura y se comunique correctamente con el módulo de perfiles para inicializar la cuenta completa del usuario.
+
+<img src="images/tests/IAM/unitest/IAMUnit2.png alt="screenshot about the product" width="1000">
+
+Simulamos el envío de datos de un usuario nuevo y confirmamos que el sistema valide la disponibilidad del correo, encripte la contraseña y registre la cuenta exitosamente.
+
+**RoleQueryServiceImplTest:**
+
+Test: handleGetRoleByNameQueryShouldReturnRoleWhenItExists:
+
+Se realizo para confirmar la precisión del sistema al buscar y recuperar niveles de permiso o roles de seguridad específicos que son requeridos para autorizar acciones dentro de la plataforma.
+
+<img src="images/tests/IAM/unitest/IAMUnit3.png alt="screenshot about the product" width="1000">
+
+Simulamos la búsqueda de un rol de usuario por su nombre y comprobamos que el sistema lo encuentre y lo devuelva correctamente para su uso.
+
+**UserQueryServiceImplTest:**
+
+Test: handleGetUserByIdQueryShouldReturnUserWhenItExists:
+
+Se realizo para asegurar que la aplicación pueda localizar y exponer internamente los datos de seguridad de una cuenta específica mediante su código de identificación único.
+
+<img src="images/tests/IAM/unitest/IAMUnit4.png alt="screenshot about the product" width="1000">
+
+Simulamos la búsqueda de un usuario mediante su ID y verificamos que la aplicación procese la solicitud y retorne los datos exactos de la cuenta.
+
+#### 6.1.2 Core Integration Tests
+
+Las pruebas de integración aseguran que las diferentes piezas de nuestro sistema trabajen juntas correctamente. A continuación, se detallan las pruebas realizadas:
+
+Se implementaron pruebas de integración las cuales se encargan de levantar el contexto de Spring Boot completo y utilizar una base de datos en memoria para validar que todas las capas y se integren de manera correcta. Esto asegura que la configuración de seguridad, la inyección de dependencias y el flujo de registro e inicio de sesión funcionen correctamente en un entorno similar al real.
+
+<img src="images/TestsImages/IntegrationTest.png" alt="Unit Test" width="1000">
+
+**PlantGuides:**
+
+**PlantGuidesIntegrationTest:**
+
+Test: createGuideShouldPersistGuideAndAllowQueryById:
+
+Se realizo para demostrar que el ciclo completo de la información funciona. Para comprobar que funcione en teoría; necesitamos probar que realmente se puede escribir y leer en una base de datos para obtener las guias.
+
+<img src="images/tests/plantguides/5.png" alt="screenshot about the product" width="1000">
+
+En este test, el sistema guarda una guía real en una base de datos temporal de prueba. Inmediatamente después, el mismo sistema busca la guía que acaba de crear utilizando su ID. Esto comprueba que la información viajó a la base de datos, se guardó, y se pudo recuperar intacta.
+
+Test: getAllGuidesShouldReturnAllCreatedGuides:
+
+Se realizo para comprobar que la base de datos puede almacenar múltiples registros a lo largo del tiempo y que nuestro sistema puede recopilarlos todos de manera conjunta cuando se le solicita el catálogo completo.
+
+<img src="images/tests/plantguides/6.png" alt="screenshot about the product" width="1000">
+
+El sistema guarda dos guías diferentes, una seguida de la otra. Luego, ejecuta una consulta para listar absolutamente todo lo que hay guardado y verifica que el resultado contenga exactamente esas dos guías que acabamos de registrar.
+
+**Profiles:**
+
+**ProfilesIntegrationTest:**
+
+Test: createProfileShouldPersistProfileAndAllowQueryById:
+
+Este test se realizó para demostrar que el ciclo de vida inicial de un perfil de usuario funciona correctamente. Necesitamos comprobar que, al momento de que un usuario ingresa sus datos, estos se guardan realmente en la base de datos y pueden ser consultados posteriormente para mostrar su perfil en la aplicación.
+
+<img src="images/tests/profiles/Profiles4.png" alt="screenshot about the product" width="1000">
+
+COn ello confirmamos que el sistema guarda un perfil nuevo. Inmediatamente después, el mismo sistema busca este perfil utilizando el ID que se acaba de generar. Esto comprueba que la información viajó a la base de datos, se almacenó con un estado inicial, y se pudo recuperar intacta.
+
+Test: updateProfileShouldModifyPersistedProfile:
+
+Se realizo para comprobar que los usuarios pueden modificar la información de su perfil con éxito, para asi garantizar que los cambios importantes como actualizar un nombre o mejorar el plan de suscripción se vean reflejados correctamente en el sistema sin alterar la identidad del usuario.
+
+<img src="images/tests/profiles/Profiles5.png" alt="screenshot about the product" width="1000">
+
+Con ello, confirmamos que el sistema primero guarda un perfil con información básica. Seguido, envía una orden para actualizar esos datos por unos nuevos. Y finalmente, recupera el perfil y verifica que la información mostrada sea la actualizada, comprobando que los cambios se aplicaron sobre el registro original sin crear duplicados.
+
+Test: getAllProfilesShouldReturnAllCreatedProfiles:
+
+Se realizo para verificar que la base de datos pueda almacenar múltiples perfiles de usuarios a lo largo del tiempo y que el sistema puede listarlos todos de manera conjunta y correcta cuando sea necesario.
+
+<img src="images/tests/profiles/Profiles6.png" alt="screenshot about the product" width="1000">
+
+Esto confirma que el sistema registra dos perfiles pertenecientes a diferentes usuarios, uno seguido del otro. Luego, ejecuta una consulta para listar absolutamente todos los perfiles guardados y comprueba que el resultado contenga exactamente esos dos perfiles que acabamos de registrar.
+
+**IAM:**
+
+**IamIntegrationTest:**
+
+Test: signUpShouldPersistUserAndAllowQueryByEmailAndId:
+
+Se realizo para demostrar la funcionalidad del flujo de registro de un nuevo usuario. Necesitamos asegurar que, al registrarse, el usuario se guarde en la base de datos con su rol correspondiente y, de manera simultánea, el sistema se comunique exitosamente con el módulo de "Perfiles" para generarle un perfil básico.
+
+<img src="images/tests/IAM/IAM4.png" alt="screenshot about the product" width="1000">
+
+La finalidad de este test, fue demostrar que el sistema simula el registro de un nuevo usuario. Luego, busca a este usuario utilizando tanto su correo electrónico. Adicionalmente, verifica que se le haya asignado el rol por defecto y comprueba que se haya enviado la orden correcta para crear su perfil asociado, confirmando la integración entre diferentes módulos.
+
+Test: signInShouldAuthenticatePersistedUserAndReturnToken:
+
+Se realizo para comprobar que al momento que el usuario inicia sesión se valida correctamente las credenciales y permite el acceso al sistema y que el usuario pueda navegar por la aplicación.
+
+<img src="images/tests/IAM/IAM5.png" alt="screenshot about the product" width="1000">
+
+El sistema primero registra un usuario con su respectiva contraseña. Luego, simula un inicio de sesión utilizando ese mismo correo y contraseña. Finalmente, el test verifica que el sistema reconozca al usuario y no rechace su inicio de sesión, el cual es indispensable para la seguridad del sistema.
+
+Test: updateUserShouldChangeEmailAndAllowQueryByNewEmail:
+
+Se realizo para validar que el sistema permite la actualización del correo electrónico del usuario, para asi garantizar que el sistema reconozca el nuevo correo.
+
+<img src="images/tests/IAM/IAM6.png" alt="screenshot about the product" width="1000">
+
+Con esto comprobamos que el sistema crea un usuario con un correo inicial. Luego, envía una orden para actualizar ese correo por uno nuevo y al finalizar, el sistema se asegura que el reemplazo fue total y seguro.
+
+Test: getAllUsersShouldIncludeUsersCreatedThroughCommands:
+
+Se realizo para comprobar que el sistema es capaz de recuperar una lista completa de todos los usuarios registrados, lo cual es vital para funciones administrativas dentro de la aplicación.
+
+<img src="images/tests/IAM/IAM7.png" alt="screenshot about the product" width="1000">
+
+El sistema registra dos usuarios de prueba distintos, uno tras otro. Luego, ejecuta una consulta general para obtener todos los usuarios del sistema. El test verifica que la lista devuelta contenga, como mínimo, a esos dos usuarios recién creados, validando sus IDs únicos.
+
+**Tasks:**
+
+**TaskIntegrationTests:**
+
+Test: createTask_ShouldReturnCreatedAndPersistInDatabase:
+
+Se realizo para demostrar como se realiza la creación de una nueva tarea. Para ello necesitamos asegurar que, cuando la aplicación envía los datos, el servidor los reciba, los valide y los guarde en la base de datos, respondiendo con éxito.
+
+<img src="images/tests/Tasks/Tasks4.png" alt="screenshot about the product" width="1000">
+
+En este test, el sistema simula ser un cliente que hace una petición enviando la información de una tarea. Luego, verifica dos cosas fundamentales, que la API responda correctamente y que al revisar directamente la base de datos, la tarea se haya registrado de manera real con los datos enviados.
+
+Test: getAllTasks_ShouldReturnTasksList:
+
+Se realizo para validar que la aplicación es capaz de consultar y exponer correctamente la lista de tareas almacenadas, asegurando que la interfaz del usuario siempre pueda obtener el catálogo actualizado de tareas pendientes.
+
+<img src="images/tests/Tasks/Tasks5.png" alt="screenshot about the product" width="1000">
+
+El sistema primero utiliza el propio endpoint de creación para registrar previamente una tarea. Inmediatamente después, simula una petición de lectura para solicitar todas las tareas. El test verifica que la respuesta del servidor sea éxitosa, que el formato devuelto sea una lista válida y que contenga exactamente los datos de la tarea creada en el paso anterior.
+
+**PlantsProfile:**
+
+**PlantProfileIntegrationTests:**
+
+Test: createPlantShouldPersistPlantAndAllowQueryById:
+
+Se realizo para demostrar como se registra una nueva planta asociada a un perfil. Para ello necesitamos validar que, al ingresar la información técnica, esta se almacene de forma permanente y pueda ser recuperada para mostrarse en la aplicación.
+
+<img src="images/tests/plantprofile/PlantProfile4.png" alt="screenshot about the product" width="1000">
+
+En este test, el sistema registra una planta. Inmediatamente después, realiza una búsqueda por el ID generado automáticamente. El test confirma que los datos de nombre y humedad coinciden exactamente con lo registrado, validando la base de datos.
+
+Test: updatePlantShouldModifyPersistedPlant:
+
+Se realizo para asegurar que los usuarios puedan actualizar la información de sus plantas en cualquier momento, como cambiar el nombre personalizado o ajustar los parámetros de humedad si el ambiente cambia.
+
+<img src="images/tests/plantprofile/PlantProfile5.png" alt="screenshot about the product" width="1000">
+
+El sistema primero guarda una planta con datos iniciales. Luego, envía un comando para actualizar esos datos. El test verifica que la base de datos devuelva la entidad con los datos modificados correctamente sobre el mismo registro.
+
+Test: createPlantHistoryShouldPersistEntryAndAllowQueryByPlantId:
+
+Se realizo para validar el flujo de datos del historial técnico de la planta. Necesitamos comprobar que el sistema puede recibir y almacenar registros individuales (como lecturas de humedad) vinculándolos correctamente a una planta específica.
+
+<img src="images/tests/plantprofile/PlantProfile6.png" alt="screenshot about the product" width="1000">
+
+El sistema primero crea el registro de una planta y posteriormente genera un evento en su historial indicando que fue regada. Finalmente, consulta todo el historial vinculado y verifica que el evento se haya guardado con precisión.
+
+#### 6.1.3 Core Behavior-Driven Development
+
+Para garantizar que el sistema cumpla con los flujos de negocio esperados por el usuario final, se implementó Behavior-Driven Development utilizando el framework Karate. Esta herramienta permite realizar pruebas automatizadas a nivel de API escribiendo escenarios en lenguaje natural, lo que facilita su lectura.
+
+<img src="images/TestsImages/KarateJava.jpg" alt="Unit Test" width="1000">
+
+<br>
+<br>
+
+**Codigos Gherkin:**
+
+IAM:
+
+Su función principal es administrar el registro y la autenticación de los usuarios en la plataforma. El módulo valida la creación de nuevas cuentas y otorga acceso al sistema únicamente mediante credenciales válidas (correo electrónico y contraseña). Asimismo, garantiza la seguridad del sistema bloqueando cualquier intento de ingreso no autorizado, ya sea por falta de registro o por el uso de credenciales incorrectas.
+
+<br>
+
+<img src="images/TestsImages/Gherkin/Sign-inGherkin.png" alt="Unit Test" width="1000">
+
+<br>
+
+Plants:
+
+Este módulo permite al usuario administrar su inventario botánico mediante operaciones integrales de creación, lectura, actualización y eliminación de registros. Además, implementa controles de seguridad y privacidad a nivel de base de datos, garantizando que cada usuario únicamente tenga los permisos necesarios para visualizar, modificar o eliminar la información correspondiente a su propio catálogo de plantas.
+
+<br>
+
+<img src="images/TestsImages/Gherkin/PlantsGherkin.png" alt="Unit Test" width="1000">
+
+<br>
+
+Tasks:
+
+Facilita la programación y el seguimiento de actividades de mantenimiento específicas asociadas a cada planta, tales como los ciclos de riego. El sistema permite al usuario registrar nuevas actividades, consultar los estados pendientes y eliminar las tareas completadas. Para mantener la integridad de la información, el módulo valida de forma estricta la propiedad de la planta antes de autorizar cualquier creación o modificación de una tarea.
+
+<br>
+
+<img src="images/TestsImages/Gherkin/TasksGherkin.png" alt="Unit Test" width="1000">
+
+<br>
+
+Wheather:
+
+Proporciona información meteorológica en tiempo real, como la temperatura y la humedad, directamente dentro de la interfaz para optimizar la toma de decisiones sobre el cuidado botánico sin requerir servicios externos. El acceso a las consultas de este servicio está restringido exclusivamente a los usuarios debidamente registrados y autenticados en la plataforma.
+
+<br>
+
+<img src="images/TestsImages/Gherkin/WheatherGherkin.png" alt="Unit Test" width="1000">
 
 
-*TP*
----
-- Además, se corrigieron los errores identificados en el primer entregable, lo que permitió mejorar tanto la estructura como la funcionalidad inicial del proyecto. Estos ajustes se realizaron en base a las observaciones recibidas, lo que reflejó una actitud proactiva del equipo frente a la mejora continua del producto.
+#### 6.1.4 Core System Tests
 
-- Durante el Sprint 2 se logró desarrollar de manera satisfactoria el front-end de la aplicación web, utilizando Angular Material para asegurar una interfaz moderna, accesible y consistente. Esta tecnología permitió integrar componentes reutilizables que mejoraron la experiencia de usuario y optimizaron los tiempos de desarrollo.
+### 6.2 Static Testing and Verification
 
-- Asimismo, se implementó un entorno en la nube con Azure para desplegar la aplicación web, lo que facilitó la visualización remota del proyecto, fortaleciendo su disponibilidad y permitiendo una mayor visibilidad del avance frente a los stakeholders.
+Las pruebas estáticas y la verificación son pilares fundamentales en el ciclo de vida de desarrollo de software (SDLC) del proyecto. A diferencia de las pruebas dinámicas, estas se realizan sin ejecutar el código fuente, permitiendo identificar errores en etapas tempranas, reducir la deuda técnica y asegurar que el equipo siga un estándar de desarrollo unificado.
 
-- Finalmente, se utilizó una Mock API para simular la carga de datos desde la red, lo que permitió validar el funcionamiento dinámico de los componentes desarrollados, asegurando la integración adecuada del front-end con una futura API real. Esto proporcionó una base sólida para continuar con las siguientes etapas del desarrollo.
+El objetivo primordial es garantizar que el código no solo sea funcional, sino también mantenible, seguro y legible. Para ello, se han implementado herramientas de análisis automatizado que evalúan el cumplimiento de reglas predefinidas y detectan vulnerabilidades que podrían pasar desapercibidas en una revisión manual.
+
+#### 6.2.1 Static Code Analysis
+
+Dentro de esta subsección, verificaremos si el código cumple con los estándares de codificación, la identificación de código confuso o ineficiente y la detección de errores potenciales (variables no usadas, posibles nulos).
+
+Dentro de las herramientas utilizadas tenemos:
+
+- Checkstyle: Usado para mejorar la calidad de código, usaremos para el proyecto el estándar de Google Java Style.
+- SonarQube: Se usará para detectar métricas de alto nivel como duplicación de código y vulnerabilidades de seguridad.
+
+#### 6.2.1.1 Coding Standard & Code Conventions
+
+En esta sección detallaremos el uso de Checkstyle con el estándar de Google Java Style.
+
+**Proceso de integración:**
+
+La integración se realizó a través del maven-checkstyle-plugin en el archivo pom.xml. Este plugin está configurado para ejecutarse automáticamente durante la fase de validate del ciclo de vida de Maven, lo que garantiza que cualquier cambio que no cumpla con los estándares detenga la construcción del proyecto
+
+```
+<plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-checkstyle-plugin</artifactId>
+    <version>3.6.0</version>
+    <configuration>
+        <configLocation>checkstyle.xml</configLocation>
+        <consoleOutput>true</consoleOutput>
+        <failsOnError>true</failsOnError>
+        <linkXRef>false</linkXRef>
+    </configuration>
+    <executions>
+        <execution>
+            <id>validate</id>
+            <phase>validate</phase>
+            <goals>
+                <goal>check</goal>
+            </goals>
+        </execution>
+    </executions>
+</plugin>
+```
+
+Dentro de las reglas críticas establecidas en nuestro archivo checkstyle.xml, destacamos:
+
+- Javadoc (Documentación):
+
+    - JavadocMethod: Se exige documentación para todos los métodos public y protected. Es obligatorio incluir los tags @param y @return para asegurar que la API sea comprensible.
+    - JavadocType: Se requiere Javadoc en todas las clases e interfaces públicas, describiendo su responsabilidad dentro del sistema.
+    - JavadocStyle: Valida que los comentarios sigan un formato profesional y gramaticalmente correcto.
+
+- Complejidad de Código:
+
+    - CyclomaticComplexity: Se ha establecido un límite de 10 para la complejidad ciclomática por método. Esto reduce el número de caminos lógicos, facilitando el mantenimiento y las pruebas.
+    - JavaNCSS: Se limita el número de sentencias de código no comentadas a un máximo de 50 por método, promoviendo la creación de funciones pequeñas y modulares.
+
+**Ejecución y Verificación:** 
+
+El equipo puede validar el cumplimiento de estas reglas localmente con el comando:
+
+```
+mvn checkstyle:check
+```
+
+A continuación, se muestra una imágen del Checkstyle con **Build Success**:
+
+<img src="images/checkstyle.jpg" alt="Checkstyle Test" width="1000">
 
 
-*TB2*
----
-- El desarrollo del Sprint 3 permitió consolidar la estructura base del sistema web, con la primera versión del backend RESTful API implementado con Spring Boot.
 
-- La publicación del Landing Page actualizado, ha mejorado la visibilidad del proyecto y su alineación con los objetivos del modelo de negocio. Esto facilita que los stakeholders puedan acceder fácilmente a los avances del producto.
+#### 6.2.1.2 Code Quality & Code Security
 
-- La creación del Video About-The-Product y el Video About-The-Team sirvieron como evidencia audiovisual del proceso de desarrollo, resaltando no solo las funcionalidades implementadas, sino también el compromiso y colaboración efectiva del equipo.
+La calidad y seguridad del código fueron aseguradas mediante herramientas de análisis estático y buenas prácticas de desarrollo. Para ello, se utilizó SonarQube con el objetivo de identificar errores potenciales, vulnerabilidades, problemas de mantenibilidad y deuda técnica dentro del backend desarrollado en Spring Boot. Esto permitió mejorar la estabilidad, seguridad y escalabilidad del proyecto antes de su integración y despliegue.
 
-- Las entrevistas de validación permitieron contrastar nuestras hipótesis de diseño e interacción frente al comportamiento real de los usuarios. Estas sesiones fueron fundamentales para identificar aspectos de mejora en la usabilidad, accesibilidad e interacción general de la solución.
+<img src="images/sonarqubeCrearLocarProject.png" alt="screenshot about the product" width="1000">
 
-- La evaluación heurística aplicada a los flujos de usuario y vistas clave de la aplicación evidenció aspectos que deben ser priorizados en el siguiente sprint, relacionados con la claridad de los botones, el flujo de navegación, y la inclusión de más contenido útil en secciones como Rootbot y guías.
+Se muestra el proceso de creación del proyecto “Plantsync” dentro de SonarQube Community Edition. Durante esta configuración se definieron parámetros iniciales como el nombre del proyecto, la clave identificadora (*Project Key*) y la rama principal (*Main Branch Name*). Esta etapa permitió conectar el análisis estático del código con el repositorio del backend para posteriormente ejecutar evaluaciones automáticas de calidad.
 
-*TF*
----
-- Durante el desarrollo del TF1, el equipo demostró habilidades sólidas de comunicación oral al presentar avances semanales tanto al docente como entre compañeros de equipo, adaptando el lenguaje técnico según la audiencia. Las reuniones de planificación, retrospectiva y revisión fueron espacios clave para compartir ideas de forma clara, estructurada y colaborativa, lo que favoreció una ejecución alineada con los objetivos del proyecto.
+<img src="images/sonarqubeInicial.png" alt="screenshot about the product" width="1000">
+
+Se observa el panel de análisis de issues detectados por SonarQube. La herramienta identificó problemas de mantenibilidad asociados principalmente a métodos vacíos y clases utilitarias mal definidas. Cada issue muestra información detallada sobre la severidad, ubicación y recomendación de corrección, facilitando la mejora continua del código fuente.
 
 
-- La documentación técnica elaborada a lo largo del trabajo, incluyendo los diagramas C4, la definición de User Stories y la organización de actividades en Trello y GitHub, evidenció una comunicación escrita precisa y estructurada. El equipo redactó informes comprensibles para personas técnicas y no técnicas, lo cual fue fundamental para transmitir el propósito, progreso y funcionalidades del sistema de forma efectiva.
+<img src="images/sonarqubeProyectoLocal.png" alt="screenshot about the product" width="1000">
 
+Se presenta el dashboard principal del proyecto “Plantsync” luego de ejecutar el análisis de código. En este panel se visualizan métricas generales de calidad como seguridad, confiabilidad, mantenibilidad, cobertura de pruebas y duplicación de código. Asimismo, se observa el estado del *Quality Gate*, indicador que permite validar si el proyecto cumple con los estándares mínimos definidos para continuar con el flujo de integración continua.
+
+<img src="images/sonarqubeIssues.png" alt="screenshot about the product" width="1000">
+
+Se muestra nuevamente el panel de issues, enfocándose en problemas relacionados con clases vacías y estructuras incompletas detectadas automáticamente por SonarQube. Estas observaciones permitieron aplicar correcciones orientadas a mejorar la estructura del backend, reducir deuda técnica y fortalecer las buenas prácticas de desarrollo en Java y Spring Boot.
+
+#### 6.2.2 Reviews
+
+
+## Capítulo VII: DevOps Practices
+
+### 7.1 Continuous Integration
+
+La Integración Continua (CI) en el proyecto PlantSync se ha establecido para automatizar la compilación, las pruebas y la verificación de la calidad del código fuente cada vez que se realizan cambios. Esto garantiza que la rama principal del proyecto se mantenga estable y libre de errores.
+
+#### 7.1.1 Tools and Practices
+
+Para asegurar la calidad del código y la detección temprana de errores en el proyecto, por lo que se implementado un enfoque de Integración Continua (CI). Esta práctica permite que los cambios realizados en el repositorio sean integrados, construidos y evaluados automáticamente mediante la ejecución de pruebas.
+
+Las herramientas principales seleccionadas para este propósito son:
+
+Jenkins: Actúa como el orquestador principal de nuestra CI. Se ha configurado un proyecto de tipo Pipeline ("plantsync") que lee las instrucciones de construcción directamente desde el repositorio, asegurando que el proceso sea reproducible y versionable.
+
+Apache Maven: Utilizado como la herramienta principal de construcción (Build Tool) y gestión de dependencias del backend. Maven se encarga de compilar el código Java, ejecutar las pruebas y empaquetar la aplicación.
+
+JaCoCo (Java Code Coverage): Herramienta integrada como plugin en Maven para medir la cobertura de las pruebas unitarias y asegurar que se cumplan los estándares de calidad definidos por el equipo.
+
+SonarQube: Plataforma de análisis estático de código utilizada para evaluar la calidad, mantenibilidad y seguridad del software. 
+
+Para dar inicio a este proceso, se configuró un servidor local de Jenkins.
+
+<img src="images/tests/jenkins/Menu principal de jenkins.png" alt="screenshot about the product" width="1000">
+
+Posteriormente, se configuró el proyecto seleccionando la opción de Pipeline, lo cual permite definir toda la infraestructura de integración continua como código (Pipeline as Code) a través de un archivo Jenkinsfile.
+
+<img src="images/tests/jenkins/creacion del proyecto en jenkins eligiendo pipeline.png" alt="screenshot about the product" width="1000">
+
+Una vez configurado, el proyecto se integra al dashboard principal, permitiendo al equipo monitorear el historial y el estado de éxito o fallo de los builds.
+
+<img src="images/tests/jenkins/visualizacion del proyecto en el menu principal.png" alt="screenshot about the product" width="1000">
+
+
+#### 7.1.2 Build & Test Suite Pipeline Components
+
+El núcleo de nuestra automatización reside en el Jenkinsfile, el cual define de manera declarativa las etapas (stages) que el código debe superar para considerarse válido. En paralelo, el archivo pom.xml define las reglas estrictas de validación.
+
+Configuración de Cobertura:
+
+Para garantizar la fiabilidad del software, se configuró el plugin de JaCoCo en el archivo pom.xml. Se estableció una regla estricta que exige un mínimo del 80% de cobertura de instrucciones.
+
+<img src="images/tests/jenkins/plugins.png" alt="screenshot about the product" width="1000">
+
+Estructura del Pipeline:
+
+El pipeline está diseñado para ejecutarse en cualquier agente disponible y provisiona automáticamente las herramientas necesarias: MAVEN_3_9_15 y JDK_21.
+
+<img src="images/tests/jenkins/jenkinsfile.png" alt="screenshot about the product" width="1000">
+
+El proceso automatizado se divide en las siguientes etapas secuenciales:
+
+Checkout SCM & Tool Install: Etapas implícitas gestionadas por Jenkins donde se descarga la última versión del código desde el repositorio y se preparan las variables de entorno para Java y Maven.
+
+Compile Project: Se ejecuta el comando mvn clean compile para limpiar construcciones previas y compilar el código fuente. Si hay errores de sintaxis, el pipeline se detiene aquí.
+
+Validate Unit Tests: Esta etapa es crucial para la automatización de las pruebas. Mediante el comando mvn test, Jenkins ejecuta toda la suite de pruebas unitarias del proyecto. No es necesaria la intervención manual; el pipeline valida que la lógica de negocio funcione según lo esperado.
+
+Validate Test Coverage: Se ejecutan los comandos mvn clean verify jacoco:report y mvn jacoco:check. Aquí, el pipeline verifica automáticamente si los tests ejecutados en el paso anterior cumplen con el 80% de cobertura mínima establecida. Si la cobertura es menor, el build falla automáticamente, impidiendo la integración de código no probado.
+
+Package Project: Como etapa final del pipeline, se ejecuta el comando mvn package. Este proceso se encarga de compilar y empaquetar el código fuente junto con sus recursos en un formato ejecutable. Al ejecutar el comando de manera estándar, se asegura que el artefacto final generado sea el resultado de un ciclo de vida de construcción completo, garantizando la integridad y consistencia del entregable antes de su distribución o despliegue.
+
+A continuación, se puede observar la representación visual de estas etapas ejecutándose exitosamente de forma secuencial:
+
+<img src="images/tests/jenkins/stages del buildeo.png" alt="screenshot about the product" width="1000">
+
+Jenkins provee un desglose detallado de cada paso interno (Pipeline Steps), lo que permite a los desarrolladores auditar los argumentos pasados a Maven y el tiempo de ejecución exacto de cada validación.
+
+<img src="images/tests/jenkins/pipeline steps de un build.png" alt="screenshot about the product" width="1000">
+
+Como resultado de la automatización de la etapa Validate Unit Tests, Jenkins recopila los resultados y proporciona un reporte visual.
+
+<img src="images/tests/jenkins/resultados de los tests.png" alt="screenshot about the product" width="1000">
+
+Finalmente, gracias a la naturaleza continua de esta práctica, Jenkins mantiene un historial visual de todas las integraciones. Esto asegura que cualquier regresión o fallo en el código introducido en futuros commits sea detectado inmediatamente, manteniendo el pipeline en verde como indicador de estabilidad.
+
+<img src="images/tests/jenkins/stages de todos los buildeos hechos.png" alt="screenshot about the product" width="1000">
+
+
+### 7.2 Continuous Delivery
+
+#### 7.2.1 Tools and Practices
+
+#### 7.2.2 Stages Deployment Pipeline Components
+
+### 7.3 Continuous deployment
+
+#### 7.3.1 Tools and Practices
+
+En esta sección se describen las herramientas y convenciones adoptadas por el equipo para garantizar un proceso de Continuous Deployment (CD) 
+automatizado, confiable y estandarizado.
+
+#### Herramientas de automatización y Despliegue:
+
+El ecosistema de despliegue se basa en la orquestación de servicios en la nube y herramientas de automatización de ciclo de vida:
+
+- Jenkins: Actúa como el motor principal de integración y despliegue continuo (CI/CD), automatizando la ejecución de pruebas y el flujo de entrega hacia los entornos de producción.  
+
+- Azure App Service: Se utiliza como proveedor de nube para el despliegue del RESTful API (Backend), aprovechando su escalabilidad y compatibilidad con el entorno de ejecución de la solución.  
+
+- Firebase Hosting: Se emplea para el despliegue y distribución del Frontend-Web Application, garantizando baja latencia y alta disponibilidad para el usuario final. 
+
+- Docker & Docker-Compose: Se utilizan para la containerización de los servicios, permitiendo que el entorno de producción sea idéntico al de desarrollo y facilitando el despliegue consistente de la arquitectura de microservicios.  
+
+#### Prácticas de Prueba y Validación
+
+Para asegurar que solo el código de alta calidad llegue a producción, se aplican las siguientes tecnologías en el pipeline:
+
+- JUnit 5 & Mockito: Herramientas base para la ejecución de Core Entities Unit Tests y Core Integration Tests, permitiendo aislar comportamientos y validar la lógica de negocio antes de cada despliegue.  
+- Karate DSL: Utilizado para las pruebas de comportamiento (BDD), asegurando que los flujos de extremo a extremo cumplan con los criterios de aceptación. 
+
+#### Flujos de Trabajo y Control de Versiones
+
+El equipo aplica estándares estrictos de gestión de código fuente para mantener la integridad de la rama de producción:
+
+- GitFlow: Se utiliza como modelo de ramificación, empleando ramas main para el código productivo, develop para la integración de características y ramas feature/ para el desarrollo de nuevas funcionalidades.
+
+- Conventional Commits: Se obliga el uso de prefijos estandarizados en los mensajes de commit (feat, fix, chore, refactor, style) para facilitar la generación automática de registros de cambios y el seguimiento de versiones.
+
+- Semantic Versioning (SemVer): Se aplica la nomenclatura vX.Y.Z para identificar los lanzamientos oficiales en el pipeline de despliegue.
+
+#### Configuración del Entorno
+
+La configuración para el despliegue satisfactorio incluye los siguientes aspectos:  
+
+- Gestión de Variables de Entorno: Configuración de secretos y llaves de conexión a base de datos dentro de las plataformas de Azure y Firebase para proteger información sensible.
+
+- Orquestación con Docker-Compose: Definición de archivos de configuración que describen cómo deben interactuar los contenedores de la API, la base de datos y otros servicios de soporte durante el despliegue.
+
+- Scripts de Despliegue: Uso de comandos automatizados dentro de Jenkins para disparar el build y la posterior publicación en los servicios de hosting seleccionados.
+
+#### 7.3.2 Production Deployment Pipeline Components
+
+En esta sección se detallan los componentes técnicos del pipeline de despliegue hacia el entorno de producción, así como las evidencias de su ejecución exitosa.
+
+Definición de Etapas del Pipeline (Jenkins Pipeline Stages)
+El proceso de despliegue automatizado en Jenkins se divide en las siguientes etapas críticas para asegurar una transición sin errores hacia producción:
+
+- Source Checkout: El pipeline se dispara automáticamente al detectar un nuevo tag de versión o un merge exitoso en la rama main, descargando el código fuente desde GitHub.
+
+- Environment Preparation: Configuración de las variables de entorno y descarga de dependencias necesarias para el entorno de producción.
+
+- Build & Containerization: Se genera el artefacto (JAR para el backend y archivos estáticos para el frontend) y se construye la imagen de Docker utilizando docker-compose.
+
+- Security & Vulnerability Scan: Verificación final de que no existen vulnerabilidades críticas en las imágenes de los contenedores antes de ser publicadas.
+
+- Production Deployment:
+
+  - Backend: Se realiza el empuje (push) de la imagen al registro de Azure y se reinicia el servicio en Azure App Service.
+
+  - Frontend: Se despliegan los archivos estáticos hacia Firebase Hosting utilizando el CLI de Firebase.
+
+
+#### Evidencias de Ejecución
+
+- Evidencias de Ejecución Pipeline en Jenkins: A continuación, se muestra el historial de ejecución donde se observa que todas las etapas (Build, Test, Deploy) finalizaron satisfactoriamente (color verde).
+
+
+- Evidencias de Ejecución de Karate: A continuación, se muestra una ejecución de una prueba de Karate, donde se observa dos escenarios que han pasado correctamente el proceso de QA.
+
+<img src="images/TestsImages/KarateReport.png" alt="Unit Test" width="1000">
+
+### 7.4 Continuous Monitoring
+
+#### 7.4.1 Tools and Practices
+
+#### 7.4.2 Monitoring Pipeline Components
+
+#### 7.4.3 Alerting Pipeline Components
+
+#### 7.4.4 Notification Pipeline Components
+
+## Capítulo VIII: Experiment-Driven Development
+
+### 8.1 Experiment Planning
+
+#### 8.1.1 As-Is Summary
+
+#### 8.1.2 Raw Material: Assumptions, Knowledge Gaps, Ideas, Claims
+
+#### 8.1.3 Experiment-Ready Questions
+
+En esta sección se definen las preguntas de experimento (Experiment-Ready Questions), las cuales son formulaciones precisas y cuantificables derivadas de las suposiciones clave del negocio (5W y 2H). Estas preguntas están diseñadas para ser evaluadas empíricamente mediante pruebas y métricas claras, permitiendo validar el comportamiento de los usuarios y la viabilidad técnica del producto.
+
+A continuación, se presentan las preguntas formuladas en base a cada una de las dimensiones del marco 5W2H:
+
+* **Who (¿Quién?):** ¿Cuál es el género y el rango de edad promedio de los usuarios interesados en usar la plataforma PlantSync para el cuidado de sus plantas?
+* **What (¿Qué?):** ¿Qué tanto mejorará la usabilidad percibida y la retención del usuario cuando se implementen recordatorios automáticos de riego frente a la configuración manual de tareas?
+* **Where (¿Dónde?):** ¿Qué tanto mejora la experiencia del usuario si la aplicación sincroniza las alertas de riego y fertilización con los datos climáticos en tiempo real de su ubicación específica?
+* **When (¿Cuándo?):** ¿Con qué frecuencia y en qué momento del día interactuarán los usuarios con la plataforma tras recibir notificaciones automáticas sobre el cuidado de sus plantas?
+* **Why (¿Por qué?):** ¿Por qué los usuarios elegirían utilizar PlantSync en lugar de buscar información botánica directamente en motores de búsqueda tradicionales o redes sociales?
+* **How (¿Cómo?):** ¿Cómo será el proceso mediante el cual el chatbot inteligente Rootbot asistirá al usuario para registrar y diagnosticar una planta con síntomas de deterioro?
+* **How much (¿Cuánto?):** ¿Cuánto estarían dispuestos a pagar mensualmente los usuarios aficionados por acceder a planes de suscripción premium con soporte de sensores IoT y guías botánicas avanzadas?
+
+Para priorizar estas preguntas, se ha elaborado una matriz de puntuación basada en los criterios de **Confidence (Confianza)**, **Risk (Riesgo)**, **Impact (Impacto)** e **Interest (Interés)**, obteniendo un **Total Score** que define el orden de ejecución de los experimentos:
+
+| Question | Confidence | Risk | Impact | Interest | Total Score |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| ¿Cuál es el género y el rango de edad promedio de los usuarios interesados en usar la plataforma PlantSync para el cuidado de sus plantas? (Who) | 8 | 8 | 9 | 9 | **34** |
+| ¿Qué tanto mejora la experiencia del usuario si la aplicación sincroniza las alertas de riego y fertilización con los datos climáticos en tiempo real de su ubicación específica? (Where) | 8 | 7 | 8 | 9 | **32** |
+| ¿Cuánto estarían dispuestos a pagar mensualmente los usuarios aficionados por acceder a planes de suscripción premium con soporte de sensores IoT y guías botánicas avanzadas? (How much) | 8 | 6 | 8 | 9 | **31** |
+| ¿Qué tanto mejorará la usabilidad percibida y la retención del usuario cuando se implementen recordatorios automáticos de riego frente a la configuración manual de tareas? (What) | 8 | 7 | 7 | 8 | **30** |
+| ¿Por qué los usuarios elegirían utilizar PlantSync en lugar de buscar información botánica directamente en motores de búsqueda tradicionales o redes sociales? (Why) | 8 | 7 | 8 | 7 | **30** |
+| ¿Con qué frecuencia y en qué momento del día interactuarán los usuarios con la plataforma tras recibir notificaciones automáticas sobre el cuidado de sus plantas? (When) | 7 | 6 | 7 | 8 | **28** |
+| ¿Cómo será el proceso mediante el cual el chatbot inteligente Rootbot asistirá al usuario para registrar y diagnosticar una planta con síntomas de deterioro? (How) | 6 | 6 | 9 | 6 | **27** |
+
+#### 8.1.4 Question Backlog
+
+El Question Backlog representa nuestro repositorio ordenado de preguntas de experimento para el desarrollo de PlantSync. Para priorizar estas preguntas, hemos utilizado la escala de Fibonacci (1, 2, 3, 5, 8) para evaluar la criticidad, el nivel de incertidumbre y el riesgo que representa cada suposición para el éxito de la plataforma (donde 8 representa la prioridad más alta y urgente):
+
+| Prioridad (1 / 2 / 3 / 5 / 8) | Pregunta | Métrica Clave |
+| :---: | :--- | :--- |
+| **8** | ¿Cuál es el género y el rango de edad promedio de los usuarios interesados en usar la plataforma PlantSync para el cuidado de sus plantas? (Who) | Distribución demográfica de usuarios registrados (%) |
+| **8** | ¿Qué tanto mejora la experiencia del usuario si la aplicación sincroniza las alertas de riego y fertilización con los datos climáticos en tiempo real de su ubicación específica? (Where) | Tasa de retención semanal / Click-Through Rate (CTR) de alertas |
+| **5** | ¿Cuánto estarían dispuestos a pagar mensualmente los usuarios aficionados por acceder a planes de suscripción premium con soporte de sensores IoT y guías botánicas avanzadas? (How much) | Tasa de conversión a planes de pago (%) |
+| **5** | ¿Qué tanto mejorará la usabilidad percibida y la retención del usuario cuando se implementen recordatorios automáticos de riego frente a la configuración manual de tareas? (What) | Tasa de completitud de tareas diarias / Retention Rate |
+| **5** | ¿Por qué los usuarios elegirían utilizar PlantSync en lugar de buscar información botánica directamente en motores de búsqueda tradicionales o redes sociales? (Why) | Net Promoter Score (NPS) / Tasa de rebote de la plataforma |
+| **3** | ¿Con qué frecuencia y en qué momento del día interactuarán los usuarios con la plataforma tras recibir notificaciones automáticas sobre el cuidado de sus plantas? (When) | Sesiones por día por usuario / Horas de actividad de la sesión |
+| **3** | ¿Cómo será el proceso mediante el cual el chatbot inteligente Rootbot asistirá al usuario para registrar y diagnosticar una planta con síntomas de deterioro? (How) | Tasa de resolución de chatbot (%) / CSAT Score (satisfacción) |
+
+#### 8.1.5 Experiment Cards
+
+A continuación, se presentan las Tarjetas de Experimento (Experiment Cards) diseñadas para validar las suposiciones más críticas y con mayor prioridad en nuestro backlog:
+
+### Tarjeta de Experimento 1: Perfil Demográfico de Adopción (Who)
+| Elemento | Descripción |
+| :--- | :--- |
+| **Question** | ¿Cuál es el género y el rango de edad promedio de los usuarios interesados en usar la plataforma PlantSync para el cuidado de sus plantas? |
+| **Why** | <ul><li>Definir con precisión el perfil demográfico (buyer persona) del usuario de PlantSync.</li><li>Ajustar el tono de comunicación, copy y diseño de la interfaz a los grupos de edad predominantes.</li><li>Identificar si existe una correlación entre el rango de edad y la adopción de tecnologías inteligentes para el hogar.</li></ul> |
+| **What** | <ul><li>Analizar los datos de registro demográfico recopilados en el formulario de registro de la plataforma durante las primeras 3 semanas de lanzamiento.</li><li>Implementar encuestas breves y voluntarias en la aplicación para perfilar a los nuevos usuarios.</li><li>Segmentar el comportamiento de uso (frecuencia de visitas) agrupado por edad y género en las herramientas de analítica.</li></ul> |
+| **Hypothesis** | Se espera que la mayoría de los usuarios interesados pertenezcan a un rango de edad de entre 25 y 45 años, con una distribución equilibrada de géneros, lo que validará que el diseño visual moderno de la plataforma es atractivo para un público joven-adulto urbano. |
+
+<br>
+
+### Tarjeta de Experimento 2: Sincronización Climática de Alertas (Where)
+| Elemento | Descripción |
+| :--- | :--- |
+| **Question** | ¿Qué tanto mejora la experiencia del usuario si la aplicación sincroniza las alertas de riego y fertilización con los datos climáticos en tiempo real de su ubicación específica? |
+| **Why** | <ul><li>Evaluar la viabilidad y el valor de la integración de la API del clima con las notificaciones de cuidado de plantas en PlantSync.</li><li>Medir si los recordatorios inteligentes adaptados al clima reducen el exceso de riego por parte del usuario.</li><li>Identificar si la personalización climática incrementa la retención activa y el engagement semanal en la aplicación.</li></ul> |
+| **What** | <ul><li>Implementar la funcionalidad de sincronización climática en tiempo real con la API de clima y adaptarla al calendario de alertas de los usuarios.</li><li>Habilitar la funcionalidad para un grupo de prueba de 50 usuarios y mantener un grupo de control de 50 usuarios con alertas manuales fijas.</li><li>Recopilar métricas de cumplimiento de riego, porcentaje de salud autopercibida de las plantas y retención semanal.</li><li>Realizar una encuesta de satisfacción y facilidad de uso (CSAT/NPS) tras un periodo de prueba de 2 semanas.</li></ul> |
+| **Hypothesis** | Se espera que la sincronización de alertas con datos climáticos en tiempo real preocupe y proporcione recomendaciones de cuidado más acertadas y contextualizadas, reduciendo los errores de riego por exceso en un 30% y aumentando la confianza de los usuarios en la plataforma. |
+
+<br>
+
+### Tarjeta de Experimento 3: Monetización y Suscripción Premium (How much)
+| Elemento | Descripción |
+| :--- | :--- |
+| **Question** | ¿Cuánto estarían dispuestos a pagar mensualmente los usuarios aficionados por acceder a planes de suscripción premium con soporte de sensores IoT y guías botánicas avanzadas? |
+| **Why** | <ul><li>Validar la viabilidad comercial y la elasticidad del precio de los planes de suscripción de PlantSync.</li><li>Medir el interés real de los usuarios en adquirir el kit físico de sensores IoT en lugar del registro puramente manual.</li><li>Estimar los ingresos proyectados para las fases de escalabilidad del negocio.</li></ul> |
+| **What** | <ul><li>Diseñar una sección en el Landing Page que simule las opciones de suscripción de pago (Básico, Premium y PRO) con pasarela de pago simulada (Stripe Sandbox).</li><li>Lanzar campañas de marketing dirigido para atraer usuarios al Landing Page de precios durante 10 días.</li><li>Medir los clics en el botón "Adquirir Plan Premium/PRO" y la tasa de conversión en las diferentes opciones de precios expuestas.</li><li>Enviar una encuesta a los usuarios interesados para validar el rango de precio ideal y los extras de valor esperados.</li></ul> |
+| **Hypothesis** | Se espera que al menos el 5% de los visitantes interesados del Landing Page haga clic en el botón de suscripción para el plan Premium ($10.99) o PRO ($16.99), lo que validará el interés comercial por las características avanzadas y el kit de sensores IoT. |
+
+<br>
+
+### Tarjeta de Experimento 4: Recordatorios Automáticos de Riego (What)
+| Elemento | Descripción |
+| :--- | :--- |
+| **Question** | ¿Qué tanto mejorará la usabilidad percibida y la retención del usuario cuando se implementen recordatorios automáticos de riego frente a la configuración manual de tareas? |
+| **Why** | <ul><li>Validar si la automatización reduce la carga cognitiva y de esfuerzo del usuario para mantener la aplicación al día.</li><li>Medir el impacto de los recordatorios automáticos en la retención semanal de los usuarios en comparación con la gestión de tareas manuales.</li><li>Identificar puntos de fricción durante la configuración de recordatorios.</li></ul> |
+| **What** | <ul><li>Implementar recordatorios automatizados preconfigurados por especie y habilitarlos para 50 usuarios (Grupo A), dejando a 50 usuarios (Grupo B) con la creación de tareas 100% manual.</li><li>Medir la tasa de apertura de notificaciones por correo electrónico y el porcentaje de tareas marcadas como completadas en el dashboard.</li><li>Monitorear la tasa de retorno de los usuarios (cohortes de retención) en ambas muestras durante 3 semanas.</li><li>Evaluar la facilidad de uso del módulo a través de una prueba System Usability Scale (SUS).</li></ul> |
+| **Hypothesis** | Se espera que los recordatorios automáticos reduzcan a la mitad el tiempo dedicado a registrar tareas y mejoren la retención de los usuarios en un 25% respecto al grupo que realiza la configuración manual. |
+
+<br>
+
+### Tarjeta de Experimento 5: Propuesta de Valor Centralizada (Why)
+| Elemento | Descripción |
+| :--- | :--- |
+| **Question** | ¿Por qué los usuarios elegirían utilizar PlantSync en lugar de buscar información botánica directamente en motores de búsqueda tradicionales o redes sociales? |
+| **Why** | <ul><li>Validar la propuesta de valor diferenciadora de centralizar los perfiles y el historial de las plantas en una aplicación dedicada.</li><li>Comprender los hábitos actuales de búsqueda de información de cuidado de plantas en internet.</li><li>Identificar cuáles son las principales fuentes de insatisfacción en las búsquedas en Google o redes sociales.</li></ul> |
+| **What** | <ul><li>Habilitar una sección de feedback interactivo y encuestas dentro de la aplicación para preguntar a los nuevos usuarios sobre su principal motivo de adopción de la herramienta.</li><li>Realizar entrevistas cualitativas breves a 15 usuarios que hayan completado al menos 5 tareas en su primera semana.</li><li>Medir el Net Promoter Score (NPS) del dashboard centralizado y del catálogo personalizado de plantas de los usuarios.</li></ul> |
+| **Hypothesis** | Se espera que los usuarios elijan PlantSync porque centraliza las necesidades específicas de sus plantas en un solo panel con alertas activas, lo que representaría un ahorro de tiempo y mayor tranquilidad, logrando un NPS superior a 40 puntos. |
+
+<br>
+
+### Tarjeta de Experimento 6: Optimización de Horarios de Notificaciones (When)
+| Elemento | Descripción |
+| :--- | :--- |
+| **Question** | ¿Con qué frecuencia y en qué momento del día interactuarán los usuarios con la plataforma tras recibir notificaciones automáticas sobre el cuidado de sus plantas? |
+| **Why** | <ul><li>Optimizar el horario de envío de notificaciones automáticas de cuidado para maximizar las tasas de apertura y cumplimiento.</li><li>Comprender las rutinas diarias de los usuarios de cara a sus interacciones con las plantas domésticas.</li><li>Reducir el riesgo de saturación o molestia por alertas enviadas en horarios inoportunos.</li></ul> |
+| **What** | <ul><li>Programar el envío de alertas de riego en tres horarios diferentes (mañana: 8:00 AM, tarde: 2:00 PM y noche: 8:00 PM) repartidos equitativamente entre los usuarios activos.</li><li>Registrar las horas de inicio de sesión de los usuarios tras la recepción del recordatorio usando herramientas de analítica y logs de base de datos.</li><li>Medir el tiempo transcurrido (delay) entre el envío de la notificación y el cumplimiento/registro de la tarea por parte del usuario.</li></ul> |
+| **Hypothesis** | Se espera que los usuarios interactúen con mayor frecuencia y registren sus tareas de riego en horarios de mañana (8:00 AM a 10:00 AM) y noche (7:00 PM a 9:00 PM), que corresponden a sus horas de permanencia y rutina doméstica en el hogar. |
+
+<br>
+
+### Tarjeta de Experimento 7: Asistencia Conversacional de Rootbot (How)
+| Elemento | Descripción |
+| :--- | :--- |
+| **Question** | ¿Cómo será el proceso mediante el cual el chatbot inteligente Rootbot asistirá al usuario para registrar y diagnosticar una planta con síntomas de deterioro? |
+| **Why** | <ul><li>Validar si el chatbot botánico impulsado por NLP puede diagnosticar con precisión síntomas comunes ingresados por usuarios novatos.</li><li>Evaluar la facilidad de uso y la tasa de finalización de conversaciones de diagnóstico en comparación con búsquedas manuales de plagas/enfermedades.</li><li>Registrar el nivel de satisfacción de los usuarios principiantes con la empatía y claridad de las respuestas del chatbot.</li></ul> |
+| **What** | <ul><li>Lanzar el módulo conversacional de Rootbot entrenado en base de datos botánica para un grupo piloto de 50 usuarios principiantes con plantas en deterioro.</li><li>Registrar y clasificar las preguntas, palabras clave e imágenes ingresadas por los usuarios durante sus consultas.</li><li>Evaluar el porcentaje de consultas que finalizaron con un diagnóstico exitoso y recomendación práctica.</li><li>Solicitar feedback rápido (estrellas/satisfacción) a los usuarios inmediatamente al finalizar cada sesión de chat.</li></ul> |
+| **Hypothesis** | Se espera que los usuarios que utilicen Rootbot completen un diagnóstico preciso de su planta en menos de 2 minutos, logrando una tasa de satisfacción (CSAT) superior al 85% y una reducción en la frustración por no entender los síntomas de su planta. |
+
+### 8.2 Experiment Design
+
+#### 8.2.1 Hypotheses
+
+
+
+### Hypothesis 1
+
+| **Question** | ¿Cuál es el género y el rango de edad promedio de los usuarios interesados en usar la plataforma PlantSync para el cuidado de sus plantas? |
+|:---|:---|
+| **Belief** | Creemos que la mayoría de los usuarios interesados en PlantSync serán adultos jóvenes de entre 25 y 45 años, con una distribución equilibrada entre géneros, quienes buscan soluciones tecnológicas prácticas para gestionar el cuidado de sus plantas desde el hogar. |
+| **Hypothesis** | Creemos que al analizar el perfil demográfico de los usuarios registrados en PlantSync, se identificará que el rango de edad predominante es de 25 a 45 años con distribución equilibrada de géneros, mediante el análisis de los datos de registro y encuestas voluntarias en la plataforma durante las primeras 3 semanas de lanzamiento, cuando los usuarios completen su perfil al registrarse por primera vez. |
+| **Null Hypothesis** | No existirá diferencia significativa en la distribución de edad o género entre los usuarios registrados en PlantSync y la población general de usuarios de aplicaciones móviles de productividad del hogar, por lo que el perfil demográfico no permitirá identificar un segmento predominante. |
+
+
+### Hypothesis 3
+
+| **Question** | ¿Cuánto estarían dispuestos a pagar mensualmente los usuarios aficionados por acceder a planes de suscripción premium con soporte de sensores IoT y guías botánicas avanzadas? |
+|:---|:---|
+| **Belief** | Creemos que existe un segmento de usuarios aficionados al cuidado de plantas dispuesto a pagar por un plan de suscripción mensual que incluya soporte de sensores IoT y guías botánicas avanzadas, y que el rango de precio entre $10.99 y $16.99 resulta atractivo para captar ese segmento. |
+| **Hypothesis** | Creemos que al menos el 5% de los visitantes interesados del Landing Page elegirán el plan Premium ($10.99) o PRO ($16.99) al interactuar con la sección de precios simulada, mediante una campaña de marketing dirigido y una pasarela de pago simulada (Stripe Sandbox) habilitada durante 10 días, cuando el usuario visualice las características diferenciadas de cada plan y evalúe su disposición real de pago. |
+| **Null Hypothesis** | No habrá diferencia significativa en la tasa de conversión entre los distintos planes de suscripción ofrecidos, indicando que los usuarios no perciben suficiente valor diferencial en las funcionalidades premium para justificar un pago mensual por encima del plan básico. |
+
+### Hypothesis 4
+
+| **Question** | ¿Qué tanto mejorará la usabilidad percibida y la retención del usuario cuando se implementen recordatorios automáticos de riego frente a la configuración manual de tareas? |
+|:---|:---|
+| **Belief** | Creemos que los recordatorios automáticos de riego preconfigurados por especie reducirán la carga cognitiva del usuario y aumentarán tanto la tasa de completitud de tareas como la retención semanal en comparación con el grupo que gestiona sus tareas manualmente. |
+| **Hypothesis** | Creemos que los usuarios que reciban recordatorios automáticos de riego preconfigurados reducirán a la mitad el tiempo dedicado a registrar tareas y mostrarán una mejora del 25% en retención semanal, mediante un experimento A/B de 3 semanas entre 50 usuarios con recordatorios automáticos (Grupo A) y 50 usuarios con configuración manual (Grupo B), evaluado con la escala SUS, cuando los usuarios deban registrar el cumplimiento de sus rutinas de cuidado de plantas dentro de la plataforma. |
+| **Null Hypothesis** | No habrá diferencia significativa en la tasa de retención semanal, el tiempo de registro de tareas ni la usabilidad percibida entre los usuarios que utilizan recordatorios automáticos y aquellos que configuran sus tareas de forma manual. |
+
+### Hypothesis 5
+
+| **Question** | ¿Por qué los usuarios elegirían utilizar PlantSync en lugar de buscar información botánica directamente en motores de búsqueda tradicionales o redes sociales? |
+|:---|:---|
+| **Belief** | Creemos que los usuarios preferirán PlantSync sobre buscadores y redes sociales porque la plataforma centraliza el historial, las alertas y las guías específicas de cada planta en un solo lugar, reduciendo el tiempo y la frustración que genera buscar información dispersa en internet. |
+| **Hypothesis** | Creemos que los usuarios adoptarán PlantSync como herramienta principal de referencia botánica sobre Google o redes sociales, logrando un Net Promoter Score (NPS) superior a 40 puntos, mediante encuestas de adopción dentro de la aplicación, entrevistas cualitativas a 15 usuarios activos y medición del NPS del dashboard centralizado, cuando los usuarios hayan completado al menos 5 tareas de cuidado en su primera semana activa en la plataforma. |
+| **Null Hypothesis** | No habrá diferencia significativa en la preferencia de los usuarios entre PlantSync y los motores de búsqueda tradicionales o redes sociales para obtener información botánica, resultando en un NPS igual o inferior a 40 puntos. |
+
+### Hypothesis 6
+
+| **Question** | ¿Con qué frecuencia y en qué momento del día interactuarán los usuarios con la plataforma tras recibir notificaciones automáticas sobre el cuidado de sus plantas? |
+|:---|:---|
+| **Belief** | Creemos que los usuarios de PlantSync interactuarán con mayor frecuencia con la plataforma en las franjas horarias de mañana (8:00–10:00 AM) y noche (7:00–9:00 PM), que corresponden a los momentos del día en que permanecen en casa y desarrollan sus rutinas domésticas. |
+| **Hypothesis** | Creemos que los usuarios registrarán un mayor índice de apertura de notificaciones y cumplimiento de tareas de cuidado en los horarios de mañana (8:00 AM) y noche (8:00 PM) en comparación con el horario de tarde (2:00 PM), mediante el envío de alertas en tres franjas horarias distintas distribuidas equitativamente entre los usuarios activos y el análisis de logs de sesión y tiempos de respuesta a las notificaciones, cuando el sistema envíe automáticamente los recordatorios de riego programados. |
+| **Null Hypothesis** | No habrá diferencia significativa en la tasa de apertura de notificaciones ni en el tiempo de respuesta al cumplimiento de tareas entre los distintos horarios de envío evaluados, indicando que el momento del día no influye en el comportamiento de interacción del usuario. |
+
+### Hypothesis 7
+
+| **Question** | ¿Cómo será el proceso mediante el cual el chatbot inteligente Rootbot asistirá al usuario para registrar y diagnosticar una planta con síntomas de deterioro? |
+|:---|:---|
+| **Belief** | Creemos que el chatbot Rootbot, entrenado en una base de datos botánica especializada, será capaz de guiar a usuarios novatos a través de un proceso conversacional claro y empático que concluya en un diagnóstico preciso y una recomendación accionable en menos de 2 minutos. |
+| **Hypothesis** | Creemos que los usuarios que utilicen Rootbot para diagnosticar síntomas de deterioro en sus plantas completarán el proceso en menos de 2 minutos con una tasa de satisfacción (CSAT) superior al 85%, mediante la habilitación del módulo conversacional para un grupo piloto de 50 usuarios principiantes y el registro de palabras clave, imágenes y tasas de finalización de cada sesión de diagnóstico, cuando el usuario reporte síntomas visibles de deterioro en alguna de sus plantas registradas en la plataforma. |
+| **Null Hypothesis** | No habrá diferencia significativa en el tiempo de diagnóstico ni en la tasa de satisfacción (CSAT) entre los usuarios que utilicen Rootbot y aquellos que realicen búsquedas manuales de síntomas en motores de búsqueda tradicionales, indicando que el chatbot no representa una mejora perceptible en el proceso de diagnóstico. |
+
+
+#### 8.2.2 Domain Business Metrics
+
+#### 8.2.3 Measures
+
+
+
+Esta sección describe los indicadores del negocio que se someterán al proceso de análisis junto con la fase de experimentación. Las medidas seleccionadas cumplen con las siguientes características: representativas, calculables y proporcionales.
+
+
+
+
+
+
+| Pregunta | ¿Cuál es el género y el rango de edad promedio de los usuarios interesados en usar la plataforma PlantSync para el cuidado de sus plantas? |
+|:---|:---|
+| **Medida** | Distribución porcentual de usuarios registrados segmentados por rango de edad (15–24, 25–34, 35–45, 45+) y género, obtenida del formulario de registro y encuestas voluntarias durante las primeras 3 semanas de lanzamiento. |
+
+
+
+
+
+| Pregunta | ¿Qué tanto mejora la experiencia del usuario si la aplicación sincroniza las alertas de riego y fertilización con los datos climáticos en tiempo real de su ubicación específica? |
+|:---|:---|
+| **Medida** | Tasa de retención semanal y Click-Through Rate (CTR) de alertas de riego, comparada entre el grupo experimental (alertas climáticas sincronizadas) y el grupo de control (alertas manuales fijas) durante un periodo de 2 semanas. |
+
+
+| Pregunta | ¿Cuánto estarían dispuestos a pagar mensualmente los usuarios aficionados por acceder a planes de suscripción premium con soporte de sensores IoT y guías botánicas avanzadas? |
+|:---|:---|
+| **Medida** | Tasa de conversión a planes de pago (%), medida como el porcentaje de visitantes del Landing Page que hacen clic en el botón de suscripción Premium ($10.99) o PRO ($16.99) durante los 10 días de campaña. |
+
+
+
+| Pregunta | ¿Qué tanto mejorará la usabilidad percibida y la retención del usuario cuando se implementen recordatorios automáticos de riego frente a la configuración manual de tareas? |
+|:---|:---|
+| **Medida** | Tasa de completitud de tareas diarias de cuidado (%) y tasa de retención semanal por cohorte, comparadas entre el Grupo A (recordatorios automáticos) y el Grupo B (configuración manual) durante 3 semanas, complementadas con el puntaje SUS de usabilidad. |
+
+
+
+| Pregunta | ¿Por qué los usuarios elegirían utilizar PlantSync en lugar de buscar información botánica directamente en motores de búsqueda tradicionales o redes sociales? |
+|:---|:---|
+| **Medida** | Net Promoter Score (NPS) del dashboard centralizado y tasa de rebote de la plataforma, obtenidos mediante encuestas dentro de la aplicación y entrevistas cualitativas a usuarios que hayan completado al menos 5 tareas en su primera semana activa. |
+
+
+
+| Pregunta | ¿Con qué frecuencia y en qué momento del día interactuarán los usuarios con la plataforma tras recibir notificaciones automáticas sobre el cuidado de sus plantas? |
+|:---|:---|
+| **Medida** | Número de sesiones por día por usuario y tiempo de respuesta (delay) entre el envío de la notificación y el registro de cumplimiento de la tarea, segmentados por franja horaria (8:00 AM, 2:00 PM y 8:00 PM) mediante logs de analítica. |
+
+| Pregunta | ¿Cómo será el proceso mediante el cual el chatbot inteligente Rootbot asistirá al usuario para registrar y diagnosticar una planta con síntomas de deterioro? |
+|:---|:---|
+| **Medida** | Tasa de resolución exitosa de diagnósticos por sesión (%) y puntaje de satisfacción CSAT, registrados automáticamente al finalizar cada conversación del chatbot con el grupo piloto de 50 usuarios principiantes. |
+
+
+
+
+
+
+#### 8.2.4 Conditions
+
+
+
+| Pregunta | ¿Cuál es el género y el rango de edad promedio de los usuarios interesados en usar la plataforma PlantSync para el cuidado de sus plantas? |
+|:---|:---|
+| **Condición Experimental** | El 60% o más de los usuarios registrados pertenece al rango de edad de 25 a 45 años, confirmando que el diseño visual y la propuesta de valor de PlantSync son atractivos para el público joven-adulto urbano. |
+| **Condición de Control** | Menos del 60% de los usuarios registrados pertenece al rango de edad de 25 a 45 años, indicando que el perfil demográfico real no coincide con el buyer persona proyectado y que se requieren ajustes en la estrategia de comunicación y diseño. |
+
+
+| Pregunta | ¿Qué tanto mejora la experiencia del usuario si la aplicación sincroniza las alertas de riego y fertilización con los datos climáticos en tiempo real de su ubicación específica? |
+|:---|:---|
+| **Condición Experimental** | La tasa de retención semanal del grupo con alertas climáticas sincronizadas es al menos un 15% mayor que la del grupo de control, y el CTR de alertas supera el 50%, confirmando que la personalización climática incrementa el engagement y reduce los errores de riego. |
+| **Condición de Control** | La diferencia en retención semanal entre ambos grupos es menor al 15% y el CTR de alertas no supera el 50%, indicando que la sincronización climática no genera un impacto perceptible en el comportamiento del usuario respecto a los recordatorios fijos. |
+
+
+| Pregunta | ¿Cuánto estarían dispuestos a pagar mensualmente los usuarios aficionados por acceder a planes de suscripción premium con soporte de sensores IoT y guías botánicas avanzadas? |
+|:---|:---|
+| **Condición Experimental** | Al menos el 5% de los visitantes del Landing Page hace clic en el botón de suscripción del plan Premium ($10.99) o PRO ($16.99), validando la viabilidad comercial del modelo de monetización y el interés real en las funcionalidades avanzadas. |
+| **Condición de Control** | Menos del 5% de los visitantes del Landing Page interactúa con los botones de suscripción de pago, indicando que el precio o la propuesta de valor de los planes premium no es suficientemente atractiva para el segmento objetivo actual. |
+
+
+| Pregunta | ¿Qué tanto mejorará la usabilidad percibida y la retención del usuario cuando se implementen recordatorios automáticos de riego frente a la configuración manual de tareas? |
+|:---|:---|
+| **Condición Experimental** | El Grupo A (recordatorios automáticos) presenta una tasa de retención semanal al menos 25% superior a la del Grupo B (configuración manual) y un puntaje SUS igual o mayor a 75, confirmando que la automatización reduce la fricción y mejora la experiencia del usuario. |
+| **Condición de Control** | La diferencia de retención semanal entre el Grupo A y el Grupo B es menor al 25% o el puntaje SUS del Grupo A es inferior a 75, indicando que los recordatorios automáticos no generan una ventaja significativa sobre la gestión manual de tareas. |
+
+
+
+| Pregunta | ¿Por qué los usuarios elegirían utilizar PlantSync en lugar de buscar información botánica directamente en motores de búsqueda tradicionales o redes sociales? |
+|:---|:---|
+| **Condición Experimental** | El NPS obtenido del dashboard centralizado es superior a 40 puntos y la tasa de rebote de la plataforma es inferior al 40%, confirmando que PlantSync ofrece una propuesta de valor diferenciada y percibida como superior frente a las búsquedas tradicionales. |
+| **Condición de Control** | El NPS es igual o inferior a 40 puntos o la tasa de rebote supera el 40%, indicando que los usuarios no perciben una ventaja clara en PlantSync respecto a los motores de búsqueda y redes sociales para resolver sus necesidades botánicas. |
+
+
+
+| Pregunta | ¿Con qué frecuencia y en qué momento del día interactuarán los usuarios con la plataforma tras recibir notificaciones automáticas sobre el cuidado de sus plantas? |
+|:---|:---|
+| **Condición Experimental** | Las franjas horarias de mañana (8:00 AM) y noche (8:00 PM) registran una tasa de apertura de notificaciones al menos 20% superior a la franja de tarde (2:00 PM) y un tiempo de respuesta al cumplimiento de tareas inferior a 30 minutos, confirmando que esos horarios son óptimos para el envío de alertas. |
+| **Condición de Control** | La diferencia en tasa de apertura entre las tres franjas horarias es menor al 20% o el tiempo de respuesta supera los 30 minutos en todas las franjas, indicando que el horario de envío no influye significativamente en el comportamiento de interacción del usuario. |
+
+
+
+| Pregunta | ¿Cómo será el proceso mediante el cual el chatbot inteligente Rootbot asistirá al usuario para registrar y diagnosticar una planta con síntomas de deterioro? |
+|:---|:---|
+| **Condición Experimental** | El 80% o más de las sesiones de diagnóstico con Rootbot concluyen exitosamente en menos de 2 minutos y el puntaje CSAT promedio es superior al 85%, confirmando que el chatbot representa una herramienta eficaz y satisfactoria para usuarios novatos. |
+| **Condición de Control** | Menos del 80% de las sesiones concluyen exitosamente en menos de 2 minutos o el puntaje CSAT promedio es igual o inferior al 85%, indicando que el chatbot aún presenta fricciones en el flujo conversacional o limitaciones en su base de conocimiento botánico. |
+
+
+
+#### 8.2.5 Scale Calculations and Decisions
+
+Esta sección describe la determinación de la cantidad de evidencia necesaria para la investigación de las hipótesis planteadas en PlantSync. La escala se basa en la Certeza, entendida como la probabilidad de error aceptable, y la Precisión, que corresponde a la granularidad del cambio a detectar en el comportamiento de los usuarios como la retención, interacción con Rootbot o conversión a planes Premium. La certeza se define mediante el Poder Estadístico, que ayuda a evitar pasar por alto una diferencia valiosa de detectar, garantizando que los resultados de usabilidad y preferencias de suscripción representen un impacto real y accionable para la plataforma.
+
+| Scale Calculation  | Decision | Desfavorable | Aceptable | Ideal | Excelente |
+| :--- | :--- |:--- | :--- | :--- | :--- |
+| Creemos que al analizar el perfil demográfico de los usuarios registrados en PlantSync, se identificará que el rango de edad predominante es de 25 a 45 años con distribución equilibrada de géneros, mediante el análisis de los datos de registro y encuestas voluntarias en la plataforma durante las primeras 3 semanas de lanzamiento, cuando los usuarios completen su perfil al registrarse por primera vez. | Implementar un formulario de registro y encuestas voluntarias en la plataforma que capturen y segmenten el rango de edad y género de los usuarios. | 1% <= x < 30.5% |>= 30.5% | >= 60% | >= 75% |
+| Creemos que al menos el 5% de los visitantes interesados del Landing Page elegirán el plan Premium ($10.99) o PRO ($16.99) al interactuar con la sección de precios simulada, mediante una campaña de marketing dirigido y una pasarela de pago simulada (Stripe Sandbox) habilitada durante 10 días, cuando el usuario visualice las características diferenciadas de cada plan y evalúe su disposición real de pago.| Implementar una pasarela de pago simulada en el Landing Page para registrar y rastrear la tasa de conversión y clics en los botones de suscripción. | 1% <= x < 3% | >= 3% | >= 5% | >= 6.3% |
+| Creemos que los usuarios que reciban recordatorios automáticos de riego preconfigurados reducirán a la mitad el tiempo dedicado a registrar tareas y mostrarán una mejora del 25% en retención semanal, mediante un experimento A/B de 3 semanas entre 50 usuarios con recordatorios automáticos (Grupo A) y 50 usuarios con configuración manual (Grupo B), evaluado con la escala SUS, cuando los usuarios deban registrar el cumplimiento de sus rutinas de cuidado de plantas dentro de la plataforma. | Implementar un experimento A/B comparando un grupo con recordatorios automáticos frente a uno manual, midiendo la diferencia porcentual en la tasa de retención semanal y completitud. | 1% <= x < 13% | >= 13% | >= 25% | >= 31.3% |
+| Creemos que los usuarios adoptarán PlantSync como herramienta principal de referencia botánica sobre Google o redes sociales, logrando un Net Promoter Score (NPS) superior a 40 puntos, mediante encuestas de adopción dentro de la aplicación, entrevistas cualitativas a 15 usuarios activos y medición del NPS del dashboard centralizado, cuando los usuarios hayan completado al menos 5 tareas de cuidado en su primera semana activa en la plataforma.| Implementar encuestas de NPS y entrevistas cualitativas dentro de la aplicación para los usuarios que hayan completado al menos 5 tareas. | 1 <= x < 20.5 | >= 20.5 | >= 40 | >= 50 |
+| Creemos que los usuarios registrarán un mayor índice de apertura de notificaciones y cumplimiento de tareas de cuidado en los horarios de mañana (8:00 AM) y noche (8:00 PM) en comparación con el horario de tarde (2:00 PM), mediante el envío de alertas en tres franjas horarias distintas distribuidas equitativamente entre los usuarios activos y el análisis de logs de sesión y tiempos de respuesta a las notificaciones, cuando el sistema envíe automáticamente los recordatorios de riego programados. | Implementar el envío automatizado de notificaciones distribuidas en tres franjas horarias distintas y contabilizar la tasa de apertura y tiempo de respuesta. | 1% <= x < 10.5% | >= 10.5% | >= 20% | >= 25% |
+| Creemos que los usuarios que utilicen Rootbot para diagnosticar síntomas de deterioro en sus plantas completarán el proceso en menos de 2 minutos con una tasa de satisfacción (CSAT) superior al 85%, mediante la habilitación del módulo conversacional para un grupo piloto de 50 usuarios principiantes y el registro de palabras clave, imágenes y tasas de finalización de cada sesión de diagnóstico, cuando el usuario reporte síntomas visibles de deterioro en alguna de sus plantas registradas en la plataforma. | Implementar el módulo conversacional de Rootbot y contabilizar el porcentaje de sesiones de diagnóstico resueltas exitosamente. | 1% <= x < 40.5% | >= 40.5% | >= 80% | >= 100% |
+
+#### 8.2.6 Methods Selection
+
+Esta sección describe cómo se lleva a cabo la recolección y análisis de la información generada en la investigación. Se expone el principio fundamental de que el método debe ser el *Simplest Useful Thing* (la cosa más simple y útil) para alcanzar el tamaño de muestra y registrar las condiciones necesarias sin generar fricción en el desarrollo tecnológico. Se establece una clara diferencia entre el objeto de investigación (la pregunta o hipótesis) y el método (la técnica elegida). Además, se resalta la norma esencial de no ejecutar simultáneamente dos o más experimentos sobre el mismo tema que puedan exponer a un solo usuario a ambos (aislar las pruebas A/B), junto con la consideración ética de no causar daño.
+
+Para medir los eventos, tasas de conversión en el Landing Page y las interacciones internas, se evaluaron las siguientes herramientas:
+
+| Herramienta | Google Analytics 4  | Mixpanel | Matomo Analytics |
+| :--- | :--- | :--- | :--- |
+| **Precio** | Plan freemium muy completo, cubre todas las necesidades del proyecto sin costos iniciales. | Plan freemium hasta 20 millones de eventos mensuales. Los planes de pago inician en $20/mes. | Plan freemium si se aloja en servidores propios. Versiones Cloud desde $23/mes. |
+| **Capacidad de Análisis** | Excelente para medir tráfico del Landing Page, tasas de rebote, demografía y eventos básicos de conversión. | Análisis exhaustivo de producto. Especializado en análisis de cohortes, retención y embudos de tareas. | Análisis completo con fuerte énfasis en el procesamiento sin muestreo de datos y mapas de calor. |
+| **Facilidad de uso** | Interfaz estandarizada con integración nativa a Firebase para aplicaciones móviles y de fácil despliegue web. | Curva de aprendizaje moderada para configurar la arquitectura de eventos, visualización intuitiva. | Requiere configuración de servidor para su versión gratuita, lo cual añade carga técnica. |
+| **Privacidad** | Utiliza modelado de datos y cookies bajo el ecosistema publicitario de Google. | Enfocado en el rastreo de eventos dentro del producto más que en recolección para publicidad. | Privacidad asegurada bajo las leyes GDPR, CCPA y LGPD, con control total de los datos. |
+
+Habiendo analizado las principales características bajo la filosofía del Simplest Useful Thing, la decisión recae en implementar Google Analytics 4 integrado con Firebase. Esta herramienta cubre de forma nativa e inmediata las métricas demográficas de registro, tasas de conversión en el Landing Page y rebote.
+
+Para las métricas cualitativas , Google Analytics 4 se complementará de la forma más sencilla mediante la integración de Google Forms o formularios web ligeros desplegados a los usuarios tras su primera semana activa, evitando sobrecargar el sistema con plataformas de encuestas de pago complejas y manteniendo la agilidad del ciclo de desarrollo.
+
+
+### 8.3 Experimentation
+
+#### 8.3.1 To-Be User Stories
+
+#### 8.3.2 To-Be Product Backlog
+
+
+## Conclusiones y Recomendaciones
+
+### **TP**
+
+**Conclusiones:**
+- La implementación de un pipeline de CI/CD mediante Jenkins ha optimizado significativamente el ciclo de vida del desarrollo, permitiendo una detección temprana de errores y asegurando que cada incremento de software cumpla con los estándares de calidad definidos antes de su despliegue en entornos de Azure y Firebase.
+- El uso de Karate DSL para las pruebas de integración ha fortalecido la validación de las APIs del sistema, garantizando que la comunicación entre el frontend y el backend sea robusta y que las funcionalidades críticas del producto, como el monitoreo y alertas de plantas, operen correctamente bajo diversos escenarios de uso.
+
+**Recomendaciones:**
+- Se recomienda expandir la cobertura de pruebas de SonarQube integrando reglas personalizadas que aborden vulnerabilidades de seguridad específicas, asegurando no solo la mantenibilidad del código sino también la protección de los datos de los usuarios frente a posibles ataques.
+- Es aconsejable implementar monitoreo en tiempo real sobre el entorno de producción en Azure para recolectar métricas de rendimiento post-despliegue, lo que permitirá identificar cuellos de botella y optimizar la escalabilidad del sistema PlantSync conforme crezca la base de usuarios.
+
+- La planificación y ejecución de pruebas técnicas han sido fundamentales para validar los requisitos y asegurar la calidad del producto. El uso de herramientas de automatización permitió identificar y corregir errores de forma temprana, garantizando una mejor experiencia para el usuario final.
+
+- La integración de procesos de calidad y despliegue continuo ha fortalecido la colaboración del equipo y la confiabilidad de las entregas. Estos estándares técnicos aseguran que PlantSync sea una solución escalable y mantenible a largo plazo.
 
 ## Video about the Team
 
@@ -7244,13 +7603,13 @@ https://www.serpar.gob.pe/noticias/10-cosas-que-debes-aprender-sobre-el-cuidado-
 
 **Repositorio de Github**
 
-+ **Respositorio de la startup:** [Link Repositorio BioPafi](https://github.com/BioPafi-OpenSource)
++ **Respositorio de la startup:** [Link Repositorio BioPafi](https://github.com/BioPafi-DisenoYExperimentos)
 
 + **Repositorio de la landing page:** [Link Repositorio Landing Page](https://github.com/BioPafi-OpenSource/plantSync-LandingPage)
 
 + **Repositorio del frontend:** [Link Repositorio Frontend](https://github.com/BioPafi-OpenSource/PlantSync_Frontend)
 
-+ **Repositorio del backend:** [Link Repositorio Backend](https://github.com/BioPafi-OpenSource/PlantSync_Platform)
++ **Repositorio del backend:** [Link Repositorio Backend](https://github.com/BioPafi-DisenoYExperimentos/Plantsync_Backend)
 
 **Deploy de la aplicación**
 
