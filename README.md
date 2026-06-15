@@ -7227,6 +7227,15 @@ Se muestra nuevamente el panel de issues, enfocándose en problemas relacionados
 
 #### 6.2.2 Reviews
 
+En la presente sección, se nos muestra la revisión exhaustiva del código fuente y la retroalimentación técnica del equipo durante el desarrollo de los Sprints. La finalidad de estas revisiones es garantizar la calidad, seguridad, y legibilidad del código antes de que sea integrado a la rama principal, asimismo evitando que la deuda técnica crezca y asegurando el correcto funcionamiento de las funcionalidades de PlantSync.
+
+**Acciones Realizadas:**
+
+- Pull Requests: Cada nueva funcionalidad o corrección de bugs. Se integró utilizando Pull Requests mediante GitHub. Cada uno de ellos requirió la revisión del equipo antes de ser aprobado.
+
+- Checkstyle: Durante el proceso de revisión, el equipo se aseguró de que el código cumpliera con las convenciones de Clean Code y el formato verificación mediante Checkstyle y SonarQube, corrigiendo variables no utilizadas, duplicidad de código o vulnerabilidades detectadas.
+
+- Validación Funcional: Antes de aprobar los cambios, se revisó que los tests unitarios y pruebas de integración pasaran de manera satisfactoria. Por ello el equipo tuvo la responsabilidad de verificar que la nueva lógica no rompiera flujos anteriores.
 
 ## Capítulo VII: DevOps Practices
 
@@ -7403,9 +7412,55 @@ El proceso de despliegue automatizado en Jenkins se divide en las siguientes eta
 
 ### 8.1 Experiment Planning
 
+En esta sección, se tiene como objetivo principal identificar suposiciones, medir el impacto de nuestras decisiones de diseño y validar las hipótesis del negocio respecto a PlantSync. A través del método Lean UX, buscamos reducir la incertidumbre comprobando si las herramientas implementadas resuelven eficientemente las problemáticas de nuestro segmento objetivo.
+
 #### 8.1.1 As-Is Summary
 
+Actualmente, las personas que cuidan plantas en casa  se enfrentan a un escenario de incertidumbre constante. El usuario nota que su planta se está deteriorando o simplemente desea establecer una rutina de cuidado. Por ello, al no tener experiencia o estar abrumado de tiempo, acude a múltiples fuentes, tratando de autodiagnosticarse o adivinar las rutinas de riego y luz.
+
+El usuario aplica un consejo genérico, como regar con mayor frecuencia, cambiando su rutina basándose en suposiciones. A menudo, se pregunta: “¿Será esto lo que realmente padece mi planta?” o “¿Existirá una manera más fácil y organizada de saber cuándo regar sin adivinar?”. Tras el paso de las semanas, si la planta no mejora o empeora, el usuario se siente frustrado pérdida de tiempo y recursos, y, en muchos casos, abandona el hábito de la jardinería doméstica al sentir que no tiene "buena mano" para las plantas.
+
 #### 8.1.2 Raw Material: Assumptions, Knowledge Gaps, Ideas, Claims
+
+**Assumptions (Suposiciones)**
+
+**Business Outcomes:**
+
+- Mejorar la seguridad y confianza del usuario al brindar un sistema automatizado que reduzca la mortalidad de plantas en un 30%.
+
+- Aumentar o retener la cantidad de usuarios activos en un 10% mediante la interacción continua con los recordatorios.
+
+- Generar ingresos escalables a través de conversiones a planes de suscripción Premium.
+
+**Customer**
+
+- Los clientes se sentirán más tranquilos y menos frustrados al recibir alertas automáticas personalizadas en vez de tener que recordar los cuidados de forma manual.
+
+- Valorarán altamente la capacidad de identificar problemas o enfermedades de manera inmediata usando fotografías.
+
+**Knowledge Gaps (Brechas de Conocimiento)**
+
+- No sabemos con exactitud cuál es el modelo de suscripción que los usuarios están dispuestos a pagar por acceder a herramientas IoT y alertas predictivas por clima.
+
+- No sabemos si los usuarios principiantes entenderán de primera mano el flujo para registrar la especie correcta de su planta o si dependerán 100% de la identificación por foto.
+
+- Desconocemos en qué momentos del día los usuarios prefieren recibir las notificaciones de riego o fertilización para no ignorarlas.
+
+**Ideas**
+
+- Implementar notificaciones "Smart" basadas en la temperatura y clima actual de la zona.
+
+- Incluir el RootBot como una burbuja de acceso rápido en el dashboard para brindar respuestas inmediatas sobre síntomas de las plantas, sin necesidad de navegar por foros externos.
+
+- Desarrollar un sistema de "salud de la planta" visual mediante iconos y gráficas fáciles de interpretar para usuarios sin formación técnica.
+
+**Claims (Afirmaciones/Quejas de los usuarios)**
+
+- "No sé cómo identificar con precisión qué le pasa a mi planta, me frustra buscar en internet y encontrar información contradictoria."
+
+- "Olvido constantemente cuándo fue la última vez que regué mis plantas o si les eché fertilizante."
+
+- "Siento que he perdido dinero y tiempo cuando mis plantas se mueren por no saber cuidarlas."
 
 #### 8.1.3 Experiment-Ready Questions
 
