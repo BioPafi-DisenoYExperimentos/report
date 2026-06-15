@@ -7632,6 +7632,110 @@ A continuación, se presentan las Tarjetas de Experimento (Experiment Cards) dis
 
 #### 8.2.2 Domain Business Metrics
 
+Esta sección define todas las métricas del dominio de negocio que serán utilizadas para evaluar los experimentos de PlantSync. Cada métrica incluye su fórmula de cálculo, técnica de recolección y meta deseada.
+
+
+
+### Metric 1: Distribución Demográfica de Usuarios Registrados
+
+| **Descripción** | Mide la composición porcentual de los usuarios registrados en PlantSync segmentados por rango de edad y género, con el objetivo de validar el perfil del buyer persona proyectado. |
+|:---|:---|
+| **Fórmula** | % Segmento = (Usuarios en segmento / Total de usuarios registrados) × 100 |
+| **Técnica de recolección** | Análisis de los datos del formulario de registro obligatorio de la plataforma, complementado con encuestas voluntarias en la aplicación durante las primeras 3 semanas de lanzamiento. |
+| **Meta deseada** | El 60% o más de los usuarios registrados pertenece al rango de edad de 25 a 45 años, con una distribución de género que no supere el 60/40 entre el género predominante y el resto. |
+
+### Metric 2: Tasa de Retención Semanal
+
+| **Descripción** | Mide el porcentaje de usuarios que regresan y realizan al menos una acción activa dentro de la plataforma en la semana siguiente a su registro o última sesión. |
+|:---|:---|
+| **Fórmula** | Retención Semanal = (Usuarios activos en semana N que también estuvieron activos en semana N-1 / Total de usuarios activos en semana N-1) × 100 |
+| **Técnica de recolección** | Análisis de cohortes semanales mediante logs de sesión de la base de datos y herramientas de analítica de la plataforma. |
+| **Meta deseada** | El grupo experimental con alertas climáticas sincronizadas debe alcanzar una tasa de retención semanal al menos 15% superior a la del grupo de control con alertas manuales. |
+
+### Metric 3: Click-Through Rate (CTR) de Alertas
+
+| **Descripción** | Mide el porcentaje de notificaciones de riego o fertilización enviadas que generaron una interacción activa (apertura y acción) por parte del usuario dentro de la plataforma. |
+|:---|:---|
+| **Fórmula** | CTR de Alertas = (Notificaciones con interacción registrada / Total de notificaciones enviadas) × 100 |
+| **Técnica de recolección** | Registro automático de eventos de apertura y cumplimiento de tarea vinculados a cada notificación enviada, mediante el sistema de analítica de eventos de la plataforma. |
+| **Meta deseada** | El CTR de alertas del grupo experimental debe superar el 50% durante el periodo de prueba de 2 semanas. |
+
+### Metric 4: Tasa de Conversión a Planes de Pago
+
+| **Descripción** | Mide el porcentaje de visitantes únicos del Landing Page que interactúan con el botón de suscripción de alguno de los planes de pago (Premium o PRO) durante el periodo de campaña. |
+|:---|:---|
+| **Fórmula** | Tasa de Conversión = (Visitantes que hacen clic en botón de suscripción de pago / Total de visitantes únicos del Landing Page) × 100 |
+| **Técnica de recolección** | Registro de eventos de clic en los botones de suscripción mediante la pasarela de pago simulada (Stripe Sandbox) y herramientas de analítica web durante los 10 días de campaña. |
+| **Meta deseada** | Al menos el 5% de los visitantes únicos del Landing Page hace clic en el botón de suscripción del plan Premium ($10.99) o PRO ($16.99). |
+
+### Metric 5: Tasa de Completitud de Tareas Diarias
+
+| **Descripción** | Mide el porcentaje de tareas de cuidado programadas (riego, fertilización, poda) que el usuario marca como completadas dentro del día en que fueron asignadas. |
+|:---|:---|
+| **Fórmula** | Completitud Diaria = (Tareas marcadas como completadas en el día asignado / Total de tareas programadas para ese día) × 100 |
+| **Técnica de recolección** | Registro automático del estado de cada tarea (pendiente / completada / vencida) en la base de datos de la plataforma, segmentado por grupo experimental y grupo de control. |
+| **Meta deseada** | El Grupo A (recordatorios automáticos) debe alcanzar una tasa de completitud diaria al menos 25% superior a la del Grupo B (configuración manual) durante las 3 semanas de experimento. |
+
+### Metric 6: Puntaje SUS (System Usability Scale)
+
+| **Descripción** | Mide la usabilidad percibida de la plataforma PlantSync mediante un cuestionario estandarizado de 10 ítems con escala Likert de 5 puntos, arrojando un puntaje de 0 a 100. |
+|:---|:---|
+| **Fórmula** | SUS Score = (Suma de contribuciones de los 10 ítems) × 2.5, donde los ítems impares se calculan como (valor – 1) y los ítems pares como (5 – valor). |
+| **Técnica de recolección** | Aplicación del cuestionario SUS estandarizado de forma voluntaria a los usuarios del Grupo A y Grupo B al finalizar las 3 semanas del experimento de recordatorios automáticos. |
+| **Meta deseada** | El puntaje SUS promedio del Grupo A debe ser igual o superior a 75 puntos, valor que según la escala estándar corresponde a una usabilidad "Buena". |
+
+### Metric 7: Net Promoter Score (NPS)
+
+| **Descripción** | Mide la probabilidad de que los usuarios recomienden PlantSync a otras personas, clasificándolos en Promotores (9–10), Pasivos (7–8) y Detractores (0–6) según su respuesta a la pregunta estándar de NPS. |
+|:---|:---|
+| **Fórmula** | NPS = % Promotores − % Detractores |
+| **Técnica de recolección** | Encuesta de una pregunta integrada en la aplicación, mostrada a los usuarios que hayan completado al menos 5 tareas de cuidado en su primera semana activa, y complementada con entrevistas cualitativas a 15 usuarios seleccionados. |
+| **Meta deseada** | El NPS del dashboard centralizado de PlantSync debe ser superior a 40 puntos, valor considerado "Excelente" en el contexto de aplicaciones de productividad. |
+
+### Metric 8: Tasa de Rebote de la Plataforma
+
+| **Descripción** | Mide el porcentaje de sesiones en las que el usuario abandona la plataforma sin realizar ninguna acción activa más allá de la pantalla de entrada, lo que indica falta de engagement con la propuesta de valor. |
+|:---|:---|
+| **Fórmula** | Tasa de Rebote = (Sesiones con una sola pantalla visitada y sin acción registrada / Total de sesiones iniciadas) × 100 |
+| **Técnica de recolección** | Registro automático de eventos de navegación por pantalla mediante el sistema de analítica de la plataforma, filtrando las sesiones de menos de 10 segundos sin interacción registrada. |
+| **Meta deseada** | La tasa de rebote de la plataforma debe ser inferior al 40% entre los usuarios que hayan completado al menos 5 tareas en su primera semana activa. |
+
+### Metric 9: Sesiones por Día por Usuario
+
+| **Descripción** | Mide el número promedio de veces que un usuario inicia sesión en PlantSync durante un día, como indicador del nivel de engagement diario con la plataforma. |
+|:---|:---|
+| **Fórmula** | Sesiones/Día/Usuario = Total de sesiones registradas en el día / Total de usuarios activos en ese día |
+| **Técnica de recolección** | Registro automático de eventos de inicio y cierre de sesión en los logs de la base de datos, segmentado por franja horaria (8:00 AM, 2:00 PM y 8:00 PM) para el experimento de optimización de notificaciones. |
+| **Meta deseada** | Los usuarios activos deben registrar en promedio al menos 1.5 sesiones por día durante el periodo de experimentación, con mayor concentración en las franjas de mañana y noche. |
+
+### Metric 10: Tiempo de Respuesta a Notificación (Delay)
+
+| **Descripción** | Mide el tiempo transcurrido en minutos entre el momento en que el sistema envía una notificación de cuidado y el momento en que el usuario registra el cumplimiento de la tarea correspondiente dentro de la plataforma. |
+|:---|:---|
+| **Fórmula** | Delay = Timestamp de cumplimiento de tarea − Timestamp de envío de notificación (expresado en minutos) |
+| **Técnica de recolección** | Comparación automática de los timestamps de envío de notificación y de registro de cumplimiento de tarea almacenados en la base de datos, segmentada por franja horaria de envío. |
+| **Meta deseada** | El tiempo de respuesta promedio debe ser inferior a 30 minutos en las franjas horarias de mañana (8:00 AM) y noche (8:00 PM), que se proyectan como las franjas de mayor engagement. |
+
+### Metric 11: Tasa de Resolución Exitosa de Diagnóstico (Rootbot)
+
+| **Descripción** | Mide el porcentaje de sesiones de diagnóstico iniciadas con el chatbot Rootbot que concluyen con un diagnóstico identificado y una recomendación práctica entregada al usuario, sin abandono a mitad del flujo conversacional. |
+|:---|:---|
+| **Fórmula** | Tasa de Resolución = (Sesiones de diagnóstico completadas con resultado / Total de sesiones de diagnóstico iniciadas) × 100 |
+| **Técnica de recolección** | Registro automático del estado final de cada sesión conversacional (completada con diagnóstico / abandonada / sin resultado) en los logs del módulo Rootbot, para el grupo piloto de 50 usuarios principiantes. |
+| **Meta deseada** | El 80% o más de las sesiones de diagnóstico iniciadas debe concluir exitosamente con un diagnóstico y recomendación en menos de 2 minutos. |
+
+### Metric 12: CSAT Score (Customer Satisfaction Score)
+
+| **Descripción** | Mide el nivel de satisfacción inmediata del usuario tras finalizar una sesión de diagnóstico con Rootbot, mediante una escala de valoración rápida de 1 a 5 estrellas presentada al concluir la conversación. |
+|:---|:---|
+| **Fórmula** | CSAT = (Sesiones calificadas con 4 o 5 estrellas / Total de sesiones calificadas) × 100 |
+| **Técnica de recolección** | Widget de valoración de 1 a 5 estrellas mostrado automáticamente al usuario al finalizar cada sesión de diagnóstico con Rootbot, con registro inmediato en la base de datos del módulo conversacional. |
+| **Meta deseada** | El CSAT promedio de las sesiones de Rootbot debe ser superior al 85% de respuestas con 4 o 5 estrellas durante el periodo de prueba piloto. |
+
+
+
+
+
 #### 8.2.3 Measures
 
 
