@@ -7088,6 +7088,83 @@ Una vez configurado, el proyecto se integra al dashboard principal, permitiendo 
 
 <img src="images/tests/jenkins/visualizacion del proyecto en el menu principal.png" alt="screenshot about the product" width="1000">
 
+Checkstyle valida que el código cumpla reglas de estilo y buenas prácticas. En el proyecto se usa el archivo checkstyle.xml.
+
+<img src="images/checkstyle1.png" alt="screenshot about the product" width="1000">
+
+Se implementó Checkstyle para verificar automáticamente que el código fuente cumpla con los estándares de codificación definidos para el proyecto. Entre las reglas validadas se incluyen:
+
+- Detección de imports no utilizados.
+- Convenciones de nombres para clases, métodos y variables.
+- Uso correcto de llaves (`{}`).
+- Bloques vacíos.
+- Una sentencia por línea.
+- Buenas prácticas de mantenibilidad.
+
+La validación se ejecutó mediante el siguiente comando:
+
+```bash
+mvn checkstyle:check
+```
+
+<img src="images/checkstyle2.png" alt="screenshot about the product" width="1000">
+
+Además, se integró SonarQube para analizar la calidad del código, cobertura de pruebas, duplicación, mantenibilidad y seguridad. Estas validaciones permiten verificar que el backend cumple con criterios mínimos de calidad antes de continuar con el despliegue.
+
+Se creó el proyecto Plantsync dentro de SonarQube Community Edition, definiendo el nombre del proyecto. Esta configuración permite identificar el proyecto durante las ejecuciones de análisis y almacenar los resultados históricos de calidad del código.
+
+<img src="images/sonarqube2.png" alt="screenshot about the product" width="1000">
+
+
+SonarQube generó un token de acceso que posteriormente fue utilizado por Maven para autenticar la ejecución del análisis estático del código fuente. 
+
+<img src="images/sonarqube5.png" alt="screenshot about the product" width="1000">
+
+Este token permite que las herramientas externas envíen resultados al servidor SonarQube de manera segura.
+
+<img src="images/sonarqube6.png" alt="screenshot about the product" width="1000">
+
+Se seleccionó la opción de análisis para proyectos Maven, obteniendo el comando necesario para ejecutar el escaneo del proyecto desde la línea de comandos.
+
+<img src="images/sonarqube7.png" alt="screenshot about the product" width="1000">
+
+Durante este proceso se realizaron las siguientes actividades:
+
+Compilación del proyecto.
+Ejecución de pruebas unitarias.
+Generación de métricas de cobertura.
+Inspección de calidad del código.
+Envío de resultados al servidor SonarQube.
+
+El proceso finalizó correctamente mostrando el mensaje:
+
+ANALYSIS SUCCESSFUL
+BUILD SUCCESS
+
+<img src="images/sonarqube8.png" alt="screenshot about the product" width="1000">
+
+Una vez finalizado el análisis, SonarQube generó el panel de resultados del proyecto mostrando los principales indicadores de calidad:
+
+- **Cobertura de pruebas:** 100%.
+- **Duplicación de código:** 0%.
+- **Problemas de mantenibilidad:** 0.
+- **Problemas de confiabilidad:** 0.
+- **Problemas de seguridad:** 0.
+- **Security Hotspots:** 0.
+
+<img src="images/sonarqube9.png" alt="screenshot about the product" width="1000">
+
+
+Asimismo, el proyecto obtuvo la calificación **A** en los siguientes criterios:
+
+- **Security:** A
+- **Reliability:** A
+- **Maintainability:** A
+
+<img src="images/sonarqube1.png" alt="screenshot about the product" width="1000">
+
+Estos resultados evidencian que el código fuente cumple con altos estándares de calidad, presentando una cobertura completa de pruebas, ausencia de código duplicado y sin incidencias relacionadas con seguridad, confiabilidad o mantenibilidad.
+
 
 #### 7.1.2 Build & Test Suite Pipeline Components
 
@@ -7136,9 +7213,103 @@ Finalmente, gracias a la naturaleza continua de esta práctica, Jenkins mantiene
 
 ### 7.2 Continuous Delivery
 
+La estrategia de Continuous Delivery (CD) implementada permite automatizar la construcción, validación y despliegue de la aplicación, garantizando entregas consistentes y reduciendo errores manuales durante el proceso de liberación.
+
 #### 7.2.1 Tools and Practices
 
+| Tool | Purpose |
+|--------|---------|
+| Jenkins | Automation of the CI/CD pipeline. |
+| Docker | Application containerization and environment consistency. |
+| SonarQube | Static code analysis and quality assurance. |
+| Git | Source code version control. |
+| Maven | Build automation and dependency management. |
+
+
+La figura presenta los contenedores Docker utilizados en el pipeline de Continuous Delivery. Jenkins se encarga de la automatización de tareas de integración y despliegue, mientras que SonarQube realiza la evaluación de la calidad del código fuente.
+
+
+<img src="images/docker.png" alt="screenshot about the product" width="1000">
+
 #### 7.2.2 Stages Deployment Pipeline Components
+
+Para la implementación del servidor de integración continua, se construyó una imagen Docker personalizada de Jenkins utilizando el archivo `Dockerfile.jenkins`. Durante este proceso se descargó la imagen base, se incorporaron las dependencias requeridas y se generó la imagen `jenkins-ci-cd:2026.final`, la cual serviría posteriormente para desplegar el contenedor encargado de la automatización del pipeline de Continuous Delivery.
+
+<img src="images/docker1.png" alt="screenshot about the product" width="1000">
+
+Una vez generada la imagen personalizada de Jenkins, se procedió a crear e iniciar el contenedor `jenkins-master` mediante el comando `docker run`. Durante esta configuración se habilitaron los puertos necesarios para el acceso a la interfaz web y la comunicación con agentes remotos, además de asociar un volumen persistente para almacenar la configuración y los datos del servidor. Posteriormente, se verificó el estado del contenedor y se consultaron los registros de ejecución utilizando el comando `docker logs`, con el fin de confirmar el correcto inicio del servicio.
+
+<img src="images/docker2.png" alt="screenshot about the product" width="1000">
+
+Tras la inicialización del servidor Jenkins, el sistema generó automáticamente una contraseña temporal de administrador requerida para completar la configuración inicial de la plataforma.
+
+<img src="images/docker3.png" alt="screenshot about the product" width="1000">
+
+Luego de acceder a Jenkins por primera vez, se procedió a la instalación de los plugins requeridos para soportar las actividades de integración y despliegue continuo. Entre ellos se incluyeron complementos para la gestión de credenciales, integración con Git, ejecución de pipelines, generación de reportes y automatización de tareas, permitiendo extender las funcionalidades del servidor Jenkins de acuerdo con los requerimientos del proyecto.
+
+<img src="images/plugins.png" alt="screenshot about the product" width="1000">
+
+Una vez completada la instalación de los plugins y la configuración inicial, Jenkins quedó listo para su utilización. A partir de este momento fue posible crear proyectos, definir pipelines de integración continua y establecer las conexiones necesarias con las demás herramientas del ecosistema DevOps, como Docker y SonarQube.
+
+<img src="images/jenkins.png" alt="screenshot about the product" width="1000">
+
+Como parte de la configuración del entorno de integración continua, se registraron las herramientas requeridas para la construcción del proyecto desde la sección *Manage Jenkins -> Tools*. En esta etapa se configuró el JDK utilizado para la ejecución de aplicaciones Java y la herramienta Apache Maven para la gestión de dependencias y compilación automática del proyecto. Estas configuraciones permiten que los pipelines ejecuten las tareas de construcción de forma estandarizada y reproducible.
+
+<img src="images/jenkins1.png" alt="screenshot about the product" width="1000">
+
+<img src="images/jenkins2.png" alt="screenshot about the product" width="1000">
+
+Una vez desplegado SonarQube, se accedió a la plataforma mediante las credenciales de administrador para realizar la configuración inicial y habilitar el análisis de calidad del código fuente.
+
+<img src="images/sonar.png" alt="screenshot about the product" width="1000">
+
+Posteriormente, se registró el proyecto dentro de SonarQube, definiendo su nombre y clave de identificación para asociar los futuros análisis de calidad realizados desde Jenkins.
+
+<img src="images/sonar1.png" alt="screenshot about the product" width="1000">
+
+Finalmente, SonarQube generó las credenciales y parámetros necesarios para conectar el proyecto con el pipeline de Jenkins, permitiendo ejecutar análisis automáticos de calidad durante cada compilación.
+
+<img src="images/sonar2.png" alt="screenshot about the product" width="1000">
+
+Para permitir la comunicación segura entre Jenkins y SonarQube, se generó un token de autenticación dentro de SonarQube. Este token sería utilizado posteriormente por Jenkins para ejecutar análisis de calidad sobre el código fuente sin exponer credenciales de usuario.
+
+<img src="images/sonar3.png" alt="screenshot about the product" width="1000">
+
+Una vez generado el token, este fue almacenado en el gestor de credenciales de Jenkins para garantizar una integración segura con SonarQube durante la ejecución de los pipelines.
+
+<img src="images/jenkins4.png" alt="screenshot about the product" width="1000">
+
+Posteriormente, se configuró la conexión entre Jenkins y SonarQube registrando la URL del servidor y las credenciales previamente creadas. Esta configuración permitió que los pipelines enviaran automáticamente los resultados de análisis al servidor SonarQube.
+
+<img src="images/jenkins5.png" alt="screenshot about the product" width="1000">
+
+Con la integración establecida, se creó un nuevo proyecto de tipo Pipeline en Jenkins para automatizar las actividades de compilación, pruebas, análisis de calidad y despliegue de la aplicación.
+
+<img src="images/jenkins6.png" alt="screenshot about the product" width="1000">
+
+<img src="images/jenkins7.png" alt="screenshot about the product" width="1000">
+
+Para notificar a Jenkins sobre los resultados de los análisis de calidad, se configuró un webhook en SonarQube que envía automáticamente la información generada al finalizar cada análisis.
+<img src="images/jenkins8.png" alt="screenshot about the product" width="1000">
+
+Posteriormente, se creó el pipeline asociado al proyecto, el cual sería responsable de ejecutar de forma automatizada las diferentes etapas definidas dentro del proceso de Continuous Delivery.
+
+<img src="images/jenkins9.png" alt="screenshot about the product" width="1000">
+
+A continuación, se configuró el repositorio Git que contiene el código fuente de la aplicación. De esta manera, Jenkins pudo obtener automáticamente los cambios más recientes para iniciar el proceso de integración continua.
+<img src="images/jenkins10.png" alt="screenshot about the product" width="1000">
+
+Tras completar la configuración, se ejecutó el pipeline verificando el correcto funcionamiento de las etapas de compilación, pruebas, análisis de calidad y generación de artefactos definidos para el proyecto.
+
+<img src="images/jenkins11.png" alt="screenshot about the product" width="1000">
+
+Luego de la integración, se verificó el correcto funcionamiento del webhook configurado en SonarQube, confirmando la comunicación exitosa entre ambas plataformas.
+
+<img src="images/jenkins12.png" alt="screenshot about the product" width="1000">
+
+Finalmente, SonarQube presentó los resultados obtenidos tras el análisis del proyecto, incluyendo métricas de calidad, vulnerabilidades, cobertura y estado general del código fuente.
+
+<img src="images/jenkins13.png" alt="screenshot about the product" width="1000">
 
 ### 7.3 Continuous deployment
 
