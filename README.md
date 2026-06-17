@@ -7055,6 +7055,15 @@ Se muestra nuevamente el panel de issues, enfocándose en problemas relacionados
 
 #### 6.2.2 Reviews
 
+En la presente sección, se nos muestra la revisión exhaustiva del código fuente y la retroalimentación técnica del equipo durante el desarrollo de los Sprints. La finalidad de estas revisiones es garantizar la calidad, seguridad, y legibilidad del código antes de que sea integrado a la rama principal, asimismo evitando que la deuda técnica crezca y asegurando el correcto funcionamiento de las funcionalidades de PlantSync.
+
+**Acciones Realizadas:**
+
+- Pull Requests: Cada nueva funcionalidad o corrección de bugs. Se integró utilizando Pull Requests mediante GitHub. Cada uno de ellos requirió la revisión del equipo antes de ser aprobado.
+
+- Checkstyle: Durante el proceso de revisión, el equipo se aseguró de que el código cumpliera con las convenciones de Clean Code y el formato verificación mediante Checkstyle y SonarQube, corrigiendo variables no utilizadas, duplicidad de código o vulnerabilidades detectadas.
+
+- Validación Funcional: Antes de aprobar los cambios, se revisó que los tests unitarios y pruebas de integración pasaran de manera satisfactoria. Por ello el equipo tuvo la responsabilidad de verificar que la nueva lógica no rompiera flujos anteriores.
 
 ## Capítulo VII: DevOps Practices
 
@@ -7402,9 +7411,55 @@ El proceso de despliegue automatizado en Jenkins se divide en las siguientes eta
 
 ### 8.1 Experiment Planning
 
+En esta sección, se tiene como objetivo principal identificar suposiciones, medir el impacto de nuestras decisiones de diseño y validar las hipótesis del negocio respecto a PlantSync. A través del método Lean UX, buscamos reducir la incertidumbre comprobando si las herramientas implementadas resuelven eficientemente las problemáticas de nuestro segmento objetivo.
+
 #### 8.1.1 As-Is Summary
 
+Actualmente, las personas que cuidan plantas en casa  se enfrentan a un escenario de incertidumbre constante. El usuario nota que su planta se está deteriorando o simplemente desea establecer una rutina de cuidado. Por ello, al no tener experiencia o estar abrumado de tiempo, acude a múltiples fuentes, tratando de autodiagnosticarse o adivinar las rutinas de riego y luz.
+
+El usuario aplica un consejo genérico, como regar con mayor frecuencia, cambiando su rutina basándose en suposiciones. A menudo, se pregunta: “¿Será esto lo que realmente padece mi planta?” o “¿Existirá una manera más fácil y organizada de saber cuándo regar sin adivinar?”. Tras el paso de las semanas, si la planta no mejora o empeora, el usuario se siente frustrado pérdida de tiempo y recursos, y, en muchos casos, abandona el hábito de la jardinería doméstica al sentir que no tiene "buena mano" para las plantas.
+
 #### 8.1.2 Raw Material: Assumptions, Knowledge Gaps, Ideas, Claims
+
+**Assumptions (Suposiciones)**
+
+**Business Outcomes:**
+
+- Mejorar la seguridad y confianza del usuario al brindar un sistema automatizado que reduzca la mortalidad de plantas en un 30%.
+
+- Aumentar o retener la cantidad de usuarios activos en un 10% mediante la interacción continua con los recordatorios.
+
+- Generar ingresos escalables a través de conversiones a planes de suscripción Premium.
+
+**Customer**
+
+- Los clientes se sentirán más tranquilos y menos frustrados al recibir alertas automáticas personalizadas en vez de tener que recordar los cuidados de forma manual.
+
+- Valorarán altamente la capacidad de identificar problemas o enfermedades de manera inmediata usando fotografías.
+
+**Knowledge Gaps (Brechas de Conocimiento)**
+
+- No sabemos con exactitud cuál es el modelo de suscripción que los usuarios están dispuestos a pagar por acceder a herramientas IoT y alertas predictivas por clima.
+
+- No sabemos si los usuarios principiantes entenderán de primera mano el flujo para registrar la especie correcta de su planta o si dependerán 100% de la identificación por foto.
+
+- Desconocemos en qué momentos del día los usuarios prefieren recibir las notificaciones de riego o fertilización para no ignorarlas.
+
+**Ideas**
+
+- Implementar notificaciones "Smart" basadas en la temperatura y clima actual de la zona.
+
+- Incluir el RootBot como una burbuja de acceso rápido en el dashboard para brindar respuestas inmediatas sobre síntomas de las plantas, sin necesidad de navegar por foros externos.
+
+- Desarrollar un sistema de "salud de la planta" visual mediante iconos y gráficas fáciles de interpretar para usuarios sin formación técnica.
+
+**Claims (Afirmaciones/Quejas de los usuarios)**
+
+- "No sé cómo identificar con precisión qué le pasa a mi planta, me frustra buscar en internet y encontrar información contradictoria."
+
+- "Olvido constantemente cuándo fue la última vez que regué mis plantas o si les eché fertilizante."
+
+- "Siento que he perdido dinero y tiempo cuando mis plantas se mueren por no saber cuidarlas."
 
 #### 8.1.3 Experiment-Ready Questions
 
@@ -7576,6 +7631,110 @@ A continuación, se presentan las Tarjetas de Experimento (Experiment Cards) dis
 
 #### 8.2.2 Domain Business Metrics
 
+Esta sección define todas las métricas del dominio de negocio que serán utilizadas para evaluar los experimentos de PlantSync. Cada métrica incluye su fórmula de cálculo, técnica de recolección y meta deseada.
+
+
+
+### Metric 1: Distribución Demográfica de Usuarios Registrados
+
+| **Descripción** | Mide la composición porcentual de los usuarios registrados en PlantSync segmentados por rango de edad y género, con el objetivo de validar el perfil del buyer persona proyectado. |
+|:---|:---|
+| **Fórmula** | % Segmento = (Usuarios en segmento / Total de usuarios registrados) × 100 |
+| **Técnica de recolección** | Análisis de los datos del formulario de registro obligatorio de la plataforma, complementado con encuestas voluntarias en la aplicación durante las primeras 3 semanas de lanzamiento. |
+| **Meta deseada** | El 60% o más de los usuarios registrados pertenece al rango de edad de 25 a 45 años, con una distribución de género que no supere el 60/40 entre el género predominante y el resto. |
+
+### Metric 2: Tasa de Retención Semanal
+
+| **Descripción** | Mide el porcentaje de usuarios que regresan y realizan al menos una acción activa dentro de la plataforma en la semana siguiente a su registro o última sesión. |
+|:---|:---|
+| **Fórmula** | Retención Semanal = (Usuarios activos en semana N que también estuvieron activos en semana N-1 / Total de usuarios activos en semana N-1) × 100 |
+| **Técnica de recolección** | Análisis de cohortes semanales mediante logs de sesión de la base de datos y herramientas de analítica de la plataforma. |
+| **Meta deseada** | El grupo experimental con alertas climáticas sincronizadas debe alcanzar una tasa de retención semanal al menos 15% superior a la del grupo de control con alertas manuales. |
+
+### Metric 3: Click-Through Rate (CTR) de Alertas
+
+| **Descripción** | Mide el porcentaje de notificaciones de riego o fertilización enviadas que generaron una interacción activa (apertura y acción) por parte del usuario dentro de la plataforma. |
+|:---|:---|
+| **Fórmula** | CTR de Alertas = (Notificaciones con interacción registrada / Total de notificaciones enviadas) × 100 |
+| **Técnica de recolección** | Registro automático de eventos de apertura y cumplimiento de tarea vinculados a cada notificación enviada, mediante el sistema de analítica de eventos de la plataforma. |
+| **Meta deseada** | El CTR de alertas del grupo experimental debe superar el 50% durante el periodo de prueba de 2 semanas. |
+
+### Metric 4: Tasa de Conversión a Planes de Pago
+
+| **Descripción** | Mide el porcentaje de visitantes únicos del Landing Page que interactúan con el botón de suscripción de alguno de los planes de pago (Premium o PRO) durante el periodo de campaña. |
+|:---|:---|
+| **Fórmula** | Tasa de Conversión = (Visitantes que hacen clic en botón de suscripción de pago / Total de visitantes únicos del Landing Page) × 100 |
+| **Técnica de recolección** | Registro de eventos de clic en los botones de suscripción mediante la pasarela de pago simulada (Stripe Sandbox) y herramientas de analítica web durante los 10 días de campaña. |
+| **Meta deseada** | Al menos el 5% de los visitantes únicos del Landing Page hace clic en el botón de suscripción del plan Premium ($10.99) o PRO ($16.99). |
+
+### Metric 5: Tasa de Completitud de Tareas Diarias
+
+| **Descripción** | Mide el porcentaje de tareas de cuidado programadas (riego, fertilización, poda) que el usuario marca como completadas dentro del día en que fueron asignadas. |
+|:---|:---|
+| **Fórmula** | Completitud Diaria = (Tareas marcadas como completadas en el día asignado / Total de tareas programadas para ese día) × 100 |
+| **Técnica de recolección** | Registro automático del estado de cada tarea (pendiente / completada / vencida) en la base de datos de la plataforma, segmentado por grupo experimental y grupo de control. |
+| **Meta deseada** | El Grupo A (recordatorios automáticos) debe alcanzar una tasa de completitud diaria al menos 25% superior a la del Grupo B (configuración manual) durante las 3 semanas de experimento. |
+
+### Metric 6: Puntaje SUS (System Usability Scale)
+
+| **Descripción** | Mide la usabilidad percibida de la plataforma PlantSync mediante un cuestionario estandarizado de 10 ítems con escala Likert de 5 puntos, arrojando un puntaje de 0 a 100. |
+|:---|:---|
+| **Fórmula** | SUS Score = (Suma de contribuciones de los 10 ítems) × 2.5, donde los ítems impares se calculan como (valor – 1) y los ítems pares como (5 – valor). |
+| **Técnica de recolección** | Aplicación del cuestionario SUS estandarizado de forma voluntaria a los usuarios del Grupo A y Grupo B al finalizar las 3 semanas del experimento de recordatorios automáticos. |
+| **Meta deseada** | El puntaje SUS promedio del Grupo A debe ser igual o superior a 75 puntos, valor que según la escala estándar corresponde a una usabilidad "Buena". |
+
+### Metric 7: Net Promoter Score (NPS)
+
+| **Descripción** | Mide la probabilidad de que los usuarios recomienden PlantSync a otras personas, clasificándolos en Promotores (9–10), Pasivos (7–8) y Detractores (0–6) según su respuesta a la pregunta estándar de NPS. |
+|:---|:---|
+| **Fórmula** | NPS = % Promotores − % Detractores |
+| **Técnica de recolección** | Encuesta de una pregunta integrada en la aplicación, mostrada a los usuarios que hayan completado al menos 5 tareas de cuidado en su primera semana activa, y complementada con entrevistas cualitativas a 15 usuarios seleccionados. |
+| **Meta deseada** | El NPS del dashboard centralizado de PlantSync debe ser superior a 40 puntos, valor considerado "Excelente" en el contexto de aplicaciones de productividad. |
+
+### Metric 8: Tasa de Rebote de la Plataforma
+
+| **Descripción** | Mide el porcentaje de sesiones en las que el usuario abandona la plataforma sin realizar ninguna acción activa más allá de la pantalla de entrada, lo que indica falta de engagement con la propuesta de valor. |
+|:---|:---|
+| **Fórmula** | Tasa de Rebote = (Sesiones con una sola pantalla visitada y sin acción registrada / Total de sesiones iniciadas) × 100 |
+| **Técnica de recolección** | Registro automático de eventos de navegación por pantalla mediante el sistema de analítica de la plataforma, filtrando las sesiones de menos de 10 segundos sin interacción registrada. |
+| **Meta deseada** | La tasa de rebote de la plataforma debe ser inferior al 40% entre los usuarios que hayan completado al menos 5 tareas en su primera semana activa. |
+
+### Metric 9: Sesiones por Día por Usuario
+
+| **Descripción** | Mide el número promedio de veces que un usuario inicia sesión en PlantSync durante un día, como indicador del nivel de engagement diario con la plataforma. |
+|:---|:---|
+| **Fórmula** | Sesiones/Día/Usuario = Total de sesiones registradas en el día / Total de usuarios activos en ese día |
+| **Técnica de recolección** | Registro automático de eventos de inicio y cierre de sesión en los logs de la base de datos, segmentado por franja horaria (8:00 AM, 2:00 PM y 8:00 PM) para el experimento de optimización de notificaciones. |
+| **Meta deseada** | Los usuarios activos deben registrar en promedio al menos 1.5 sesiones por día durante el periodo de experimentación, con mayor concentración en las franjas de mañana y noche. |
+
+### Metric 10: Tiempo de Respuesta a Notificación (Delay)
+
+| **Descripción** | Mide el tiempo transcurrido en minutos entre el momento en que el sistema envía una notificación de cuidado y el momento en que el usuario registra el cumplimiento de la tarea correspondiente dentro de la plataforma. |
+|:---|:---|
+| **Fórmula** | Delay = Timestamp de cumplimiento de tarea − Timestamp de envío de notificación (expresado en minutos) |
+| **Técnica de recolección** | Comparación automática de los timestamps de envío de notificación y de registro de cumplimiento de tarea almacenados en la base de datos, segmentada por franja horaria de envío. |
+| **Meta deseada** | El tiempo de respuesta promedio debe ser inferior a 30 minutos en las franjas horarias de mañana (8:00 AM) y noche (8:00 PM), que se proyectan como las franjas de mayor engagement. |
+
+### Metric 11: Tasa de Resolución Exitosa de Diagnóstico (Rootbot)
+
+| **Descripción** | Mide el porcentaje de sesiones de diagnóstico iniciadas con el chatbot Rootbot que concluyen con un diagnóstico identificado y una recomendación práctica entregada al usuario, sin abandono a mitad del flujo conversacional. |
+|:---|:---|
+| **Fórmula** | Tasa de Resolución = (Sesiones de diagnóstico completadas con resultado / Total de sesiones de diagnóstico iniciadas) × 100 |
+| **Técnica de recolección** | Registro automático del estado final de cada sesión conversacional (completada con diagnóstico / abandonada / sin resultado) en los logs del módulo Rootbot, para el grupo piloto de 50 usuarios principiantes. |
+| **Meta deseada** | El 80% o más de las sesiones de diagnóstico iniciadas debe concluir exitosamente con un diagnóstico y recomendación en menos de 2 minutos. |
+
+### Metric 12: CSAT Score (Customer Satisfaction Score)
+
+| **Descripción** | Mide el nivel de satisfacción inmediata del usuario tras finalizar una sesión de diagnóstico con Rootbot, mediante una escala de valoración rápida de 1 a 5 estrellas presentada al concluir la conversación. |
+|:---|:---|
+| **Fórmula** | CSAT = (Sesiones calificadas con 4 o 5 estrellas / Total de sesiones calificadas) × 100 |
+| **Técnica de recolección** | Widget de valoración de 1 a 5 estrellas mostrado automáticamente al usuario al finalizar cada sesión de diagnóstico con Rootbot, con registro inmediato en la base de datos del módulo conversacional. |
+| **Meta deseada** | El CSAT promedio de las sesiones de Rootbot debe ser superior al 85% de respuestas con 4 o 5 estrellas durante el periodo de prueba piloto. |
+
+
+
+
+
 #### 8.2.3 Measures
 
 
@@ -7727,6 +7886,16 @@ Lighthouse cumple perfectamente con los requerimientos del proyecto al ser una h
 - La planificación y ejecución de pruebas técnicas han sido fundamentales para validar los requisitos y asegurar la calidad del producto. El uso de herramientas de automatización permitió identificar y corregir errores de forma temprana, garantizando una mejor experiencia para el usuario final.
 
 - La integración de procesos de calidad y despliegue continuo ha fortalecido la colaboración del equipo y la confiabilidad de las entregas. Estos estándares técnicos aseguran que PlantSync sea una solución escalable y mantenible a largo plazo.
+
+### **TB2**
+
+**Conclusiones:**
+- La adopción de la metodología *Experiment-Driven Development* (Capítulo VIII) mediante el planteamiento de preguntas de experimento y matrices de priorización permite alinear el desarrollo de software directamente con los objetivos de negocio y el comportamiento real del usuario, mitigando el riesgo de implementar funcionalidades de bajo impacto.
+- La definición de métricas detalladas para experimentos críticos (como la tasa de resolución de Rootbot y el tiempo de respuesta a notificaciones) proporciona una base cuantificable de éxito técnico y de experiencia de usuario, facilitando la toma de decisiones basada en datos empíricos.
+
+**Recomendaciones:**
+- Se recomienda integrar herramientas de analítica digital (como Google Analytics 4 o Mixpanel) y automatizar pruebas de rendimiento sintéticas mediante Lighthouse dentro del flujo continuo para evaluar de forma ágil el impacto de las modificaciones en el frontend y validar las hipótesis del negocio.
+- Es aconsejable establecer un flujo estructurado para el *Question Backlog* que permita revisar e iterar de manera ágil las suposiciones y brechas de conocimiento del producto conforme se recopila feedback de los usuarios en los experimentos en producción.
 
 ## Video about the Team
 
