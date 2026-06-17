@@ -7696,27 +7696,20 @@ Esta sección describe la determinación de la cantidad de evidencia necesaria p
 
 #### 8.2.6 Methods Selection
 
-Esta sección describe cómo se lleva a cabo la recolección y análisis de la información generada en la investigación. Se expone el principio fundamental de que el método debe ser el *Simplest Useful Thing* (la cosa más simple y útil) para alcanzar el tamaño de muestra y registrar las condiciones necesarias sin generar fricción en el desarrollo tecnológico. Se establece una clara diferencia entre el objeto de investigación (la pregunta o hipótesis) y el método (la técnica elegida). Además, se resalta la norma esencial de no ejecutar simultáneamente dos o más experimentos sobre el mismo tema que puedan exponer a un solo usuario a ambos (aislar las pruebas A/B), junto con la consideración ética de no causar daño.
+Esta sección describe cómo se lleva a cabo la recolección y análisis de la información generada en la investigación. Se expone el principio fundamental de que el método debe ser el más simple y útil (*Simplest Useful Thing*) para alcanzar el tamaño de muestra y registrar las condiciones necesarias sin generar fricción en el desarrollo tecnológico. Se establece una clara diferencia entre el objeto de investigación y el método. Además, se resalta la norma esencial de no ejecutar simultáneamente dos o más experimentos sobre el mismo tema que puedan exponer a un solo usuario a ambos (aislar las pruebas A/B), junto con la consideración ética de no causar daño.
 
 Para medir los eventos, tasas de conversión en el Landing Page y las interacciones internas, se evaluaron las siguientes herramientas:
 
-| Herramienta | Google Analytics 4  | Mixpanel | Matomo Analytics |
-| :--- | :--- | :--- | :--- |
-| **Precio** | Plan freemium muy completo, cubre todas las necesidades del proyecto sin costos iniciales. | Plan freemium hasta 20 millones de eventos mensuales. Los planes de pago inician en $20/mes. | Plan freemium si se aloja en servidores propios. Versiones Cloud desde $23/mes. |
-| **Capacidad de Análisis** | Excelente para medir tráfico del Landing Page, tasas de rebote, demografía y eventos básicos de conversión. | Análisis exhaustivo de producto. Especializado en análisis de cohortes, retención y embudos de tareas. | Análisis completo con fuerte énfasis en el procesamiento sin muestreo de datos y mapas de calor. |
-| **Facilidad de uso** | Interfaz estandarizada con integración nativa a Firebase para aplicaciones móviles y de fácil despliegue web. | Curva de aprendizaje moderada para configurar la arquitectura de eventos, visualización intuitiva. | Requiere configuración de servidor para su versión gratuita, lo cual añade carga técnica. |
-| **Privacidad** | Utiliza modelado de datos y cookies bajo el ecosistema publicitario de Google. | Enfocado en el rastreo de eventos dentro del producto más que en recolección para publicidad. | Privacidad asegurada bajo las leyes GDPR, CCPA y LGPD, con control total de los datos. |
+| Herramienta | Google Analytics 4 | Mixpanel | Matomo Analytics | Lighthouse |
+| :--- | :--- | :--- | :--- | :--- |
+| **Precio** | Plan freemium muy completo, cubre todas las necesidades del proyecto sin costos iniciales. | Plan freemium hasta 20 millones de eventos mensuales. Los planes de pago inician en $20/mes. | Plan freemium si se aloja en servidores propios. Versiones Cloud desde $23/mes. | Completamente gratuito, de código abierto y disponible de forma nativa en las herramientas de desarrollo del navegador. |
+| **Capacidad de Análisis** | Excelente para medir tráfico del Landing Page, tasas de rebote, demografía y eventos básicos de conversión. | Análisis exhaustivo de producto. Especializado en análisis de cohortes, retención y embudos de tareas. | Análisis completo con fuerte énfasis en el procesamiento sin muestreo de datos y mapas de calor. | Automatizado para auditorías técnicas del frontend: rendimiento (Core Web Vitals), accesibilidad, buenas prácticas y SEO. |
+| **Facilidad de uso** | Interfaz estandarizada con integración nativa a Firebase para aplicaciones móviles y de fácil despliegue web. | Curva de aprendizaje moderada para configurar la arquitectura de eventos, visualización intuitiva. | Requiere configuración de servidor para su versión gratuita, lo cual añade carga técnica. | Extremadamente sencillo de ejecutar directamente desde Chrome DevTools o PageSpeed Insights, con reportes visuales inmediatos. |
+| **Privacidad** | Utiliza modelado de datos y cookies bajo el ecosistema publicitario de Google. | Enfocado en el rastreo de eventos dentro del producto más que en recolección para publicidad. | Privacidad asegurada bajo las leyes GDPR, CCPA y LGPD, con control total de los datos. | Máxima privacidad. No recolecta ni rastrea datos de usuarios reales; ejecuta pruebas sintéticas de manera local o en servidor. |
 
-Habiendo analizado las principales características bajo la filosofía del Simplest Useful Thing, la decisión recae en implementar Google Analytics 4 integrado con Firebase. Esta herramienta cubre de forma nativa e inmediata las métricas demográficas de registro, tasas de conversión en el Landing Page y rebote.
+Usando las principales características bajo la filosofía del *Simplest Useful Thing*, la mejor decisión recae en implementar Lighthouse como herramienta principal de evaluación. 
 
-Para las métricas cualitativas , Google Analytics 4 se complementará de la forma más sencilla mediante la integración de Google Forms o formularios web ligeros desplegados a los usuarios tras su primera semana activa, evitando sobrecargar el sistema con plataformas de encuestas de pago complejas y manteniendo la agilidad del ciclo de desarrollo.
-
-
-### 8.3 Experimentation
-
-#### 8.3.1 To-Be User Stories
-
-#### 8.3.2 To-Be Product Backlog
+Lighthouse cumple perfectamente con los requerimientos del proyecto al ser una herramienta gratuita, sin integraciones complejas ni carga técnica en el código base. Permitirá auditar de manera automatizada e iterativa el rendimiento de carga, la accesibilidad de la plataforma y el SEO. De esta forma, se asegura la entrega de un producto optimizado y construido bajo las mejores prácticas, manteniendo la agilidad del ciclo de desarrollo y entregando reportes accionables desde las etapas más tempranas de construcción.
 
 
 ## Conclusiones y Recomendaciones
