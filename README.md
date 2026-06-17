@@ -7887,6 +7887,16 @@ Lighthouse cumple perfectamente con los requerimientos del proyecto al ser una h
 
 - La integración de procesos de calidad y despliegue continuo ha fortalecido la colaboración del equipo y la confiabilidad de las entregas. Estos estándares técnicos aseguran que PlantSync sea una solución escalable y mantenible a largo plazo.
 
+### **TB2**
+
+**Conclusiones:**
+- La adopción de la metodología *Experiment-Driven Development* (Capítulo VIII) mediante el planteamiento de preguntas de experimento y matrices de priorización permite alinear el desarrollo de software directamente con los objetivos de negocio y el comportamiento real del usuario, mitigando el riesgo de implementar funcionalidades de bajo impacto.
+- La definición de métricas detalladas para experimentos críticos (como la tasa de resolución de Rootbot y el tiempo de respuesta a notificaciones) proporciona una base cuantificable de éxito técnico y de experiencia de usuario, facilitando la toma de decisiones basada en datos empíricos.
+
+**Recomendaciones:**
+- Se recomienda integrar herramientas de analítica digital (como Google Analytics 4 o Mixpanel) y automatizar pruebas de rendimiento sintéticas mediante Lighthouse dentro del flujo continuo para evaluar de forma ágil el impacto de las modificaciones en el frontend y validar las hipótesis del negocio.
+- Es aconsejable establecer un flujo estructurado para el *Question Backlog* que permita revisar e iterar de manera ágil las suposiciones y brechas de conocimiento del producto conforme se recopila feedback de los usuarios en los experimentos en producción.
+
 ## Video about the Team
 
 El video presenta un resumen del trabajo desarrollado por el equipo, donde cada integrante describe las tareas que llevó a cabo para cumplir con los objetivos del curso. Además, se resalta la importancia de la comunicación oral y escrita como una herramienta clave para expresar ideas y reportar el progreso del proyecto.
