@@ -81,6 +81,7 @@ Link del documento en GitHub: https://github.com/BioPafi-DisenoYExperimentos/rep
 </p>
 
 
+
 ---
 
 ## Contenido
@@ -3156,42 +3157,7 @@ Class Plant
   </tr>
 </table>
 
-Class Climate
-
-<table align="center">
-  <tr>
-    <td><strong>Atribute</strong></td>
-    <td><strong>Type</strong></td>
-    <td><strong>Description</strong></td>
-  </tr>
-  <tr>
-    <td>id</td>
-    <td>uuid</td>
-    <td>Unique identifier of a Climate</td>
-  </tr>
-  <tr>
-    <td>name</td>
-    <td>String</td>
-    <td>Name of a climate</td>
-  </tr>
-  <tr>
-    <td>humidity</td>
-    <td>float</td>
-    <td>Percentage of humidity in the air of a climate</td>
-  </tr>
-  <tr>
-    <td>temperature</td>
-    <td>float</td>
-    <td>Temperature degree in celcius</td>
-  </tr>
-  <tr>
-    <td>sunlightHours</td>
-    <td>float</td>
-    <td>Hours of sunlight of a climate</td>
-  </tr>
-</table>
-
-Class Guide
+Class Guides
 
 <table align="center">
   <tr>
@@ -3216,37 +3182,8 @@ Class Guide
   </tr>
 </table>
 
-Class Recomendation
 
-<table align="center">
-  <tr>
-    <td><strong>Atribute</strong></td>
-    <td><strong>Type</strong></td>
-    <td><strong>Description</strong></td>
-  </tr>
-  <tr>
-    <td>id</td>
-    <td>uuid</td>
-    <td>Unique identifier of an recomendation</td>
-  </tr>
-  <tr>
-    <td>recomendation</td>
-    <td>String</td>
-    <td>Content of the recomendation</td>
-  </tr>
-  <tr>
-    <td>guide</td>
-    <td>Guide</td>
-    <td>Guide included in the recomendation</td>
-  </tr>
-  <tr>
-    <td>climate</td>
-    <td>Climate</td>
-    <td>Suitable climate for the recomendation</td>
-  </tr>
-</table>
-
-Class PlantProfile
+Class Plants
 
 <table align="center">
   <tr>
@@ -3301,35 +3238,6 @@ Class PlantProfile
   </tr>
 </table>
 
-Class Record
-
-<table align="center">
-  <tr>
-    <td><strong>Atribute</strong></td>
-    <td><strong>Type</strong></td>
-    <td><strong>Description</strong></td>
-  </tr>
-  <tr>
-    <td>id</td>
-    <td>uuid</td>
-    <td>Unique identifier of a record</td>
-  </tr>
-  <tr>
-    <td>title</td>
-    <td>String</td>
-    <td>Title of a record</td>
-  </tr>
-  <tr>
-    <td>date</td>
-    <td>Date</td>
-    <td>Creation date of a record</td>
-  </tr>
-  <tr>
-    <td>description</td>
-    <td>String</td>
-    <td>Description of the activities in a record</td>
-  </tr>
-</table>
 
 Class Task
 
@@ -3366,93 +3274,13 @@ Class Task
   </tr>
 </table>
 
-Class Reminder
-
-<table align="center">
-  <tr>
-    <td><strong>Atribute</strong></td>
-    <td><strong>Type</strong></td>
-    <td><strong>Description</strong></td>
-  </tr>
-  <tr>
-    <td>id</td>
-    <td>uuid</td>
-    <td>Unique identifier of an reminder</td>
-  </tr>
-  <tr>
-    <td>date</td>
-    <td>Date</td>
-    <td>Date of a reminder</td>
-  </tr>
-  <tr>
-    <td>title</td>
-    <td>String</td>
-    <td>Title of a reminder</td>
-  </tr>
-  <tr>
-    <td>description</td>
-    <td>String</td>
-    <td>Description of a reminder</td>
-  </tr>
-</table>
-
-Class ManualAssistedMonitoring
-
-<table align="center">
-  <tr>
-    <td><strong>Atribute</strong></td>
-    <td><strong>Type</strong></td>
-    <td><strong>Description</strong></td>
-  </tr>
-  <tr>
-    <td>id</td>
-    <td>uuid</td>
-    <td>Unique identifier of a ManualAssistedMonitoring</td>
-  </tr>
-  <tr>
-    <td>question</td>
-    <td>String</td>
-    <td>Question for the Asistance</td>
-  </tr>
-  <tr>
-    <td>answer</td>
-    <td>String</td>
-    <td>Answer of the question</td>
-  </tr>
-</table>
-
-Class Subscription
-
-<table align="center">
-  <tr>
-    <td><strong>Atribute</strong></td>
-    <td><strong>Type</strong></td>
-    <td><strong>Description</strong></td>
-  </tr>
-  <tr>
-    <td>id</td>
-    <td>uuid</td>
-    <td>Unique identifier of an subscription</td>
-  </tr>
-  <tr>
-    <td>subscriptionType</td>
-    <td>SubscriptionType</td>
-    <td>Type of the subscription</td>
-  </tr>
-  <tr>
-    <td>paymentCard</td>
-    <td>PaymentCard</td>
-    <td>Payment Card associated to the subscription</td>
-  </tr>
-</table>
-
 ### 4.8. Database Design
 
 Se eligió utilizar Vertabelo para modelar el diagrama de base de datos por su facilidad de uso y MySQL como motor de la base de datos por su estabilidad y escalabilidad.
 
 #### 4.8.1. Database Diagram
 
-<img src="images/plantsync-BD.png" alt="plantsync-database-diagram" width="1000">
+<img src="images/database.png" alt="plantsync-database-diagram" width="1000">
 
 ## Capítulo V: Product Implementation, Validation & Deployment
 
@@ -7269,6 +7097,83 @@ Una vez configurado, el proyecto se integra al dashboard principal, permitiendo 
 
 <img src="images/tests/jenkins/visualizacion del proyecto en el menu principal.png" alt="screenshot about the product" width="1000">
 
+Checkstyle valida que el código cumpla reglas de estilo y buenas prácticas. En el proyecto se usa el archivo checkstyle.xml.
+
+<img src="images/checkstyle1.png" alt="screenshot about the product" width="1000">
+
+Se implementó Checkstyle para verificar automáticamente que el código fuente cumpla con los estándares de codificación definidos para el proyecto. Entre las reglas validadas se incluyen:
+
+- Detección de imports no utilizados.
+- Convenciones de nombres para clases, métodos y variables.
+- Uso correcto de llaves (`{}`).
+- Bloques vacíos.
+- Una sentencia por línea.
+- Buenas prácticas de mantenibilidad.
+
+La validación se ejecutó mediante el siguiente comando:
+
+```bash
+mvn checkstyle:check
+```
+
+<img src="images/checkstyle2.png" alt="screenshot about the product" width="1000">
+
+Además, se integró SonarQube para analizar la calidad del código, cobertura de pruebas, duplicación, mantenibilidad y seguridad. Estas validaciones permiten verificar que el backend cumple con criterios mínimos de calidad antes de continuar con el despliegue.
+
+Se creó el proyecto Plantsync dentro de SonarQube Community Edition, definiendo el nombre del proyecto. Esta configuración permite identificar el proyecto durante las ejecuciones de análisis y almacenar los resultados históricos de calidad del código.
+
+<img src="images/sonarqube2.png" alt="screenshot about the product" width="1000">
+
+
+SonarQube generó un token de acceso que posteriormente fue utilizado por Maven para autenticar la ejecución del análisis estático del código fuente. 
+
+<img src="images/sonarqube5.png" alt="screenshot about the product" width="1000">
+
+Este token permite que las herramientas externas envíen resultados al servidor SonarQube de manera segura.
+
+<img src="images/sonarqube6.png" alt="screenshot about the product" width="1000">
+
+Se seleccionó la opción de análisis para proyectos Maven, obteniendo el comando necesario para ejecutar el escaneo del proyecto desde la línea de comandos.
+
+<img src="images/sonarqube7.png" alt="screenshot about the product" width="1000">
+
+Durante este proceso se realizaron las siguientes actividades:
+
+Compilación del proyecto.
+Ejecución de pruebas unitarias.
+Generación de métricas de cobertura.
+Inspección de calidad del código.
+Envío de resultados al servidor SonarQube.
+
+El proceso finalizó correctamente mostrando el mensaje:
+
+ANALYSIS SUCCESSFUL
+BUILD SUCCESS
+
+<img src="images/sonarqube8.png" alt="screenshot about the product" width="1000">
+
+Una vez finalizado el análisis, SonarQube generó el panel de resultados del proyecto mostrando los principales indicadores de calidad:
+
+- **Cobertura de pruebas:** 100%.
+- **Duplicación de código:** 0%.
+- **Problemas de mantenibilidad:** 0.
+- **Problemas de confiabilidad:** 0.
+- **Problemas de seguridad:** 0.
+- **Security Hotspots:** 0.
+
+<img src="images/sonarqube9.png" alt="screenshot about the product" width="1000">
+
+
+Asimismo, el proyecto obtuvo la calificación **A** en los siguientes criterios:
+
+- **Security:** A
+- **Reliability:** A
+- **Maintainability:** A
+
+<img src="images/sonarqube1.png" alt="screenshot about the product" width="1000">
+
+Estos resultados evidencian que el código fuente cumple con altos estándares de calidad, presentando una cobertura completa de pruebas, ausencia de código duplicado y sin incidencias relacionadas con seguridad, confiabilidad o mantenibilidad.
+
 
 #### 7.1.2 Build & Test Suite Pipeline Components
 
@@ -7317,9 +7222,103 @@ Finalmente, gracias a la naturaleza continua de esta práctica, Jenkins mantiene
 
 ### 7.2 Continuous Delivery
 
+La estrategia de Continuous Delivery (CD) implementada permite automatizar la construcción, validación y despliegue de la aplicación, garantizando entregas consistentes y reduciendo errores manuales durante el proceso de liberación.
+
 #### 7.2.1 Tools and Practices
 
+| Tool | Purpose |
+|--------|---------|
+| Jenkins | Automation of the CI/CD pipeline. |
+| Docker | Application containerization and environment consistency. |
+| SonarQube | Static code analysis and quality assurance. |
+| Git | Source code version control. |
+| Maven | Build automation and dependency management. |
+
+
+La figura presenta los contenedores Docker utilizados en el pipeline de Continuous Delivery. Jenkins se encarga de la automatización de tareas de integración y despliegue, mientras que SonarQube realiza la evaluación de la calidad del código fuente.
+
+
+<img src="images/docker.png" alt="screenshot about the product" width="1000">
+
 #### 7.2.2 Stages Deployment Pipeline Components
+
+Para la implementación del servidor de integración continua, se construyó una imagen Docker personalizada de Jenkins utilizando el archivo `Dockerfile.jenkins`. Durante este proceso se descargó la imagen base, se incorporaron las dependencias requeridas y se generó la imagen `jenkins-ci-cd:2026.final`, la cual serviría posteriormente para desplegar el contenedor encargado de la automatización del pipeline de Continuous Delivery.
+
+<img src="images/docker1.png" alt="screenshot about the product" width="1000">
+
+Una vez generada la imagen personalizada de Jenkins, se procedió a crear e iniciar el contenedor `jenkins-master` mediante el comando `docker run`. Durante esta configuración se habilitaron los puertos necesarios para el acceso a la interfaz web y la comunicación con agentes remotos, además de asociar un volumen persistente para almacenar la configuración y los datos del servidor. Posteriormente, se verificó el estado del contenedor y se consultaron los registros de ejecución utilizando el comando `docker logs`, con el fin de confirmar el correcto inicio del servicio.
+
+<img src="images/docker2.png" alt="screenshot about the product" width="1000">
+
+Tras la inicialización del servidor Jenkins, el sistema generó automáticamente una contraseña temporal de administrador requerida para completar la configuración inicial de la plataforma.
+
+<img src="images/docker3.png" alt="screenshot about the product" width="1000">
+
+Luego de acceder a Jenkins por primera vez, se procedió a la instalación de los plugins requeridos para soportar las actividades de integración y despliegue continuo. Entre ellos se incluyeron complementos para la gestión de credenciales, integración con Git, ejecución de pipelines, generación de reportes y automatización de tareas, permitiendo extender las funcionalidades del servidor Jenkins de acuerdo con los requerimientos del proyecto.
+
+<img src="images/plugins.png" alt="screenshot about the product" width="1000">
+
+Una vez completada la instalación de los plugins y la configuración inicial, Jenkins quedó listo para su utilización. A partir de este momento fue posible crear proyectos, definir pipelines de integración continua y establecer las conexiones necesarias con las demás herramientas del ecosistema DevOps, como Docker y SonarQube.
+
+<img src="images/jenkins.png" alt="screenshot about the product" width="1000">
+
+Como parte de la configuración del entorno de integración continua, se registraron las herramientas requeridas para la construcción del proyecto desde la sección *Manage Jenkins -> Tools*. En esta etapa se configuró el JDK utilizado para la ejecución de aplicaciones Java y la herramienta Apache Maven para la gestión de dependencias y compilación automática del proyecto. Estas configuraciones permiten que los pipelines ejecuten las tareas de construcción de forma estandarizada y reproducible.
+
+<img src="images/jenkins1.png" alt="screenshot about the product" width="1000">
+
+<img src="images/jenkins2.png" alt="screenshot about the product" width="1000">
+
+Una vez desplegado SonarQube, se accedió a la plataforma mediante las credenciales de administrador para realizar la configuración inicial y habilitar el análisis de calidad del código fuente.
+
+<img src="images/sonar.png" alt="screenshot about the product" width="1000">
+
+Posteriormente, se registró el proyecto dentro de SonarQube, definiendo su nombre y clave de identificación para asociar los futuros análisis de calidad realizados desde Jenkins.
+
+<img src="images/sonar1.png" alt="screenshot about the product" width="1000">
+
+Finalmente, SonarQube generó las credenciales y parámetros necesarios para conectar el proyecto con el pipeline de Jenkins, permitiendo ejecutar análisis automáticos de calidad durante cada compilación.
+
+<img src="images/sonar2.png" alt="screenshot about the product" width="1000">
+
+Para permitir la comunicación segura entre Jenkins y SonarQube, se generó un token de autenticación dentro de SonarQube. Este token sería utilizado posteriormente por Jenkins para ejecutar análisis de calidad sobre el código fuente sin exponer credenciales de usuario.
+
+<img src="images/sonar3.png" alt="screenshot about the product" width="1000">
+
+Una vez generado el token, este fue almacenado en el gestor de credenciales de Jenkins para garantizar una integración segura con SonarQube durante la ejecución de los pipelines.
+
+<img src="images/jenkins4.png" alt="screenshot about the product" width="1000">
+
+Posteriormente, se configuró la conexión entre Jenkins y SonarQube registrando la URL del servidor y las credenciales previamente creadas. Esta configuración permitió que los pipelines enviaran automáticamente los resultados de análisis al servidor SonarQube.
+
+<img src="images/jenkins5.png" alt="screenshot about the product" width="1000">
+
+Con la integración establecida, se creó un nuevo proyecto de tipo Pipeline en Jenkins para automatizar las actividades de compilación, pruebas, análisis de calidad y despliegue de la aplicación.
+
+<img src="images/jenkins6.png" alt="screenshot about the product" width="1000">
+
+<img src="images/jenkins7.png" alt="screenshot about the product" width="1000">
+
+Para notificar a Jenkins sobre los resultados de los análisis de calidad, se configuró un webhook en SonarQube que envía automáticamente la información generada al finalizar cada análisis.
+<img src="images/jenkins8.png" alt="screenshot about the product" width="1000">
+
+Posteriormente, se creó el pipeline asociado al proyecto, el cual sería responsable de ejecutar de forma automatizada las diferentes etapas definidas dentro del proceso de Continuous Delivery.
+
+<img src="images/jenkins9.png" alt="screenshot about the product" width="1000">
+
+A continuación, se configuró el repositorio Git que contiene el código fuente de la aplicación. De esta manera, Jenkins pudo obtener automáticamente los cambios más recientes para iniciar el proceso de integración continua.
+<img src="images/jenkins10.png" alt="screenshot about the product" width="1000">
+
+Tras completar la configuración, se ejecutó el pipeline verificando el correcto funcionamiento de las etapas de compilación, pruebas, análisis de calidad y generación de artefactos definidos para el proyecto.
+
+<img src="images/jenkins11.png" alt="screenshot about the product" width="1000">
+
+Luego de la integración, se verificó el correcto funcionamiento del webhook configurado en SonarQube, confirmando la comunicación exitosa entre ambas plataformas.
+
+<img src="images/jenkins12.png" alt="screenshot about the product" width="1000">
+
+Finalmente, SonarQube presentó los resultados obtenidos tras el análisis del proyecto, incluyendo métricas de calidad, vulnerabilidades, cobertura y estado general del código fuente.
+
+<img src="images/jenkins13.png" alt="screenshot about the product" width="1000">
 
 ### 7.3 Continuous deployment
 
@@ -7856,27 +7855,20 @@ Esta sección describe la determinación de la cantidad de evidencia necesaria p
 
 #### 8.2.6 Methods Selection
 
-Esta sección describe cómo se lleva a cabo la recolección y análisis de la información generada en la investigación. Se expone el principio fundamental de que el método debe ser el *Simplest Useful Thing* (la cosa más simple y útil) para alcanzar el tamaño de muestra y registrar las condiciones necesarias sin generar fricción en el desarrollo tecnológico. Se establece una clara diferencia entre el objeto de investigación (la pregunta o hipótesis) y el método (la técnica elegida). Además, se resalta la norma esencial de no ejecutar simultáneamente dos o más experimentos sobre el mismo tema que puedan exponer a un solo usuario a ambos (aislar las pruebas A/B), junto con la consideración ética de no causar daño.
+Esta sección describe cómo se lleva a cabo la recolección y análisis de la información generada en la investigación. Se expone el principio fundamental de que el método debe ser el más simple y útil (*Simplest Useful Thing*) para alcanzar el tamaño de muestra y registrar las condiciones necesarias sin generar fricción en el desarrollo tecnológico. Se establece una clara diferencia entre el objeto de investigación y el método. Además, se resalta la norma esencial de no ejecutar simultáneamente dos o más experimentos sobre el mismo tema que puedan exponer a un solo usuario a ambos (aislar las pruebas A/B), junto con la consideración ética de no causar daño.
 
 Para medir los eventos, tasas de conversión en el Landing Page y las interacciones internas, se evaluaron las siguientes herramientas:
 
-| Herramienta | Google Analytics 4  | Mixpanel | Matomo Analytics |
-| :--- | :--- | :--- | :--- |
-| **Precio** | Plan freemium muy completo, cubre todas las necesidades del proyecto sin costos iniciales. | Plan freemium hasta 20 millones de eventos mensuales. Los planes de pago inician en $20/mes. | Plan freemium si se aloja en servidores propios. Versiones Cloud desde $23/mes. |
-| **Capacidad de Análisis** | Excelente para medir tráfico del Landing Page, tasas de rebote, demografía y eventos básicos de conversión. | Análisis exhaustivo de producto. Especializado en análisis de cohortes, retención y embudos de tareas. | Análisis completo con fuerte énfasis en el procesamiento sin muestreo de datos y mapas de calor. |
-| **Facilidad de uso** | Interfaz estandarizada con integración nativa a Firebase para aplicaciones móviles y de fácil despliegue web. | Curva de aprendizaje moderada para configurar la arquitectura de eventos, visualización intuitiva. | Requiere configuración de servidor para su versión gratuita, lo cual añade carga técnica. |
-| **Privacidad** | Utiliza modelado de datos y cookies bajo el ecosistema publicitario de Google. | Enfocado en el rastreo de eventos dentro del producto más que en recolección para publicidad. | Privacidad asegurada bajo las leyes GDPR, CCPA y LGPD, con control total de los datos. |
+| Herramienta | Google Analytics 4 | Mixpanel | Matomo Analytics | Lighthouse |
+| :--- | :--- | :--- | :--- | :--- |
+| **Precio** | Plan freemium muy completo, cubre todas las necesidades del proyecto sin costos iniciales. | Plan freemium hasta 20 millones de eventos mensuales. Los planes de pago inician en $20/mes. | Plan freemium si se aloja en servidores propios. Versiones Cloud desde $23/mes. | Completamente gratuito, de código abierto y disponible de forma nativa en las herramientas de desarrollo del navegador. |
+| **Capacidad de Análisis** | Excelente para medir tráfico del Landing Page, tasas de rebote, demografía y eventos básicos de conversión. | Análisis exhaustivo de producto. Especializado en análisis de cohortes, retención y embudos de tareas. | Análisis completo con fuerte énfasis en el procesamiento sin muestreo de datos y mapas de calor. | Automatizado para auditorías técnicas del frontend: rendimiento (Core Web Vitals), accesibilidad, buenas prácticas y SEO. |
+| **Facilidad de uso** | Interfaz estandarizada con integración nativa a Firebase para aplicaciones móviles y de fácil despliegue web. | Curva de aprendizaje moderada para configurar la arquitectura de eventos, visualización intuitiva. | Requiere configuración de servidor para su versión gratuita, lo cual añade carga técnica. | Extremadamente sencillo de ejecutar directamente desde Chrome DevTools o PageSpeed Insights, con reportes visuales inmediatos. |
+| **Privacidad** | Utiliza modelado de datos y cookies bajo el ecosistema publicitario de Google. | Enfocado en el rastreo de eventos dentro del producto más que en recolección para publicidad. | Privacidad asegurada bajo las leyes GDPR, CCPA y LGPD, con control total de los datos. | Máxima privacidad. No recolecta ni rastrea datos de usuarios reales; ejecuta pruebas sintéticas de manera local o en servidor. |
 
-Habiendo analizado las principales características bajo la filosofía del Simplest Useful Thing, la decisión recae en implementar Google Analytics 4 integrado con Firebase. Esta herramienta cubre de forma nativa e inmediata las métricas demográficas de registro, tasas de conversión en el Landing Page y rebote.
+Usando las principales características bajo la filosofía del *Simplest Useful Thing*, la mejor decisión recae en implementar Lighthouse como herramienta principal de evaluación. 
 
-Para las métricas cualitativas , Google Analytics 4 se complementará de la forma más sencilla mediante la integración de Google Forms o formularios web ligeros desplegados a los usuarios tras su primera semana activa, evitando sobrecargar el sistema con plataformas de encuestas de pago complejas y manteniendo la agilidad del ciclo de desarrollo.
-
-
-### 8.3 Experimentation
-
-#### 8.3.1 To-Be User Stories
-
-#### 8.3.2 To-Be Product Backlog
+Lighthouse cumple perfectamente con los requerimientos del proyecto al ser una herramienta gratuita, sin integraciones complejas ni carga técnica en el código base. Permitirá auditar de manera automatizada e iterativa el rendimiento de carga, la accesibilidad de la plataforma y el SEO. De esta forma, se asegura la entrega de un producto optimizado y construido bajo las mejores prácticas, manteniendo la agilidad del ciclo de desarrollo y entregando reportes accionables desde las etapas más tempranas de construcción.
 
 
 ## Conclusiones y Recomendaciones
@@ -7946,7 +7938,7 @@ https://www.serpar.gob.pe/noticias/10-cosas-que-debes-aprender-sobre-el-cuidado-
 
 + **Landing Page Deployado:** [Link Landing Page](https://biopafi-opensource.github.io/plantSync-LandingPage/)
 
-+ **Frontend Deployado:** [Link Frontend](https://yellow-ocean-0e2fe8a10.6.azurestaticapps.net/login)
++ **Frontend Deployado:** [Link Frontend](https://polite-bay-0d4eadd10.1.azurestaticapps.net/)
 
 + **Backend Deployado:** [Link Backend](https://plantsync-platform.azurewebsites.net/swagger-ui/index.html#/)
 
@@ -7956,7 +7948,7 @@ https://www.serpar.gob.pe/noticias/10-cosas-que-debes-aprender-sobre-el-cuidado-
 
 + **TP1:** [Link Exposición TP1](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a500_upc_edu_pe/ERme61BdAqRPhoKR7Ql5b2UB3ykeXWxgqbxTaeFgv0tVpg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=pwUKmL)
 
-+ **TB2:** [Link Exposición TB2](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a500_upc_edu_pe/ETyYTrRvykdOpAWmi9HRZCEBqaVsI3bGLnxITA9sc8fZSw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=NLPguQ)
++ **TB2:** [Link Exposición TB2](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a500_upc_edu_pe/ETyYTrRvykdOpAWmi9HRZCEBqaVsI3bGLnxITA9sc8fZSw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=Yen1ES)
 
 + **TF:** [Link Exposición TF1](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a500_upc_edu_pe/ETkjF2XWIxFMl8tzMLutMgsBuwEyJnal9rCGU5QPr8H0pw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=SVZdbB)
 
