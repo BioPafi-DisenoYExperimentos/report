@@ -63,6 +63,16 @@ Link del documento en GitHub: https://github.com/BioPafi-DisenoYExperimentos/rep
 | Rivera Ratachi, Renzo Sebastian | Karate, pruebas de integración y tests unitarios. |
 | Coca Lavado, Carlos Andres | Pruebas de integración y Karate. |
 
+
+## **TB2**
+| **Integrante** | **Tareas Asignadas** |
+| :--- | :--- |
+| Almerco Rojas, Jocelyn Damaly | Capítulo VII y dokcierización de sonarqube y jenkins. |
+| Castañeda Llanos, Kevin Alexander | Capítulo VIII: Experiment-Driven Development |
+| Palomino Fiestas, Erick Leonardo | Capítulo VIII: Experiment-Driven Development |
+| Rivera Ratachi, Renzo Sebastian | Capítulo VIII: Experiment-Driven Development |
+| Coca Lavado, Carlos Andres | Capítulo VIII: Experiment-Driven Development |
+
 **GitHub Collaboration Insights**
 
 **Integrantes:**
@@ -79,6 +89,8 @@ Link del documento en GitHub: https://github.com/BioPafi-DisenoYExperimentos/rep
 <p align="center">
   <img src="images/insight-github/test-backend-insights.jpg" alt="evidencia-tp" width="1000">
 </p>
+
+
 
 
 
