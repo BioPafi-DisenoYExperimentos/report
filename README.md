@@ -7885,9 +7885,9 @@ Para medir los eventos, tasas de conversión en el Landing Page y las interaccio
 | **Facilidad de uso** | Interfaz estandarizada con integración nativa a Firebase para aplicaciones móviles y de fácil despliegue web. | Curva de aprendizaje moderada para configurar la arquitectura de eventos, visualización intuitiva. | Requiere configuración de servidor para su versión gratuita, lo cual añade carga técnica. | Extremadamente sencillo de ejecutar directamente desde Chrome DevTools o PageSpeed Insights, con reportes visuales inmediatos. |
 | **Privacidad** | Utiliza modelado de datos y cookies bajo el ecosistema publicitario de Google. | Enfocado en el rastreo de eventos dentro del producto más que en recolección para publicidad. | Privacidad asegurada bajo las leyes GDPR, CCPA y LGPD, con control total de los datos. | Máxima privacidad. No recolecta ni rastrea datos de usuarios reales; ejecuta pruebas sintéticas de manera local o en servidor. |
 
-Usando las principales características bajo la filosofía del *Simplest Useful Thing*, la mejor decisión recae en implementar Lighthouse como herramienta principal de evaluación. 
+Usando las principales características bajo la filosofía del *Simplest Useful Thing*, la mejor decisión recae en implementar Google Analytics 4 como herramienta principal de evaluación. 
 
-Lighthouse cumple perfectamente con los requerimientos del proyecto al ser una herramienta gratuita, sin integraciones complejas ni carga técnica en el código base. Permitirá auditar de manera automatizada e iterativa el rendimiento de carga, la accesibilidad de la plataforma y el SEO. De esta forma, se asegura la entrega de un producto optimizado y construido bajo las mejores prácticas, manteniendo la agilidad del ciclo de desarrollo y entregando reportes accionables desde las etapas más tempranas de construcción.
+Google Analytics 4 es la mejor elección porque elimina las barreras de entrada económicas y técnicas, ofreciendo la analítica más robusta del mercado para entender de dónde vienen nuestros usuarios y cómo reaccionan a nuestro producto.
 
 
 ## Conclusiones y Recomendaciones
