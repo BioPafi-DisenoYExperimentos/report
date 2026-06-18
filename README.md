@@ -7599,6 +7599,13 @@ A continuación, se presentan las Tarjetas de Experimento (Experiment Cards) dis
 | **Hypothesis** | Creemos que al analizar el perfil demográfico de los usuarios registrados en PlantSync, se identificará que el rango de edad predominante es de 25 a 45 años con distribución equilibrada de géneros, mediante el análisis de los datos de registro y encuestas voluntarias en la plataforma durante las primeras 3 semanas de lanzamiento, cuando los usuarios completen su perfil al registrarse por primera vez. |
 | **Null Hypothesis** | No existirá diferencia significativa en la distribución de edad o género entre los usuarios registrados en PlantSync y la población general de usuarios de aplicaciones móviles de productividad del hogar, por lo que el perfil demográfico no permitirá identificar un segmento predominante. |
 
+### Hypothesis 2
+
+| **Question** | ¿Qué tanto mejora la experiencia del usuario si la aplicación sincroniza las alertas de riego y fertilización con los datos climáticos en tiempo real de su ubicación específica? |
+|:---|:---|
+| **Belief** | Creemos que los usuarios que reciban alertas adaptadas a las condiciones climáticas reales de su ubicación cometerán menos errores de riego por exceso o por defecto, lo que incrementará su satisfacción y confianza en la plataforma frente a quienes utilizan recordatorios fijos. |
+| **Hypothesis** | Creemos que la sincronización de alertas de riego y fertilización con datos climáticos en tiempo real mejorará la experiencia del usuario y reducirá los errores de riego por exceso en un 30%, mediante la comparación entre un grupo experimental con alertas climáticas activas y un grupo de control con alertas manuales fijas durante 2 semanas, cuando el sistema detecte condiciones de humedad o lluvia en la ubicación del usuario y ajuste automáticamente las notificaciones. |
+| **Null Hypothesis** | No habrá diferencia significativa en la tasa de errores de riego, la retención semanal ni la satisfacción del usuario entre el grupo que utiliza alertas sincronizadas con datos climáticos y el grupo que gestiona recordatorios de forma manual. |
 
 ### Hypothesis 3
 
@@ -7878,9 +7885,9 @@ Para medir los eventos, tasas de conversión en el Landing Page y las interaccio
 | **Facilidad de uso** | Interfaz estandarizada con integración nativa a Firebase para aplicaciones móviles y de fácil despliegue web. | Curva de aprendizaje moderada para configurar la arquitectura de eventos, visualización intuitiva. | Requiere configuración de servidor para su versión gratuita, lo cual añade carga técnica. | Extremadamente sencillo de ejecutar directamente desde Chrome DevTools o PageSpeed Insights, con reportes visuales inmediatos. |
 | **Privacidad** | Utiliza modelado de datos y cookies bajo el ecosistema publicitario de Google. | Enfocado en el rastreo de eventos dentro del producto más que en recolección para publicidad. | Privacidad asegurada bajo las leyes GDPR, CCPA y LGPD, con control total de los datos. | Máxima privacidad. No recolecta ni rastrea datos de usuarios reales; ejecuta pruebas sintéticas de manera local o en servidor. |
 
-Usando las principales características bajo la filosofía del *Simplest Useful Thing*, la mejor decisión recae en implementar Lighthouse como herramienta principal de evaluación. 
+Usando las principales características bajo la filosofía del *Simplest Useful Thing*, la mejor decisión recae en implementar Google Analytics 4 como herramienta principal de evaluación. 
 
-Lighthouse cumple perfectamente con los requerimientos del proyecto al ser una herramienta gratuita, sin integraciones complejas ni carga técnica en el código base. Permitirá auditar de manera automatizada e iterativa el rendimiento de carga, la accesibilidad de la plataforma y el SEO. De esta forma, se asegura la entrega de un producto optimizado y construido bajo las mejores prácticas, manteniendo la agilidad del ciclo de desarrollo y entregando reportes accionables desde las etapas más tempranas de construcción.
+Google Analytics 4 es la mejor elección porque elimina las barreras de entrada económicas y técnicas, ofreciendo la analítica más robusta del mercado para entender de dónde vienen nuestros usuarios y cómo reaccionan a nuestro producto.
 
 
 ## Conclusiones y Recomendaciones
