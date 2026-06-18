@@ -7878,12 +7878,12 @@ Esta sección describe cómo se lleva a cabo la recolección y análisis de la i
 
 Para medir los eventos, tasas de conversión en el Landing Page y las interacciones internas, se evaluaron las siguientes herramientas:
 
-| Herramienta | Google Analytics 4 | Mixpanel | Matomo Analytics | Lighthouse |
-| :--- | :--- | :--- | :--- | :--- |
-| **Precio** | Plan freemium muy completo, cubre todas las necesidades del proyecto sin costos iniciales. | Plan freemium hasta 20 millones de eventos mensuales. Los planes de pago inician en $20/mes. | Plan freemium si se aloja en servidores propios. Versiones Cloud desde $23/mes. | Completamente gratuito, de código abierto y disponible de forma nativa en las herramientas de desarrollo del navegador. |
-| **Capacidad de Análisis** | Excelente para medir tráfico del Landing Page, tasas de rebote, demografía y eventos básicos de conversión. | Análisis exhaustivo de producto. Especializado en análisis de cohortes, retención y embudos de tareas. | Análisis completo con fuerte énfasis en el procesamiento sin muestreo de datos y mapas de calor. | Automatizado para auditorías técnicas del frontend: rendimiento (Core Web Vitals), accesibilidad, buenas prácticas y SEO. |
-| **Facilidad de uso** | Interfaz estandarizada con integración nativa a Firebase para aplicaciones móviles y de fácil despliegue web. | Curva de aprendizaje moderada para configurar la arquitectura de eventos, visualización intuitiva. | Requiere configuración de servidor para su versión gratuita, lo cual añade carga técnica. | Extremadamente sencillo de ejecutar directamente desde Chrome DevTools o PageSpeed Insights, con reportes visuales inmediatos. |
-| **Privacidad** | Utiliza modelado de datos y cookies bajo el ecosistema publicitario de Google. | Enfocado en el rastreo de eventos dentro del producto más que en recolección para publicidad. | Privacidad asegurada bajo las leyes GDPR, CCPA y LGPD, con control total de los datos. | Máxima privacidad. No recolecta ni rastrea datos de usuarios reales; ejecuta pruebas sintéticas de manera local o en servidor. |
+| Herramienta | Google Analytics 4 | Mixpanel | Matomo Analytics |
+| :--- | :--- | :--- | :--- |
+| **Precio** | Plan freemium muy completo, cubre todas las necesidades del proyecto sin costos iniciales. | Plan freemium hasta 20 millones de eventos mensuales. Los planes de pago inician en $20/mes. | Plan freemium si se aloja en servidores propios. Versiones Cloud desde $23/mes. |
+| **Capacidad de Análisis** | Excelente para medir tráfico del Landing Page, tasas de rebote, demografía y eventos básicos de conversión. | Análisis exhaustivo de producto. Especializado en análisis de cohortes, retención y embudos de tareas. | Análisis completo con fuerte énfasis en el procesamiento sin muestreo de datos y mapas de calor. |
+| **Facilidad de uso** | Interfaz estandarizada con integración nativa a Firebase para aplicaciones móviles y de fácil despliegue web. | Curva de aprendizaje moderada para configurar la arquitectura de eventos, visualización intuitiva. | Requiere configuración de servidor para su versión gratuita, lo cual añade carga técnica. |
+| **Privacidad** | Utiliza modelado de datos y cookies bajo el ecosistema publicitario de Google. | Enfocado en el rastreo de eventos dentro del producto más que en recolección para publicidad. | Privacidad asegurada bajo las leyes GDPR, CCPA y LGPD, con control total de los datos. |
 
 Usando las principales características bajo la filosofía del *Simplest Useful Thing*, la mejor decisión recae en implementar Google Analytics 4 como herramienta principal de evaluación. 
 
@@ -7909,11 +7909,12 @@ Google Analytics 4 es la mejor elección porque elimina las barreras de entrada 
 ### **TB2**
 
 **Conclusiones:**
+
 - La adopción de la metodología *Experiment-Driven Development* (Capítulo VIII) mediante el planteamiento de preguntas de experimento y matrices de priorización permite alinear el desarrollo de software directamente con los objetivos de negocio y el comportamiento real del usuario, mitigando el riesgo de implementar funcionalidades de bajo impacto.
 - La definición de métricas detalladas para experimentos críticos (como la tasa de resolución de Rootbot y el tiempo de respuesta a notificaciones) proporciona una base cuantificable de éxito técnico y de experiencia de usuario, facilitando la toma de decisiones basada en datos empíricos.
 
 **Recomendaciones:**
-- Se recomienda integrar herramientas de analítica digital (como Google Analytics 4 o Mixpanel) y automatizar pruebas de rendimiento sintéticas mediante Lighthouse dentro del flujo continuo para evaluar de forma ágil el impacto de las modificaciones en el frontend y validar las hipótesis del negocio.
+
 - Es aconsejable establecer un flujo estructurado para el *Question Backlog* que permita revisar e iterar de manera ágil las suposiciones y brechas de conocimiento del producto conforme se recopila feedback de los usuarios en los experimentos en producción.
 
 ## Video about the Team
