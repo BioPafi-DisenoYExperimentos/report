@@ -268,6 +268,24 @@ Link del documento en GitHub: https://github.com/BioPafi-DisenoYExperimentos/rep
   - [8.3. Experimentation](#83-experimentation)
     - [8.3.1. To-Be User Stories](#831-to-be-user-stories)
     - [8.3.2. To-Be Product Backlog](#832-to-be-product-backlog)
+    - [8.3.3. Pipeline-supported, Experiment-Driven To-Be Software Platform Lifecycle](#833-pipeline-supported-experiment-driven-to-be-software-platform-lifecycle)
+      - [8.3.3.1. To-Be Sprint Backlogs](#8331-to-be-sprint-backlogs)
+      - [8.3.3.2. Implemented To-Be Landing Page Evidence](#8332-implemented-to-be-landing-page-evidence)
+      - [8.3.3.3. Implemented To-Be Frontend-Web Application Evidence](#8333-implemented-to-be-frontend-web-application-evidence)
+      - [8.3.3.4. Implemented To-Be Native-Mobile Application Evidence](#8334-implemented-to-be-native-mobile-application-evidence)
+      - [8.3.3.5. Implemented To-Be RESTful API and/or Serverless Backend Evidence](#8335-implemented-to-be-restful-api-andor-serverless-backend-evidence)
+      - [8.3.3.6. Team Collaboration Insights](#8336-team-collaboration-insights)
+    - [8.3.4. To-Be Validation Interviews](#834-to-be-validation-interviews)
+      - [8.3.4.1. Diseño de Entrevistas](#8341-diseño-de-entrevistas)
+      - [8.3.4.2. Registro de Entrevistas](#8342-registro-de-entrevistas)
+  - [8.4. Experiment Aftermath & Analysis](#84-experiment-aftermath--analysis)
+    - [8.4.1. Analysis and Interpretation of Results](#841-analysis-and-interpretation-of-results)
+    - [8.4.2. Re-scored and Re-prioritized Question Backlog](#842-re-scored-and-re-prioritized-question-backlog)
+  - [8.5. Continuous Learning](#85-continuous-learning)
+    - [8.5.1. Shareback Session Artifacts: Learning Workflow](#851-shareback-session-artifacts-learning-workflow)
+  - [8.6. To-Be Software Platform Pre-launch](#86-to-be-software-platform-pre-launch)
+    - [8.6.1. About-the-Product Intro Video](#861-about-the-product-intro-video)
+- [Matriz de Evaluación Ética y de Impacto](#matriz-de-evaluación-ética-y-de-impacto)
 
 - [Conclusiones y Recomendaciones](#conclusiones-y-recomendaciones)
 - [Video about the Team](#video-about-the-team)
@@ -7889,6 +7907,51 @@ Usando las principales características bajo la filosofía del *Simplest Useful 
 
 Google Analytics 4 es la mejor elección porque elimina las barreras de entrada económicas y técnicas, ofreciendo la analítica más robusta del mercado para entender de dónde vienen nuestros usuarios y cómo reaccionan a nuestro producto.
 
+#### 8.2.7. Data Analytics: Goals, KPIs and Metrics Selection
+
+#### 8.2.8. Web and Mobile Tracking Plan
+
+### 8.3. Experimentation
+
+#### 8.3.1. To-Be User Stories
+
+#### 8.3.2. To-Be Product Backlog
+
+#### 8.3.3. Pipeline-supported, Experiment-Driven To-Be Software Platform Lifecycle
+
+##### 8.3.3.1. To-Be Sprint Backlogs
+
+##### 8.3.3.2. Implemented To-Be Landing Page Evidence
+
+##### 8.3.3.3. Implemented To-Be Frontend-Web Application Evidence
+
+##### 8.3.3.4. Implemented To-Be Native-Mobile Application Evidence
+
+##### 8.3.3.5. Implemented To-Be RESTful API and/or Serverless Backend Evidence
+
+##### 8.3.3.6. Team Collaboration Insights
+
+#### 8.3.4. To-Be Validation Interviews
+
+##### 8.3.4.1. Diseño de Entrevistas
+
+##### 8.3.4.2. Registro de Entrevistas
+
+### 8.4. Experiment Aftermath & Analysis
+
+#### 8.4.1. Analysis and Interpretation of Results
+
+#### 8.4.2. Re-scored and Re-prioritized Question Backlog
+
+### 8.5. Continuous Learning
+
+#### 8.5.1. Shareback Session Artifacts: Learning Workflow
+
+### 8.6. To-Be Software Platform Pre-launch
+
+#### 8.6.1. About-the-Product Intro Video
+
+## Matriz de Evaluación Ética y de Impacto
 
 ## Conclusiones y Recomendaciones
 
