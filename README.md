@@ -7923,7 +7923,56 @@ Google Analytics 4 es la mejor elección porque elimina las barreras de entrada 
 
 ##### 8.3.3.2. Implemented To-Be Landing Page Evidence
 
+Se presentan capturas de pantalla de la Landing Page implementada y adaptada para el experimento, donde se muestran los cambios en el diseño de la interfaz y las llamadas a la acción (CTA) para medir el interés de los usuarios:
+
+###### Evidencia de la sección principal (Hero Section) y CTA
+<p align="center">
+  <img src="images/experimentos/landing1.jpg" alt="Landing Page Hero Section" width="1000">
+</p>
+
+###### Evidencia de la sección de características y propuesta de valor
+<p align="center">
+  <img src="images/experimentos/landing2.jpg" alt="Landing Page Features" width="1000">
+</p>
+
+###### Evidencia de la sección de contacto y registro de interés
+<p align="center">
+  <img src="images/experimentos/landing3.jpg" alt="Landing Page Contact" width="1000">
+</p>
+
 ##### 8.3.3.3. Implemented To-Be Frontend-Web Application Evidence
+
+Se presentan capturas de la aplicación web frontend que evidencian la implementación del sistema "To-Be", abarcando el flujo completo de autenticación y las vistas principales de la plataforma:
+
+###### Inicio de Sesión (Login) y Registro de Usuario (Sign Up)
+<p align="center">
+  <img src="images/experimentos/login.jpg" alt="Login Vista" width="480">
+  <img src="images/experimentos/signup.jpg" alt="Signup Vista" width="480">
+</p>
+
+###### Módulo "Mis Plantas"
+Vista que detalla el listado y monitoreo de las plantas del usuario:
+<p align="center">
+  <img src="images/experimentos/mis-plantas.jpg" alt="Mis Plantas Vista" width="1000">
+</p>
+
+###### Módulo de Tareas y Calendario de Cuidado
+Muestra los recordatorios de riego, fertilización y tareas pendientes:
+<p align="center">
+  <img src="images/experimentos/tareas.jpg" alt="Tareas de Cuidado" width="1000">
+</p>
+
+###### Guías de Cuidado Botánico
+Muestra el acceso a la base de datos de conocimientos e instrucciones de mantenimiento:
+<p align="center">
+  <img src="images/experimentos/guias.jpg" alt="Guías de Cuidado" width="1000">
+</p>
+
+###### Configuración de Cuenta y Notificaciones
+Permite gestionar la frecuencia de alertas automáticas y preferencias del usuario:
+<p align="center">
+  <img src="images/experimentos/configuracion.jpg" alt="Configuración de Cuenta" width="1000">
+</p>
 
 ##### 8.3.3.4. Implemented To-Be Native-Mobile Application Evidence
 
