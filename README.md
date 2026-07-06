@@ -1320,7 +1320,7 @@ Expertos
 Enlace: [To-Be Scenario Map en Miro](https://miro.com/app/board/uXjVI_gA5Fc=/?share_link_id=106413711670)
 
 ### 3.2. User Stories
-
+ 
 <table>
   <thead>
     <tr>
@@ -7615,7 +7615,7 @@ A continuación, se presentan las Tarjetas de Experimento (Experiment Cards) dis
 |:---|:---|
 | **Belief** | Creemos que la mayoría de los usuarios interesados en PlantSync serán adultos jóvenes de entre 25 y 45 años, con una distribución equilibrada entre géneros, quienes buscan soluciones tecnológicas prácticas para gestionar el cuidado de sus plantas desde el hogar. |
 | **Hypothesis** | Creemos que al analizar el perfil demográfico de los usuarios registrados en PlantSync, se identificará que el rango de edad predominante es de 25 a 45 años con distribución equilibrada de géneros, mediante el análisis de los datos de registro y encuestas voluntarias en la plataforma durante las primeras 3 semanas de lanzamiento, cuando los usuarios completen su perfil al registrarse por primera vez. |
-| **Null Hypothesis** | No existirá diferencia significativa en la distribución de edad o género entre los usuarios registrados en PlantSync y la población general de usuarios de aplicaciones móviles de productividad del hogar, por lo que el perfil demográfico no permitirá identificar un segmento predominante. |
+| **Null Hypothesis** | La proporción de usuarios registrados en el rango de edad de 25 a 45 años será igual o inferior al 50%, o la distribución de géneros mostrará una desviación significativa (mayor al 15% de diferencia entre ellos), indicando que no existe un segmento demográfico predominante para la plataforma. |
 
 ### Hypothesis 2
 
@@ -7623,7 +7623,7 @@ A continuación, se presentan las Tarjetas de Experimento (Experiment Cards) dis
 |:---|:---|
 | **Belief** | Creemos que los usuarios que reciban alertas adaptadas a las condiciones climáticas reales de su ubicación cometerán menos errores de riego por exceso o por defecto, lo que incrementará su satisfacción y confianza en la plataforma frente a quienes utilizan recordatorios fijos. |
 | **Hypothesis** | Creemos que la sincronización de alertas de riego y fertilización con datos climáticos en tiempo real mejorará la experiencia del usuario y reducirá los errores de riego por exceso en un 30%, mediante la comparación entre un grupo experimental con alertas climáticas activas y un grupo de control con alertas manuales fijas durante 2 semanas, cuando el sistema detecte condiciones de humedad o lluvia en la ubicación del usuario y ajuste automáticamente las notificaciones. |
-| **Null Hypothesis** | No habrá diferencia significativa en la tasa de errores de riego, la retención semanal ni la satisfacción del usuario entre el grupo que utiliza alertas sincronizadas con datos climáticos y el grupo que gestiona recordatorios de forma manual. |
+| **Null Hypothesis** | La reducción de errores de riego por exceso en el grupo con alertas sincronizadas será inferior al 30% en comparación con el grupo de control, indicando que los datos climáticos no impactan de forma estadísticamente significativa en los hábitos de riego del usuario. |
 
 ### Hypothesis 3
 
@@ -7631,7 +7631,7 @@ A continuación, se presentan las Tarjetas de Experimento (Experiment Cards) dis
 |:---|:---|
 | **Belief** | Creemos que existe un segmento de usuarios aficionados al cuidado de plantas dispuesto a pagar por un plan de suscripción mensual que incluya soporte de sensores IoT y guías botánicas avanzadas, y que el rango de precio entre $10.99 y $16.99 resulta atractivo para captar ese segmento. |
 | **Hypothesis** | Creemos que al menos el 5% de los visitantes interesados del Landing Page elegirán el plan Premium ($10.99) o PRO ($16.99) al interactuar con la sección de precios simulada, mediante una campaña de marketing dirigido y una pasarela de pago simulada (Stripe Sandbox) habilitada durante 10 días, cuando el usuario visualice las características diferenciadas de cada plan y evalúe su disposición real de pago. |
-| **Null Hypothesis** | No habrá diferencia significativa en la tasa de conversión entre los distintos planes de suscripción ofrecidos, indicando que los usuarios no perciben suficiente valor diferencial en las funcionalidades premium para justificar un pago mensual por encima del plan básico. |
+| **Null Hypothesis** | La tasa de conversión hacia los planes Premium ($10.99) o PRO ($16.99) será estrictamente inferior al 5% del total de visitantes del Landing Page, indicando que los usuarios no perciben suficiente valor diferencial en las funcionalidades premium para justificar un pago mensual por encima del plan básico. |
 
 ### Hypothesis 4
 
@@ -7639,7 +7639,7 @@ A continuación, se presentan las Tarjetas de Experimento (Experiment Cards) dis
 |:---|:---|
 | **Belief** | Creemos que los recordatorios automáticos de riego preconfigurados por especie reducirán la carga cognitiva del usuario y aumentarán tanto la tasa de completitud de tareas como la retención semanal en comparación con el grupo que gestiona sus tareas manualmente. |
 | **Hypothesis** | Creemos que los usuarios que reciban recordatorios automáticos de riego preconfigurados reducirán a la mitad el tiempo dedicado a registrar tareas y mostrarán una mejora del 25% en retención semanal, mediante un experimento A/B de 3 semanas entre 50 usuarios con recordatorios automáticos (Grupo A) y 50 usuarios con configuración manual (Grupo B), evaluado con la escala SUS, cuando los usuarios deban registrar el cumplimiento de sus rutinas de cuidado de plantas dentro de la plataforma. |
-| **Null Hypothesis** | No habrá diferencia significativa en la tasa de retención semanal, el tiempo de registro de tareas ni la usabilidad percibida entre los usuarios que utilizan recordatorios automáticos y aquellos que configuran sus tareas de forma manual. |
+| **Null Hypothesis** | La implementación de recordatorios automáticos reducirá el tiempo de registro de tareas en menos del 50% y la mejora en la tasa de retención semanal será inferior al 25% en el grupo experimental comparado con el grupo de configuración manual. |
 
 ### Hypothesis 5
 
@@ -7655,7 +7655,7 @@ A continuación, se presentan las Tarjetas de Experimento (Experiment Cards) dis
 |:---|:---|
 | **Belief** | Creemos que los usuarios de PlantSync interactuarán con mayor frecuencia con la plataforma en las franjas horarias de mañana (8:00–10:00 AM) y noche (7:00–9:00 PM), que corresponden a los momentos del día en que permanecen en casa y desarrollan sus rutinas domésticas. |
 | **Hypothesis** | Creemos que los usuarios registrarán un mayor índice de apertura de notificaciones y cumplimiento de tareas de cuidado en los horarios de mañana (8:00 AM) y noche (8:00 PM) en comparación con el horario de tarde (2:00 PM), mediante el envío de alertas en tres franjas horarias distintas distribuidas equitativamente entre los usuarios activos y el análisis de logs de sesión y tiempos de respuesta a las notificaciones, cuando el sistema envíe automáticamente los recordatorios de riego programados. |
-| **Null Hypothesis** | No habrá diferencia significativa en la tasa de apertura de notificaciones ni en el tiempo de respuesta al cumplimiento de tareas entre los distintos horarios de envío evaluados, indicando que el momento del día no influye en el comportamiento de interacción del usuario. |
+| **Null Hypothesis** | El índice de apertura de notificaciones y el cumplimiento de tareas en los horarios de mañana (8:00 AM) y noche (8:00 PM) no mostrarán un aumento estadísticamente significativo frente al horario de tarde (2:00 PM), demostrando que la franja horaria no afecta la interacción del usuario. |
 
 ### Hypothesis 7
 
@@ -7663,7 +7663,7 @@ A continuación, se presentan las Tarjetas de Experimento (Experiment Cards) dis
 |:---|:---|
 | **Belief** | Creemos que el chatbot Rootbot, entrenado en una base de datos botánica especializada, será capaz de guiar a usuarios novatos a través de un proceso conversacional claro y empático que concluya en un diagnóstico preciso y una recomendación accionable en menos de 2 minutos. |
 | **Hypothesis** | Creemos que los usuarios que utilicen Rootbot para diagnosticar síntomas de deterioro en sus plantas completarán el proceso en menos de 2 minutos con una tasa de satisfacción (CSAT) superior al 85%, mediante la habilitación del módulo conversacional para un grupo piloto de 50 usuarios principiantes y el registro de palabras clave, imágenes y tasas de finalización de cada sesión de diagnóstico, cuando el usuario reporte síntomas visibles de deterioro en alguna de sus plantas registradas en la plataforma. |
-| **Null Hypothesis** | No habrá diferencia significativa en el tiempo de diagnóstico ni en la tasa de satisfacción (CSAT) entre los usuarios que utilicen Rootbot y aquellos que realicen búsquedas manuales de síntomas en motores de búsqueda tradicionales, indicando que el chatbot no representa una mejora perceptible en el proceso de diagnóstico. |
+| **Null Hypothesis** | El tiempo promedio para completar un diagnóstico con Rootbot será igual o superior a 2 minutos, y/o la tasa de satisfacción (CSAT) del usuario será igual o inferior al 85%, indicando que el chatbot no representa una mejora ágil frente a la búsqueda manual. |
 
 
 #### 8.2.2 Domain Business Metrics
@@ -7915,11 +7915,336 @@ Google Analytics 4 es la mejor elección porque elimina las barreras de entrada 
 
 #### 8.3.1. To-Be User Stories
 
+<br>
+
+<table style="width: 100%; border-collapse: collapse; text-align: left;" border="1">
+  <tr>
+    <th style="padding: 10px; width: 25%;">Story ID</th>
+    <th style="padding: 10px; width: 25%;">User</th>
+    <th style="padding: 10px; width: 25%;">Priority</th>
+    <th style="padding: 10px; width: 25%;">Epic</th>
+  </tr>
+  <tr>
+    <td style="padding: 10px;">US-01</td>
+    <td style="padding: 10px;">Usuario Nuevo</td>
+    <td style="padding: 10px;">Alta</td>
+    <td style="padding: 10px;">EP01</td>
+  </tr>
+  <tr>
+    <th style="padding: 10px;">Title</th>
+    <td style="padding: 10px;" colspan="3">Registro de edad</td>
+  </tr>
+  <tr>
+    <th style="padding: 10px;" colspan="4">Description</th>
+  </tr>
+  <tr>
+    <td style="padding: 10px;" colspan="4">
+      <strong>Como</strong> nuevo usuario de la plataforma,<br>
+      <strong>Quiero</strong> poder ingresar edad al momento de configurar mi perfil,<br>
+      <strong>Para</strong> ayudar a identificar a los grupos demográficos predominantes segun la edad que utilizan el sistema.
+    </td>
+  </tr>
+  <tr>
+    <th style="padding: 10px;" colspan="4">Acceptance Criteria</th>
+  </tr>
+  <tr>
+    <td style="padding: 10px;" colspan="4">
+      <ul>
+        <li><strong>Scenario 1: Campos disponibles en el formulario de perfil.</strong><br>
+        <strong>Dado que</strong> un usuario nuevo accede a la pantalla de registro, <strong>cuando</strong> visualiza el formulario de datos, <strong>entonces</strong> debe encontrar opciones claras para escribir su edad.</li>
+        <li style="margin-top: 10px;"><strong>Scenario 2: Procesamiento de la información ingresada.</strong><br>
+        <strong>Dado que</strong> el usuario completa su dato de edad <strong>cuando</strong> guarda y crea su cuenta, <strong>entonces</strong> la aplicación procesa la solicitud y envía la información para ser almacenada junto con el resto de su perfil.</li>
+        <li style="margin-top: 10px;"><strong>Scenario 3: Almacenamiento exitoso en el sistema.</strong><br>
+        <strong>Dado que</strong> el sistema recibe la información del usuario, <strong>cuando</strong> valida que los datos son correctos, <strong>entonces</strong> los guarda de forma segura en la base de datos asociada a ese perfil específico.</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+<br>
+
+<table style="width: 100%; border-collapse: collapse; text-align: left;" border="1">
+  <tr>
+    <th style="padding: 10px; width: 25%;">Story ID</th>
+    <th style="padding: 10px; width: 25%;">User</th>
+    <th style="padding: 10px; width: 25%;">Priority</th>
+    <th style="padding: 10px; width: 25%;">Epic</th>
+  </tr>
+  <tr>
+    <td style="padding: 10px;">US-02</td>
+    <td style="padding: 10px;">Usuario Nuevo</td>
+    <td style="padding: 10px;">Media</td>
+    <td style="padding: 10px;">EP01</td>
+  </tr>
+  <tr>
+    <th style="padding: 10px;">Title</th>
+    <td style="padding: 10px;" colspan="3">Registro de género</td>
+  </tr>
+  <tr>
+    <th style="padding: 10px;" colspan="4">Description</th>
+  </tr>
+  <tr>
+    <td style="padding: 10px;" colspan="4">
+      <strong>Como</strong> nuevo usuario de la plataforma,<br>
+      <strong>Quiero</strong> poder ingresar mi género al momento de configurar mi perfil,<br>
+      <strong>Para</strong> ayudar a identificar a los grupos demográficos predominantes segun el genero que utilizan el sistema.
+    </td>
+  </tr>
+  <tr>
+    <th style="padding: 10px;" colspan="4">Acceptance Criteria</th>
+  </tr>
+  <tr>
+    <td style="padding: 10px;" colspan="4">
+      <ul>
+        <li><strong>Scenario 1: Campos disponibles en el formulario de perfil.</strong><br>
+        <strong>Dado que</strong> un usuario nuevo accede a la pantalla de registro, <strong>cuando</strong> visualiza el formulario de datos, <strong>entonces</strong> debe encontrar opciones claras para seleccionar su género.</li>
+        <li style="margin-top: 10px;"><strong>Scenario 2: Procesamiento de la información ingresada.</strong><br>
+        <strong>Dado que</strong> el usuario completa su dato de género, <strong>cuando</strong> guarda y crea su cuenta, <strong>entonces</strong> la aplicación procesa la solicitud y envía la información para ser almacenada junto con el resto de su perfil.</li>
+        <li style="margin-top: 10px;"><strong>Scenario 3: Almacenamiento exitoso en el sistema.</strong><br>
+        <strong>Dado que</strong> el sistema recibe la información del usuario, <strong>cuando</strong> valida que los datos son correctos, <strong>entonces</strong> los guarda de forma segura en la base de datos asociada a ese perfil específico.</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+<br>
+
+<table style="width: 100%; border-collapse: collapse; text-align: left;" border="1">
+  <tr>
+    <th style="padding: 10px; width: 25%;">Story ID</th>
+    <th style="padding: 10px; width: 25%;">User</th>
+    <th style="padding: 10px; width: 25%;">Priority</th>
+    <th style="padding: 10px; width: 25%;">Epic</th>
+  </tr>
+  <tr>
+    <td style="padding: 10px;">US-03</td>
+    <td style="padding: 10px;">Visitante del Landing Page</td>
+    <td style="padding: 10px;">Alta</td>
+    <td style="padding: 10px;">EP06</td>
+  </tr>
+  <tr>
+    <th style="padding: 10px;">Title</th>
+    <td style="padding: 10px;" colspan="3">Visualización de Planes de Suscripción Premium</td>
+  </tr>
+  <tr>
+    <th style="padding: 10px;" colspan="4">Description</th>
+  </tr>
+  <tr>
+    <td style="padding: 10px;" colspan="4">
+      <strong>Como</strong> visitante aficionado al cuidado de plantas,<br>
+      <strong>Quiero</strong> ver una sección de planes de suscripción en la página de inicio con sus características,<br>
+      <strong>Para</strong> evaluar si los beneficios avanzados justifican adquirir una suscripción de pago en la plataforma.
+    </td>
+  </tr>
+  <tr>
+    <th style="padding: 10px;" colspan="4">Acceptance Criteria</th>
+  </tr>
+  <tr>
+    <td style="padding: 10px;" colspan="4">
+      <ul>
+        <li><strong>Scenario 1: Visualización de los planes de precios.</strong><br>
+        <strong>Dado que</strong> el usuario navega por la página principal de presentación, <strong>cuando</strong> se desplaza hacia la sección de precios, <strong>entonces</strong> debe visualizar de forma clara tres opciones de suscripción con sus respectivos valores mensuales.</li>
+        <li style="margin-top: 10px;"><strong>Scenario 2: Lectura de beneficios exclusivos.</strong><br>
+        <strong>Dado que</strong> el usuario revisa las tarjetas de los planes de pago, <strong>cuando</strong> lee los beneficios listados, <strong>entonces</strong> visualizará características exclusivas como "Soporte para sensores IoT" y "Guías botánicas avanzadas".</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+<table style="width: 100%; border-collapse: collapse; text-align: left;" border="1">
+  <tr>
+    <th style="padding: 10px; width: 25%;">Story ID</th>
+    <th style="padding: 10px; width: 25%;">User</th>
+    <th style="padding: 10px; width: 25%;">Priority</th>
+    <th style="padding: 10px; width: 25%;">Epic</th>
+  </tr>
+  <tr>
+    <td style="padding: 10px;">US-04</td>
+    <td style="padding: 10px;">Visitante interesado en las suscripciones</td>
+    <td style="padding: 10px;">Media</td>
+    <td style="padding: 10px;">EP06</td>
+  </tr>
+  <tr>
+    <th style="padding: 10px;">Title</th>
+    <td style="padding: 10px;" colspan="3">Muestra de interes en la suscripcion</td>
+  </tr>
+  <tr>
+    <th style="padding: 10px;" colspan="4">Description</th>
+  </tr>
+  <tr>
+    <td style="padding: 10px;" colspan="4">
+      <strong>Como</strong> visitante aficionado al cuidado de plantas,<br>
+      <strong>Quiero</strong> poder darle click a los diferentes planes,<br>
+      <strong>Para</strong> poder demostrar interes en la obtencion de la suscripcion.
+    </td>
+  </tr>
+  <tr>
+    <th style="padding: 10px;" colspan="4">Acceptance Criteria</th>
+  </tr>
+  <tr>
+    <td style="padding: 10px;" colspan="4">
+      <ul>
+        <li style="margin-top: 10px;"><strong>Scenario 1: Simulación de compra e interés.</strong><br>
+        <strong>Dado que</strong> el usuario decide probar un plan de pago, <strong>cuando</strong> va a la seccion de mi interesa, <strong>entonces</strong> el sistema le muestra un breve formulario de lista de espera para registrar su interés.</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+<br>
+
 #### 8.3.2. To-Be Product Backlog
+
+<table border="1" style="width: 100%; border-collapse: collapse; text-align: left;">
+  <thead>
+    <tr>
+      <th style="padding: 10px;">#Orden</th>
+      <th style="padding: 10px;">User Story ID</th>
+      <th style="padding: 10px;">Título</th>
+      <th style="padding: 10px;">Descripción</th>
+      <th style="padding: 10px; text-align: center;">Story Points (1/2/3/5/8)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="padding: 10px; text-align: center;">1</td>
+      <td style="padding: 10px; font-weight: bold;">US-01</td>
+      <td style="padding: 10px;">Registro de edad</td>
+      <td style="padding: 10px;"><strong>Como</strong> nuevo usuario de la plataforma, <strong>quiero</strong> poder ingresar mi edad al momento de configurar mi perfil, <strong>para</strong> ayudar a identificar a los grupos demográficos predominantes según la edad que utilizan el sistema.</td>
+      <td style="padding: 10px; text-align: center;">2</td>
+    </tr>
+    <tr>
+      <td style="padding: 10px; text-align: center;">2</td>
+      <td style="padding: 10px; font-weight: bold;">US-02</td>
+      <td style="padding: 10px;">Registro de género</td>
+      <td style="padding: 10px;"><strong>Como</strong> nuevo usuario de la plataforma, <strong>quiero</strong> poder ingresar mi género al momento de configurar mi perfil, <strong>para</strong> ayudar a identificar a los grupos demográficos predominantes según el género que utilizan el sistema.</td>
+      <td style="padding: 10px; text-align: center;">2</td>
+    </tr>
+    <tr>
+      <td style="padding: 10px; text-align: center;">3</td>
+      <td style="padding: 10px; font-weight: bold;">US-03</td>
+      <td style="padding: 10px;">Visualización de Planes de Suscripción Premium</td>
+      <td style="padding: 10px;"><strong>Como</strong> visitante aficionado al cuidado de plantas, <strong>quiero</strong> ver una sección de planes de suscripción en la página de inicio con sus características, <strong>para</strong> evaluar si los beneficios avanzados justifican adquirir una suscripción de pago en la plataforma.</td>
+      <td style="padding: 10px; text-align: center;">3</td>
+    </tr>
+    <tr>
+      <td style="padding: 10px; text-align: center;">4</td>
+      <td style="padding: 10px; font-weight: bold;">US-04</td>
+      <td style="padding: 10px;">Muestra de interés en la suscripción</td>
+      <td style="padding: 10px;"><strong>Como</strong> visitante aficionado al cuidado de plantas, <strong>quiero</strong> poder darle clic a los diferentes planes, <strong>para</strong> poder demostrar interés en la obtención de la suscripción.</td>
+      <td style="padding: 10px; text-align: center;">2</td>
+    </tr>
+  </tbody>
+</table>
 
 #### 8.3.3. Pipeline-supported, Experiment-Driven To-Be Software Platform Lifecycle
 
 ##### 8.3.3.1. To-Be Sprint Backlogs
+
+<table border="1" cellspacing="0" cellpadding="5" style="width: 100%; border-collapse: collapse; text-align: left;">
+  <thead>
+    <tr>
+      <th colspan="2" style="padding: 10px; text-align: center;">Technical User Story</th>
+      <th colspan="2" style="padding: 10px; text-align: center;">WorkItem / Task</th>
+      <th style="padding: 10px;">Description</th>
+      <th style="padding: 10px; text-align: center;">Estimation (Hours)</th>
+      <th style="padding: 10px;">Assigned To</th>
+      <th style="padding: 10px; text-align: center;">Status</th>
+    </tr>
+    <tr>
+      <th style="padding: 10px; text-align: center;">Id</th>
+      <th style="padding: 10px;">Title</th>
+      <th style="padding: 10px; text-align: center;">Id</th>
+      <th style="padding: 10px;">Title</th>
+      <th style="padding: 10px;"></th>
+      <th style="padding: 10px;"></th>
+      <th style="padding: 10px;"></th>
+      <th style="padding: 10px;">(To-do/In-Process/To-Review/Done)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="padding: 10px; text-align: center;">US-01</td>
+      <td style="padding: 10px;">Registro de edad</td>
+      <td style="padding: 10px; text-align: center;">TK01</td>
+      <td style="padding: 10px;">Actualizar BD y Backend (Edad)</td>
+      <td style="padding: 10px;">Crear columna 'age' y actualizar entidad Profile, DTOs y comandos en Spring Boot.</td>
+      <td style="padding: 10px; text-align: center;">3</td>
+      <td style="padding: 10px;">Kevin Castañeda</td>
+      <td style="padding: 10px; text-align: center;">Done</td>
+    </tr>
+    <tr>
+      <td style="padding: 10px; text-align: center;">US-01</td>
+      <td style="padding: 10px;">Registro de edad</td>
+      <td style="padding: 10px; text-align: center;">TK02</td>
+      <td style="padding: 10px;">Modificar UI de Registro (Edad)</td>
+      <td style="padding: 10px;">Añadir input numérico para la edad en el formulario de Angular y actualizar la integración con el servicio.</td>
+      <td style="padding: 10px; text-align: center;">2</td>
+      <td style="padding: 10px;">Kevin Castañeda</td>
+      <td style="padding: 10px; text-align: center;">Done</td>
+    </tr>
+    <tr>
+      <td style="padding: 10px; text-align: center;">US-02</td>
+      <td style="padding: 10px;">Registro de género</td>
+      <td style="padding: 10px; text-align: center;">TK03</td>
+      <td style="padding: 10px;">Actualizar BD y Backend (Género)</td>
+      <td style="padding: 10px;">Crear columna 'gender' y actualizar entidad Profile, DTOs y comandos en Spring Boot.</td>
+      <td style="padding: 10px; text-align: center;">3</td>
+      <td style="padding: 10px;">Kevin Castañeda</td>
+      <td style="padding: 10px; text-align: center;">Done</td>
+    </tr>
+    <tr>
+      <td style="padding: 10px; text-align: center;">US-02</td>
+      <td style="padding: 10px;">Registro de género</td>
+      <td style="padding: 10px; text-align: center;">TK04</td>
+      <td style="padding: 10px;">Modificar UI de Registro (Género)</td>
+      <td style="padding: 10px;">Añadir input desplegable (select) para el género en el formulario de Angular y conectar con el backend.</td>
+      <td style="padding: 10px; text-align: center;">2</td>
+      <td style="padding: 10px;">Kevin Castañeda</td>
+      <td style="padding: 10px; text-align: center;">Done</td>
+    </tr>
+    <tr>
+      <td style="padding: 10px; text-align: center;">US-03</td>
+      <td style="padding: 10px;">Visualización de Planes Premium</td>
+      <td style="padding: 10px; text-align: center;">TK05</td>
+      <td style="padding: 10px;">Maquetación HTML de tarjetas de precio</td>
+      <td style="padding: 10px;">Crear la estructura del Landing Page para mostrar las 3 opciones de planes.</td>
+      <td style="padding: 10px; text-align: center;">2</td>
+      <td style="padding: 10px;"> Jocelyn Almerco</td>
+      <td style="padding: 10px; text-align: center;">Done</td>
+    </tr>
+    <tr>
+      <td style="padding: 10px; text-align: center;">US-03</td>
+      <td style="padding: 10px;">Visualización de Planes Premium</td>
+      <td style="padding: 10px; text-align: center;">TK06</td>
+      <td style="padding: 10px;">Estilos CSS para sección de precios</td>
+      <td style="padding: 10px;">Asegurar que las tarjetas de precios sean responsivas y visualmente atractivas.</td>
+      <td style="padding: 10px; text-align: center;">3</td>
+      <td style="padding: 10px;">Jocelyn Almerco</td>
+      <td style="padding: 10px; text-align: center;">Done</td>
+    </tr>
+    <tr>
+      <td style="padding: 10px; text-align: center;">US-04</td>
+      <td style="padding: 10px;">Muestra de interés en suscripción</td>
+      <td style="padding: 10px; text-align: center;">TK07</td>
+      <td style="padding: 10px;">Configurar botones de acción (CTA)</td>
+      <td style="padding: 10px;">Añadir eventos para capturar los clics en los botones de "Adquirir plan".</td>
+      <td style="padding: 10px; text-align: center;">2</td>
+      <td style="padding: 10px;">Jocelyn Almerco</td>
+      <td style="padding: 10px; text-align: center;">Done</td>
+    </tr>
+    <tr>
+      <td style="padding: 10px; text-align: center;">US-04</td>
+      <td style="padding: 10px;">Muestra de interés en suscripción</td>
+      <td style="padding: 10px; text-align: center;">TK08</td>
+      <td style="padding: 10px;">Integrar formulario de espera simulado</td>
+      <td style="padding: 10px;">Crear modal o redirección a un formulario externo de los interesados.</td>
+      <td style="padding: 10px; text-align: center;">2</td>
+      <td style="padding: 10px;">Jocelyn Almerco</td>
+      <td style="padding: 10px; text-align: center;">Done</td>
+    </tr>
+  </tbody>
+</table>
 
 ##### 8.3.3.2. Implemented To-Be Landing Page Evidence
 
