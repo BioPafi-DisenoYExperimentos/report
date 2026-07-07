@@ -8508,7 +8508,64 @@ Entrevista para personas con poca experiencia en el cuidado de plantas:
 
 #### 8.4.1. Analysis and Interpretation of Results
 
+A continuación, se presentará la evidencia, la examinación del análisis, las implicaciones y la interpretación completa de los resultados de nuestra experimentación desarrollada en Python para el proyecto PlantSync.
+
+Para evidenciar todos los porcentajes y los datos que se calculan para el resultado final de las experimentaciones, se utilizaron modelos de análisis de datos en Python. Esto nos ayudó para el cálculo de los eventos de los experimentos, como las interacciones con el nuevo diseño del frontend y la tasa de conversión obtenida a través de nuestro landing page informativo. Al término de la ejecución del script, se tomaron las capturas correspondientes para incluirlas en esta sección. Se evaluó un periodo de prueba de 7 días (correspondiente a las pruebas con usuarios posteriores al despliegue del Sprint 2) para validar si los experimentos planteados en la plataforma fueron exitosos.
+
+Para el análisis de los usuarios que ingresan diariamente a ver el landing page y utilizan el frontend para registrar sus plantas, se estructuró la siguiente data:
+
+| Día de Prueba | Visitas al Landing Page | Registros Nuevos | Plantas Sincronizadas | Tiempo Promedio en Frontend (min) |
+| :--- | :--- | :--- | :--- | :--- |
+| Día 1 | 120 | 10 | 15 | 2.5 |
+| Día 2 | 135 | 15 | 25 | 3 |
+| Día 3 | 150 | 22 | 40 | 3.2 |
+| Día 4 | 190 | 35 | 70 | 4.1 |
+| Día 5 | 240 | 55 | 110 | 4.8 |
+| Día 6 | 310 | 85 | 175 | 5.5 |
+| Día 7 | 380 | 120 | 250 | 6.2 |
+
+Lo primero que analizaremos será una predicción para el siguiente día de pruebas y ver cuántas plantas sincronizadas podríamos esperar que los usuarios registren. Se tomó como corte el Día 7
+
+<img src="images/evidencia-TF/Bloque 1 Python.png" alt="Screenshot Bloque 1 Python" width="1000">
+
+
+<img src="images/evidencia-TF/Ejecución 1 Python.png" alt="Screenshot Ejecución 1 Python" width="1000">
+
+Ahora vemos el gráfico de la conversión de los usuarios, comparando las visitas al Landing Page frente a los nuevos registros por día:
+
+<img src="images/evidencia-TF/Bloque 2 Python.png" alt="Screenshot Bloque 2 Python" width="1000">
+
+<img src="images/evidencia-TF/Ejecución 2 Python.png" alt="Screenshot Ejecución 2 Python" width="1000">
+
+**Gráfico de Rendimiento y Conversión del Landing Page:**
+En este gráfico, se muestra la cantidad de visitas al landing page en contraste con los registros nuevos de usuarios a lo largo de la semana de prueba. Observamos que, tras la optimización informativa del landing page, la adopción ha tenido una curva fuertemente ascendente. Mientras que en los primeros días la tasa de conversión rondaba el 8-11%, para el "Día 7" superó el 31%. Esto valida nuestra hipótesis de que un landing page claro e intuitivo reduce las dudas del usuario y fomenta la creación de cuentas.
+
+**Gráfico de Evolución de Plantas Sincronizadas:**
+Utilizando un gráfico de barras, se evidencia el uso directo de la interfaz del frontend para la función principal de la aplicación: la sincronización de plantas. El incremento exponencial (pasando de 15 plantas el primer día a 250 al finalizar la semana) sugiere que la interfaz de usuario implementada no solo es funcional, sino que retiene al usuario al permitirle añadir múltiples perfiles botánicos sin fricción técnica. Las pruebas de usuario han dado resultados positivos, confirmando que la navegación dentro del catálogo y el registro es escalable.
+
 #### 8.4.2. Re-scored and Re-prioritized Question Backlog
+
+Tras evaluar la experiencia del usuario y la respuesta técnica del sistema en las fases previas, se han reevaluado las preguntas de experimentación del backlog de PlantSync para enfocarnos en los atributos de mayor impacto:
+
+| Question | Confidence | Risk | Impact | Interest | Total Score |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| ¿Cómo los usuarios podrían recibir alertas y recordatorios más precisos sobre el riego de sus plantas para garantizar su correcto desarrollo y supervivencia? | 8 | 7 | 9 | 9 | 33 |
+| ¿Cómo optimizar los aspectos específicos del diseño del frontend para agilizar el registro y la sincronización de una nueva planta en menos clics? | 8 | 5 | 8 | 8 | 29 |
+| ¿Cómo mejorar la claridad de la información en el landing page para incrementar aún más la tasa de conversión de visitantes a usuarios activos? | 7 | 6 | 8 | 8 | 29 |
+| ¿De qué manera se puede reducir el tiempo de carga del catálogo de plantas en la aplicación web para evitar el abandono de los usuarios durante la navegación? | 6 | 5 | 7 | 7 | 25 |
+| ¿Cómo implementar una sección interactiva donde los usuarios puedan compartir el estado de sus cultivos con otros miembros para fomentar una comunidad? | 5 | 4 | 6 | 6 | 21 |
+
+<br>
+
+| Prioridad (1/2/3/5/8) | Pregunta |
+| :---: | :--- |
+| 8 | ¿Cómo los usuarios podrían recibir alertas y recordatorios más precisos sobre el riego de sus plantas para garantizar su correcto desarrollo y supervivencia? |
+| 8 | ¿Cómo optimizar los aspectos específicos del diseño del frontend para agilizar el registro y la sincronización de una nueva planta en menos clics? |
+| 5 | ¿Cómo mejorar la claridad de la información en el landing page para incrementar aún más la tasa de conversión de visitantes a usuarios activos? |
+| 3 | ¿De qué manera se puede reducir el tiempo de carga del catálogo de plantas en la aplicación web para evitar el abandono de los usuarios durante la navegación? |
+| 2 | ¿Cómo implementar una sección interactiva donde los usuarios puedan compartir el estado de sus cultivos con otros miembros para fomentar una comunidad? |
+
+En base al análisis de los resultados obtenidos y al nuevo puntaje asignado en nuestra matriz de preguntas, hemos otorgado la máxima prioridad (8) a la optimización de alertas de cuidado y a la fluidez del diseño del frontend. Esto se debe a que, una vez que el usuario ingresa por el landing page, el "core" de la retención reside en la sincronización exitosa de las plantas y en el valor continuo que aportan los recordatorios. Por otro lado, las características sociales y comunitarias han recibido un puntaje menor (2 y 3), ya que se consideran funcionalidades secundarias que se abordarán una vez que el rendimiento central de la plataforma sea 100% estable.
 
 ### 8.5. Continuous Learning
 
