@@ -8265,6 +8265,12 @@ Se presentan capturas de pantalla de la Landing Page implementada y adaptada par
   <img src="images/experimentos/landing3.jpg" alt="Landing Page Contact" width="1000">
 </p>
 
+###### Evidencia de Analíticas y Almacenamiento Local (Local Storage)
+Muestra el seguimiento analítico y de almacenamiento local (Local Storage) al interactuar con los botones de planes de suscripción para medir el interés de los usuarios:
+<p align="center">
+  <img src="images/experimentos/analytics-localstorage.jpg" alt="Local Storage y Analytics" width="1000">
+</p>
+
 ##### 8.3.3.3. Implemented To-Be Frontend-Web Application Evidence
 
 Se presentan capturas de la aplicación web frontend que evidencian la implementación del sistema "To-Be", abarcando el flujo completo de autenticación y las vistas principales de la plataforma:
@@ -8273,6 +8279,18 @@ Se presentan capturas de la aplicación web frontend que evidencian la implement
 <p align="center">
   <img src="images/experimentos/login.jpg" alt="Login Vista" width="480">
   <img src="images/experimentos/signup.jpg" alt="Signup Vista" width="480">
+</p>
+
+###### Registro de Usuario con Nuevos Campos (Edad y Género)
+Captura del formulario de registro de usuario actualizado para incluir los nuevos campos demográficos:
+<p align="center">
+  <img src="images/experimentos/register-new-fields.jpg" alt="Formulario con nuevos campos" width="1000">
+</p>
+
+###### Detalle de Petición API (Payload del Request) para Registro
+Detalle de la petición HTTP interceptada donde se aprecia el envío correcto de los nuevos campos de edad y género en la carga de datos (payload):
+<p align="center">
+  <img src="images/experimentos/register-age-request.jpg" alt="Request payload de registro" width="1000">
 </p>
 
 ###### Módulo "Mis Plantas"
@@ -8299,9 +8317,13 @@ Permite gestionar la frecuencia de alertas automáticas y preferencias del usuar
   <img src="images/experimentos/configuracion.jpg" alt="Configuración de Cuenta" width="1000">
 </p>
 
-##### 8.3.3.4. Implemented To-Be Native-Mobile Application Evidence
+###### Persistencia en Base de Datos SQL
+Captura de la base de datos SQL que valida que los campos de edad y género se almacenan correctamente al crear perfiles en el sistema:
+<p align="center">
+  <img src="images/experimentos/sql-data.jpg" alt="Registros en base de datos SQL" width="1000">
+</p>
 
-##### 8.3.3.5. Implemented To-Be RESTful API and/or Serverless Backend Evidence
+##### 8.3.3.4. Implemented To-Be RESTful API and/or Serverless Backend Evidence
 
 ##### 8.3.3.6. Team Collaboration Insights
 
