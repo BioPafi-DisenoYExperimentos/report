@@ -8325,7 +8325,366 @@ Captura de la base de datos SQL que valida que los campos de edad y género se a
 
 ##### 8.3.3.4. Implemented To-Be RESTful API and/or Serverless Backend Evidence
 
+**Implementación en Swagger**
+
+**User**
+
+<p align="center">
+  <img src="images/endpointUser.png" alt="User" width="1000">
+</p>
+
+**Profiles**
+
+<p align="center">
+  <img src="images/endpointProfiles.png" alt="Profiles" width="1000">
+</p>
+
+**Roles**
+
+<p align="center">
+  <img src="images/endpointRoles.png" alt="Roles" width="1000">
+</p>
+
+**Weather**
+
+<p align="center">
+  <img src="images/endpointWeather.png" alt="Weather" width="1000">
+</p>
+
+**Authentication**
+
+<p align="center">
+  <img src="images/endpointAuthentication.png" alt="Authentication" width="1000">
+</p>
+
+**Guides**
+
+<p align="center">
+  <img src="images/endpointGuides.png" alt="Guides" width="1000">
+</p>
+
+**PlantHistories**
+
+<p align="center">
+  <img src="images/endpointPlantHistories.png" alt="PlantHistories" width="1000">
+</p>
+
+
+**Plants**
+
+<p align="center">
+  <img src="images/endpointPlants.png" alt="Plants" width="1000">
+</p>
+
+**Tasks**
+
+<p align="center">
+  <img src="images/endpointTasks.png" alt="Task" width="1000">
+</p>
+
+**Documentación de la API Restful**
+
+**Tabla de los endpoints**
+| **Módulo**          | **Endpoint**                               | **Método** | **Descripción**                                | **Request Body**             | **Response**                     |
+| ------------------- | ------------------------------------------ | ---------- | ---------------------------------------------- | ---------------------------- | -------------------------------- |
+| **Users**           | `/api/v1/users/{id}`                       | PUT        | Actualiza un usuario por ID                    | `UpdateUserResource`         | `UserResource`                   |
+|                     | `/api/v1/users`                            | GET        | Obtiene todos los usuarios                     | -                            | `UserResource[]`                 |
+|                     | `/api/v1/users/{userId}`                   | GET        | Obtiene un usuario por ID                      | -                            | `UserResource`                   |
+| **Profiles**        | `/api/v1/profiles/{id}`                    | PUT        | Actualiza un perfil por ID                     | `UpdateProfileResource`      | `ProfileResource`                |
+|                     | `/api/v1/profiles`                         | GET        | Obtiene todos los perfiles                     | -                            | `ProfileResource[]`              |
+|                     | `/api/v1/profiles`                         | POST       | Crea un nuevo perfil                           | `CreateProfileResource`      | `ProfileResource`                |
+|                     | `/api/v1/profiles/{profileId}`             | GET        | Obtiene un perfil por ID                       | -                            | `ProfileResource`                |
+|                     | `/api/v1/profiles/by-user-id`              | GET        | Obtiene un perfil por ID de usuario            | -                            | `ProfileResource`                |
+| **Roles**           | `/api/v1/roles`                            | GET        | Obtiene todos los roles                        | -                            | `RoleResource[]`                 |
+| **Weather**         | `/api/v1/weather/city`                     | GET        | Obtiene información del clima por ciudad       | -                            | `string`                         |
+| **Authentication**  | `/api/v1/authentication/sign-up`           | POST       | Registra un nuevo usuario                      | `SignUpResource`             | `AuthenticatedAccountResource`   |
+|                     | `/api/v1/authentication/sign-in`           | POST       | Autentica un usuario                           | `SignInResource`             | `AuthenticatedAccountResource`   |
+| **Guides**          | `/api/v1/guides`                           | GET        | Obtiene todas las guías                        | -                            | `GuideResource[]`                |
+|                     | `/api/v1/guides`                           | POST       | Crea una nueva guía                            | `CreateGuideResource`        | `GuideResource`                  |
+|                     | `/api/v1/guides/{guideId}`                 | GET        | Obtiene una guía por ID                        | -                            | `GuideResource`                  |
+| **Plant Histories** | `/api/v1/plantHistories`                   | POST       | Crea un nuevo historial de planta              | `CreatePlantHistoryResource` | `PlantHistoryResource`           |
+|                     | `/api/v1/plantHistories/{plantId}`         | GET        | Obtiene historiales de planta por ID           | -                            | `PlantHistoryResource[]`         |
+|                     | `/api/v1/plantHistories/by-plant/{plantId}`| GET        | Obtiene historial por ID de planta             | -                            | `PlantHistoryResource`           |
+| **Tasks**           | `/api/v1/tasks`                            | GET        | Obtiene todas las tareas                       | -                            | `TaskResource[]`                 |
+|                     | `/api/v1/tasks`                            | POST       | Crea una nueva tarea                           | `CreateTaskResource`         | `TaskResource`                   |
+|                     | `/api/v1/tasks/{taskId}`                   | DELETE     | Elimina una tarea                              | -                            | `string`                         |
+| **Plants**          | `/api/v1/plants/{plantId}`                 | GET        | Obtiene una planta por ID                      | -                            | `PlantResource`                  |
+|                     | `/api/v1/plants/{plantId}`                 | PUT        | Actualiza una planta                           | `UpdatePlantResource`        | `PlantResource`                  |
+|                     | `/api/v1/plants/{plantId}`                 | DELETE     | Elimina una planta                             | -                            | `string`                         |
+|                     | `/api/v1/plants`                           | GET        | Obtiene todas las plantas                      | -                            | `PlantResource[]`                |
+|                     | `/api/v1/plants`                           | POST       | Crea una nueva planta                          | `CreatePlantResource`        | `PlantResource`                  |
+|                     | `/api/v1/plants/by-profile/{profileId}`    | GET        | Obtiene plantas por ID de perfil               | -                            | `PlantResource[]`                |
+
+Modelos de Request/Response
+
+**User**
+
+**CreateReportResource**
+
+```json
+{
+  "personName": "string",
+  "subscriptionPlan": "string",
+  "userId": 0,
+  "age": 0,
+  "gender": "string"
+}
+```
+ 
+### Profiles
+
+**CreateProfileResource**
+
+```json
+{
+  "personName": "string",
+  "subscriptionPlan": "string",
+  "userId": "integer",
+  "age": "integer",
+  "gender": "string"
+}
+```
+
+**UpdateProfileResource**
+
+```json
+{
+  "personName": "string",
+  "subscriptionPlan": "string"
+}
+```
+
+**ProfileResource**
+
+```json
+{
+  "id": "integer",
+  "personName": "string",
+  "subscriptionPlan": "string",
+  "userId": "integer",
+  "age": "integer",
+  "gender": "string"
+}
+```
+### Roles
+
+**Role**
+
+```json
+{
+  "id": "integer",
+  "name": "string"
+}
+```
+
+### Weather
+
+**Weather**
+
+```json
+{
+  "city": "string",
+  "response": "string"
+}
+```
+
+### Authentication
+
+**SignUp**
+
+```json
+{
+  "name": "string",
+  "email": "string",
+  "password": "string",
+  "subscriptionPlan": "string",
+  "age": "integer",
+  "gender": "string"
+}
+```
+
+**SignIn**
+
+```json
+{
+  "email": "string",
+  "password": "string"
+}
+```
+
+**AuthenticatedUser**
+
+```json
+{
+  "id": "integer",
+  "email": "string",
+  "token": "string"
+}
+```
+
+### Guides
+
+**CreateGuide**
+
+```json
+{
+  "title": "string",
+  "name": "string",
+  "description": "string",
+  "topic": "string",
+  "type": "string",
+  "imageUrl": "string"
+}
+```
+
+**Guide**
+
+```json
+{
+  "id": "integer",
+  "title": "string",
+  "name": "string",
+  "description": "string",
+  "topic": "string",
+  "type": "string",
+  "imageUrl": "string"
+}
+```
+
+### Plant Histories
+
+**CreatePlantHistory**
+
+```json
+{
+  "plantId": "integer",
+  "type": "string",
+  "date": "string",
+  "time": "string",
+  "humidity": "integer"
+}
+```
+
+**PlantHistory**
+
+```json
+{
+  "id": "integer",
+  "plantId": "integer",
+  "type": "string",
+  "date": "string",
+  "time": "string",
+  "humidity": "integer"
+}
+```
+
+### Tasks
+
+**CreateTask**
+
+```json
+{
+  "action": "string",
+  "date": "string",
+  "plantId": "integer",
+  "profileId": "integer",
+  "completed": "boolean"
+}
+```
+
+**Task**
+
+```json
+{
+  "id": "integer",
+  "action": "string",
+  "date": "string",
+  "plantId": "integer",
+  "profileId": "integer",
+  "completed": "boolean"
+}
+```
+
+### Plants
+
+**CreatePlant**
+
+```json
+{
+  "name": "string",
+  "species": "string",
+  "acquisitionDate": "string",
+  "humidity": "string",
+  "nextWateringDate": "string",
+  "imageUrl": "string",
+  "notificationsEnabled": "boolean",
+  "profileId": "integer"
+}
+```
+
+**Plant**
+
+```json
+{
+  "id": "integer",
+  "name": "string",
+  "species": "string",
+  "acquisitionDate": "string",
+  "humidity": "string",
+  "nextWateringDate": "string",
+  "imageUrl": "string",
+  "notificationsEnabled": "boolean",
+  "profileId": "integer"
+}
+```
+
+### Users
+
+**UpdateUser**
+
+```json
+{
+  "email": "string"
+}
+```
+
+**User**
+
+```json
+{
+  "id": "integer",
+  "email": "string",
+  "roles": [
+    "string"
+  ]
+}
+```
+
+### Checklist
+
+Se ejecutó la validación de calidad de código mediante Checkstyle, verificando que el proyecto cumpla con las reglas de estilo y convenciones definidas. La auditoría finalizó sin registrar infracciones, obteniendo un resultado de BUILD SUCCESS con 0 Checkstyle violations, lo que confirma el cumplimiento de las normas de codificación establecidas.
+
+<p align="center">
+  <img src="images/checkstyle.png" alt="Insight" width="1000">
+</p>
+
+### Tests
+
+Se ejecutó el conjunto completo de pruebas automatizadas del proyecto. Como resultado, las 70 pruebas fueron superadas satisfactoriamente (70 tests passed), validando el correcto funcionamiento de los componentes y servicios implementados.
+
+<p align="center">
+  <img src="images/testRun.png" alt="Insight" width="1000">
+</p>
+
+
+
+
+
 ##### 8.3.3.6. Team Collaboration Insights
+
+<p align="center">
+  <img src="images/Insights.png" alt="Insight" width="1000">
+</p>
 
 #### 8.3.4. To-Be Validation Interviews
 
