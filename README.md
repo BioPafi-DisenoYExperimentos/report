@@ -8260,7 +8260,249 @@ Google Analytics 4 es la mejor elección porque elimina las barreras de entrada 
 
 ##### 8.3.4.1. Diseño de Entrevistas
 
+Entrevista para personas con experiencia como hobbyistas (años cuidando plantas en casa):
+
+1.- ¿Qué funcionalidades del dashboard consideras más valiosas para alguien con experiencia?
+
+2.- ¿Se te resulto facil registrar tus plantas y gestionar sus cuidados en “Mis Plantas”?
+
+3.- ¿La sección de historial te resulta útil para mantener un seguimiento avanzado?
+
+4.- ¿Qué opinión tienes sobre la calidad y nivel de profundidad de las guías disponibles?
+
+5.- ¿El sistema de tareas se adapta bien a tus rutinas de cuidado?
+
+6.- Al probar Rootbot ¿Consideras útil su asistencia para alguien con experiencia?
+
+7.- ¿Hay alguna función que te haya sorprendido o que no hayas visto en otras herramientas similares?
+
+8.- ¿Qué opinas de la posibilidad de centralizar todas las plantas y tareas en un solo panel?
+
+9.- ¿Qué herramientas adicionales crees que podrían aportar valor a usuarios avanzados?
+
+10.- ¿Recomendarías esta plataforma a otros cuidadores con experiencia? ¿Qué los motivaría a usarla?
+
+Entrevista para personas con poca experiencia en el cuidado de plantas:
+
+1.- ¿Te resultó clara la función principal de la app cuando entraste por primera vez?
+
+2.- ¿Qué te pareció el proceso de registrar una planta en “Mis Plantas”? ¿Fue fácil de seguir?
+
+3.- ¿El historial de cuidados te pareció útil para llevar un seguimiento?
+
+4.- ¿Te ayudó la sección de guías a entender mejor cómo cuidar tus plantas?
+
+5.- ¿La sección de tareas te ayudó a organizarte con el riego, la fertilización u otros cuidados?
+
+6.- ¿Que te parecio Rootbot, siendo una chatbot que te ayuda a resolver preguntas sobre tus plantas?
+
+7.- ¿Crees que el diseño del dashboard te permitió encontrar lo que necesitabas rápidamente?
+
+8.- ¿Qué sensación tuviste al usar la app? ¿Te dio confianza para empezar con tus plantas?
+
+9.- ¿Qué función te pareció más útil como principiante? ¿Por qué?
+
+10.- ¿Qué agregarías o cambiarías para que esta app ayude mejor a quienes recién empiezan?
+
 ##### 8.3.4.2. Registro de Entrevistas
+
+## _Expertos cuidadores de plantas_
+
+<br>
+
+<table align="center">
+  <tr>
+    <th colspan="2" style="text-align:center">Entrevista 1</th>
+  </tr>
+  <tr>
+    <td><strong>Entrevistado</strong></td>
+    <td>Pedro vargas</td>
+  </tr>
+  <tr>
+    <td><strong>Edad</strong></td>
+    <td>23 años</td>
+  </tr>
+  <tr>
+    <td><strong>Distrito</strong></td>
+    <td>San Miguel</td>
+  </tr>
+  <tr>
+    <td><strong>Timing</strong></td>
+    <td>00:00 - 20:39</td>
+  </tr>
+  <tr>
+    <td><strong>URL</strong></td>
+    <td><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a500_upc_edu_pe/ESo5zHrrdaJGoCemsZ-n9rAB7GbfhQukPN2nsoXDKGw34A?nav=eyJwbGF5YmFja09wdGlvbnMiOnsic3RhcnRUaW1lSW5TZWNvbmRzIjowLCJ0aW1lc3RhbXBlZExpbmtSZWZlcnJlckluZm8iOnsic2NlbmFyaW8iOiJDaGFwdGVyU2hhcmUiLCJhZGRpdGlvbmFsSW5mbyI6eyJpc1NoYXJlZENoYXB0ZXJBdXRvIjpmYWxzZX19fSwicmVmZXJyYWxJbmZvIjp7InJlZmVycmFsQXBwIjoiU3RyZWFtV2ViQXBwIiwicmVmZXJyYWxWaWV3IjoiU2hhcmVDaGFwdGVyTGluayIsInJlZmVycmFsQXBwUGxhdGZvcm0iOiJXZWIiLCJyZWZlcnJhbE1vZGUiOiJ2aWV3In19&e=y1EqSk" target="_blank"> https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a500_upc_edu_pe/ESo5zHrrdaJGoCemsZ-n9rAB7GbfhQukPN2nsoXDKGw34A?nav=eyJwbGF5YmFja09wdGlvbnMiOnsic3RhcnRUaW1lSW5TZWNvbmRzIjowLCJ0aW1lc3RhbXBlZExpbmtSZWZlcnJlckluZm8iOnsic2NlbmFyaW8iOiJDaGFwdGVyU2hhcmUiLCJhZGRpdGlvbmFsSW5mbyI6eyJpc1NoYXJlZENoYXB0ZXJBdXRvIjpmYWxzZX19fSwicmVmZXJyYWxJbmZvIjp7InJlZmVycmFsQXBwIjoiU3RyZWFtV2ViQXBwIiwicmVmZXJyYWxWaWV3IjoiU2hhcmVDaGFwdGVyTGluayIsInJlZmVycmFsQXBwUGxhdGZvcm0iOiJXZWIiLCJyZWZlcnJhbE1vZGUiOiJ2aWV3In19&e=y1EqSk</a></td>
+  </tr>
+  <tr>
+    <td colspan="2" style="text-align:justify">
+      Resumen:<br>
+      Pedro Vargas valoró especialmente la funcionalidad del calendario de riego, ya que le permite recordar cuándo atender sus plantas. Consideró fácil registrar las plantas, aunque notó la falta de una animación de carga. Encontró útil el historial para llevar seguimiento y cree que las guías pueden ser valiosas si se amplían a más especies. El sistema de tareas le pareció práctico y adaptable a sus rutinas. Sobre el asistente Rootbot, sugirió incluir diagnósticos y recomendaciones personalizadas ante problemas visibles en las plantas. Le sorprendió la capacidad de visualizar análisis y manejar muchas plantas a la vez, y ve con buenos ojos centralizar toda la información en un panel único. Sugirió añadir herramientas que permitan registrar síntomas y recibir orientación sobre problemas específicos. Finalmente, recomendaría la plataforma a otros cuidadores experimentados, especialmente si gestionan muchas plantas, por su utilidad para organizar y no olvidar tareas.
+    </td>
+  </tr>
+  <tr>
+<td colspan="2">
+  <img src="images/evidencia-sprint3/entrevistavalidacion1-pedro.jpg" alt="Screenshot Entrevista 2" width="1000">
+    </td>
+  </tr>
+</table>
+
+<br>
+
+<table align="center">
+  <tr>
+    <th colspan="2" style="text-align:center">Entrevista 2</th>
+  </tr>
+  <tr>
+    <td><strong>Entrevistada</strong></td>
+    <td>Leonor Gonzales</td>
+  </tr>
+  <tr>
+    <td><strong>Edad</strong></td>
+    <td>60 años</td>
+  </tr>
+  <tr>
+    <td><strong>Distrito</strong></td>
+    <td>San Miguel</td>
+  </tr>
+  <tr>
+    <td><strong>Timing</strong></td>
+    <td>20:39 - 30:15</td>
+  </tr>
+  <tr>
+    <td><strong>URL</strong></td>
+    <td><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a500_upc_edu_pe/ESo5zHrrdaJGoCemsZ-n9rAB7GbfhQukPN2nsoXDKGw34A?nav=eyJwbGF5YmFja09wdGlvbnMiOnsic3RhcnRUaW1lSW5TZWNvbmRzIjoxMjM5LCJ0aW1lc3RhbXBlZExpbmtSZWZlcnJlckluZm8iOnsic2NlbmFyaW8iOiJDaGFwdGVyU2hhcmUiLCJhZGRpdGlvbmFsSW5mbyI6eyJpc1NoYXJlZENoYXB0ZXJBdXRvIjpmYWxzZX19fSwicmVmZXJyYWxJbmZvIjp7InJlZmVycmFsQXBwIjoiU3RyZWFtV2ViQXBwIiwicmVmZXJyYWxWaWV3IjoiU2hhcmVDaGFwdGVyTGluayIsInJlZmVycmFsQXBwUGxhdGZvcm0iOiJXZWIiLCJyZWZlcnJhbE1vZGUiOiJ2aWV3In19&e=nBsgUC" target="_blank">https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a500_upc_edu_pe/ESo5zHrrdaJGoCemsZ-n9rAB7GbfhQukPN2nsoXDKGw34A?nav=eyJwbGF5YmFja09wdGlvbnMiOnsic3RhcnRUaW1lSW5TZWNvbmRzIjoxMjM5LCJ0aW1lc3RhbXBlZExpbmtSZWZlcnJlckluZm8iOnsic2NlbmFyaW8iOiJDaGFwdGVyU2hhcmUiLCJhZGRpdGlvbmFsSW5mbyI6eyJpc1NoYXJlZENoYXB0ZXJBdXRvIjpmYWxzZX19fSwicmVmZXJyYWxJbmZvIjp7InJlZmVycmFsQXBwIjoiU3RyZWFtV2ViQXBwIiwicmVmZXJyYWxWaWV3IjoiU2hhcmVDaGFwdGVyTGluayIsInJlZmVycmFsQXBwUGxhdGZvcm0iOiJXZWIiLCJyZWZlcnJhbE1vZGUiOiJ2aWV3In19&e=nBsgUC</a></td>
+  </tr>
+  <tr>
+    <td colspan="2" style="text-align:justify">
+      Resumen:<br>
+      Leonor González, una usuaria previamente entrevistada para identificar necesidades en el cuidado de plantas, participó en la prueba de la primera versión de PlantSync. Destacó la facilidad para registrar plantas, agregar fotos y editar información, así como la utilidad del historial de cuidados para no perder el seguimiento de cada planta. Le pareció interesante la función de clima y valoró la sección de tareas por permitirle marcar actividades como completadas. En la sección de guías sugirió ampliar el número de opciones, ya que solo se habían desarrollado tres. Aunque el chatbot le resultó innovador, lo consideró complicado de usar, sobre todo al gestionar fechas. Señaló algunas dificultades para visualizar botones y encabezados debido al tamaño del texto, pero en general encontró la aplicación sencilla, útil y con opciones flexibles en la sección de planes.
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      <img src="images/validation-interview-leonor.png" alt="Screenshot Entrevista 2" width="1000">
+    </td>
+  </tr>
+</table>
+
+<br>
+
+<table align="center">
+  <tr>
+    <th colspan="2" style="text-align:center">Entrevista 3</th>
+  </tr>
+  <tr>
+    <td><strong>Entrevistada</strong></td>
+    <td>Guadalupe Alvarado</td>
+  </tr>
+  <tr>
+    <td><strong>Edad</strong></td>
+    <td>52 años</td>
+  </tr>
+  <tr>
+    <td><strong>Distrito</strong></td>
+    <td>San Miguel</td>
+  </tr>
+  <tr>
+    <td><strong>Timing</strong></td>
+    <td>30:15 - 38:57</td>
+  </tr>
+  <tr>
+    <td><strong>URL</strong></td>
+    <td><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a500_upc_edu_pe/ESo5zHrrdaJGoCemsZ-n9rAB7GbfhQukPN2nsoXDKGw34A?nav=eyJwbGF5YmFja09wdGlvbnMiOnsic3RhcnRUaW1lSW5TZWNvbmRzIjoxODE1LCJ0aW1lc3RhbXBlZExpbmtSZWZlcnJlckluZm8iOnsic2NlbmFyaW8iOiJDaGFwdGVyU2hhcmUiLCJhZGRpdGlvbmFsSW5mbyI6eyJpc1NoYXJlZENoYXB0ZXJBdXRvIjpmYWxzZX19fSwicmVmZXJyYWxJbmZvIjp7InJlZmVycmFsQXBwIjoiU3RyZWFtV2ViQXBwIiwicmVmZXJyYWxWaWV3IjoiU2hhcmVDaGFwdGVyTGluayIsInJlZmVycmFsQXBwUGxhdGZvcm0iOiJXZWIiLCJyZWZlcnJhbE1vZGUiOiJ2aWV3In19&e=I0rgoM" target="_blank">https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a500_upc_edu_pe/ESo5zHrrdaJGoCemsZ-n9rAB7GbfhQukPN2nsoXDKGw34A?nav=eyJwbGF5YmFja09wdGlvbnMiOnsic3RhcnRUaW1lSW5TZWNvbmRzIjoxODE1LCJ0aW1lc3RhbXBlZExpbmtSZWZlcnJlckluZm8iOnsic2NlbmFyaW8iOiJDaGFwdGVyU2hhcmUiLCJhZGRpdGlvbmFsSW5mbyI6eyJpc1NoYXJlZENoYXB0ZXJBdXRvIjpmYWxzZX19fSwicmVmZXJyYWxJbmZvIjp7InJlZmVycmFsQXBwIjoiU3RyZWFtV2ViQXBwIiwicmVmZXJyYWxWaWV3IjoiU2hhcmVDaGFwdGVyTGluayIsInJlZmVycmFsQXBwUGxhdGZvcm0iOiJXZWIiLCJyZWZlcnJhbE1vZGUiOiJ2aWV3In19&e=I0rgoM</a></td>
+  </tr>
+  <tr>
+    <td colspan="2" style="text-align:justify">
+      Resumen:<br>
+      Guadalupe Alvarado Ramos es una usuaria previamente entrevistada como parte del segmento con experiencia en el cuidado de plantas. Durante la prueba de la aplicación PlantSync, pudo navegar de forma correcta por todas las secciones y no presentó conflictos significativos con la interfaz ni con el flujo general de la aplicación. Consideró especialmente útil el acceso a las características principales de las plantas, como la humedad y la temperatura, y destacó la facilidad para registrar nuevas plantas en su perfil. Le agradó el apartado de tareas, aunque observó que no resulta cómodo tener que ingresar manualmente los eventos como riego, poda o fertilización, y sugirió mejorar esa funcionalidad. Respecto a las guías, mencionó que deberían enriquecerse con información más relevante para personas con experiencia, ya que las existentes le resultaron limitadas para su nivel. Guadalupe valoró de forma positiva el uso del RootBot y consideró que su utilidad aplica para usuarios de todos los niveles. Finalmente, aunque reconoció las funciones útiles de la aplicación, expresó que le gustaría que los cuidados se adaptaran automáticamente a las estaciones del año para hacerlos más precisos y personalizados.
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      <img src="images/validation-interview-guadalupe.png" alt="Screenshot Entrevista 3" width="1000">
+    </td>
+  </tr>
+</table>
+
+<br>
+
+## _Principiantes cuidadores de plantas:_
+
+<br>
+
+<table align="center">
+  <tr>
+    <th colspan="2" style="text-align:center">Entrevista 1</th>
+  </tr>
+  <tr>
+    <td><strong>Entrevistado</strong></td>
+    <td>Estefano Solis</td></td>
+  </tr>
+  <tr>
+    <td><strong>Edad</strong></td>
+    <td>19 años</td>
+  </tr>
+  <tr>
+    <td><strong>Distrito</strong></td>
+    <td>Cercado de Lima</td></td>
+  </tr>
+  <tr>
+    <td><strong>Timing</strong></td>
+    <td>38:57 - 51:10</td>
+  </tr>
+  <tr>
+    <td><strong>URL</strong></td>
+    <td><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a500_upc_edu_pe/ESo5zHrrdaJGoCemsZ-n9rAB7GbfhQukPN2nsoXDKGw34A?nav=eyJwbGF5YmFja09wdGlvbnMiOnsic3RhcnRUaW1lSW5TZWNvbmRzIjoyMzM3LCJ0aW1lc3RhbXBlZExpbmtSZWZlcnJlckluZm8iOnsic2NlbmFyaW8iOiJDaGFwdGVyU2hhcmUiLCJhZGRpdGlvbmFsSW5mbyI6eyJpc1NoYXJlZENoYXB0ZXJBdXRvIjpmYWxzZX19fSwicmVmZXJyYWxJbmZvIjp7InJlZmVycmFsQXBwIjoiU3RyZWFtV2ViQXBwIiwicmVmZXJyYWxWaWV3IjoiU2hhcmVDaGFwdGVyTGluayIsInJlZmVycmFsQXBwUGxhdGZvcm0iOiJXZWIiLCJyZWZlcnJhbE1vZGUiOiJ2aWV3In19&e=UvgcXa" target="_blank">https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a500_upc_edu_pe/ESo5zHrrdaJGoCemsZ-n9rAB7GbfhQukPN2nsoXDKGw34A?nav=eyJwbGF5YmFja09wdGlvbnMiOnsic3RhcnRUaW1lSW5TZWNvbmRzIjoyMzM3LCJ0aW1lc3RhbXBlZExpbmtSZWZlcnJlckluZm8iOnsic2NlbmFyaW8iOiJDaGFwdGVyU2hhcmUiLCJhZGRpdGlvbmFsSW5mbyI6eyJpc1NoYXJlZENoYXB0ZXJBdXRvIjpmYWxzZX19fSwicmVmZXJyYWxJbmZvIjp7InJlZmVycmFsQXBwIjoiU3RyZWFtV2ViQXBwIiwicmVmZXJyYWxWaWV3IjoiU2hhcmVDaGFwdGVyTGluayIsInJlZmVycmFsQXBwUGxhdGZvcm0iOiJXZWIiLCJyZWZlcnJhbE1vZGUiOiJ2aWV3In19&e=UvgcXa</a></td>
+  </tr>
+  <tr>
+    <td colspan="2" style="text-align:justify">
+      Resumen: Estefano Solis expresó que la función principal de la app fue clara desde el inicio y que el proceso de registrar plantas fue sencillo, destacando la utilidad de identificar plantas con fotos. Consideró muy útil el historial para evitar errores de riego y valoró positivamente la sección de guías, ya que le evita buscar en Google. Las tareas y recordatorios fueron lo más útil para él como principiante, pues lo ayudaron a establecer hábitos de cuidado. Le sorprendió gratamente Rootbot, al permitirle resolver dudas rápidamente, y opinó que el dashboard está bien diseñado y es fácil de navegar. La app le dio confianza y alivio al facilitar el cuidado de plantas, motivándolo a tener más. Como sugerencia, propuso una función de diagnóstico por foto para detectar problemas visuales en las plantas, aunque en general considera que la app ya está bastante completa.
+<br>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      <img src="images/evidencia-sprint3/entrevistavalidacion2-estefano.jpg" alt="screenshot entrevista estefano" width="1000">
+    </td>
+  </tr>
+</table>
+
+<table align="center">
+  <tr>
+    <th colspan="2" style="text-align:center">Entrevista 2</th>
+  </tr>
+  <tr>
+    <td><strong>Entrevistado</strong></td>
+    <td>Andrea Elizabeth Santur Tello</td></td>
+  </tr>
+  <tr>
+    <td><strong>Edad</strong></td>
+    <td>18 años</td>
+  </tr>
+  <tr>
+    <td><strong>Distrito</strong></td>
+    <td>Los Olivos</td></td>
+  </tr>
+  <tr>
+    <td><strong>Timing</strong></td>
+    <td>51:10 - 56:44</td>
+  </tr>
+  <tr>
+    <td><strong>URL</strong></td>
+    <td><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a500_upc_edu_pe/ESo5zHrrdaJGoCemsZ-n9rAB7GbfhQukPN2nsoXDKGw34A?nav=eyJwbGF5YmFja09wdGlvbnMiOnsic3RhcnRUaW1lSW5TZWNvbmRzIjozMDcwLCJ0aW1lc3RhbXBlZExpbmtSZWZlcnJlckluZm8iOnsic2NlbmFyaW8iOiJDaGFwdGVyU2hhcmUiLCJhZGRpdGlvbmFsSW5mbyI6eyJpc1NoYXJlZENoYXB0ZXJBdXRvIjpmYWxzZX19fSwicmVmZXJyYWxJbmZvIjp7InJlZmVycmFsQXBwIjoiU3RyZWFtV2ViQXBwIiwicmVmZXJyYWxWaWV3IjoiU2hhcmVDaGFwdGVyTGluayIsInJlZmVycmFsQXBwUGxhdGZvcm0iOiJXZWIiLCJyZWZlcnJhbE1vZGUiOiJ2aWV3In19&e=XJ5P7X" target="_blank">https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a500_upc_edu_pe/ESo5zHrrdaJGoCemsZ-n9rAB7GbfhQukPN2nsoXDKGw34A?nav=eyJwbGF5YmFja09wdGlvbnMiOnsic3RhcnRUaW1lSW5TZWNvbmRzIjozMDcwLCJ0aW1lc3RhbXBlZExpbmtSZWZlcnJlckluZm8iOnsic2NlbmFyaW8iOiJDaGFwdGVyU2hhcmUiLCJhZGRpdGlvbmFsSW5mbyI6eyJpc1NoYXJlZENoYXB0ZXJBdXRvIjpmYWxzZX19fSwicmVmZXJyYWxJbmZvIjp7InJlZmVycmFsQXBwIjoiU3RyZWFtV2ViQXBwIiwicmVmZXJyYWxWaWV3IjoiU2hhcmVDaGFwdGVyTGluayIsInJlZmVycmFsQXBwUGxhdGZvcm0iOiJXZWIiLCJyZWZlcnJhbE1vZGUiOiJ2aWV3In19&e=XJ5P7X</a></td>
+  </tr>
+  <tr>
+    <td colspan="2" style="text-align:justify">
+      Resumen: Elizabeth Santur dijo que la función principal de la app fue clara desde el inicio y que el proceso de registrar plantas fue sencillo, como tambien el proceso de registro como nuevo usuario fue rapido y facil de entender, ella destacp la utilidad de identificar plantas con fotos. Consideró muy útil el historial para evitar errores de riego y ayudarse con ello para crear como una rutina de cuidado para sus plantas y valoró positivamente la sección de guías. Las tareas y recordatorios fueron lo más útil para él como principiante. Le sorprendió gratamente Rootbot, al permitirle resolver dudas rápidamente, mostrando gran sorpresa con al interactuar con este, y opinó que el dashboard está bien diseñado y es fácil de navegar entre los distintos apartados de la App Web. La app le dio confianza y alivio al facilitar el cuidado de plantas, motivándolo a tener más. Como sugerencia, propuso una función de personalizacion para el diseño como lo son los colores o el color de fondo, aunque en general considera que la app ya está bastante completa.
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      <img src="images/evidencia-sprint3/entrevistavalidacion-andrea.jpg" alt="screenshot andrea santur" width="1000">
+    </td>
+  </tr>
+</table>
 
 ### 8.4. Experiment Aftermath & Analysis
 
@@ -8271,6 +8513,71 @@ Google Analytics 4 es la mejor elección porque elimina las barreras de entrada 
 ### 8.5. Continuous Learning
 
 #### 8.5.1. Shareback Session Artifacts: Learning Workflow
+
+El flujo de aprendizaje obtenido de los experimentos de monetización y perfilado demográfico nos demostró que existe un mercado claro y validado: adultos jóvenes (25-45 años) dispuestos a invertir en planes Premium y PRO. La alta tasa de clics e interés en el Landing Page hacia la funcionalidad de "Sensores IoT" y "Guías Avanzadas" nos indica que el usuario busca llevar el cuidado de sus plantas a un nivel más profesional y automatizado. Implementar la integración de hardware (sensores físicos) y la visualización de analíticas avanzadas representaría un salto importante en la retención y en la conversión directa hacia nuestros planes de pago.
+
+**New Raw Material**
+Gracias a los resultados obtenidos en el Landing Page y al registro de usuarios, vimos una excelente acogida en la propuesta de los planes de pago que incluyen kits físicos. Por ello, pensamos implementar la nueva funcionalidad de "Sincronización IoT y Analíticas Avanzadas", la cual permitirá a los usuarios conectar un sensor físico a la aplicación para monitorear en tiempo real los niveles exactos de humedad, temperatura y luz de sus plantas, dejando atrás el registro puramente manual.
+
+**Assumptions**
+
+**Business Outcomes**
+Como empresa buscamos:
+
+La integración con sensores IoT incrementará la conversión de usuarios gratuitos a planes Premium/PRO en un 15%.
+
+La venta de planes con hardware reducirá la tasa de abandono (churn rate), ya que el usuario genera un compromiso físico y a largo plazo con la plataforma.
+
+El conocimiento demográfico exacto (edad y género) permitirá optimizar el gasto en campañas de marketing (CAC) dirigidas al público que demostró mayor interés de compra.
+
+**Customer**
+
+Los usuarios (adultos jóvenes) están familiarizados y tienen afinidad con las tecnologías de "Smart Home" (Casas Inteligentes).
+
+Los usuarios desean delegar el monitoreo constante de sus plantas a un dispositivo inteligente para reducir su ansiedad por regar de más o de menos.
+
+Los usuarios valorarán tener gráficos y datos históricos precisos sobre la salud y el entorno de sus plantas.
+
+User Outcomes
+Tras la próxima experimentación con la integración IoT, esperamos que los usuarios logren los siguientes resultados:
+
+**Customer**
+
+Tranquilidad mental y reducción de estrés al saber que un sensor está monitoreando el estado real de sus plantas 24/7.
+
+Empoderamiento y satisfacción al ver datos objetivos (gráficos de mejora) de que están cuidando bien a sus plantas.
+
+Ahorro significativo de tiempo al no tener que revisar manualmente la tierra de cada maceta en su hogar.
+
+Mayor confianza en sus habilidades botánicas gracias al respaldo de datos en tiempo real.
+
+**Knowledge Gaps**
+
+¿Cómo aseguramos que el proceso de emparejamiento (pairing) entre el sensor IoT y la aplicación sea intuitivo y rápido para usuarios que no son expertos en tecnología?
+
+¿Qué sucede si el sensor físico se queda sin batería o pierde conexión Wi-Fi? ¿Cómo se lo comunicamos al usuario sin generar pánico o falsas alarmas?
+
+¿Estarán los usuarios dispuestos a pagar el costo de envío del hardware además de la suscripción mensual, o esperan que esté incluido?
+
+¿Cuántos sensores en promedio necesitará un usuario por hogar para sentir que el plan Premium vale la pena?
+
+**Ideas**
+
+Crear un flujo de "Onboarding" interactivo paso a paso en la app (con animaciones) para conectar el sensor IoT mediante Bluetooth/Wi-Fi en menos de 2 minutos.
+
+Implementar un panel de "Salud del Dispositivo" en el dashboard que notifique con antelación sobre el nivel de batería y conectividad del sensor.
+
+Ofrecer un modelo de "Hardware as a Service" (HaaS) donde el primer sensor viene incluido de forma gratuita al pagar el plan anual de la suscripción PRO.
+
+Añadir alertas climáticas (basadas en los datos del sensor) que notifiquen al usuario si la planta necesita ser movida a la sombra.
+
+**Claims**
+
+"Me anoté en la lista de espera del plan PRO en la página porque siempre riego mis plantas de más; necesito algo que me diga el nivel exacto de humedad en la tierra."
+
+"Tengo 28 años, trabajo todo el día fuera de casa y me encantaría que mis plantas también estuvieran conectadas al celular para revisarlas desde la oficina."
+
+"Me gusta la app, pero me olvido de registrar manualmente cuándo regué. Si hubiera un sensor que lo registre automáticamente por mí, pagaría la suscripción sin pensarlo."
 
 ### 8.6. To-Be Software Platform Pre-launch
 
