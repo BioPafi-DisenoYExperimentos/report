@@ -1320,7 +1320,7 @@ Expertos
 Enlace: [To-Be Scenario Map en Miro](https://miro.com/app/board/uXjVI_gA5Fc=/?share_link_id=106413711670)
 
 ### 3.2. User Stories
-
+ 
 <table>
   <thead>
     <tr>
@@ -7615,7 +7615,7 @@ A continuación, se presentan las Tarjetas de Experimento (Experiment Cards) dis
 |:---|:---|
 | **Belief** | Creemos que la mayoría de los usuarios interesados en PlantSync serán adultos jóvenes de entre 25 y 45 años, con una distribución equilibrada entre géneros, quienes buscan soluciones tecnológicas prácticas para gestionar el cuidado de sus plantas desde el hogar. |
 | **Hypothesis** | Creemos que al analizar el perfil demográfico de los usuarios registrados en PlantSync, se identificará que el rango de edad predominante es de 25 a 45 años con distribución equilibrada de géneros, mediante el análisis de los datos de registro y encuestas voluntarias en la plataforma durante las primeras 3 semanas de lanzamiento, cuando los usuarios completen su perfil al registrarse por primera vez. |
-| **Null Hypothesis** | No existirá diferencia significativa en la distribución de edad o género entre los usuarios registrados en PlantSync y la población general de usuarios de aplicaciones móviles de productividad del hogar, por lo que el perfil demográfico no permitirá identificar un segmento predominante. |
+| **Null Hypothesis** | La proporción de usuarios registrados en el rango de edad de 25 a 45 años será igual o inferior al 50%, o la distribución de géneros mostrará una desviación significativa (mayor al 15% de diferencia entre ellos), indicando que no existe un segmento demográfico predominante para la plataforma. |
 
 ### Hypothesis 2
 
@@ -7623,7 +7623,7 @@ A continuación, se presentan las Tarjetas de Experimento (Experiment Cards) dis
 |:---|:---|
 | **Belief** | Creemos que los usuarios que reciban alertas adaptadas a las condiciones climáticas reales de su ubicación cometerán menos errores de riego por exceso o por defecto, lo que incrementará su satisfacción y confianza en la plataforma frente a quienes utilizan recordatorios fijos. |
 | **Hypothesis** | Creemos que la sincronización de alertas de riego y fertilización con datos climáticos en tiempo real mejorará la experiencia del usuario y reducirá los errores de riego por exceso en un 30%, mediante la comparación entre un grupo experimental con alertas climáticas activas y un grupo de control con alertas manuales fijas durante 2 semanas, cuando el sistema detecte condiciones de humedad o lluvia en la ubicación del usuario y ajuste automáticamente las notificaciones. |
-| **Null Hypothesis** | No habrá diferencia significativa en la tasa de errores de riego, la retención semanal ni la satisfacción del usuario entre el grupo que utiliza alertas sincronizadas con datos climáticos y el grupo que gestiona recordatorios de forma manual. |
+| **Null Hypothesis** | La reducción de errores de riego por exceso en el grupo con alertas sincronizadas será inferior al 30% en comparación con el grupo de control, indicando que los datos climáticos no impactan de forma estadísticamente significativa en los hábitos de riego del usuario. |
 
 ### Hypothesis 3
 
@@ -7631,7 +7631,7 @@ A continuación, se presentan las Tarjetas de Experimento (Experiment Cards) dis
 |:---|:---|
 | **Belief** | Creemos que existe un segmento de usuarios aficionados al cuidado de plantas dispuesto a pagar por un plan de suscripción mensual que incluya soporte de sensores IoT y guías botánicas avanzadas, y que el rango de precio entre $10.99 y $16.99 resulta atractivo para captar ese segmento. |
 | **Hypothesis** | Creemos que al menos el 5% de los visitantes interesados del Landing Page elegirán el plan Premium ($10.99) o PRO ($16.99) al interactuar con la sección de precios simulada, mediante una campaña de marketing dirigido y una pasarela de pago simulada (Stripe Sandbox) habilitada durante 10 días, cuando el usuario visualice las características diferenciadas de cada plan y evalúe su disposición real de pago. |
-| **Null Hypothesis** | No habrá diferencia significativa en la tasa de conversión entre los distintos planes de suscripción ofrecidos, indicando que los usuarios no perciben suficiente valor diferencial en las funcionalidades premium para justificar un pago mensual por encima del plan básico. |
+| **Null Hypothesis** | La tasa de conversión hacia los planes Premium ($10.99) o PRO ($16.99) será estrictamente inferior al 5% del total de visitantes del Landing Page, indicando que los usuarios no perciben suficiente valor diferencial en las funcionalidades premium para justificar un pago mensual por encima del plan básico. |
 
 ### Hypothesis 4
 
@@ -7639,7 +7639,7 @@ A continuación, se presentan las Tarjetas de Experimento (Experiment Cards) dis
 |:---|:---|
 | **Belief** | Creemos que los recordatorios automáticos de riego preconfigurados por especie reducirán la carga cognitiva del usuario y aumentarán tanto la tasa de completitud de tareas como la retención semanal en comparación con el grupo que gestiona sus tareas manualmente. |
 | **Hypothesis** | Creemos que los usuarios que reciban recordatorios automáticos de riego preconfigurados reducirán a la mitad el tiempo dedicado a registrar tareas y mostrarán una mejora del 25% en retención semanal, mediante un experimento A/B de 3 semanas entre 50 usuarios con recordatorios automáticos (Grupo A) y 50 usuarios con configuración manual (Grupo B), evaluado con la escala SUS, cuando los usuarios deban registrar el cumplimiento de sus rutinas de cuidado de plantas dentro de la plataforma. |
-| **Null Hypothesis** | No habrá diferencia significativa en la tasa de retención semanal, el tiempo de registro de tareas ni la usabilidad percibida entre los usuarios que utilizan recordatorios automáticos y aquellos que configuran sus tareas de forma manual. |
+| **Null Hypothesis** | La implementación de recordatorios automáticos reducirá el tiempo de registro de tareas en menos del 50% y la mejora en la tasa de retención semanal será inferior al 25% en el grupo experimental comparado con el grupo de configuración manual. |
 
 ### Hypothesis 5
 
@@ -7655,7 +7655,7 @@ A continuación, se presentan las Tarjetas de Experimento (Experiment Cards) dis
 |:---|:---|
 | **Belief** | Creemos que los usuarios de PlantSync interactuarán con mayor frecuencia con la plataforma en las franjas horarias de mañana (8:00–10:00 AM) y noche (7:00–9:00 PM), que corresponden a los momentos del día en que permanecen en casa y desarrollan sus rutinas domésticas. |
 | **Hypothesis** | Creemos que los usuarios registrarán un mayor índice de apertura de notificaciones y cumplimiento de tareas de cuidado en los horarios de mañana (8:00 AM) y noche (8:00 PM) en comparación con el horario de tarde (2:00 PM), mediante el envío de alertas en tres franjas horarias distintas distribuidas equitativamente entre los usuarios activos y el análisis de logs de sesión y tiempos de respuesta a las notificaciones, cuando el sistema envíe automáticamente los recordatorios de riego programados. |
-| **Null Hypothesis** | No habrá diferencia significativa en la tasa de apertura de notificaciones ni en el tiempo de respuesta al cumplimiento de tareas entre los distintos horarios de envío evaluados, indicando que el momento del día no influye en el comportamiento de interacción del usuario. |
+| **Null Hypothesis** | El índice de apertura de notificaciones y el cumplimiento de tareas en los horarios de mañana (8:00 AM) y noche (8:00 PM) no mostrarán un aumento estadísticamente significativo frente al horario de tarde (2:00 PM), demostrando que la franja horaria no afecta la interacción del usuario. |
 
 ### Hypothesis 7
 
@@ -7663,7 +7663,7 @@ A continuación, se presentan las Tarjetas de Experimento (Experiment Cards) dis
 |:---|:---|
 | **Belief** | Creemos que el chatbot Rootbot, entrenado en una base de datos botánica especializada, será capaz de guiar a usuarios novatos a través de un proceso conversacional claro y empático que concluya en un diagnóstico preciso y una recomendación accionable en menos de 2 minutos. |
 | **Hypothesis** | Creemos que los usuarios que utilicen Rootbot para diagnosticar síntomas de deterioro en sus plantas completarán el proceso en menos de 2 minutos con una tasa de satisfacción (CSAT) superior al 85%, mediante la habilitación del módulo conversacional para un grupo piloto de 50 usuarios principiantes y el registro de palabras clave, imágenes y tasas de finalización de cada sesión de diagnóstico, cuando el usuario reporte síntomas visibles de deterioro en alguna de sus plantas registradas en la plataforma. |
-| **Null Hypothesis** | No habrá diferencia significativa en el tiempo de diagnóstico ni en la tasa de satisfacción (CSAT) entre los usuarios que utilicen Rootbot y aquellos que realicen búsquedas manuales de síntomas en motores de búsqueda tradicionales, indicando que el chatbot no representa una mejora perceptible en el proceso de diagnóstico. |
+| **Null Hypothesis** | El tiempo promedio para completar un diagnóstico con Rootbot será igual o superior a 2 minutos, y/o la tasa de satisfacción (CSAT) del usuario será igual o inferior al 85%, indicando que el chatbot no representa una mejora ágil frente a la búsqueda manual. |
 
 
 #### 8.2.2 Domain Business Metrics
@@ -7915,11 +7915,336 @@ Google Analytics 4 es la mejor elección porque elimina las barreras de entrada 
 
 #### 8.3.1. To-Be User Stories
 
+<br>
+
+<table style="width: 100%; border-collapse: collapse; text-align: left;" border="1">
+  <tr>
+    <th style="padding: 10px; width: 25%;">Story ID</th>
+    <th style="padding: 10px; width: 25%;">User</th>
+    <th style="padding: 10px; width: 25%;">Priority</th>
+    <th style="padding: 10px; width: 25%;">Epic</th>
+  </tr>
+  <tr>
+    <td style="padding: 10px;">US-01</td>
+    <td style="padding: 10px;">Usuario Nuevo</td>
+    <td style="padding: 10px;">Alta</td>
+    <td style="padding: 10px;">EP01</td>
+  </tr>
+  <tr>
+    <th style="padding: 10px;">Title</th>
+    <td style="padding: 10px;" colspan="3">Registro de edad</td>
+  </tr>
+  <tr>
+    <th style="padding: 10px;" colspan="4">Description</th>
+  </tr>
+  <tr>
+    <td style="padding: 10px;" colspan="4">
+      <strong>Como</strong> nuevo usuario de la plataforma,<br>
+      <strong>Quiero</strong> poder ingresar edad al momento de configurar mi perfil,<br>
+      <strong>Para</strong> ayudar a identificar a los grupos demográficos predominantes segun la edad que utilizan el sistema.
+    </td>
+  </tr>
+  <tr>
+    <th style="padding: 10px;" colspan="4">Acceptance Criteria</th>
+  </tr>
+  <tr>
+    <td style="padding: 10px;" colspan="4">
+      <ul>
+        <li><strong>Scenario 1: Campos disponibles en el formulario de perfil.</strong><br>
+        <strong>Dado que</strong> un usuario nuevo accede a la pantalla de registro, <strong>cuando</strong> visualiza el formulario de datos, <strong>entonces</strong> debe encontrar opciones claras para escribir su edad.</li>
+        <li style="margin-top: 10px;"><strong>Scenario 2: Procesamiento de la información ingresada.</strong><br>
+        <strong>Dado que</strong> el usuario completa su dato de edad <strong>cuando</strong> guarda y crea su cuenta, <strong>entonces</strong> la aplicación procesa la solicitud y envía la información para ser almacenada junto con el resto de su perfil.</li>
+        <li style="margin-top: 10px;"><strong>Scenario 3: Almacenamiento exitoso en el sistema.</strong><br>
+        <strong>Dado que</strong> el sistema recibe la información del usuario, <strong>cuando</strong> valida que los datos son correctos, <strong>entonces</strong> los guarda de forma segura en la base de datos asociada a ese perfil específico.</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+<br>
+
+<table style="width: 100%; border-collapse: collapse; text-align: left;" border="1">
+  <tr>
+    <th style="padding: 10px; width: 25%;">Story ID</th>
+    <th style="padding: 10px; width: 25%;">User</th>
+    <th style="padding: 10px; width: 25%;">Priority</th>
+    <th style="padding: 10px; width: 25%;">Epic</th>
+  </tr>
+  <tr>
+    <td style="padding: 10px;">US-02</td>
+    <td style="padding: 10px;">Usuario Nuevo</td>
+    <td style="padding: 10px;">Media</td>
+    <td style="padding: 10px;">EP01</td>
+  </tr>
+  <tr>
+    <th style="padding: 10px;">Title</th>
+    <td style="padding: 10px;" colspan="3">Registro de género</td>
+  </tr>
+  <tr>
+    <th style="padding: 10px;" colspan="4">Description</th>
+  </tr>
+  <tr>
+    <td style="padding: 10px;" colspan="4">
+      <strong>Como</strong> nuevo usuario de la plataforma,<br>
+      <strong>Quiero</strong> poder ingresar mi género al momento de configurar mi perfil,<br>
+      <strong>Para</strong> ayudar a identificar a los grupos demográficos predominantes segun el genero que utilizan el sistema.
+    </td>
+  </tr>
+  <tr>
+    <th style="padding: 10px;" colspan="4">Acceptance Criteria</th>
+  </tr>
+  <tr>
+    <td style="padding: 10px;" colspan="4">
+      <ul>
+        <li><strong>Scenario 1: Campos disponibles en el formulario de perfil.</strong><br>
+        <strong>Dado que</strong> un usuario nuevo accede a la pantalla de registro, <strong>cuando</strong> visualiza el formulario de datos, <strong>entonces</strong> debe encontrar opciones claras para seleccionar su género.</li>
+        <li style="margin-top: 10px;"><strong>Scenario 2: Procesamiento de la información ingresada.</strong><br>
+        <strong>Dado que</strong> el usuario completa su dato de género, <strong>cuando</strong> guarda y crea su cuenta, <strong>entonces</strong> la aplicación procesa la solicitud y envía la información para ser almacenada junto con el resto de su perfil.</li>
+        <li style="margin-top: 10px;"><strong>Scenario 3: Almacenamiento exitoso en el sistema.</strong><br>
+        <strong>Dado que</strong> el sistema recibe la información del usuario, <strong>cuando</strong> valida que los datos son correctos, <strong>entonces</strong> los guarda de forma segura en la base de datos asociada a ese perfil específico.</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+<br>
+
+<table style="width: 100%; border-collapse: collapse; text-align: left;" border="1">
+  <tr>
+    <th style="padding: 10px; width: 25%;">Story ID</th>
+    <th style="padding: 10px; width: 25%;">User</th>
+    <th style="padding: 10px; width: 25%;">Priority</th>
+    <th style="padding: 10px; width: 25%;">Epic</th>
+  </tr>
+  <tr>
+    <td style="padding: 10px;">US-03</td>
+    <td style="padding: 10px;">Visitante del Landing Page</td>
+    <td style="padding: 10px;">Alta</td>
+    <td style="padding: 10px;">EP06</td>
+  </tr>
+  <tr>
+    <th style="padding: 10px;">Title</th>
+    <td style="padding: 10px;" colspan="3">Visualización de Planes de Suscripción Premium</td>
+  </tr>
+  <tr>
+    <th style="padding: 10px;" colspan="4">Description</th>
+  </tr>
+  <tr>
+    <td style="padding: 10px;" colspan="4">
+      <strong>Como</strong> visitante aficionado al cuidado de plantas,<br>
+      <strong>Quiero</strong> ver una sección de planes de suscripción en la página de inicio con sus características,<br>
+      <strong>Para</strong> evaluar si los beneficios avanzados justifican adquirir una suscripción de pago en la plataforma.
+    </td>
+  </tr>
+  <tr>
+    <th style="padding: 10px;" colspan="4">Acceptance Criteria</th>
+  </tr>
+  <tr>
+    <td style="padding: 10px;" colspan="4">
+      <ul>
+        <li><strong>Scenario 1: Visualización de los planes de precios.</strong><br>
+        <strong>Dado que</strong> el usuario navega por la página principal de presentación, <strong>cuando</strong> se desplaza hacia la sección de precios, <strong>entonces</strong> debe visualizar de forma clara tres opciones de suscripción con sus respectivos valores mensuales.</li>
+        <li style="margin-top: 10px;"><strong>Scenario 2: Lectura de beneficios exclusivos.</strong><br>
+        <strong>Dado que</strong> el usuario revisa las tarjetas de los planes de pago, <strong>cuando</strong> lee los beneficios listados, <strong>entonces</strong> visualizará características exclusivas como "Soporte para sensores IoT" y "Guías botánicas avanzadas".</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+<table style="width: 100%; border-collapse: collapse; text-align: left;" border="1">
+  <tr>
+    <th style="padding: 10px; width: 25%;">Story ID</th>
+    <th style="padding: 10px; width: 25%;">User</th>
+    <th style="padding: 10px; width: 25%;">Priority</th>
+    <th style="padding: 10px; width: 25%;">Epic</th>
+  </tr>
+  <tr>
+    <td style="padding: 10px;">US-04</td>
+    <td style="padding: 10px;">Visitante interesado en las suscripciones</td>
+    <td style="padding: 10px;">Media</td>
+    <td style="padding: 10px;">EP06</td>
+  </tr>
+  <tr>
+    <th style="padding: 10px;">Title</th>
+    <td style="padding: 10px;" colspan="3">Muestra de interes en la suscripcion</td>
+  </tr>
+  <tr>
+    <th style="padding: 10px;" colspan="4">Description</th>
+  </tr>
+  <tr>
+    <td style="padding: 10px;" colspan="4">
+      <strong>Como</strong> visitante aficionado al cuidado de plantas,<br>
+      <strong>Quiero</strong> poder darle click a los diferentes planes,<br>
+      <strong>Para</strong> poder demostrar interes en la obtencion de la suscripcion.
+    </td>
+  </tr>
+  <tr>
+    <th style="padding: 10px;" colspan="4">Acceptance Criteria</th>
+  </tr>
+  <tr>
+    <td style="padding: 10px;" colspan="4">
+      <ul>
+        <li style="margin-top: 10px;"><strong>Scenario 1: Simulación de compra e interés.</strong><br>
+        <strong>Dado que</strong> el usuario decide probar un plan de pago, <strong>cuando</strong> va a la seccion de mi interesa, <strong>entonces</strong> el sistema le muestra un breve formulario de lista de espera para registrar su interés.</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+<br>
+
 #### 8.3.2. To-Be Product Backlog
+
+<table border="1" style="width: 100%; border-collapse: collapse; text-align: left;">
+  <thead>
+    <tr>
+      <th style="padding: 10px;">#Orden</th>
+      <th style="padding: 10px;">User Story ID</th>
+      <th style="padding: 10px;">Título</th>
+      <th style="padding: 10px;">Descripción</th>
+      <th style="padding: 10px; text-align: center;">Story Points (1/2/3/5/8)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="padding: 10px; text-align: center;">1</td>
+      <td style="padding: 10px; font-weight: bold;">US-01</td>
+      <td style="padding: 10px;">Registro de edad</td>
+      <td style="padding: 10px;"><strong>Como</strong> nuevo usuario de la plataforma, <strong>quiero</strong> poder ingresar mi edad al momento de configurar mi perfil, <strong>para</strong> ayudar a identificar a los grupos demográficos predominantes según la edad que utilizan el sistema.</td>
+      <td style="padding: 10px; text-align: center;">2</td>
+    </tr>
+    <tr>
+      <td style="padding: 10px; text-align: center;">2</td>
+      <td style="padding: 10px; font-weight: bold;">US-02</td>
+      <td style="padding: 10px;">Registro de género</td>
+      <td style="padding: 10px;"><strong>Como</strong> nuevo usuario de la plataforma, <strong>quiero</strong> poder ingresar mi género al momento de configurar mi perfil, <strong>para</strong> ayudar a identificar a los grupos demográficos predominantes según el género que utilizan el sistema.</td>
+      <td style="padding: 10px; text-align: center;">2</td>
+    </tr>
+    <tr>
+      <td style="padding: 10px; text-align: center;">3</td>
+      <td style="padding: 10px; font-weight: bold;">US-03</td>
+      <td style="padding: 10px;">Visualización de Planes de Suscripción Premium</td>
+      <td style="padding: 10px;"><strong>Como</strong> visitante aficionado al cuidado de plantas, <strong>quiero</strong> ver una sección de planes de suscripción en la página de inicio con sus características, <strong>para</strong> evaluar si los beneficios avanzados justifican adquirir una suscripción de pago en la plataforma.</td>
+      <td style="padding: 10px; text-align: center;">3</td>
+    </tr>
+    <tr>
+      <td style="padding: 10px; text-align: center;">4</td>
+      <td style="padding: 10px; font-weight: bold;">US-04</td>
+      <td style="padding: 10px;">Muestra de interés en la suscripción</td>
+      <td style="padding: 10px;"><strong>Como</strong> visitante aficionado al cuidado de plantas, <strong>quiero</strong> poder darle clic a los diferentes planes, <strong>para</strong> poder demostrar interés en la obtención de la suscripción.</td>
+      <td style="padding: 10px; text-align: center;">2</td>
+    </tr>
+  </tbody>
+</table>
 
 #### 8.3.3. Pipeline-supported, Experiment-Driven To-Be Software Platform Lifecycle
 
 ##### 8.3.3.1. To-Be Sprint Backlogs
+
+<table border="1" cellspacing="0" cellpadding="5" style="width: 100%; border-collapse: collapse; text-align: left;">
+  <thead>
+    <tr>
+      <th colspan="2" style="padding: 10px; text-align: center;">Technical User Story</th>
+      <th colspan="2" style="padding: 10px; text-align: center;">WorkItem / Task</th>
+      <th style="padding: 10px;">Description</th>
+      <th style="padding: 10px; text-align: center;">Estimation (Hours)</th>
+      <th style="padding: 10px;">Assigned To</th>
+      <th style="padding: 10px; text-align: center;">Status</th>
+    </tr>
+    <tr>
+      <th style="padding: 10px; text-align: center;">Id</th>
+      <th style="padding: 10px;">Title</th>
+      <th style="padding: 10px; text-align: center;">Id</th>
+      <th style="padding: 10px;">Title</th>
+      <th style="padding: 10px;"></th>
+      <th style="padding: 10px;"></th>
+      <th style="padding: 10px;"></th>
+      <th style="padding: 10px;">(To-do/In-Process/To-Review/Done)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="padding: 10px; text-align: center;">US-01</td>
+      <td style="padding: 10px;">Registro de edad</td>
+      <td style="padding: 10px; text-align: center;">TK01</td>
+      <td style="padding: 10px;">Actualizar BD y Backend (Edad)</td>
+      <td style="padding: 10px;">Crear columna 'age' y actualizar entidad Profile, DTOs y comandos en Spring Boot.</td>
+      <td style="padding: 10px; text-align: center;">3</td>
+      <td style="padding: 10px;">Kevin Castañeda</td>
+      <td style="padding: 10px; text-align: center;">Done</td>
+    </tr>
+    <tr>
+      <td style="padding: 10px; text-align: center;">US-01</td>
+      <td style="padding: 10px;">Registro de edad</td>
+      <td style="padding: 10px; text-align: center;">TK02</td>
+      <td style="padding: 10px;">Modificar UI de Registro (Edad)</td>
+      <td style="padding: 10px;">Añadir input numérico para la edad en el formulario de Angular y actualizar la integración con el servicio.</td>
+      <td style="padding: 10px; text-align: center;">2</td>
+      <td style="padding: 10px;">Kevin Castañeda</td>
+      <td style="padding: 10px; text-align: center;">Done</td>
+    </tr>
+    <tr>
+      <td style="padding: 10px; text-align: center;">US-02</td>
+      <td style="padding: 10px;">Registro de género</td>
+      <td style="padding: 10px; text-align: center;">TK03</td>
+      <td style="padding: 10px;">Actualizar BD y Backend (Género)</td>
+      <td style="padding: 10px;">Crear columna 'gender' y actualizar entidad Profile, DTOs y comandos en Spring Boot.</td>
+      <td style="padding: 10px; text-align: center;">3</td>
+      <td style="padding: 10px;">Kevin Castañeda</td>
+      <td style="padding: 10px; text-align: center;">Done</td>
+    </tr>
+    <tr>
+      <td style="padding: 10px; text-align: center;">US-02</td>
+      <td style="padding: 10px;">Registro de género</td>
+      <td style="padding: 10px; text-align: center;">TK04</td>
+      <td style="padding: 10px;">Modificar UI de Registro (Género)</td>
+      <td style="padding: 10px;">Añadir input desplegable (select) para el género en el formulario de Angular y conectar con el backend.</td>
+      <td style="padding: 10px; text-align: center;">2</td>
+      <td style="padding: 10px;">Kevin Castañeda</td>
+      <td style="padding: 10px; text-align: center;">Done</td>
+    </tr>
+    <tr>
+      <td style="padding: 10px; text-align: center;">US-03</td>
+      <td style="padding: 10px;">Visualización de Planes Premium</td>
+      <td style="padding: 10px; text-align: center;">TK05</td>
+      <td style="padding: 10px;">Maquetación HTML de tarjetas de precio</td>
+      <td style="padding: 10px;">Crear la estructura del Landing Page para mostrar las 3 opciones de planes.</td>
+      <td style="padding: 10px; text-align: center;">2</td>
+      <td style="padding: 10px;"> Jocelyn Almerco</td>
+      <td style="padding: 10px; text-align: center;">Done</td>
+    </tr>
+    <tr>
+      <td style="padding: 10px; text-align: center;">US-03</td>
+      <td style="padding: 10px;">Visualización de Planes Premium</td>
+      <td style="padding: 10px; text-align: center;">TK06</td>
+      <td style="padding: 10px;">Estilos CSS para sección de precios</td>
+      <td style="padding: 10px;">Asegurar que las tarjetas de precios sean responsivas y visualmente atractivas.</td>
+      <td style="padding: 10px; text-align: center;">3</td>
+      <td style="padding: 10px;">Jocelyn Almerco</td>
+      <td style="padding: 10px; text-align: center;">Done</td>
+    </tr>
+    <tr>
+      <td style="padding: 10px; text-align: center;">US-04</td>
+      <td style="padding: 10px;">Muestra de interés en suscripción</td>
+      <td style="padding: 10px; text-align: center;">TK07</td>
+      <td style="padding: 10px;">Configurar botones de acción (CTA)</td>
+      <td style="padding: 10px;">Añadir eventos para capturar los clics en los botones de "Adquirir plan".</td>
+      <td style="padding: 10px; text-align: center;">2</td>
+      <td style="padding: 10px;">Jocelyn Almerco</td>
+      <td style="padding: 10px; text-align: center;">Done</td>
+    </tr>
+    <tr>
+      <td style="padding: 10px; text-align: center;">US-04</td>
+      <td style="padding: 10px;">Muestra de interés en suscripción</td>
+      <td style="padding: 10px; text-align: center;">TK08</td>
+      <td style="padding: 10px;">Integrar formulario de espera simulado</td>
+      <td style="padding: 10px;">Crear modal o redirección a un formulario externo de los interesados.</td>
+      <td style="padding: 10px; text-align: center;">2</td>
+      <td style="padding: 10px;">Jocelyn Almerco</td>
+      <td style="padding: 10px; text-align: center;">Done</td>
+    </tr>
+  </tbody>
+</table>
 
 ##### 8.3.3.2. Implemented To-Be Landing Page Evidence
 
@@ -7984,7 +8309,249 @@ Permite gestionar la frecuencia de alertas automáticas y preferencias del usuar
 
 ##### 8.3.4.1. Diseño de Entrevistas
 
+Entrevista para personas con experiencia como hobbyistas (años cuidando plantas en casa):
+
+1.- ¿Qué funcionalidades del dashboard consideras más valiosas para alguien con experiencia?
+
+2.- ¿Se te resulto facil registrar tus plantas y gestionar sus cuidados en “Mis Plantas”?
+
+3.- ¿La sección de historial te resulta útil para mantener un seguimiento avanzado?
+
+4.- ¿Qué opinión tienes sobre la calidad y nivel de profundidad de las guías disponibles?
+
+5.- ¿El sistema de tareas se adapta bien a tus rutinas de cuidado?
+
+6.- Al probar Rootbot ¿Consideras útil su asistencia para alguien con experiencia?
+
+7.- ¿Hay alguna función que te haya sorprendido o que no hayas visto en otras herramientas similares?
+
+8.- ¿Qué opinas de la posibilidad de centralizar todas las plantas y tareas en un solo panel?
+
+9.- ¿Qué herramientas adicionales crees que podrían aportar valor a usuarios avanzados?
+
+10.- ¿Recomendarías esta plataforma a otros cuidadores con experiencia? ¿Qué los motivaría a usarla?
+
+Entrevista para personas con poca experiencia en el cuidado de plantas:
+
+1.- ¿Te resultó clara la función principal de la app cuando entraste por primera vez?
+
+2.- ¿Qué te pareció el proceso de registrar una planta en “Mis Plantas”? ¿Fue fácil de seguir?
+
+3.- ¿El historial de cuidados te pareció útil para llevar un seguimiento?
+
+4.- ¿Te ayudó la sección de guías a entender mejor cómo cuidar tus plantas?
+
+5.- ¿La sección de tareas te ayudó a organizarte con el riego, la fertilización u otros cuidados?
+
+6.- ¿Que te parecio Rootbot, siendo una chatbot que te ayuda a resolver preguntas sobre tus plantas?
+
+7.- ¿Crees que el diseño del dashboard te permitió encontrar lo que necesitabas rápidamente?
+
+8.- ¿Qué sensación tuviste al usar la app? ¿Te dio confianza para empezar con tus plantas?
+
+9.- ¿Qué función te pareció más útil como principiante? ¿Por qué?
+
+10.- ¿Qué agregarías o cambiarías para que esta app ayude mejor a quienes recién empiezan?
+
 ##### 8.3.4.2. Registro de Entrevistas
+
+## _Expertos cuidadores de plantas_
+
+<br>
+
+<table align="center">
+  <tr>
+    <th colspan="2" style="text-align:center">Entrevista 1</th>
+  </tr>
+  <tr>
+    <td><strong>Entrevistado</strong></td>
+    <td>Pedro vargas</td>
+  </tr>
+  <tr>
+    <td><strong>Edad</strong></td>
+    <td>23 años</td>
+  </tr>
+  <tr>
+    <td><strong>Distrito</strong></td>
+    <td>San Miguel</td>
+  </tr>
+  <tr>
+    <td><strong>Timing</strong></td>
+    <td>00:00 - 20:39</td>
+  </tr>
+  <tr>
+    <td><strong>URL</strong></td>
+    <td><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a500_upc_edu_pe/ESo5zHrrdaJGoCemsZ-n9rAB7GbfhQukPN2nsoXDKGw34A?nav=eyJwbGF5YmFja09wdGlvbnMiOnsic3RhcnRUaW1lSW5TZWNvbmRzIjowLCJ0aW1lc3RhbXBlZExpbmtSZWZlcnJlckluZm8iOnsic2NlbmFyaW8iOiJDaGFwdGVyU2hhcmUiLCJhZGRpdGlvbmFsSW5mbyI6eyJpc1NoYXJlZENoYXB0ZXJBdXRvIjpmYWxzZX19fSwicmVmZXJyYWxJbmZvIjp7InJlZmVycmFsQXBwIjoiU3RyZWFtV2ViQXBwIiwicmVmZXJyYWxWaWV3IjoiU2hhcmVDaGFwdGVyTGluayIsInJlZmVycmFsQXBwUGxhdGZvcm0iOiJXZWIiLCJyZWZlcnJhbE1vZGUiOiJ2aWV3In19&e=y1EqSk" target="_blank"> https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a500_upc_edu_pe/ESo5zHrrdaJGoCemsZ-n9rAB7GbfhQukPN2nsoXDKGw34A?nav=eyJwbGF5YmFja09wdGlvbnMiOnsic3RhcnRUaW1lSW5TZWNvbmRzIjowLCJ0aW1lc3RhbXBlZExpbmtSZWZlcnJlckluZm8iOnsic2NlbmFyaW8iOiJDaGFwdGVyU2hhcmUiLCJhZGRpdGlvbmFsSW5mbyI6eyJpc1NoYXJlZENoYXB0ZXJBdXRvIjpmYWxzZX19fSwicmVmZXJyYWxJbmZvIjp7InJlZmVycmFsQXBwIjoiU3RyZWFtV2ViQXBwIiwicmVmZXJyYWxWaWV3IjoiU2hhcmVDaGFwdGVyTGluayIsInJlZmVycmFsQXBwUGxhdGZvcm0iOiJXZWIiLCJyZWZlcnJhbE1vZGUiOiJ2aWV3In19&e=y1EqSk</a></td>
+  </tr>
+  <tr>
+    <td colspan="2" style="text-align:justify">
+      Resumen:<br>
+      Pedro Vargas valoró especialmente la funcionalidad del calendario de riego, ya que le permite recordar cuándo atender sus plantas. Consideró fácil registrar las plantas, aunque notó la falta de una animación de carga. Encontró útil el historial para llevar seguimiento y cree que las guías pueden ser valiosas si se amplían a más especies. El sistema de tareas le pareció práctico y adaptable a sus rutinas. Sobre el asistente Rootbot, sugirió incluir diagnósticos y recomendaciones personalizadas ante problemas visibles en las plantas. Le sorprendió la capacidad de visualizar análisis y manejar muchas plantas a la vez, y ve con buenos ojos centralizar toda la información en un panel único. Sugirió añadir herramientas que permitan registrar síntomas y recibir orientación sobre problemas específicos. Finalmente, recomendaría la plataforma a otros cuidadores experimentados, especialmente si gestionan muchas plantas, por su utilidad para organizar y no olvidar tareas.
+    </td>
+  </tr>
+  <tr>
+<td colspan="2">
+  <img src="images/evidencia-sprint3/entrevistavalidacion1-pedro.jpg" alt="Screenshot Entrevista 2" width="1000">
+    </td>
+  </tr>
+</table>
+
+<br>
+
+<table align="center">
+  <tr>
+    <th colspan="2" style="text-align:center">Entrevista 2</th>
+  </tr>
+  <tr>
+    <td><strong>Entrevistada</strong></td>
+    <td>Leonor Gonzales</td>
+  </tr>
+  <tr>
+    <td><strong>Edad</strong></td>
+    <td>60 años</td>
+  </tr>
+  <tr>
+    <td><strong>Distrito</strong></td>
+    <td>San Miguel</td>
+  </tr>
+  <tr>
+    <td><strong>Timing</strong></td>
+    <td>20:39 - 30:15</td>
+  </tr>
+  <tr>
+    <td><strong>URL</strong></td>
+    <td><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a500_upc_edu_pe/ESo5zHrrdaJGoCemsZ-n9rAB7GbfhQukPN2nsoXDKGw34A?nav=eyJwbGF5YmFja09wdGlvbnMiOnsic3RhcnRUaW1lSW5TZWNvbmRzIjoxMjM5LCJ0aW1lc3RhbXBlZExpbmtSZWZlcnJlckluZm8iOnsic2NlbmFyaW8iOiJDaGFwdGVyU2hhcmUiLCJhZGRpdGlvbmFsSW5mbyI6eyJpc1NoYXJlZENoYXB0ZXJBdXRvIjpmYWxzZX19fSwicmVmZXJyYWxJbmZvIjp7InJlZmVycmFsQXBwIjoiU3RyZWFtV2ViQXBwIiwicmVmZXJyYWxWaWV3IjoiU2hhcmVDaGFwdGVyTGluayIsInJlZmVycmFsQXBwUGxhdGZvcm0iOiJXZWIiLCJyZWZlcnJhbE1vZGUiOiJ2aWV3In19&e=nBsgUC" target="_blank">https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a500_upc_edu_pe/ESo5zHrrdaJGoCemsZ-n9rAB7GbfhQukPN2nsoXDKGw34A?nav=eyJwbGF5YmFja09wdGlvbnMiOnsic3RhcnRUaW1lSW5TZWNvbmRzIjoxMjM5LCJ0aW1lc3RhbXBlZExpbmtSZWZlcnJlckluZm8iOnsic2NlbmFyaW8iOiJDaGFwdGVyU2hhcmUiLCJhZGRpdGlvbmFsSW5mbyI6eyJpc1NoYXJlZENoYXB0ZXJBdXRvIjpmYWxzZX19fSwicmVmZXJyYWxJbmZvIjp7InJlZmVycmFsQXBwIjoiU3RyZWFtV2ViQXBwIiwicmVmZXJyYWxWaWV3IjoiU2hhcmVDaGFwdGVyTGluayIsInJlZmVycmFsQXBwUGxhdGZvcm0iOiJXZWIiLCJyZWZlcnJhbE1vZGUiOiJ2aWV3In19&e=nBsgUC</a></td>
+  </tr>
+  <tr>
+    <td colspan="2" style="text-align:justify">
+      Resumen:<br>
+      Leonor González, una usuaria previamente entrevistada para identificar necesidades en el cuidado de plantas, participó en la prueba de la primera versión de PlantSync. Destacó la facilidad para registrar plantas, agregar fotos y editar información, así como la utilidad del historial de cuidados para no perder el seguimiento de cada planta. Le pareció interesante la función de clima y valoró la sección de tareas por permitirle marcar actividades como completadas. En la sección de guías sugirió ampliar el número de opciones, ya que solo se habían desarrollado tres. Aunque el chatbot le resultó innovador, lo consideró complicado de usar, sobre todo al gestionar fechas. Señaló algunas dificultades para visualizar botones y encabezados debido al tamaño del texto, pero en general encontró la aplicación sencilla, útil y con opciones flexibles en la sección de planes.
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      <img src="images/validation-interview-leonor.png" alt="Screenshot Entrevista 2" width="1000">
+    </td>
+  </tr>
+</table>
+
+<br>
+
+<table align="center">
+  <tr>
+    <th colspan="2" style="text-align:center">Entrevista 3</th>
+  </tr>
+  <tr>
+    <td><strong>Entrevistada</strong></td>
+    <td>Guadalupe Alvarado</td>
+  </tr>
+  <tr>
+    <td><strong>Edad</strong></td>
+    <td>52 años</td>
+  </tr>
+  <tr>
+    <td><strong>Distrito</strong></td>
+    <td>San Miguel</td>
+  </tr>
+  <tr>
+    <td><strong>Timing</strong></td>
+    <td>30:15 - 38:57</td>
+  </tr>
+  <tr>
+    <td><strong>URL</strong></td>
+    <td><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a500_upc_edu_pe/ESo5zHrrdaJGoCemsZ-n9rAB7GbfhQukPN2nsoXDKGw34A?nav=eyJwbGF5YmFja09wdGlvbnMiOnsic3RhcnRUaW1lSW5TZWNvbmRzIjoxODE1LCJ0aW1lc3RhbXBlZExpbmtSZWZlcnJlckluZm8iOnsic2NlbmFyaW8iOiJDaGFwdGVyU2hhcmUiLCJhZGRpdGlvbmFsSW5mbyI6eyJpc1NoYXJlZENoYXB0ZXJBdXRvIjpmYWxzZX19fSwicmVmZXJyYWxJbmZvIjp7InJlZmVycmFsQXBwIjoiU3RyZWFtV2ViQXBwIiwicmVmZXJyYWxWaWV3IjoiU2hhcmVDaGFwdGVyTGluayIsInJlZmVycmFsQXBwUGxhdGZvcm0iOiJXZWIiLCJyZWZlcnJhbE1vZGUiOiJ2aWV3In19&e=I0rgoM" target="_blank">https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a500_upc_edu_pe/ESo5zHrrdaJGoCemsZ-n9rAB7GbfhQukPN2nsoXDKGw34A?nav=eyJwbGF5YmFja09wdGlvbnMiOnsic3RhcnRUaW1lSW5TZWNvbmRzIjoxODE1LCJ0aW1lc3RhbXBlZExpbmtSZWZlcnJlckluZm8iOnsic2NlbmFyaW8iOiJDaGFwdGVyU2hhcmUiLCJhZGRpdGlvbmFsSW5mbyI6eyJpc1NoYXJlZENoYXB0ZXJBdXRvIjpmYWxzZX19fSwicmVmZXJyYWxJbmZvIjp7InJlZmVycmFsQXBwIjoiU3RyZWFtV2ViQXBwIiwicmVmZXJyYWxWaWV3IjoiU2hhcmVDaGFwdGVyTGluayIsInJlZmVycmFsQXBwUGxhdGZvcm0iOiJXZWIiLCJyZWZlcnJhbE1vZGUiOiJ2aWV3In19&e=I0rgoM</a></td>
+  </tr>
+  <tr>
+    <td colspan="2" style="text-align:justify">
+      Resumen:<br>
+      Guadalupe Alvarado Ramos es una usuaria previamente entrevistada como parte del segmento con experiencia en el cuidado de plantas. Durante la prueba de la aplicación PlantSync, pudo navegar de forma correcta por todas las secciones y no presentó conflictos significativos con la interfaz ni con el flujo general de la aplicación. Consideró especialmente útil el acceso a las características principales de las plantas, como la humedad y la temperatura, y destacó la facilidad para registrar nuevas plantas en su perfil. Le agradó el apartado de tareas, aunque observó que no resulta cómodo tener que ingresar manualmente los eventos como riego, poda o fertilización, y sugirió mejorar esa funcionalidad. Respecto a las guías, mencionó que deberían enriquecerse con información más relevante para personas con experiencia, ya que las existentes le resultaron limitadas para su nivel. Guadalupe valoró de forma positiva el uso del RootBot y consideró que su utilidad aplica para usuarios de todos los niveles. Finalmente, aunque reconoció las funciones útiles de la aplicación, expresó que le gustaría que los cuidados se adaptaran automáticamente a las estaciones del año para hacerlos más precisos y personalizados.
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      <img src="images/validation-interview-guadalupe.png" alt="Screenshot Entrevista 3" width="1000">
+    </td>
+  </tr>
+</table>
+
+<br>
+
+## _Principiantes cuidadores de plantas:_
+
+<br>
+
+<table align="center">
+  <tr>
+    <th colspan="2" style="text-align:center">Entrevista 1</th>
+  </tr>
+  <tr>
+    <td><strong>Entrevistado</strong></td>
+    <td>Estefano Solis</td></td>
+  </tr>
+  <tr>
+    <td><strong>Edad</strong></td>
+    <td>19 años</td>
+  </tr>
+  <tr>
+    <td><strong>Distrito</strong></td>
+    <td>Cercado de Lima</td></td>
+  </tr>
+  <tr>
+    <td><strong>Timing</strong></td>
+    <td>38:57 - 51:10</td>
+  </tr>
+  <tr>
+    <td><strong>URL</strong></td>
+    <td><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a500_upc_edu_pe/ESo5zHrrdaJGoCemsZ-n9rAB7GbfhQukPN2nsoXDKGw34A?nav=eyJwbGF5YmFja09wdGlvbnMiOnsic3RhcnRUaW1lSW5TZWNvbmRzIjoyMzM3LCJ0aW1lc3RhbXBlZExpbmtSZWZlcnJlckluZm8iOnsic2NlbmFyaW8iOiJDaGFwdGVyU2hhcmUiLCJhZGRpdGlvbmFsSW5mbyI6eyJpc1NoYXJlZENoYXB0ZXJBdXRvIjpmYWxzZX19fSwicmVmZXJyYWxJbmZvIjp7InJlZmVycmFsQXBwIjoiU3RyZWFtV2ViQXBwIiwicmVmZXJyYWxWaWV3IjoiU2hhcmVDaGFwdGVyTGluayIsInJlZmVycmFsQXBwUGxhdGZvcm0iOiJXZWIiLCJyZWZlcnJhbE1vZGUiOiJ2aWV3In19&e=UvgcXa" target="_blank">https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a500_upc_edu_pe/ESo5zHrrdaJGoCemsZ-n9rAB7GbfhQukPN2nsoXDKGw34A?nav=eyJwbGF5YmFja09wdGlvbnMiOnsic3RhcnRUaW1lSW5TZWNvbmRzIjoyMzM3LCJ0aW1lc3RhbXBlZExpbmtSZWZlcnJlckluZm8iOnsic2NlbmFyaW8iOiJDaGFwdGVyU2hhcmUiLCJhZGRpdGlvbmFsSW5mbyI6eyJpc1NoYXJlZENoYXB0ZXJBdXRvIjpmYWxzZX19fSwicmVmZXJyYWxJbmZvIjp7InJlZmVycmFsQXBwIjoiU3RyZWFtV2ViQXBwIiwicmVmZXJyYWxWaWV3IjoiU2hhcmVDaGFwdGVyTGluayIsInJlZmVycmFsQXBwUGxhdGZvcm0iOiJXZWIiLCJyZWZlcnJhbE1vZGUiOiJ2aWV3In19&e=UvgcXa</a></td>
+  </tr>
+  <tr>
+    <td colspan="2" style="text-align:justify">
+      Resumen: Estefano Solis expresó que la función principal de la app fue clara desde el inicio y que el proceso de registrar plantas fue sencillo, destacando la utilidad de identificar plantas con fotos. Consideró muy útil el historial para evitar errores de riego y valoró positivamente la sección de guías, ya que le evita buscar en Google. Las tareas y recordatorios fueron lo más útil para él como principiante, pues lo ayudaron a establecer hábitos de cuidado. Le sorprendió gratamente Rootbot, al permitirle resolver dudas rápidamente, y opinó que el dashboard está bien diseñado y es fácil de navegar. La app le dio confianza y alivio al facilitar el cuidado de plantas, motivándolo a tener más. Como sugerencia, propuso una función de diagnóstico por foto para detectar problemas visuales en las plantas, aunque en general considera que la app ya está bastante completa.
+<br>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      <img src="images/evidencia-sprint3/entrevistavalidacion2-estefano.jpg" alt="screenshot entrevista estefano" width="1000">
+    </td>
+  </tr>
+</table>
+
+<table align="center">
+  <tr>
+    <th colspan="2" style="text-align:center">Entrevista 2</th>
+  </tr>
+  <tr>
+    <td><strong>Entrevistado</strong></td>
+    <td>Andrea Elizabeth Santur Tello</td></td>
+  </tr>
+  <tr>
+    <td><strong>Edad</strong></td>
+    <td>18 años</td>
+  </tr>
+  <tr>
+    <td><strong>Distrito</strong></td>
+    <td>Los Olivos</td></td>
+  </tr>
+  <tr>
+    <td><strong>Timing</strong></td>
+    <td>51:10 - 56:44</td>
+  </tr>
+  <tr>
+    <td><strong>URL</strong></td>
+    <td><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a500_upc_edu_pe/ESo5zHrrdaJGoCemsZ-n9rAB7GbfhQukPN2nsoXDKGw34A?nav=eyJwbGF5YmFja09wdGlvbnMiOnsic3RhcnRUaW1lSW5TZWNvbmRzIjozMDcwLCJ0aW1lc3RhbXBlZExpbmtSZWZlcnJlckluZm8iOnsic2NlbmFyaW8iOiJDaGFwdGVyU2hhcmUiLCJhZGRpdGlvbmFsSW5mbyI6eyJpc1NoYXJlZENoYXB0ZXJBdXRvIjpmYWxzZX19fSwicmVmZXJyYWxJbmZvIjp7InJlZmVycmFsQXBwIjoiU3RyZWFtV2ViQXBwIiwicmVmZXJyYWxWaWV3IjoiU2hhcmVDaGFwdGVyTGluayIsInJlZmVycmFsQXBwUGxhdGZvcm0iOiJXZWIiLCJyZWZlcnJhbE1vZGUiOiJ2aWV3In19&e=XJ5P7X" target="_blank">https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a500_upc_edu_pe/ESo5zHrrdaJGoCemsZ-n9rAB7GbfhQukPN2nsoXDKGw34A?nav=eyJwbGF5YmFja09wdGlvbnMiOnsic3RhcnRUaW1lSW5TZWNvbmRzIjozMDcwLCJ0aW1lc3RhbXBlZExpbmtSZWZlcnJlckluZm8iOnsic2NlbmFyaW8iOiJDaGFwdGVyU2hhcmUiLCJhZGRpdGlvbmFsSW5mbyI6eyJpc1NoYXJlZENoYXB0ZXJBdXRvIjpmYWxzZX19fSwicmVmZXJyYWxJbmZvIjp7InJlZmVycmFsQXBwIjoiU3RyZWFtV2ViQXBwIiwicmVmZXJyYWxWaWV3IjoiU2hhcmVDaGFwdGVyTGluayIsInJlZmVycmFsQXBwUGxhdGZvcm0iOiJXZWIiLCJyZWZlcnJhbE1vZGUiOiJ2aWV3In19&e=XJ5P7X</a></td>
+  </tr>
+  <tr>
+    <td colspan="2" style="text-align:justify">
+      Resumen: Elizabeth Santur dijo que la función principal de la app fue clara desde el inicio y que el proceso de registrar plantas fue sencillo, como tambien el proceso de registro como nuevo usuario fue rapido y facil de entender, ella destacp la utilidad de identificar plantas con fotos. Consideró muy útil el historial para evitar errores de riego y ayudarse con ello para crear como una rutina de cuidado para sus plantas y valoró positivamente la sección de guías. Las tareas y recordatorios fueron lo más útil para él como principiante. Le sorprendió gratamente Rootbot, al permitirle resolver dudas rápidamente, mostrando gran sorpresa con al interactuar con este, y opinó que el dashboard está bien diseñado y es fácil de navegar entre los distintos apartados de la App Web. La app le dio confianza y alivio al facilitar el cuidado de plantas, motivándolo a tener más. Como sugerencia, propuso una función de personalizacion para el diseño como lo son los colores o el color de fondo, aunque en general considera que la app ya está bastante completa.
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      <img src="images/evidencia-sprint3/entrevistavalidacion-andrea.jpg" alt="screenshot andrea santur" width="1000">
+    </td>
+  </tr>
+</table>
 
 ### 8.4. Experiment Aftermath & Analysis
 
@@ -7995,6 +8562,71 @@ Permite gestionar la frecuencia de alertas automáticas y preferencias del usuar
 ### 8.5. Continuous Learning
 
 #### 8.5.1. Shareback Session Artifacts: Learning Workflow
+
+El flujo de aprendizaje obtenido de los experimentos de monetización y perfilado demográfico nos demostró que existe un mercado claro y validado: adultos jóvenes (25-45 años) dispuestos a invertir en planes Premium y PRO. La alta tasa de clics e interés en el Landing Page hacia la funcionalidad de "Sensores IoT" y "Guías Avanzadas" nos indica que el usuario busca llevar el cuidado de sus plantas a un nivel más profesional y automatizado. Implementar la integración de hardware (sensores físicos) y la visualización de analíticas avanzadas representaría un salto importante en la retención y en la conversión directa hacia nuestros planes de pago.
+
+**New Raw Material**
+Gracias a los resultados obtenidos en el Landing Page y al registro de usuarios, vimos una excelente acogida en la propuesta de los planes de pago que incluyen kits físicos. Por ello, pensamos implementar la nueva funcionalidad de "Sincronización IoT y Analíticas Avanzadas", la cual permitirá a los usuarios conectar un sensor físico a la aplicación para monitorear en tiempo real los niveles exactos de humedad, temperatura y luz de sus plantas, dejando atrás el registro puramente manual.
+
+**Assumptions**
+
+**Business Outcomes**
+Como empresa buscamos:
+
+La integración con sensores IoT incrementará la conversión de usuarios gratuitos a planes Premium/PRO en un 15%.
+
+La venta de planes con hardware reducirá la tasa de abandono (churn rate), ya que el usuario genera un compromiso físico y a largo plazo con la plataforma.
+
+El conocimiento demográfico exacto (edad y género) permitirá optimizar el gasto en campañas de marketing (CAC) dirigidas al público que demostró mayor interés de compra.
+
+**Customer**
+
+Los usuarios (adultos jóvenes) están familiarizados y tienen afinidad con las tecnologías de "Smart Home" (Casas Inteligentes).
+
+Los usuarios desean delegar el monitoreo constante de sus plantas a un dispositivo inteligente para reducir su ansiedad por regar de más o de menos.
+
+Los usuarios valorarán tener gráficos y datos históricos precisos sobre la salud y el entorno de sus plantas.
+
+User Outcomes
+Tras la próxima experimentación con la integración IoT, esperamos que los usuarios logren los siguientes resultados:
+
+**Customer**
+
+Tranquilidad mental y reducción de estrés al saber que un sensor está monitoreando el estado real de sus plantas 24/7.
+
+Empoderamiento y satisfacción al ver datos objetivos (gráficos de mejora) de que están cuidando bien a sus plantas.
+
+Ahorro significativo de tiempo al no tener que revisar manualmente la tierra de cada maceta en su hogar.
+
+Mayor confianza en sus habilidades botánicas gracias al respaldo de datos en tiempo real.
+
+**Knowledge Gaps**
+
+¿Cómo aseguramos que el proceso de emparejamiento (pairing) entre el sensor IoT y la aplicación sea intuitivo y rápido para usuarios que no son expertos en tecnología?
+
+¿Qué sucede si el sensor físico se queda sin batería o pierde conexión Wi-Fi? ¿Cómo se lo comunicamos al usuario sin generar pánico o falsas alarmas?
+
+¿Estarán los usuarios dispuestos a pagar el costo de envío del hardware además de la suscripción mensual, o esperan que esté incluido?
+
+¿Cuántos sensores en promedio necesitará un usuario por hogar para sentir que el plan Premium vale la pena?
+
+**Ideas**
+
+Crear un flujo de "Onboarding" interactivo paso a paso en la app (con animaciones) para conectar el sensor IoT mediante Bluetooth/Wi-Fi en menos de 2 minutos.
+
+Implementar un panel de "Salud del Dispositivo" en el dashboard que notifique con antelación sobre el nivel de batería y conectividad del sensor.
+
+Ofrecer un modelo de "Hardware as a Service" (HaaS) donde el primer sensor viene incluido de forma gratuita al pagar el plan anual de la suscripción PRO.
+
+Añadir alertas climáticas (basadas en los datos del sensor) que notifiquen al usuario si la planta necesita ser movida a la sombra.
+
+**Claims**
+
+"Me anoté en la lista de espera del plan PRO en la página porque siempre riego mis plantas de más; necesito algo que me diga el nivel exacto de humedad en la tierra."
+
+"Tengo 28 años, trabajo todo el día fuera de casa y me encantaría que mis plantas también estuvieran conectadas al celular para revisarlas desde la oficina."
+
+"Me gusta la app, pero me olvido de registrar manualmente cuándo regué. Si hubiera un sensor que lo registre automáticamente por mí, pagaría la suscripción sin pensarlo."
 
 ### 8.6. To-Be Software Platform Pre-launch
 
