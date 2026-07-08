@@ -8508,64 +8508,48 @@ Entrevista para personas con poca experiencia en el cuidado de plantas:
 
 #### 8.4.1. Analysis and Interpretation of Results
 
-A continuación, se presentará la evidencia, la examinación del análisis, las implicaciones y la interpretación completa de los resultados de nuestra experimentación desarrollada en Python para el proyecto PlantSync.
+En esta sección se presentan los resultados obtenidos tras el despliegue del prototipo funcional de la plataforma web de PlantSync. Los experimentos se centraron en evaluar la adopción de planes de suscripción y la fricción (medida en tiempo) del nuevo formulario de perfilamiento de usuarios.
 
-Para evidenciar todos los porcentajes y los datos que se calculan para el resultado final de las experimentaciones, se utilizaron modelos de análisis de datos en Python. Esto nos ayudó para el cálculo de los eventos de los experimentos, como las interacciones con el nuevo diseño del frontend y la tasa de conversión obtenida a través de nuestro landing page informativo. Al término de la ejecución del script, se tomaron las capturas correspondientes para incluirlas en esta sección. Se evaluó un periodo de prueba de 7 días (correspondiente a las pruebas con usuarios posteriores al despliegue del Sprint 2) para validar si los experimentos planteados en la plataforma fueron exitosos.
+<img src="images/evidencia-TF/Grafica 1.png" alt="screenshot Grafica 1" width="1000">
 
-Para el análisis de los usuarios que ingresan diariamente a ver el landing page y utilizan el frontend para registrar sus plantas, se estructuró la siguiente data:
+En el gráfico de líneas superior, se visualiza la distribución porcentual y la tendencia de adopción de los planes de suscripción (Básico, Premium y Pro). Durante un periodo de prueba de 7 días, se monitoreó el comportamiento de un grupo de 30 usuarios beta al momento de crear su cuenta en PlantSync. El resultado numérico muestra una curva descendente lógica: el 60% de los usuarios optó por el plan "Básico", el 30% se registró en el plan "Premium" y un 10% seleccionó el plan "Pro".
 
-| Día de Prueba | Visitas al Landing Page | Registros Nuevos | Plantas Sincronizadas | Tiempo Promedio en Frontend (min) |
-| :--- | :--- | :--- | :--- | :--- |
-| Día 1 | 120 | 10 | 15 | 2.5 |
-| Día 2 | 135 | 15 | 25 | 3 |
-| Día 3 | 150 | 22 | 40 | 3.2 |
-| Día 4 | 190 | 35 | 70 | 4.1 |
-| Día 5 | 240 | 55 | 110 | 4.8 |
-| Día 6 | 310 | 85 | 175 | 5.5 |
-| Día 7 | 380 | 120 | 250 | 6.2 |
+El hecho de que el 40% de los usuarios haya mostrado disposición inicial para optar por planes de pago (Premium y Pro) en una etapa temprana de registro, demuestra que la propuesta de valor comunicada en la Landing Page y en las vistas de Sign Up genera suficiente interés y percepción de utilidad (especialmente en funcionalidades como el ChatBot y el historial de cuidados).
 
-Lo primero que analizaremos será una predicción para el siguiente día de pruebas y ver cuántas plantas sincronizadas podríamos esperar que los usuarios registren. Se tomó como corte el Día 7
+Dado este resultado, se recomienda mantener la estructura actual de Pricing en el frontend, pero implementar una campaña de onboarding por correo electrónico dirigida a los usuarios del plan Básico. El objetivo será incentivar el upselling mostrándoles el valor real del monitoreo inteligente y las notificaciones automatizadas que ofrecen los planes superiores, con el fin de aplanar la curva del gráfico y elevar la conversión en el próximo trimestre.
 
-<img src="images/evidencia-TF/Bloque 1 Python.png" alt="Screenshot Bloque 1 Python" width="1000">
+<img src="images/evidencia-TF/Grafica 2.png" alt="screenshot Grafica 2" width="1000">
 
+En el segundo gráfico, se analizó el impacto en tiempo real de la inclusión de nuevos campos demográficos obligatorios (Edad y Género) en el formulario de "Crear Cuenta". El objetivo del experimento era medir en segundos la fricción generada por solicitar esta información adicional, la cual es necesaria para la persistencia en la base de datos SQL y la personalización de guías botánicas.
 
-<img src="images/evidencia-TF/Ejecución 1 Python.png" alt="Screenshot Ejecución 1 Python" width="1000">
+Tras el análisis del conjunto de datos de 15 usuarios de prueba, la línea de tendencia muestra que el tiempo de llenado se mantiene en un rango estable, con un pico máximo de 60 segundos y un mínimo de 38 segundos. El tiempo promedio para completar el registro fue de aproximadamente 45 segundos. Este resultado indica un nivel de fricción bajo y altamente satisfactorio para un proceso de Onboarding.
 
-Ahora vemos el gráfico de la conversión de los usuarios, comparando las visitas al Landing Page frente a los nuevos registros por día:
-
-<img src="images/evidencia-TF/Bloque 2 Python.png" alt="Screenshot Bloque 2 Python" width="1000">
-
-<img src="images/evidencia-TF/Ejecución 2 Python.png" alt="Screenshot Ejecución 2 Python" width="1000">
-
-**Gráfico de Rendimiento y Conversión del Landing Page:**
-En este gráfico, se muestra la cantidad de visitas al landing page en contraste con los registros nuevos de usuarios a lo largo de la semana de prueba. Observamos que, tras la optimización informativa del landing page, la adopción ha tenido una curva fuertemente ascendente. Mientras que en los primeros días la tasa de conversión rondaba el 8-11%, para el "Día 7" superó el 31%. Esto valida nuestra hipótesis de que un landing page claro e intuitivo reduce las dudas del usuario y fomenta la creación de cuentas.
-
-**Gráfico de Evolución de Plantas Sincronizadas:**
-Utilizando un gráfico de barras, se evidencia el uso directo de la interfaz del frontend para la función principal de la aplicación: la sincronización de plantas. El incremento exponencial (pasando de 15 plantas el primer día a 250 al finalizar la semana) sugiere que la interfaz de usuario implementada no solo es funcional, sino que retiene al usuario al permitirle añadir múltiples perfiles botánicos sin fricción técnica. Las pruebas de usuario han dado resultados positivos, confirmando que la navegación dentro del catálogo y el registro es escalable.
+El resultado revela que solicitar datos básicos de perfilamiento desde el inicio no ralentiza significativamente el proceso ni disuade a los usuarios interesados en el cuidado de plantas. Con esta información validada en la base de datos SQL, se sugiere avanzar con el desarrollo del algoritmo de recomendaciones personalizadas de PlantSync (basado en el perfil del usuario y las condiciones climáticas), asegurando una experiencia óptima y adaptada a cada segmento de edad.
 
 #### 8.4.2. Re-scored and Re-prioritized Question Backlog
 
-Tras evaluar la experiencia del usuario y la respuesta técnica del sistema en las fases previas, se han reevaluado las preguntas de experimentación del backlog de PlantSync para enfocarnos en los atributos de mayor impacto:
+Según los resultados obtenidos en la validación del registro y la selección de planes en la plataforma web de PlantSync, hemos asignado nuevos puntajes a las preguntas de nuestro Question Backlog. El impacto de validar la captura de datos demográficos y el interés en planes Premium nos permite reajustar nuestras prioridades de desarrollo, tal como se muestra en el siguiente cuadro:
 
 | Question | Confidence | Risk | Impact | Interest | Total Score |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| ¿Cómo los usuarios podrían recibir alertas y recordatorios más precisos sobre el riego de sus plantas para garantizar su correcto desarrollo y supervivencia? | 8 | 7 | 9 | 9 | 33 |
-| ¿Cómo optimizar los aspectos específicos del diseño del frontend para agilizar el registro y la sincronización de una nueva planta en menos clics? | 8 | 5 | 8 | 8 | 29 |
-| ¿Cómo mejorar la claridad de la información en el landing page para incrementar aún más la tasa de conversión de visitantes a usuarios activos? | 7 | 6 | 8 | 8 | 29 |
-| ¿De qué manera se puede reducir el tiempo de carga del catálogo de plantas en la aplicación web para evitar el abandono de los usuarios durante la navegación? | 6 | 5 | 7 | 7 | 25 |
-| ¿Cómo implementar una sección interactiva donde los usuarios puedan compartir el estado de sus cultivos con otros miembros para fomentar una comunidad? | 5 | 4 | 6 | 6 | 21 |
+| ¿Qué tan dispuestos están los usuarios a proporcionar datos demográficos (edad/género) al registrarse para obtener guías personalizadas? | 9 | 2 | 8 | 7 | 26 |
+| ¿Cuál es la tasa de interés inicial en los planes de suscripción de pago (Premium/Pro) frente al plan Básico gratuito? | 8 | 4 | 7 | 8 | 27 |
+| ¿Cómo afecta la interfaz de "Mis Plantas" a la frecuencia con la que los usuarios revisan el estado de humedad y próximos riegos? | 5 | 3 | 9 | 6 | 23 |
+| ¿Qué tan intuitivo es el módulo de "Tareas" para comprender las acciones pendientes (regar, podar) a corto plazo? | 6 | 2 | 8 | 7 | 23 |
+| ¿El acceso directo a las "Guías de Cuidado Botánico" disminuye la dependencia de soporte externo por parte de los usuarios nuevos? | 4 | 4 | 7 | 8 | 23 |
 
 <br>
 
+A partir de la puntuación total obtenida, se ha aplicado la secuencia de Fibonacci para establecer el orden de prioridad en el desarrollo de las siguientes iteraciones del producto:
+
 | Prioridad (1/2/3/5/8) | Pregunta |
 | :---: | :--- |
-| 8 | ¿Cómo los usuarios podrían recibir alertas y recordatorios más precisos sobre el riego de sus plantas para garantizar su correcto desarrollo y supervivencia? |
-| 8 | ¿Cómo optimizar los aspectos específicos del diseño del frontend para agilizar el registro y la sincronización de una nueva planta en menos clics? |
-| 5 | ¿Cómo mejorar la claridad de la información en el landing page para incrementar aún más la tasa de conversión de visitantes a usuarios activos? |
-| 3 | ¿De qué manera se puede reducir el tiempo de carga del catálogo de plantas en la aplicación web para evitar el abandono de los usuarios durante la navegación? |
-| 2 | ¿Cómo implementar una sección interactiva donde los usuarios puedan compartir el estado de sus cultivos con otros miembros para fomentar una comunidad? |
+| **8** | ¿Cuál es la tasa de interés inicial en los planes de suscripción de pago (Premium/Pro) frente al plan Básico gratuito? |
+| **8** | ¿Qué tan dispuestos están los usuarios a proporcionar datos demográficos (edad/género) al registrarse para obtener guías personalizadas? |
+| **5** | ¿Cómo afecta la interfaz de "Mis Plantas" a la frecuencia con la que los usuarios revisan el estado de humedad y próximos riegos? |
+| **5** | ¿Qué tan intuitivo es el módulo de "Tareas" para comprender las acciones pendientes (regar, podar) a corto plazo? |
+| **3** | ¿El acceso directo a las "Guías de Cuidado Botánico" disminuye la dependencia de soporte externo por parte de los usuarios nuevos? |
 
-En base al análisis de los resultados obtenidos y al nuevo puntaje asignado en nuestra matriz de preguntas, hemos otorgado la máxima prioridad (8) a la optimización de alertas de cuidado y a la fluidez del diseño del frontend. Esto se debe a que, una vez que el usuario ingresa por el landing page, el "core" de la retención reside en la sincronización exitosa de las plantas y en el valor continuo que aportan los recordatorios. Por otro lado, las características sociales y comunitarias han recibido un puntaje menor (2 y 3), ya que se consideran funcionalidades secundarias que se abordarán una vez que el rendimiento central de la plataforma sea 100% estable.
 
 ### 8.5. Continuous Learning
 
