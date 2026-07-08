@@ -45,7 +45,11 @@
 | 1.3 | 12/05/26 | Almerco, Castañeda, Palomino, Rivera, Coca | Uso de Jenkins y documentación de Jenkins y checklist. |
 | 1.4 | 13/05/26 | Almerco, Castañeda, Palomino, Rivera, Coca | Creación de Checkstyle y SonarQube, y documentación de Jenkins y checklist. |
 | 2.1 | 09/06/26 | Almerco, Castañeda, Palomino, Rivera, Coca | Añadir nuevos items del TB2, experiment cards, question backlogs y experiment ready questions |
-| 2.2 | 11/06/26 | Almerco, Castañeda, Palomino, Rivera, Coca | Añadir measures, conditions, hipothesis y domain business metrics.s |
+| 3.1 | 06/07/26 | Castañeda Kevin | Añadir evidencias para los experimentos escogidos en la Landing Page y App Web. |
+| 3.2 | 07/07/26 | Almerco Rojas Jocelyn | Añadir Evidencias para los experimentos escogidos en el Backend |
+| 3.3 | 06/07/26 | Palomino Fiestas Erick | Añadir To-be User Stories y To-be product backlog |
+| 3.4 | 11/06/26 | Renzo Rivera  | Añadir  To-be User stories, entrevistas de validacion.
+| 4.1 | 11/06/26 | Carlos Coca | Añadir matriz de impacto ético, entrevistas de validación |
 
 ---
 
@@ -268,6 +272,24 @@ Link del documento en GitHub: https://github.com/BioPafi-DisenoYExperimentos/rep
   - [8.3. Experimentation](#83-experimentation)
     - [8.3.1. To-Be User Stories](#831-to-be-user-stories)
     - [8.3.2. To-Be Product Backlog](#832-to-be-product-backlog)
+    - [8.3.3. Pipeline-supported, Experiment-Driven To-Be Software Platform Lifecycle](#833-pipeline-supported-experiment-driven-to-be-software-platform-lifecycle)
+      - [8.3.3.1. To-Be Sprint Backlogs](#8331-to-be-sprint-backlogs)
+      - [8.3.3.2. Implemented To-Be Landing Page Evidence](#8332-implemented-to-be-landing-page-evidence)
+      - [8.3.3.3. Implemented To-Be Frontend-Web Application Evidence](#8333-implemented-to-be-frontend-web-application-evidence)
+      - [8.3.3.4. Implemented To-Be Native-Mobile Application Evidence](#8334-implemented-to-be-native-mobile-application-evidence)
+      - [8.3.3.5. Implemented To-Be RESTful API and/or Serverless Backend Evidence](#8335-implemented-to-be-restful-api-andor-serverless-backend-evidence)
+      - [8.3.3.6. Team Collaboration Insights](#8336-team-collaboration-insights)
+    - [8.3.4. To-Be Validation Interviews](#834-to-be-validation-interviews)
+      - [8.3.4.1. Diseño de Entrevistas](#8341-diseño-de-entrevistas)
+      - [8.3.4.2. Registro de Entrevistas](#8342-registro-de-entrevistas)
+  - [8.4. Experiment Aftermath & Analysis](#84-experiment-aftermath--analysis)
+    - [8.4.1. Analysis and Interpretation of Results](#841-analysis-and-interpretation-of-results)
+    - [8.4.2. Re-scored and Re-prioritized Question Backlog](#842-re-scored-and-re-prioritized-question-backlog)
+  - [8.5. Continuous Learning](#85-continuous-learning)
+    - [8.5.1. Shareback Session Artifacts: Learning Workflow](#851-shareback-session-artifacts-learning-workflow)
+  - [8.6. To-Be Software Platform Pre-launch](#86-to-be-software-platform-pre-launch)
+    - [8.6.1. About-the-Product Intro Video](#861-about-the-product-intro-video)
+- [Matriz de Evaluación Ética y de Impacto](#matriz-de-evaluación-ética-y-de-impacto)
 
 - [Conclusiones y Recomendaciones](#conclusiones-y-recomendaciones)
 - [Video about the Team](#video-about-the-team)
@@ -280,8 +302,8 @@ Link del documento en GitHub: https://github.com/BioPafi-DisenoYExperimentos/rep
 
 | **Criterio** | **Acciones Realizadas** | **Conclusiones** |
 | :--- | :--- | :--- |
-| **Comunica oralmente con efectividad a diferentes rangos de audiencia.** | **Almerco Rojas, Jocelyn Damaly:** Expuso la configuración y resultados de SonarQube, detallando las métricas de calidad y deuda técnica identificadas en el proyecto.<br><br>**Castañeda Llanos, Kevin Alexander:** Presentó los avances en la creación de tests unitarios e integrales, así como la implementación de Checkstyle para asegurar los estándares de código.<br><br>**Palomino Fiestas, Erick Leonardo:** Explicó el flujo de trabajo en Jenkins para la integración continua y la ejecución de pruebas de integración.<br><br>**Rivera Ratachi, Renzo Sebastian:** Comunicó los resultados de las pruebas realizadas con Karate, detallando la cobertura de tests unitarios e integrales.<br><br>**Coca Lavado, Carlos Andres:** Expuso la lógica detrás de los scripts de Karate y los resultados de las pruebas de integración en el sistema. | TP: Como equipo, logramos una comunicación oral efectiva que facilitó la coordinación técnica para la implementación de pruebas y la automatización con Jenkins. La exposición clara de los avances diarios permitió una integración fluida de las herramientas de calidad en el proyecto, asegurando que todos los integrantes estuvieran alineados con los objetivos técnicos. <br><br> TB2: Se implementó la fase de experimentación, logramos comunicarnos de manera efectiva para finalizar todos los items necesarios para cumplir con los objetivos propuestos.
-| **Comunica por escrito con efectividad a diferentes rangos de audiencia.** | **Almerco Rojas, Jocelyn Damaly:** Redactó los informes de calidad generados por SonarQube, documentando los puntos de mejora y la calidad del código.<br><br>**Castañeda Llanos, Kevin Alexander:** Elaboró la documentación técnica de los tests unitarios, integrales y las reglas configuradas en Checkstyle.<br><br>**Palomino Fiestas, Erick Leonardo:** Documentó los procesos de automatización en Jenkins y colaboró en la redacción de los reportes de pruebas de integración.<br><br>**Rivera Ratachi, Renzo Sebastian:** Redactó la documentación de los tests unitarios e integrales realizados con Karate, asegurando la trazabilidad de las pruebas.<br><br>**Coca Lavado, Carlos Andres:** Elaboró la documentación técnica de los escenarios de prueba en Karate y los resultados de integración. | TP: Se logró una documentación técnica precisa y estructurada sobre los procesos de testing, despliegue continuo y calidad de software. La redacción clara de los reportes y guías facilitó la trazabilidad del desarrollo del TP, permitiendo que la información fuera accesible y comprensible para todos los evaluadores. <br><br> TB2: Se documentó de forma escrita de forma correcta los puntos a seguir en la fase de la experimentación para poder validar la idea de negocio. |
+| **4.c.1 Reconoce responsabilidad ética y profesional en situaciones de ingeniería de software** | **Almerco Rojas, Jocelyn Damaly:** **TP/TB2:** Evaluó la deuda técnica y la calidad del código con SonarQube. Reconoció la responsabilidad profesional de entregar un software seguro y mantenible, identificando y documentando vulnerabilidades ("code smells") y brechas de seguridad para evitar riesgos a los usuarios y fallas críticas en el sistema. **TF:** Diseñó e implementó las APIs RESTful de la fase "To-Be" y documentó los "collaboration insights", asumiendo la responsabilidad ética y profesional de asegurar el intercambio seguro de datos y la transparencia del equipo en el repositorio.<br><br>**Castañeda Llanos, Kevin Alexander:** **TP/TB2:** Implementó Checkstyle y diseñó pruebas unitarias y de integración. Reconoció su responsabilidad profesional al asegurar que el código cumpla con los estándares de codificación establecidos y que cada componente sea testeado de manera rigurosa, garantizando la confiabilidad y estabilidad de la aplicación. **TF:** Desarrolló la Landing Page e implementó el frontend de la aplicación web "To-Be", asumiendo la responsabilidad ética de construir interfaces de usuario que informen con total transparencia sobre las funcionalidades y protejan la privacidad de los datos en los formularios y evidencias del frontend.<br><br>**Palomino Fiestas, Erick Leonardo:** **TP/TB2:** Automatizó el pipeline de integración continua con Jenkins. Reconoció su responsabilidad profesional al configurar un flujo de trabajo controlado y reproducible que evite el despliegue de código defectuoso o vulnerable en entornos de producción. **TF:** Organizó y documentó las historias de usuario "To-Be", el product backlog y su ciclo de vida, así como los sprint backlogs de la fase "To-Be", asumiendo el deber profesional de planificar de forma realista y ética las metas del equipo de desarrollo, previniendo sobrecargas de trabajo.<br><br>**Rivera Ratachi, Renzo Sebastian:** **TP/TB2:** Implementó pruebas unitarias y automatizó pruebas de API mediante Karate DSL. Asumió la responsabilidad profesional de asegurar que la comunicación entre servicios y el flujo de datos del usuario funcionen de manera correcta, evitando pérdidas de información o fallos en el sistema. **TF:** Elaboró las historias de usuario "To-Be", documentó el aprendizaje continuo (continuous learning), el registro de entrevistas y la matriz de evaluación ética de impacto, asumiendo el compromiso ético de evaluar los posibles dilemas morales y sociales del uso del sistema.<br><br>**Coca Lavado, Carlos Andres:** **TP/TB2:** Diseñó escenarios y scripts de prueba de integración con Karate DSL. Aseguró que las integraciones del sistema operen con robustez y bajo estándares técnicos elevados, garantizando la confiabilidad integral del software. **TF:** Condujo las entrevistas de validación, interpretó objetivamente los resultados y gestionó el question backlog, asumiendo la responsabilidad ética de reportar fielmente las opiniones de los usuarios sin sesgos para guiar el desarrollo de manera profesional. | **TP / TB2:** El equipo reconoció y asumió sus responsabilidades éticas y profesionales a través de la adopción de estándares de codificación rigurosos (Checkstyle), análisis estático de código (SonarQube) y automatización de pruebas integrales (Karate, Jenkins). Esto asegura la entrega de un producto estable, seguro y confiable para los usuarios, cumpliendo con los principios profesionales de la ingeniería de software.<br><br>**TF:** El equipo consolidó sus responsabilidades éticas y profesionales al estructurar el desarrollo del producto con backlogs realistas, implementar de forma segura las APIs RESTful y el frontend, y documentar de manera transparente la validación con los usuarios y la matriz de impacto ético, asegurando un proceso de desarrollo confiable y ético. |
+| **4.c.2 Emite juicios informados considerando el impacto de las soluciones de ingeniería de software en contextos globales, económicos, ambientales y sociales** | **Almerco Rojas, Jocelyn Damaly:** **TP/TB2:** Analizó el impacto ambiental y económico de la infraestructura de software de PlantSync, priorizando la optimización de recursos mediante la dockerización de SonarQube y Jenkins, reduciendo el consumo energético de los servidores en la nube y promoviendo prácticas sostenibles. **TF:** Desarrolló la API RESTful de la fase "To-Be", analizando el impacto económico global y el consumo de recursos de los servidores para garantizar la viabilidad técnica y financiera del backend de la startup.<br><br>**Castañeda Llanos, Kevin Alexander:** **TP/TB2:** Participó en el diseño y priorización de experimentos en la fase de Experiment-Driven Development. Evaluó el impacto económico y social de la implementación de suscripciones PRO y el modelo de HaaS (sensores), garantizando que las decisiones técnicas beneficien tanto a la viabilidad económica de la startup como a las necesidades reales del usuario. **TF:** Implementó la Landing Page y el frontend de la web app "To-Be", evaluando el impacto social y comercial de las interfaces en la captación y retención de usuarios para expandir la educación ecológica de manera masiva.<br><br>**Palomino Fiestas, Erick Leonardo:** **TP/TB2:** Evaluó el impacto económico global del pipeline de CI/CD automatizado, optimizando los tiempos de compilación y despliegue en Azure, permitiendo reducir los costos operativos y de computación asociados al desarrollo continuo. **TF:** Diseñó historias de usuario y planificó el product backlog y sprints de la fase "To-Be", tomando decisiones fundamentadas sobre la sostenibilidad del producto y su ciclo de vida para maximizar el valor ambiental y social entregado.<br><br>**Rivera Ratachi, Renzo Sebastian:** **TP/TB2:** Evaluó el impacto social y ambiental de la solución tecnológica mediante el diseño de experimentos. Analizó cómo el uso de PlantSync fomenta el cuidado ecológico doméstico y la concientización ambiental, sustentando la relevancia del producto en el bienestar de la comunidad. **TF:** Estructuró la matriz de evaluación ética de impacto y el aprendizaje continuo tras registrar las entrevistas, emitiendo juicios sobre el impacto a largo plazo de la plataforma en la sociedad y el ecosistema doméstico.<br><br>**Coca Lavado, Carlos Andres:** **TP/TB2:** Analizó el impacto socioeconómico del producto al priorizar el Question Backlog en base a la retroalimentación del usuario, garantizando que el desarrollo de software resuelva problemas reales de la comunidad y maximice el valor económico y social entregado. **TF:** Realizó el análisis e interpretación de resultados de las entrevistas de validación y del question backlog, emitiendo juicios fundamentados para validar empíricamente que la solución de ingeniería responde a necesidades ambientales y sociales prioritarias de los usuarios. | **TP / TB2:** Mediante la metodología Experiment-Driven Development (EDD), el equipo emitió juicios informados para validar el impacto multidimensional de la aplicación. Se consideró el impacto ambiental de PlantSync al promover el cuidado ecológico de plantas de interior, el impacto económico a través del diseño de un modelo de suscripción viable y el impacto social mediante la mejora de la experiencia de usuario y su relación con la naturaleza.<br><br>**TF:** A través del diseño y ejecución del ciclo "To-Be", la implementación de la aplicación web final y el análisis crítico de la matriz ética y las entrevistas de validación, el equipo emitió juicios informados determinando que la solución optimiza el cuidado ecológico (impacto ambiental), ofrece un modelo económico viable (impacto económico) y mejora la calidad de vida y concientización ecológica de los usuarios en la sociedad (impacto social y global). |
 
 ---
 
@@ -1302,7 +1324,7 @@ Expertos
 Enlace: [To-Be Scenario Map en Miro](https://miro.com/app/board/uXjVI_gA5Fc=/?share_link_id=106413711670)
 
 ### 3.2. User Stories
-
+ 
 <table>
   <thead>
     <tr>
@@ -7413,11 +7435,55 @@ El proceso de despliegue automatizado en Jenkins se divide en las siguientes eta
 
 #### 7.4.1 Tools and Practices
 
+Para lograr una supervisión robusta y constante de nuestra plataforma, nos apoyaremos en el siguiente conjunto de tecnologías y metodologías:
+
+**Tools:**
+
+| Herramienta | Tipo | Descripción | Propósito |
+| :--- | :--- | :--- | :--- |
+| **Prometheus** | Gestor de métricas | Plataforma de código abierto encargada de recolectar y almacenar métricas de series temporales, óptima para arquitecturas basadas en contenedores. | Rastrear el comportamiento del backend alojado en Azure y el flujo de la base de datos MySQL. |
+| **Grafana** | Visualización de datos | Interfaz gráfica que se acopla a Prometheus para la creación de cuadros de mando dinámicos y personalizables. | Monitorear visualmente indicadores críticos como la latencia de las peticiones a la API, el estado de los contenedores y el consumo de recursos. |
+| **Vercel Analytics** | Analítica de frontend | Herramienta de diagnóstico nativa proporcionada por Vercel para evaluar la salud del entorno web. | Estudiar el tráfico, la velocidad y la interacción del usuario en la capa de presentación. |
+| **MySQL Exporter** | Integrador de métricas | Módulo de conexión que traduce y envía el estado de salud del motor de base de datos hacia el ecosistema de Prometheus. | Vigilar el estado de las conexiones, medir tiempos de consulta y evitar cuellos de botella en el servidor de datos. |
+
+<br>
+
+**Practices:**
+
+Centralización de la observabilidad: Toda la telemetría proveniente de los contenedores Docker en el backend y los registros de MySQL se consolidan en Grafana para ofrecer un panel de control unificado y accesible para el equipo.
+
+**Métricas clave:**
+
+- Tiempo de respuesta de la API: (Métrica prioritaria) Evaluación continua de la latencia para garantizar interacciones fluidas entre el cliente y el servidor.
+
+- Índice de errores HTTP emitidos por los servicios en Azure.
+
+- Consumo de memoria RAM y uso de CPU por parte de las instancias de Docker.
+
+- Velocidad de procesamiento de las consultas (queries) dentro de MySQL.
+
+- Métricas de rendimiento y tiempos de carga experimentados en el frontend alojado en Vercel.
+
 #### 7.4.2 Monitoring Pipeline Components
+
+El flujo de supervisión abarca distintas fases diseñadas para preservar el buen funcionamiento y la calidad del software, abarcando desde la escritura del código hasta su paso a producción. En nuestro esquema, la validación del código recae en SonarQube, que ejecuta revisiones estáticas de forma automática para detectar código duplicado, vulnerabilidades y fallos antes del proceso de integración.
+
+Posteriormente, cuando el sistema se empaqueta utilizando Docker y se despliega (con el backend operando en Azure y el frontend en Vercel), arranca la extracción de telemetría en tiempo real. Esta visibilidad operativa resulta crucial para que el equipo de desarrollo note inmediatamente cualquier caída en el rendimiento de los recursos o incrementos inusuales en el tiempo de respuesta de la API.
 
 #### 7.4.3 Alerting Pipeline Components
 
+El mecanismo de alertas es indispensable para reaccionar al instante frente a caídas o comportamientos inusuales, enviando avisos automáticos fundamentados en nuestras métricas prioritarias.
+
+| Componente | Descripción |
+| :--- | :--- |
+| **Prometheus Alertmanager** | Se encarga de gestionar y enrutar las alertas basándose en reglas predefinidas (por ejemplo, si la latencia de la API supera los 2 segundos o si un contenedor en Azure deja de responder), agrupando las notificaciones para no saturar los canales de comunicación. |
+| **Grafana Alerts** | Ofrece la capacidad de fijar umbrales de advertencia directamente sobre los gráficos de monitorización, disparando avisos al equipo en el momento exacto en que los KPIs muestran valores fuera de la normalidad. |
+
 #### 7.4.4 Notification Pipeline Components
+
+La automatización de las comunicaciones es vital para mantener a los desarrolladores informados sobre el éxito o fracaso de las integraciones y pases a producción. En este escenario, Jenkins actúa como el motor central de nuestro flujo CI/CD, encargándose de emitir reportes detallados en cada paso del proceso de construcción.
+
+Mediante Jenkins, se configuran avisos que se disparan de forma automática al finalizar la compilación de las imágenes en Docker, tras obtener el diagnóstico de código de SonarQube, o una vez concluido el despliegue hacia los entornos de Vercel y Azure. Esto propicia una intervención rápida si surge algún error de compilación. Por otro lado, para el sistema que ya se encuentra en ejecución, Grafana y Alertmanager asumen el rol de reportar las alarmas operativas, cerrando así el círculo de visibilidad integral tanto en la etapa de desarrollo continuo como en la disponibilidad del servicio.
 
 ## Capítulo VIII: Experiment-Driven Development
 
@@ -7597,7 +7663,7 @@ A continuación, se presentan las Tarjetas de Experimento (Experiment Cards) dis
 |:---|:---|
 | **Belief** | Creemos que la mayoría de los usuarios interesados en PlantSync serán adultos jóvenes de entre 25 y 45 años, con una distribución equilibrada entre géneros, quienes buscan soluciones tecnológicas prácticas para gestionar el cuidado de sus plantas desde el hogar. |
 | **Hypothesis** | Creemos que al analizar el perfil demográfico de los usuarios registrados en PlantSync, se identificará que el rango de edad predominante es de 25 a 45 años con distribución equilibrada de géneros, mediante el análisis de los datos de registro y encuestas voluntarias en la plataforma durante las primeras 3 semanas de lanzamiento, cuando los usuarios completen su perfil al registrarse por primera vez. |
-| **Null Hypothesis** | No existirá diferencia significativa en la distribución de edad o género entre los usuarios registrados en PlantSync y la población general de usuarios de aplicaciones móviles de productividad del hogar, por lo que el perfil demográfico no permitirá identificar un segmento predominante. |
+| **Null Hypothesis** | La proporción de usuarios registrados en el rango de edad de 25 a 45 años será igual o inferior al 50%, o la distribución de géneros mostrará una desviación significativa (mayor al 15% de diferencia entre ellos), indicando que no existe un segmento demográfico predominante para la plataforma. |
 
 ### Hypothesis 2
 
@@ -7605,7 +7671,7 @@ A continuación, se presentan las Tarjetas de Experimento (Experiment Cards) dis
 |:---|:---|
 | **Belief** | Creemos que los usuarios que reciban alertas adaptadas a las condiciones climáticas reales de su ubicación cometerán menos errores de riego por exceso o por defecto, lo que incrementará su satisfacción y confianza en la plataforma frente a quienes utilizan recordatorios fijos. |
 | **Hypothesis** | Creemos que la sincronización de alertas de riego y fertilización con datos climáticos en tiempo real mejorará la experiencia del usuario y reducirá los errores de riego por exceso en un 30%, mediante la comparación entre un grupo experimental con alertas climáticas activas y un grupo de control con alertas manuales fijas durante 2 semanas, cuando el sistema detecte condiciones de humedad o lluvia en la ubicación del usuario y ajuste automáticamente las notificaciones. |
-| **Null Hypothesis** | No habrá diferencia significativa en la tasa de errores de riego, la retención semanal ni la satisfacción del usuario entre el grupo que utiliza alertas sincronizadas con datos climáticos y el grupo que gestiona recordatorios de forma manual. |
+| **Null Hypothesis** | La reducción de errores de riego por exceso en el grupo con alertas sincronizadas será inferior al 30% en comparación con el grupo de control, indicando que los datos climáticos no impactan de forma estadísticamente significativa en los hábitos de riego del usuario. |
 
 ### Hypothesis 3
 
@@ -7613,7 +7679,7 @@ A continuación, se presentan las Tarjetas de Experimento (Experiment Cards) dis
 |:---|:---|
 | **Belief** | Creemos que existe un segmento de usuarios aficionados al cuidado de plantas dispuesto a pagar por un plan de suscripción mensual que incluya soporte de sensores IoT y guías botánicas avanzadas, y que el rango de precio entre $10.99 y $16.99 resulta atractivo para captar ese segmento. |
 | **Hypothesis** | Creemos que al menos el 5% de los visitantes interesados del Landing Page elegirán el plan Premium ($10.99) o PRO ($16.99) al interactuar con la sección de precios simulada, mediante una campaña de marketing dirigido y una pasarela de pago simulada (Stripe Sandbox) habilitada durante 10 días, cuando el usuario visualice las características diferenciadas de cada plan y evalúe su disposición real de pago. |
-| **Null Hypothesis** | No habrá diferencia significativa en la tasa de conversión entre los distintos planes de suscripción ofrecidos, indicando que los usuarios no perciben suficiente valor diferencial en las funcionalidades premium para justificar un pago mensual por encima del plan básico. |
+| **Null Hypothesis** | La tasa de conversión hacia los planes Premium ($10.99) o PRO ($16.99) será estrictamente inferior al 5% del total de visitantes del Landing Page, indicando que los usuarios no perciben suficiente valor diferencial en las funcionalidades premium para justificar un pago mensual por encima del plan básico. |
 
 ### Hypothesis 4
 
@@ -7621,7 +7687,7 @@ A continuación, se presentan las Tarjetas de Experimento (Experiment Cards) dis
 |:---|:---|
 | **Belief** | Creemos que los recordatorios automáticos de riego preconfigurados por especie reducirán la carga cognitiva del usuario y aumentarán tanto la tasa de completitud de tareas como la retención semanal en comparación con el grupo que gestiona sus tareas manualmente. |
 | **Hypothesis** | Creemos que los usuarios que reciban recordatorios automáticos de riego preconfigurados reducirán a la mitad el tiempo dedicado a registrar tareas y mostrarán una mejora del 25% en retención semanal, mediante un experimento A/B de 3 semanas entre 50 usuarios con recordatorios automáticos (Grupo A) y 50 usuarios con configuración manual (Grupo B), evaluado con la escala SUS, cuando los usuarios deban registrar el cumplimiento de sus rutinas de cuidado de plantas dentro de la plataforma. |
-| **Null Hypothesis** | No habrá diferencia significativa en la tasa de retención semanal, el tiempo de registro de tareas ni la usabilidad percibida entre los usuarios que utilizan recordatorios automáticos y aquellos que configuran sus tareas de forma manual. |
+| **Null Hypothesis** | La implementación de recordatorios automáticos reducirá el tiempo de registro de tareas en menos del 50% y la mejora en la tasa de retención semanal será inferior al 25% en el grupo experimental comparado con el grupo de configuración manual. |
 
 ### Hypothesis 5
 
@@ -7637,7 +7703,7 @@ A continuación, se presentan las Tarjetas de Experimento (Experiment Cards) dis
 |:---|:---|
 | **Belief** | Creemos que los usuarios de PlantSync interactuarán con mayor frecuencia con la plataforma en las franjas horarias de mañana (8:00–10:00 AM) y noche (7:00–9:00 PM), que corresponden a los momentos del día en que permanecen en casa y desarrollan sus rutinas domésticas. |
 | **Hypothesis** | Creemos que los usuarios registrarán un mayor índice de apertura de notificaciones y cumplimiento de tareas de cuidado en los horarios de mañana (8:00 AM) y noche (8:00 PM) en comparación con el horario de tarde (2:00 PM), mediante el envío de alertas en tres franjas horarias distintas distribuidas equitativamente entre los usuarios activos y el análisis de logs de sesión y tiempos de respuesta a las notificaciones, cuando el sistema envíe automáticamente los recordatorios de riego programados. |
-| **Null Hypothesis** | No habrá diferencia significativa en la tasa de apertura de notificaciones ni en el tiempo de respuesta al cumplimiento de tareas entre los distintos horarios de envío evaluados, indicando que el momento del día no influye en el comportamiento de interacción del usuario. |
+| **Null Hypothesis** | El índice de apertura de notificaciones y el cumplimiento de tareas en los horarios de mañana (8:00 AM) y noche (8:00 PM) no mostrarán un aumento estadísticamente significativo frente al horario de tarde (2:00 PM), demostrando que la franja horaria no afecta la interacción del usuario. |
 
 ### Hypothesis 7
 
@@ -7645,7 +7711,7 @@ A continuación, se presentan las Tarjetas de Experimento (Experiment Cards) dis
 |:---|:---|
 | **Belief** | Creemos que el chatbot Rootbot, entrenado en una base de datos botánica especializada, será capaz de guiar a usuarios novatos a través de un proceso conversacional claro y empático que concluya en un diagnóstico preciso y una recomendación accionable en menos de 2 minutos. |
 | **Hypothesis** | Creemos que los usuarios que utilicen Rootbot para diagnosticar síntomas de deterioro en sus plantas completarán el proceso en menos de 2 minutos con una tasa de satisfacción (CSAT) superior al 85%, mediante la habilitación del módulo conversacional para un grupo piloto de 50 usuarios principiantes y el registro de palabras clave, imágenes y tasas de finalización de cada sesión de diagnóstico, cuando el usuario reporte síntomas visibles de deterioro en alguna de sus plantas registradas en la plataforma. |
-| **Null Hypothesis** | No habrá diferencia significativa en el tiempo de diagnóstico ni en la tasa de satisfacción (CSAT) entre los usuarios que utilicen Rootbot y aquellos que realicen búsquedas manuales de síntomas en motores de búsqueda tradicionales, indicando que el chatbot no representa una mejora perceptible en el proceso de diagnóstico. |
+| **Null Hypothesis** | El tiempo promedio para completar un diagnóstico con Rootbot será igual o superior a 2 minutos, y/o la tasa de satisfacción (CSAT) del usuario será igual o inferior al 85%, indicando que el chatbot no representa una mejora ágil frente a la búsqueda manual. |
 
 
 #### 8.2.2 Domain Business Metrics
@@ -7889,13 +7955,1628 @@ Usando las principales características bajo la filosofía del *Simplest Useful 
 
 Google Analytics 4 es la mejor elección porque elimina las barreras de entrada económicas y técnicas, ofreciendo la analítica más robusta del mercado para entender de dónde vienen nuestros usuarios y cómo reaccionan a nuestro producto.
 
+#### 8.2.7. Data Analytics: Goals, KPIs and Metrics Selection
+
+Al haber optado por Google Analytics 4 (GA4) guiados por el principio del Simplest Useful Thing, el paso siguiente consiste en establecer los indicadores de rendimiento que nos permitirán cuantificar el impacto de nuestras decisiones de diseño. El monitoreo constante de estas variables es vital para confirmar si nuestras hipótesis son correctas y garantizar la viabilidad del proyecto. Las métricas primordiales a evaluar son:
+
+- Monitoreo de la fidelidad del usuario (Retención): Rastrearemos acciones críticas continuas, tales como la creación de perfiles para nuevas plantas y la lectura de notificaciones. La finalidad es contrastar el rendimiento de las alertas inteligentes; específicamente, buscamos que la cohorte expuesta a notificaciones basadas en el clima logre una retención semanal al menos un 15% mayor que el grupo estándar.
+
+- Proporción de conversión hacia planes premium: Emplearemos embudos de navegación en nuestra Landing Page para estimar la intención real de compra. La meta central de este experimento es conseguir que un mínimo del 5% de los visitantes únicos exploren activamente y seleccionen las opciones de suscripción de pago (plan Premium de $10.99 o plan PRO de $16.99).
+
+- Agilidad y completitud en rutinas de cuidado: Se añadirán mediciones temporales a las interacciones dentro de los módulos de riego y fertilización. Nuestra proyección apunta a evidenciar que la automatización de recordatorios facilita significativamente el uso de la aplicación, incrementando la tasa de tareas completadas diariamente en un 25% respecto al método de registro manual.
+
+- Desempeño del asistente conversacional (Rootbot): A través de la configuración de eventos personalizados, evaluaremos la efectividad de los diagnósticos botánicos generados por inteligencia artificial. El escenario ideal proyecta que más del 80% de las consultas se resuelvan en un tiempo inferior a 2 minutos, alcanzando una calificación de satisfacción del cliente (CSAT) por encima del 85%.
+
+La instrumentación de GA4 nos otorgará la visibilidad técnica necesaria para validar empíricamente nuestras suposiciones iniciales. De este modo, contaremos con respaldo numérico para confirmar desde el perfil de nuestro buyer persona (adultos jóvenes de 25 a 45 años) hasta el nivel de lealtad hacia nuestra plataforma frente a los buscadores tradicionales, aspirando a consolidar un Net Promoter Score (NPS) superior a los 40 puntos.
+
+#### 8.2.8. Web and Mobile Tracking Plan
+
+A continuación, se presentan las evidencias gráficas que certifican la instalación y el funcionamiento del sistema de analítica web:
+
+
+
+<p align="center">
+  <img src="images/analytics/1.png" alt="Insight" width="1000">
+</p>
+
+Imagen del landing page donde se implemento
+
+<br>
+
+<p align="center">
+  <img src="images/analytics/2.jpeg" alt="Insight" width="1000">
+</p>
+
+Imagen de configuracion Google Analytics 1
+
+<br>
+
+<p align="center">
+  <img src="images/analytics/3.jpeg" alt="Insight" width="1000">
+</p>
+
+Imagen de configuracion de Google Analytics 2
+
+<br>
+
+<p align="center">
+  <img src="images/analytics/4.jpeg" alt="Insight" width="1000">
+</p>
+
+Imagen de codigo implementado en para la integracion
+
+<br>
+
+<p align="center">
+  <img src="images/analytics/5.jpeg" alt="Insight" width="1000">
+</p>
+
+Imagen del informe de Google Analytics
+
+### 8.3. Experimentation
+
+#### 8.3.1. To-Be User Stories
+
+<br>
+
+<table style="width: 100%; border-collapse: collapse; text-align: left;" border="1">
+  <tr>
+    <th style="padding: 10px; width: 25%;">Story ID</th>
+    <th style="padding: 10px; width: 25%;">User</th>
+    <th style="padding: 10px; width: 25%;">Priority</th>
+    <th style="padding: 10px; width: 25%;">Epic</th>
+  </tr>
+  <tr>
+    <td style="padding: 10px;">US-01</td>
+    <td style="padding: 10px;">Usuario Nuevo</td>
+    <td style="padding: 10px;">Alta</td>
+    <td style="padding: 10px;">EP01</td>
+  </tr>
+  <tr>
+    <th style="padding: 10px;">Title</th>
+    <td style="padding: 10px;" colspan="3">Registro de edad</td>
+  </tr>
+  <tr>
+    <th style="padding: 10px;" colspan="4">Description</th>
+  </tr>
+  <tr>
+    <td style="padding: 10px;" colspan="4">
+      <strong>Como</strong> nuevo usuario de la plataforma,<br>
+      <strong>Quiero</strong> poder ingresar edad al momento de configurar mi perfil,<br>
+      <strong>Para</strong> ayudar a identificar a los grupos demográficos predominantes segun la edad que utilizan el sistema.
+    </td>
+  </tr>
+  <tr>
+    <th style="padding: 10px;" colspan="4">Acceptance Criteria</th>
+  </tr>
+  <tr>
+    <td style="padding: 10px;" colspan="4">
+      <ul>
+        <li><strong>Scenario 1: Campos disponibles en el formulario de perfil.</strong><br>
+        <strong>Dado que</strong> un usuario nuevo accede a la pantalla de registro, <strong>cuando</strong> visualiza el formulario de datos, <strong>entonces</strong> debe encontrar opciones claras para escribir su edad.</li>
+        <li style="margin-top: 10px;"><strong>Scenario 2: Procesamiento de la información ingresada.</strong><br>
+        <strong>Dado que</strong> el usuario completa su dato de edad <strong>cuando</strong> guarda y crea su cuenta, <strong>entonces</strong> la aplicación procesa la solicitud y envía la información para ser almacenada junto con el resto de su perfil.</li>
+        <li style="margin-top: 10px;"><strong>Scenario 3: Almacenamiento exitoso en el sistema.</strong><br>
+        <strong>Dado que</strong> el sistema recibe la información del usuario, <strong>cuando</strong> valida que los datos son correctos, <strong>entonces</strong> los guarda de forma segura en la base de datos asociada a ese perfil específico.</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+<br>
+
+<table style="width: 100%; border-collapse: collapse; text-align: left;" border="1">
+  <tr>
+    <th style="padding: 10px; width: 25%;">Story ID</th>
+    <th style="padding: 10px; width: 25%;">User</th>
+    <th style="padding: 10px; width: 25%;">Priority</th>
+    <th style="padding: 10px; width: 25%;">Epic</th>
+  </tr>
+  <tr>
+    <td style="padding: 10px;">US-02</td>
+    <td style="padding: 10px;">Usuario Nuevo</td>
+    <td style="padding: 10px;">Media</td>
+    <td style="padding: 10px;">EP01</td>
+  </tr>
+  <tr>
+    <th style="padding: 10px;">Title</th>
+    <td style="padding: 10px;" colspan="3">Registro de género</td>
+  </tr>
+  <tr>
+    <th style="padding: 10px;" colspan="4">Description</th>
+  </tr>
+  <tr>
+    <td style="padding: 10px;" colspan="4">
+      <strong>Como</strong> nuevo usuario de la plataforma,<br>
+      <strong>Quiero</strong> poder ingresar mi género al momento de configurar mi perfil,<br>
+      <strong>Para</strong> ayudar a identificar a los grupos demográficos predominantes segun el genero que utilizan el sistema.
+    </td>
+  </tr>
+  <tr>
+    <th style="padding: 10px;" colspan="4">Acceptance Criteria</th>
+  </tr>
+  <tr>
+    <td style="padding: 10px;" colspan="4">
+      <ul>
+        <li><strong>Scenario 1: Campos disponibles en el formulario de perfil.</strong><br>
+        <strong>Dado que</strong> un usuario nuevo accede a la pantalla de registro, <strong>cuando</strong> visualiza el formulario de datos, <strong>entonces</strong> debe encontrar opciones claras para seleccionar su género.</li>
+        <li style="margin-top: 10px;"><strong>Scenario 2: Procesamiento de la información ingresada.</strong><br>
+        <strong>Dado que</strong> el usuario completa su dato de género, <strong>cuando</strong> guarda y crea su cuenta, <strong>entonces</strong> la aplicación procesa la solicitud y envía la información para ser almacenada junto con el resto de su perfil.</li>
+        <li style="margin-top: 10px;"><strong>Scenario 3: Almacenamiento exitoso en el sistema.</strong><br>
+        <strong>Dado que</strong> el sistema recibe la información del usuario, <strong>cuando</strong> valida que los datos son correctos, <strong>entonces</strong> los guarda de forma segura en la base de datos asociada a ese perfil específico.</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+<br>
+
+<table style="width: 100%; border-collapse: collapse; text-align: left;" border="1">
+  <tr>
+    <th style="padding: 10px; width: 25%;">Story ID</th>
+    <th style="padding: 10px; width: 25%;">User</th>
+    <th style="padding: 10px; width: 25%;">Priority</th>
+    <th style="padding: 10px; width: 25%;">Epic</th>
+  </tr>
+  <tr>
+    <td style="padding: 10px;">US-03</td>
+    <td style="padding: 10px;">Visitante del Landing Page</td>
+    <td style="padding: 10px;">Alta</td>
+    <td style="padding: 10px;">EP06</td>
+  </tr>
+  <tr>
+    <th style="padding: 10px;">Title</th>
+    <td style="padding: 10px;" colspan="3">Visualización de Planes de Suscripción Premium</td>
+  </tr>
+  <tr>
+    <th style="padding: 10px;" colspan="4">Description</th>
+  </tr>
+  <tr>
+    <td style="padding: 10px;" colspan="4">
+      <strong>Como</strong> visitante aficionado al cuidado de plantas,<br>
+      <strong>Quiero</strong> ver una sección de planes de suscripción en la página de inicio con sus características,<br>
+      <strong>Para</strong> evaluar si los beneficios avanzados justifican adquirir una suscripción de pago en la plataforma.
+    </td>
+  </tr>
+  <tr>
+    <th style="padding: 10px;" colspan="4">Acceptance Criteria</th>
+  </tr>
+  <tr>
+    <td style="padding: 10px;" colspan="4">
+      <ul>
+        <li><strong>Scenario 1: Visualización de los planes de precios.</strong><br>
+        <strong>Dado que</strong> el usuario navega por la página principal de presentación, <strong>cuando</strong> se desplaza hacia la sección de precios, <strong>entonces</strong> debe visualizar de forma clara tres opciones de suscripción con sus respectivos valores mensuales.</li>
+        <li style="margin-top: 10px;"><strong>Scenario 2: Lectura de beneficios exclusivos.</strong><br>
+        <strong>Dado que</strong> el usuario revisa las tarjetas de los planes de pago, <strong>cuando</strong> lee los beneficios listados, <strong>entonces</strong> visualizará características exclusivas como "Soporte para sensores IoT" y "Guías botánicas avanzadas".</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+<table style="width: 100%; border-collapse: collapse; text-align: left;" border="1">
+  <tr>
+    <th style="padding: 10px; width: 25%;">Story ID</th>
+    <th style="padding: 10px; width: 25%;">User</th>
+    <th style="padding: 10px; width: 25%;">Priority</th>
+    <th style="padding: 10px; width: 25%;">Epic</th>
+  </tr>
+  <tr>
+    <td style="padding: 10px;">US-04</td>
+    <td style="padding: 10px;">Visitante interesado en las suscripciones</td>
+    <td style="padding: 10px;">Media</td>
+    <td style="padding: 10px;">EP06</td>
+  </tr>
+  <tr>
+    <th style="padding: 10px;">Title</th>
+    <td style="padding: 10px;" colspan="3">Muestra de interes en la suscripcion</td>
+  </tr>
+  <tr>
+    <th style="padding: 10px;" colspan="4">Description</th>
+  </tr>
+  <tr>
+    <td style="padding: 10px;" colspan="4">
+      <strong>Como</strong> visitante aficionado al cuidado de plantas,<br>
+      <strong>Quiero</strong> poder darle click a los diferentes planes,<br>
+      <strong>Para</strong> poder demostrar interes en la obtencion de la suscripcion.
+    </td>
+  </tr>
+  <tr>
+    <th style="padding: 10px;" colspan="4">Acceptance Criteria</th>
+  </tr>
+  <tr>
+    <td style="padding: 10px;" colspan="4">
+      <ul>
+        <li style="margin-top: 10px;"><strong>Scenario 1: Simulación de compra e interés.</strong><br>
+        <strong>Dado que</strong> el usuario decide probar un plan de pago, <strong>cuando</strong> va a la seccion de mi interesa, <strong>entonces</strong> el sistema le muestra un breve formulario de lista de espera para registrar su interés.</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+<br>
+
+#### 8.3.2. To-Be Product Backlog
+
+<table border="1" style="width: 100%; border-collapse: collapse; text-align: left;">
+  <thead>
+    <tr>
+      <th style="padding: 10px;">#Orden</th>
+      <th style="padding: 10px;">User Story ID</th>
+      <th style="padding: 10px;">Título</th>
+      <th style="padding: 10px;">Descripción</th>
+      <th style="padding: 10px; text-align: center;">Story Points (1/2/3/5/8)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="padding: 10px; text-align: center;">1</td>
+      <td style="padding: 10px; font-weight: bold;">US-01</td>
+      <td style="padding: 10px;">Registro de edad</td>
+      <td style="padding: 10px;"><strong>Como</strong> nuevo usuario de la plataforma, <strong>quiero</strong> poder ingresar mi edad al momento de configurar mi perfil, <strong>para</strong> ayudar a identificar a los grupos demográficos predominantes según la edad que utilizan el sistema.</td>
+      <td style="padding: 10px; text-align: center;">2</td>
+    </tr>
+    <tr>
+      <td style="padding: 10px; text-align: center;">2</td>
+      <td style="padding: 10px; font-weight: bold;">US-02</td>
+      <td style="padding: 10px;">Registro de género</td>
+      <td style="padding: 10px;"><strong>Como</strong> nuevo usuario de la plataforma, <strong>quiero</strong> poder ingresar mi género al momento de configurar mi perfil, <strong>para</strong> ayudar a identificar a los grupos demográficos predominantes según el género que utilizan el sistema.</td>
+      <td style="padding: 10px; text-align: center;">2</td>
+    </tr>
+    <tr>
+      <td style="padding: 10px; text-align: center;">3</td>
+      <td style="padding: 10px; font-weight: bold;">US-03</td>
+      <td style="padding: 10px;">Visualización de Planes de Suscripción Premium</td>
+      <td style="padding: 10px;"><strong>Como</strong> visitante aficionado al cuidado de plantas, <strong>quiero</strong> ver una sección de planes de suscripción en la página de inicio con sus características, <strong>para</strong> evaluar si los beneficios avanzados justifican adquirir una suscripción de pago en la plataforma.</td>
+      <td style="padding: 10px; text-align: center;">3</td>
+    </tr>
+    <tr>
+      <td style="padding: 10px; text-align: center;">4</td>
+      <td style="padding: 10px; font-weight: bold;">US-04</td>
+      <td style="padding: 10px;">Muestra de interés en la suscripción</td>
+      <td style="padding: 10px;"><strong>Como</strong> visitante aficionado al cuidado de plantas, <strong>quiero</strong> poder darle clic a los diferentes planes, <strong>para</strong> poder demostrar interés en la obtención de la suscripción.</td>
+      <td style="padding: 10px; text-align: center;">2</td>
+    </tr>
+  </tbody>
+</table>
+
+#### 8.3.3. Pipeline-supported, Experiment-Driven To-Be Software Platform Lifecycle
+
+##### 8.3.3.1. To-Be Sprint Backlogs
+
+<table border="1" cellspacing="0" cellpadding="5" style="width: 100%; border-collapse: collapse; text-align: left;">
+  <thead>
+    <tr>
+      <th colspan="2" style="padding: 10px; text-align: center;">Technical User Story</th>
+      <th colspan="2" style="padding: 10px; text-align: center;">WorkItem / Task</th>
+      <th style="padding: 10px;">Description</th>
+      <th style="padding: 10px; text-align: center;">Estimation (Hours)</th>
+      <th style="padding: 10px;">Assigned To</th>
+      <th style="padding: 10px; text-align: center;">Status</th>
+    </tr>
+    <tr>
+      <th style="padding: 10px; text-align: center;">Id</th>
+      <th style="padding: 10px;">Title</th>
+      <th style="padding: 10px; text-align: center;">Id</th>
+      <th style="padding: 10px;">Title</th>
+      <th style="padding: 10px;"></th>
+      <th style="padding: 10px;"></th>
+      <th style="padding: 10px;"></th>
+      <th style="padding: 10px;">(To-do/In-Process/To-Review/Done)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="padding: 10px; text-align: center;">US-01</td>
+      <td style="padding: 10px;">Registro de edad</td>
+      <td style="padding: 10px; text-align: center;">TK01</td>
+      <td style="padding: 10px;">Actualizar BD y Backend (Edad)</td>
+      <td style="padding: 10px;">Crear columna 'age' y actualizar entidad Profile, DTOs y comandos en Spring Boot.</td>
+      <td style="padding: 10px; text-align: center;">3</td>
+      <td style="padding: 10px;">Kevin Castañeda</td>
+      <td style="padding: 10px; text-align: center;">Done</td>
+    </tr>
+    <tr>
+      <td style="padding: 10px; text-align: center;">US-01</td>
+      <td style="padding: 10px;">Registro de edad</td>
+      <td style="padding: 10px; text-align: center;">TK02</td>
+      <td style="padding: 10px;">Modificar UI de Registro (Edad)</td>
+      <td style="padding: 10px;">Añadir input numérico para la edad en el formulario de Angular y actualizar la integración con el servicio.</td>
+      <td style="padding: 10px; text-align: center;">2</td>
+      <td style="padding: 10px;">Kevin Castañeda</td>
+      <td style="padding: 10px; text-align: center;">Done</td>
+    </tr>
+    <tr>
+      <td style="padding: 10px; text-align: center;">US-02</td>
+      <td style="padding: 10px;">Registro de género</td>
+      <td style="padding: 10px; text-align: center;">TK03</td>
+      <td style="padding: 10px;">Actualizar BD y Backend (Género)</td>
+      <td style="padding: 10px;">Crear columna 'gender' y actualizar entidad Profile, DTOs y comandos en Spring Boot.</td>
+      <td style="padding: 10px; text-align: center;">3</td>
+      <td style="padding: 10px;">Kevin Castañeda</td>
+      <td style="padding: 10px; text-align: center;">Done</td>
+    </tr>
+    <tr>
+      <td style="padding: 10px; text-align: center;">US-02</td>
+      <td style="padding: 10px;">Registro de género</td>
+      <td style="padding: 10px; text-align: center;">TK04</td>
+      <td style="padding: 10px;">Modificar UI de Registro (Género)</td>
+      <td style="padding: 10px;">Añadir input desplegable (select) para el género en el formulario de Angular y conectar con el backend.</td>
+      <td style="padding: 10px; text-align: center;">2</td>
+      <td style="padding: 10px;">Kevin Castañeda</td>
+      <td style="padding: 10px; text-align: center;">Done</td>
+    </tr>
+    <tr>
+      <td style="padding: 10px; text-align: center;">US-03</td>
+      <td style="padding: 10px;">Visualización de Planes Premium</td>
+      <td style="padding: 10px; text-align: center;">TK05</td>
+      <td style="padding: 10px;">Maquetación HTML de tarjetas de precio</td>
+      <td style="padding: 10px;">Crear la estructura del Landing Page para mostrar las 3 opciones de planes.</td>
+      <td style="padding: 10px; text-align: center;">2</td>
+      <td style="padding: 10px;"> Jocelyn Almerco</td>
+      <td style="padding: 10px; text-align: center;">Done</td>
+    </tr>
+    <tr>
+      <td style="padding: 10px; text-align: center;">US-03</td>
+      <td style="padding: 10px;">Visualización de Planes Premium</td>
+      <td style="padding: 10px; text-align: center;">TK06</td>
+      <td style="padding: 10px;">Estilos CSS para sección de precios</td>
+      <td style="padding: 10px;">Asegurar que las tarjetas de precios sean responsivas y visualmente atractivas.</td>
+      <td style="padding: 10px; text-align: center;">3</td>
+      <td style="padding: 10px;">Jocelyn Almerco</td>
+      <td style="padding: 10px; text-align: center;">Done</td>
+    </tr>
+    <tr>
+      <td style="padding: 10px; text-align: center;">US-04</td>
+      <td style="padding: 10px;">Muestra de interés en suscripción</td>
+      <td style="padding: 10px; text-align: center;">TK07</td>
+      <td style="padding: 10px;">Configurar botones de acción (CTA)</td>
+      <td style="padding: 10px;">Añadir eventos para capturar los clics en los botones de "Adquirir plan".</td>
+      <td style="padding: 10px; text-align: center;">2</td>
+      <td style="padding: 10px;">Jocelyn Almerco</td>
+      <td style="padding: 10px; text-align: center;">Done</td>
+    </tr>
+    <tr>
+      <td style="padding: 10px; text-align: center;">US-04</td>
+      <td style="padding: 10px;">Muestra de interés en suscripción</td>
+      <td style="padding: 10px; text-align: center;">TK08</td>
+      <td style="padding: 10px;">Integrar formulario de espera simulado</td>
+      <td style="padding: 10px;">Crear modal o redirección a un formulario externo de los interesados.</td>
+      <td style="padding: 10px; text-align: center;">2</td>
+      <td style="padding: 10px;">Jocelyn Almerco</td>
+      <td style="padding: 10px; text-align: center;">Done</td>
+    </tr>
+  </tbody>
+</table>
+
+##### 8.3.3.2. Implemented To-Be Landing Page Evidence
+
+Se presentan capturas de pantalla de la Landing Page implementada y adaptada para el experimento, donde se muestran los cambios en el diseño de la interfaz y las llamadas a la acción (CTA) para medir el interés de los usuarios:
+
+**Link landing page:** [https://biopafi-disenoyexperimentos.github.io/landing_page/](https://biopafi-disenoyexperimentos.github.io/landing_page/)
+
+###### Evidencia de la sección principal (Hero Section) y CTA
+<p align="center">
+  <img src="images/experimentos/landing1.jpg" alt="Landing Page Hero Section" width="1000">
+</p>
+
+###### Evidencia de la sección de características y propuesta de valor
+<p align="center">
+  <img src="images/experimentos/landing2.jpg" alt="Landing Page Features" width="1000">
+</p>
+
+###### Evidencia de la sección de contacto y registro de interés
+<p align="center">
+  <img src="images/experimentos/landing3.jpg" alt="Landing Page Contact" width="1000">
+</p>
+
+###### Evidencia de Analíticas y Almacenamiento Local (Local Storage)
+Muestra el seguimiento analítico y de almacenamiento local (Local Storage) al interactuar con los botones de planes de suscripción para medir el interés de los usuarios:
+<p align="center">
+  <img src="images/experimentos/analytics-localstorage.jpg" alt="Local Storage y Analytics" width="1000">
+</p>
+
+##### 8.3.3.3. Implemented To-Be Frontend-Web Application Evidence
+
+Se presentan capturas de la aplicación web frontend que evidencian la implementación del sistema "To-Be", abarcando el flujo completo de autenticación y las vistas principales de la plataforma:
+
+**Link Frontend:** [https://plant-sync-frontend.vercel.app/login](https://plant-sync-frontend.vercel.app/login)
+
+###### Inicio de Sesión (Login) y Registro de Usuario (Sign Up)
+<p align="center">
+  <img src="images/experimentos/login.jpg" alt="Login Vista" width="480">
+  <img src="images/experimentos/signup.jpg" alt="Signup Vista" width="480">
+</p>
+
+###### Registro de Usuario con Nuevos Campos (Edad y Género)
+Captura del formulario de registro de usuario actualizado para incluir los nuevos campos demográficos:
+<p align="center">
+  <img src="images/experimentos/register-new-fields.jpg" alt="Formulario con nuevos campos" width="1000">
+</p>
+
+###### Detalle de Petición API (Payload del Request) para Registro
+Detalle de la petición HTTP interceptada donde se aprecia el envío correcto de los nuevos campos de edad y género en la carga de datos (payload):
+<p align="center">
+  <img src="images/experimentos/register-age-request.jpg" alt="Request payload de registro" width="1000">
+</p>
+
+###### Módulo "Mis Plantas"
+Vista que detalla el listado y monitoreo de las plantas del usuario:
+<p align="center">
+  <img src="images/experimentos/mis-plantas.jpg" alt="Mis Plantas Vista" width="1000">
+</p>
+
+###### Módulo de Tareas y Calendario de Cuidado
+Muestra los recordatorios de riego, fertilización y tareas pendientes:
+<p align="center">
+  <img src="images/experimentos/tareas.jpg" alt="Tareas de Cuidado" width="1000">
+</p>
+
+###### Guías de Cuidado Botánico
+Muestra el acceso a la base de datos de conocimientos e instrucciones de mantenimiento:
+<p align="center">
+  <img src="images/experimentos/guias.jpg" alt="Guías de Cuidado" width="1000">
+</p>
+
+###### Configuración de Cuenta y Notificaciones
+Permite gestionar la frecuencia de alertas automáticas y preferencias del usuario:
+<p align="center">
+  <img src="images/experimentos/configuracion.jpg" alt="Configuración de Cuenta" width="1000">
+</p>
+
+###### Persistencia en Base de Datos SQL
+Captura de la base de datos SQL que valida que los campos de edad y género se almacenan correctamente al crear perfiles en el sistema:
+<p align="center">
+  <img src="images/experimentos/sql-data.jpg" alt="Registros en base de datos SQL" width="1000">
+</p>
+
+##### 8.3.3.4. Implemented To-Be RESTful API and/or Serverless Backend Evidence
+
+**Link Backend:** [https://plantsync-backend-exp.azurewebsites.net/swagger-ui/index.html#/](https://plantsync-backend-exp.azurewebsites.net/swagger-ui/index.html#/)
+
+**Implementación en Swagger**
+
+**User**
+
+<p align="center">
+  <img src="images/endpointUser.png" alt="User" width="1000">
+</p>
+
+**Profiles**
+
+<p align="center">
+  <img src="images/endpointProfiles.png" alt="Profiles" width="1000">
+</p>
+
+**Roles**
+
+<p align="center">
+  <img src="images/endpointRoles.png" alt="Roles" width="1000">
+</p>
+
+**Weather**
+
+<p align="center">
+  <img src="images/endpointWeather.png" alt="Weather" width="1000">
+</p>
+
+**Authentication**
+
+<p align="center">
+  <img src="images/endpointAuthentication.png" alt="Authentication" width="1000">
+</p>
+
+**Guides**
+
+<p align="center">
+  <img src="images/endpointGuides.png" alt="Guides" width="1000">
+</p>
+
+**PlantHistories**
+
+<p align="center">
+  <img src="images/endpointPlantHistories.png" alt="PlantHistories" width="1000">
+</p>
+
+
+**Plants**
+
+<p align="center">
+  <img src="images/endpointPlants.png" alt="Plants" width="1000">
+</p>
+
+**Tasks**
+
+<p align="center">
+  <img src="images/endpointTasks.png" alt="Task" width="1000">
+</p>
+
+**Documentación de la API Restful**
+
+**Tabla de los endpoints**
+| **Módulo**          | **Endpoint**                               | **Método** | **Descripción**                                | **Request Body**             | **Response**                     |
+| ------------------- | ------------------------------------------ | ---------- | ---------------------------------------------- | ---------------------------- | -------------------------------- |
+| **Users**           | `/api/v1/users/{id}`                       | PUT        | Actualiza un usuario por ID                    | `UpdateUserResource`         | `UserResource`                   |
+|                     | `/api/v1/users`                            | GET        | Obtiene todos los usuarios                     | -                            | `UserResource[]`                 |
+|                     | `/api/v1/users/{userId}`                   | GET        | Obtiene un usuario por ID                      | -                            | `UserResource`                   |
+| **Profiles**        | `/api/v1/profiles/{id}`                    | PUT        | Actualiza un perfil por ID                     | `UpdateProfileResource`      | `ProfileResource`                |
+|                     | `/api/v1/profiles`                         | GET        | Obtiene todos los perfiles                     | -                            | `ProfileResource[]`              |
+|                     | `/api/v1/profiles`                         | POST       | Crea un nuevo perfil                           | `CreateProfileResource`      | `ProfileResource`                |
+|                     | `/api/v1/profiles/{profileId}`             | GET        | Obtiene un perfil por ID                       | -                            | `ProfileResource`                |
+|                     | `/api/v1/profiles/by-user-id`              | GET        | Obtiene un perfil por ID de usuario            | -                            | `ProfileResource`                |
+| **Roles**           | `/api/v1/roles`                            | GET        | Obtiene todos los roles                        | -                            | `RoleResource[]`                 |
+| **Weather**         | `/api/v1/weather/city`                     | GET        | Obtiene información del clima por ciudad       | -                            | `string`                         |
+| **Authentication**  | `/api/v1/authentication/sign-up`           | POST       | Registra un nuevo usuario                      | `SignUpResource`             | `AuthenticatedAccountResource`   |
+|                     | `/api/v1/authentication/sign-in`           | POST       | Autentica un usuario                           | `SignInResource`             | `AuthenticatedAccountResource`   |
+| **Guides**          | `/api/v1/guides`                           | GET        | Obtiene todas las guías                        | -                            | `GuideResource[]`                |
+|                     | `/api/v1/guides`                           | POST       | Crea una nueva guía                            | `CreateGuideResource`        | `GuideResource`                  |
+|                     | `/api/v1/guides/{guideId}`                 | GET        | Obtiene una guía por ID                        | -                            | `GuideResource`                  |
+| **Plant Histories** | `/api/v1/plantHistories`                   | POST       | Crea un nuevo historial de planta              | `CreatePlantHistoryResource` | `PlantHistoryResource`           |
+|                     | `/api/v1/plantHistories/{plantId}`         | GET        | Obtiene historiales de planta por ID           | -                            | `PlantHistoryResource[]`         |
+|                     | `/api/v1/plantHistories/by-plant/{plantId}`| GET        | Obtiene historial por ID de planta             | -                            | `PlantHistoryResource`           |
+| **Tasks**           | `/api/v1/tasks`                            | GET        | Obtiene todas las tareas                       | -                            | `TaskResource[]`                 |
+|                     | `/api/v1/tasks`                            | POST       | Crea una nueva tarea                           | `CreateTaskResource`         | `TaskResource`                   |
+|                     | `/api/v1/tasks/{taskId}`                   | DELETE     | Elimina una tarea                              | -                            | `string`                         |
+| **Plants**          | `/api/v1/plants/{plantId}`                 | GET        | Obtiene una planta por ID                      | -                            | `PlantResource`                  |
+|                     | `/api/v1/plants/{plantId}`                 | PUT        | Actualiza una planta                           | `UpdatePlantResource`        | `PlantResource`                  |
+|                     | `/api/v1/plants/{plantId}`                 | DELETE     | Elimina una planta                             | -                            | `string`                         |
+|                     | `/api/v1/plants`                           | GET        | Obtiene todas las plantas                      | -                            | `PlantResource[]`                |
+|                     | `/api/v1/plants`                           | POST       | Crea una nueva planta                          | `CreatePlantResource`        | `PlantResource`                  |
+|                     | `/api/v1/plants/by-profile/{profileId}`    | GET        | Obtiene plantas por ID de perfil               | -                            | `PlantResource[]`                |
+
+Modelos de Request/Response
+
+**User**
+
+**CreateReportResource**
+
+```json
+{
+  "personName": "string",
+  "subscriptionPlan": "string",
+  "userId": 0,
+  "age": 0,
+  "gender": "string"
+}
+```
+ 
+### Profiles
+
+**CreateProfileResource**
+
+```json
+{
+  "personName": "string",
+  "subscriptionPlan": "string",
+  "userId": "integer",
+  "age": "integer",
+  "gender": "string"
+}
+```
+
+**UpdateProfileResource**
+
+```json
+{
+  "personName": "string",
+  "subscriptionPlan": "string"
+}
+```
+
+**ProfileResource**
+
+```json
+{
+  "id": "integer",
+  "personName": "string",
+  "subscriptionPlan": "string",
+  "userId": "integer",
+  "age": "integer",
+  "gender": "string"
+}
+```
+### Roles
+
+**Role**
+
+```json
+{
+  "id": "integer",
+  "name": "string"
+}
+```
+
+### Weather
+
+**Weather**
+
+```json
+{
+  "city": "string",
+  "response": "string"
+}
+```
+
+### Authentication
+
+**SignUp**
+
+```json
+{
+  "name": "string",
+  "email": "string",
+  "password": "string",
+  "subscriptionPlan": "string",
+  "age": "integer",
+  "gender": "string"
+}
+```
+
+**SignIn**
+
+```json
+{
+  "email": "string",
+  "password": "string"
+}
+```
+
+**AuthenticatedUser**
+
+```json
+{
+  "id": "integer",
+  "email": "string",
+  "token": "string"
+}
+```
+
+### Guides
+
+**CreateGuide**
+
+```json
+{
+  "title": "string",
+  "name": "string",
+  "description": "string",
+  "topic": "string",
+  "type": "string",
+  "imageUrl": "string"
+}
+```
+
+**Guide**
+
+```json
+{
+  "id": "integer",
+  "title": "string",
+  "name": "string",
+  "description": "string",
+  "topic": "string",
+  "type": "string",
+  "imageUrl": "string"
+}
+```
+
+### Plant Histories
+
+**CreatePlantHistory**
+
+```json
+{
+  "plantId": "integer",
+  "type": "string",
+  "date": "string",
+  "time": "string",
+  "humidity": "integer"
+}
+```
+
+**PlantHistory**
+
+```json
+{
+  "id": "integer",
+  "plantId": "integer",
+  "type": "string",
+  "date": "string",
+  "time": "string",
+  "humidity": "integer"
+}
+```
+
+### Tasks
+
+**CreateTask**
+
+```json
+{
+  "action": "string",
+  "date": "string",
+  "plantId": "integer",
+  "profileId": "integer",
+  "completed": "boolean"
+}
+```
+
+**Task**
+
+```json
+{
+  "id": "integer",
+  "action": "string",
+  "date": "string",
+  "plantId": "integer",
+  "profileId": "integer",
+  "completed": "boolean"
+}
+```
+
+### Plants
+
+**CreatePlant**
+
+```json
+{
+  "name": "string",
+  "species": "string",
+  "acquisitionDate": "string",
+  "humidity": "string",
+  "nextWateringDate": "string",
+  "imageUrl": "string",
+  "notificationsEnabled": "boolean",
+  "profileId": "integer"
+}
+```
+
+**Plant**
+
+```json
+{
+  "id": "integer",
+  "name": "string",
+  "species": "string",
+  "acquisitionDate": "string",
+  "humidity": "string",
+  "nextWateringDate": "string",
+  "imageUrl": "string",
+  "notificationsEnabled": "boolean",
+  "profileId": "integer"
+}
+```
+
+### Users
+
+**UpdateUser**
+
+```json
+{
+  "email": "string"
+}
+```
+
+**User**
+
+```json
+{
+  "id": "integer",
+  "email": "string",
+  "roles": [
+    "string"
+  ]
+}
+```
+
+### Checklist
+
+Se ejecutó la validación de calidad de código mediante Checkstyle, verificando que el proyecto cumpla con las reglas de estilo y convenciones definidas. La auditoría finalizó sin registrar infracciones, obteniendo un resultado de BUILD SUCCESS con 0 Checkstyle violations, lo que confirma el cumplimiento de las normas de codificación establecidas.
+
+<p align="center">
+  <img src="images/checkstyle.png" alt="Insight" width="1000">
+</p>
+
+### Tests
+
+Se ejecutó el conjunto completo de pruebas automatizadas del proyecto. Como resultado, las 83 pruebas fueron superadas satisfactoriamente (83 tests passed), validando el correcto funcionamiento de los componentes y servicios implementados.
+
+<p align="center">
+  <img src="images/testRun.png" alt="Insight" width="1000">
+</p>
+
+### Jenkins
+
+Se observa el proyecto plantsync_backend, utilizado para la automatización del pipeline de Integración Continua. Este pipeline ejecuta la compilación del proyecto, las pruebas automatizadas, el análisis de calidad con SonarQube y la construcción de la imagen Docker, validando el correcto funcionamiento del backend antes de su despliegue
+
+<p align="center">
+  <img src="images/jenkinsF1.png" alt="Insight" width="1000">
+</p>
+
+Se configuró el proyecto plantsync_backend utilizando la opción Pipeline script from SCM, lo que permite que Jenkins obtenga automáticamente el archivo Jenkinsfile desde el repositorio GitHub Plantsync_Backend. Además, se definió la rama develop (*/develop) como fuente del proceso de integración continua, garantizando que cada ejecución del pipeline utilice la versión más reciente del código en desarrollo y automatice las etapas de compilación, pruebas y análisis de calidad.
+
+<p align="center">
+  <img src="images/jenkinsDevelop.png" alt="Insight" width="1000">
+</p>
+
+Se ejecutó el pipeline de integración continua en Jenkins, completando exitosamente todas las etapas definidas: obtención del código fuente, compilación, ejecución de pruebas unitarias, validación de cobertura, análisis con SonarQube y construcción de la imagen Docker, confirmando el correcto funcionamiento del proceso de integración continua.
+
+<p align="center">
+  <img src="images/jenkinsD.png" alt="Insight" width="1000">
+</p>
+
+La vista Stage View de Jenkins muestra el estado de cada ejecución del pipeline y el resultado de sus diferentes etapas, permitiendo identificar rápidamente compilaciones exitosas, tiempos de ejecución y posibles fallos durante el proceso de integración continua.
+
+<p align="center">
+  <img src="images/jenkinsF2.png" alt="Insight" width="1000">
+</p>
+
+### Sonarqube
+
+Se configuró el proyecto PlantSync Backend en SonarQube y se generó el token de autenticación utilizado por Jenkins para ejecutar automáticamente los análisis de calidad durante el pipeline de integración continua.
+
+<p align="center">
+  <img src="images/global.png" alt="Insight" width="1000">
+</p>
+
+
+Una vez finalizado el análisis, SonarQube verificó el código nuevo del proyecto, confirmando que el Quality Gate fue superado exitosamente, con 100% de cobertura, sin vulnerabilidades, sin errores críticos y cumpliendo los estándares de calidad definidos.
+
+<p align="center">
+  <img src="images/sonarqubeF1.png" alt="Insight" width="1000">
+</p>
+
+Se ejecutó el análisis de calidad del código mediante SonarQube, verificando métricas como cobertura de pruebas, confiabilidad, mantenibilidad, seguridad y duplicación de código. Tras incrementar la cobertura de las pruebas unitarias, el proyecto superó satisfactoriamente el Quality Gate, alcanzando un estado Passed.
+
+<p align="center">
+  <img src="images/sonarqubeD.png" alt="Insight" width="1000">
+</p>
+
+<p align="center">
+  <img src="images/sonarqubeF2.png" alt="Insight" width="1000">
+</p>
+
+Se configuró un Webhook en SonarQube para notificar automáticamente a Jenkins el resultado del análisis de calidad del código. Esta integración permite que el pipeline espere la evaluación del Quality Gate antes de continuar con las siguientes etapas del proceso de integración continua.
+
+<p align="center">
+  <img src="images/sonarqubeW.png" alt="Insight" width="1000">
+</p>
+
+### Docker
+
+Se desplegaron los servicios de Jenkins y SonarQube mediante contenedores Docker, verificando su correcta ejecución y disponibilidad. Ambos servicios se ejecutan de manera independiente y se comunican a través de una red Docker para soportar el proceso de integración continua.
+
+<p align="center">
+  <img src="images/dockerF.png" alt="Insight" width="1000">
+</p>
+
+Como resultado del pipeline de Jenkins, se generaron automáticamente las imágenes Docker de la aplicación, etiquetadas tanto con el número de la compilación como con la versión latest, facilitando su reutilización y posterior despliegue en diferentes entornos.
+
+<p align="center">
+  <img src="images/dockerFI.png" alt="Insight" width="1000">
+</p>
+
+# Experimentos
+
+**Experimento 1 — Perfil Demográfico de Adopción**
+
+**Archivo:** `src/main/java/.../profiles/domain/model/valueobjects/Gender.java`
+
+```java
+public enum Gender {
+  MALE,
+  FEMALE,
+  OTHER,
+  PREFER_NOT_TO_SAY;
+
+  public static Gender fromString(String value) {
+    try {
+      return Gender.valueOf(value.toUpperCase());
+    } catch (IllegalArgumentException ex) {
+      throw new IllegalArgumentException("Invalid gender: " + value);
+    }
+  }
+}
+```
+
+**Archivo:** `src/main/java/.../profiles/domain/model/aggregates/Profile.java`
+
+```java
+@Column(name = "age")
+private Integer age;
+
+@Enumerated(EnumType.STRING)
+@Column(name = "gender")
+private Gender gender;
+
+public Profile(CreateProfileCommand command) {
+    this.personName = command.personName();
+    this.subscriptionPlan = command.subscriptionPlan();
+    this.userId = command.userId();
+    this.paymentStatus = PaymentStatus.PENDING;
+    this.age = command.age();
+    this.gender = command.gender();
+}
+```
+
+**Archivo:** `src/main/java/.../profiles/domain/model/commands/CreateProfileCommand.java`
+
+```java
+public record CreateProfileCommand(
+    PersonName personName,
+    SubscriptionPlan subscriptionPlan,
+    UserId userId,
+    Integer age,
+    Gender gender
+) {}
+```
+
+**Archivo:** `src/main/java/.../profiles/infrastructure/persistence/jpa/repositories/ProfileRepository.java`
+
+```java
+public interface ProfileRepository extends JpaRepository<Profile, Long> {
+  Optional<Profile> findByUserId(UserId userId);
+}
+```
+
+**Análisis**
+
+La implementación permite registrar y validar la información demográfica de los usuarios mediante el almacenamiento de la edad y el género dentro del perfil. Esto proporciona la información necesaria para caracterizar el perfil de adopción de PlantSync y realizar la segmentación demográfica de los usuarios durante la ejecución del experimento.
+
+---
+
+**Experimento 2 — Sincronización Climática de Alertas**
+
+**Archivo:** `src/main/java/.../plantprofiles/interfaces/rest/WeatherQueryController.java`
+
+```java
+@RestController
+@RequestMapping("/api/v1/weather")
+public class WeatherQueryController {
+
+  private final RestTemplate restTemplate = new RestTemplate();
+
+  @Value("${weather.api.key}")
+  private String apiKey;
+
+  @GetMapping("/city")
+  public ResponseEntity<String> getWeatherByCity(@RequestParam String city) {
+    String url = "https://api.openweathermap.org/data/2.5/weather?q="
+        + city + "&appid=" + apiKey + "&units=metric";
+    try {
+      ResponseEntity<String> response = restTemplate.getForEntity(url, String.class);
+      return ResponseEntity.ok().body(response.getBody());
+    } catch (Exception e) {
+      return ResponseEntity.status(HttpStatus.BAD_GATEWAY)
+          .body("Weather API error: " + e.getMessage());
+    }
+  }
+}
+```
+
+**Análisis**
+
+La implementación integra la API de OpenWeather para obtener información climática en tiempo real según la ubicación indicada por el usuario. Esta funcionalidad permite disponer de datos actualizados del clima que sirven como base para sincronizar las recomendaciones y alertas de cuidado de las plantas.
+
+---
+
+**Experimento 3 — Monetización Premium**
+
+**Archivo:** `src/main/java/.../profiles/domain/model/valueobjects/SubscriptionPlan.java`
+
+```java
+public enum SubscriptionPlan {
+  BASIC,
+  PREMIUM,
+  PRO;
+
+  public static SubscriptionPlan fromString(String value) {
+    try {
+      return SubscriptionPlan.valueOf(value.toUpperCase());
+    } catch (IllegalArgumentException ex) {
+      throw new IllegalArgumentException("Invalid subscription plan: " + value);
+    }
+  }
+}
+```
+
+**Archivo:** `src/main/java/.../profiles/domain/model/valueobjects/PaymentStatus.java`
+
+```java
+public enum PaymentStatus {
+  PENDING,
+  PAID
+}
+```
+
+**Archivo:** `src/main/java/.../profiles/domain/model/aggregates/Profile.java`
+
+```java
+@Enumerated(EnumType.STRING)
+private SubscriptionPlan subscriptionPlan;
+
+@Enumerated(EnumType.STRING)
+private PaymentStatus paymentStatus = PaymentStatus.PENDING;
+```
+
+**Archivo:** `src/main/java/.../shared/infrastructure/security/WebSecurityConfiguration.java`
+
+```java
+.requestMatchers(
+    "/api/v1/authentication/**",
+    "/v3/api-docs/**",
+    "/swagger-ui.html",
+    "/swagger-ui/**",
+    "/swagger-resources/**",
+    "/api/payments/create-session",
+    "/webjars/**").permitAll()
+```
+
+**Frontend — Landing Page**
+
+```javascript
+document.querySelectorAll('.waitlist-trigger').forEach(button => {
+  button.addEventListener('click', () => {
+    const planName = button.getAttribute('data-plan');
+    planInput.value = planName;
+    displayPlanInput.value = planName;
+
+    waitlistForm.reset();
+    waitlistForm.style.display = 'block';
+    successMsg.style.display = 'none';
+
+    modal.style.display = 'flex';
+  });
+});
+
+waitlistForm.addEventListener('submit', (e) => {
+  e.preventDefault();
+
+  const name = document.getElementById('waitlist-name').value;
+  const email = document.getElementById('waitlist-email').value;
+  const plan = planInput.value;
+
+  const key = `waitlist_${Date.now()}`;
+
+  localStorage.setItem(
+    key,
+    JSON.stringify({
+      name,
+      email,
+      plan,
+      timestamp: new Date().toISOString()
+    })
+  );
+
+  waitlistForm.style.display = 'none';
+  successMsg.style.display = 'block';
+});
+```
+
+**Análisis**
+
+La implementación permite gestionar los planes de suscripción (Básico, Premium y Pro), registrar el interés de los usuarios mediante el Landing Page y administrar el estado del plan asociado al perfil. Con ello se valida la propuesta de monetización y el interés de los usuarios por las funcionalidades premium de PlantSync.
+
+---
+
+**Experimento 4 — Recordatorios Automáticos de Riego**
+
+**Archivo:** `src/main/java/.../plantprofiles/domain/model/aggregates/Plant.java`
+
+```java
+private String species;
+private LocalDate nextWateringDate;
+private Boolean notificationsEnabled;
+```
+
+**Archivo:** `src/main/java/.../tasks/domain/model/aggregates/Task.java`
+
+```java
+public class Task extends AuditableAbstractAggregateRoot<Task> {
+  private LocalDate date;
+  private String action;
+  private Boolean completed;
+  private PlantId plantId;
+  private ProfileId profileId;
+}
+```
+
+**Análisis**
+
+La implementación permite gestionar las tareas de cuidado de las plantas mediante el registro de fechas de riego, configuración de notificaciones y administración de tareas asociadas al usuario. Esto proporciona la base para automatizar el seguimiento de las actividades de mantenimiento de las plantas.
+
+---
+
+**Experimento 5 — Propuesta de Valor Centralizada**
+
+**Frontend — Landing Page**
+
+```html
+<div class="hero-content">
+
+    <div class="hero-badge">
+        🌱 Cuidado inteligente de plantas
+    </div>
+
+    <h1>
+        Tu planta siempre
+        <span class="highlight">bien cuidada</span>,
+        sin complicaciones
+    </h1>
+
+    <p>
+        Monitorea su estado de forma inteligente, recibe alertas automáticas
+        y accede a guías de cuidado premium sin ser un experto.
+    </p>
+
+    <a href="http://localhost:4200/register" class="cta-button">
+        Empieza ahora
+    </a>
+
+</div>
+```
+
+**Análisis**
+
+La implementación comunica de manera clara la propuesta de valor de PlantSync mediante el Landing Page, presentando los beneficios principales de la plataforma, las funcionalidades disponibles y el acceso a los distintos planes de suscripción, facilitando que los usuarios comprendan el valor ofrecido por la solución.
+
+---
+
+**Experimento 6 — Optimización de Horarios de Notificaciones**
+
+**Archivo:** `src/main/java/.../plantprofiles/domain/model/aggregates/Plant.java`
+
+```java
+private LocalDate nextWateringDate;
+private Boolean notificationsEnabled;
+```
+
+**Archivo:** `src/main/java/.../plantprofiles/domain/model/aggregates/PlantHistory.java`
+
+```java
+public class PlantHistory extends AuditableAbstractAggregateRoot<PlantHistory> {
+  private PlantId plantId;
+  private String type;
+  private LocalDate date;
+  private LocalTime time;
+  private Integer humidity;
+}
+```
+
+**Análisis**
+
+La implementación registra la fecha, hora y tipo de actividad realizada sobre cada planta, permitiendo analizar los momentos de interacción de los usuarios con la plataforma y proporcionando la información necesaria para optimizar el envío de futuras notificaciones.
+
+---
+
+**Experimento 7 — Rootbot Conversacional**
+
+**Archivo:** `src/main/java/.../plantprofiles/domain/model/aggregates/Plant.java`
+
+```java
+@Column(name = "image_url", columnDefinition = "LONGTEXT")
+private String imageUrl;
+```
+
+**Archivo:** `src/main/java/.../plantprofiles/domain/model/aggregates/PlantHistory.java`
+
+```java
+private PlantId plantId;
+private String type;
+private LocalDate date;
+private LocalTime time;
+private Integer humidity;
+```
+
+**Análisis**
+
+La implementación permite almacenar la imagen de cada planta y mantener un historial de información relacionada con su estado y cuidado. Esta información constituye la base para asistir al usuario durante el proceso de identificación y seguimiento de sus plantas dentro de la plataforma.
+
+##### 8.3.3.6. Team Collaboration Insights
+
+<p align="center">
+  <img src="images/Insights.png" alt="Insight" width="1000">
+</p>
+
+#### 8.3.4. To-Be Validation Interviews
+
+##### 8.3.4.1. Diseño de Entrevistas
+
+Entrevista para personas con experiencia como hobbyistas (años cuidando plantas en casa):
+
+1.- ¿Qué funcionalidades del dashboard consideras más valiosas para alguien con experiencia?
+
+2.- ¿Se te resulto facil registrar tus plantas y gestionar sus cuidados en “Mis Plantas”?
+
+3.- ¿La sección de historial te resulta útil para mantener un seguimiento avanzado?
+
+4.- ¿Qué opinión tienes sobre la calidad y nivel de profundidad de las guías disponibles?
+
+5.- ¿El sistema de tareas se adapta bien a tus rutinas de cuidado?
+
+6.- Al probar Rootbot ¿Consideras útil su asistencia para alguien con experiencia?
+
+7.- ¿Hay alguna función que te haya sorprendido o que no hayas visto en otras herramientas similares?
+
+8.- ¿Qué opinas de la posibilidad de centralizar todas las plantas y tareas en un solo panel?
+
+9.- ¿Qué herramientas adicionales crees que podrían aportar valor a usuarios avanzados?
+
+10.- ¿Recomendarías esta plataforma a otros cuidadores con experiencia? ¿Qué los motivaría a usarla?
+
+Entrevista para personas con poca experiencia en el cuidado de plantas:
+
+1.- ¿Te resultó clara la función principal de la app cuando entraste por primera vez?
+
+2.- ¿Qué te pareció el proceso de registrar una planta en “Mis Plantas”? ¿Fue fácil de seguir?
+
+3.- ¿El historial de cuidados te pareció útil para llevar un seguimiento?
+
+4.- ¿Te ayudó la sección de guías a entender mejor cómo cuidar tus plantas?
+
+5.- ¿La sección de tareas te ayudó a organizarte con el riego, la fertilización u otros cuidados?
+
+6.- ¿Que te parecio Rootbot, siendo una chatbot que te ayuda a resolver preguntas sobre tus plantas?
+
+7.- ¿Crees que el diseño del dashboard te permitió encontrar lo que necesitabas rápidamente?
+
+8.- ¿Qué sensación tuviste al usar la app? ¿Te dio confianza para empezar con tus plantas?
+
+9.- ¿Qué función te pareció más útil como principiante? ¿Por qué?
+
+10.- ¿Qué agregarías o cambiarías para que esta app ayude mejor a quienes recién empiezan?
+
+##### 8.3.4.2. Registro de Entrevistas
+
+## _Expertos cuidadores de plantas_
+
+<br>
+
+<table align="center">
+  <tr>
+    <th colspan="2" style="text-align:center">Entrevista 1</th>
+  </tr>
+  <tr>
+    <td><strong>Entrevistado</strong></td>
+    <td>Pedro vargas</td>
+  </tr>
+  <tr>
+    <td><strong>Edad</strong></td>
+    <td>23 años</td>
+  </tr>
+  <tr>
+    <td><strong>Distrito</strong></td>
+    <td>San Miguel</td>
+  </tr>
+  <tr>
+    <td><strong>Timing</strong></td>
+    <td>00:00 - 20:39</td>
+  </tr>
+  <tr>
+    <td><strong>URL</strong></td>
+    <td><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a500_upc_edu_pe/ESo5zHrrdaJGoCemsZ-n9rAB7GbfhQukPN2nsoXDKGw34A?nav=eyJwbGF5YmFja09wdGlvbnMiOnsic3RhcnRUaW1lSW5TZWNvbmRzIjowLCJ0aW1lc3RhbXBlZExpbmtSZWZlcnJlckluZm8iOnsic2NlbmFyaW8iOiJDaGFwdGVyU2hhcmUiLCJhZGRpdGlvbmFsSW5mbyI6eyJpc1NoYXJlZENoYXB0ZXJBdXRvIjpmYWxzZX19fSwicmVmZXJyYWxJbmZvIjp7InJlZmVycmFsQXBwIjoiU3RyZWFtV2ViQXBwIiwicmVmZXJyYWxWaWV3IjoiU2hhcmVDaGFwdGVyTGluayIsInJlZmVycmFsQXBwUGxhdGZvcm0iOiJXZWIiLCJyZWZlcnJhbE1vZGUiOiJ2aWV3In19&e=y1EqSk" target="_blank"> https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a500_upc_edu_pe/ESo5zHrrdaJGoCemsZ-n9rAB7GbfhQukPN2nsoXDKGw34A?nav=eyJwbGF5YmFja09wdGlvbnMiOnsic3RhcnRUaW1lSW5TZWNvbmRzIjowLCJ0aW1lc3RhbXBlZExpbmtSZWZlcnJlckluZm8iOnsic2NlbmFyaW8iOiJDaGFwdGVyU2hhcmUiLCJhZGRpdGlvbmFsSW5mbyI6eyJpc1NoYXJlZENoYXB0ZXJBdXRvIjpmYWxzZX19fSwicmVmZXJyYWxJbmZvIjp7InJlZmVycmFsQXBwIjoiU3RyZWFtV2ViQXBwIiwicmVmZXJyYWxWaWV3IjoiU2hhcmVDaGFwdGVyTGluayIsInJlZmVycmFsQXBwUGxhdGZvcm0iOiJXZWIiLCJyZWZlcnJhbE1vZGUiOiJ2aWV3In19&e=y1EqSk</a></td>
+  </tr>
+  <tr>
+    <td colspan="2" style="text-align:justify">
+      Resumen:<br>
+      Pedro Vargas valoró especialmente la funcionalidad del calendario de riego, ya que le permite recordar cuándo atender sus plantas. Consideró fácil registrar las plantas, aunque notó la falta de una animación de carga. Encontró útil el historial para llevar seguimiento y cree que las guías pueden ser valiosas si se amplían a más especies. El sistema de tareas le pareció práctico y adaptable a sus rutinas. Sobre el asistente Rootbot, sugirió incluir diagnósticos y recomendaciones personalizadas ante problemas visibles en las plantas. Le sorprendió la capacidad de visualizar análisis y manejar muchas plantas a la vez, y ve con buenos ojos centralizar toda la información en un panel único. Sugirió añadir herramientas que permitan registrar síntomas y recibir orientación sobre problemas específicos. Finalmente, recomendaría la plataforma a otros cuidadores experimentados, especialmente si gestionan muchas plantas, por su utilidad para organizar y no olvidar tareas.
+    </td>
+  </tr>
+  <tr>
+<td colspan="2">
+  <img src="images/evidencia-sprint3/entrevistavalidacion1-pedro.jpg" alt="Screenshot Entrevista 2" width="1000">
+    </td>
+  </tr>
+</table>
+
+<br>
+
+<table align="center">
+  <tr>
+    <th colspan="2" style="text-align:center">Entrevista 2</th>
+  </tr>
+  <tr>
+    <td><strong>Entrevistada</strong></td>
+    <td>Leonor Gonzales</td>
+  </tr>
+  <tr>
+    <td><strong>Edad</strong></td>
+    <td>60 años</td>
+  </tr>
+  <tr>
+    <td><strong>Distrito</strong></td>
+    <td>San Miguel</td>
+  </tr>
+  <tr>
+    <td><strong>Timing</strong></td>
+    <td>20:39 - 30:15</td>
+  </tr>
+  <tr>
+    <td><strong>URL</strong></td>
+    <td><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a500_upc_edu_pe/ESo5zHrrdaJGoCemsZ-n9rAB7GbfhQukPN2nsoXDKGw34A?nav=eyJwbGF5YmFja09wdGlvbnMiOnsic3RhcnRUaW1lSW5TZWNvbmRzIjoxMjM5LCJ0aW1lc3RhbXBlZExpbmtSZWZlcnJlckluZm8iOnsic2NlbmFyaW8iOiJDaGFwdGVyU2hhcmUiLCJhZGRpdGlvbmFsSW5mbyI6eyJpc1NoYXJlZENoYXB0ZXJBdXRvIjpmYWxzZX19fSwicmVmZXJyYWxJbmZvIjp7InJlZmVycmFsQXBwIjoiU3RyZWFtV2ViQXBwIiwicmVmZXJyYWxWaWV3IjoiU2hhcmVDaGFwdGVyTGluayIsInJlZmVycmFsQXBwUGxhdGZvcm0iOiJXZWIiLCJyZWZlcnJhbE1vZGUiOiJ2aWV3In19&e=nBsgUC" target="_blank">https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a500_upc_edu_pe/ESo5zHrrdaJGoCemsZ-n9rAB7GbfhQukPN2nsoXDKGw34A?nav=eyJwbGF5YmFja09wdGlvbnMiOnsic3RhcnRUaW1lSW5TZWNvbmRzIjoxMjM5LCJ0aW1lc3RhbXBlZExpbmtSZWZlcnJlckluZm8iOnsic2NlbmFyaW8iOiJDaGFwdGVyU2hhcmUiLCJhZGRpdGlvbmFsSW5mbyI6eyJpc1NoYXJlZENoYXB0ZXJBdXRvIjpmYWxzZX19fSwicmVmZXJyYWxJbmZvIjp7InJlZmVycmFsQXBwIjoiU3RyZWFtV2ViQXBwIiwicmVmZXJyYWxWaWV3IjoiU2hhcmVDaGFwdGVyTGluayIsInJlZmVycmFsQXBwUGxhdGZvcm0iOiJXZWIiLCJyZWZlcnJhbE1vZGUiOiJ2aWV3In19&e=nBsgUC</a></td>
+  </tr>
+  <tr>
+    <td colspan="2" style="text-align:justify">
+      Resumen:<br>
+      Leonor González, una usuaria previamente entrevistada para identificar necesidades en el cuidado de plantas, participó en la prueba de la primera versión de PlantSync. Destacó la facilidad para registrar plantas, agregar fotos y editar información, así como la utilidad del historial de cuidados para no perder el seguimiento de cada planta. Le pareció interesante la función de clima y valoró la sección de tareas por permitirle marcar actividades como completadas. En la sección de guías sugirió ampliar el número de opciones, ya que solo se habían desarrollado tres. Aunque el chatbot le resultó innovador, lo consideró complicado de usar, sobre todo al gestionar fechas. Señaló algunas dificultades para visualizar botones y encabezados debido al tamaño del texto, pero en general encontró la aplicación sencilla, útil y con opciones flexibles en la sección de planes.
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      <img src="images/validation-interview-leonor.png" alt="Screenshot Entrevista 2" width="1000">
+    </td>
+  </tr>
+</table>
+
+<br>
+
+<table align="center">
+  <tr>
+    <th colspan="2" style="text-align:center">Entrevista 3</th>
+  </tr>
+  <tr>
+    <td><strong>Entrevistada</strong></td>
+    <td>Guadalupe Alvarado</td>
+  </tr>
+  <tr>
+    <td><strong>Edad</strong></td>
+    <td>52 años</td>
+  </tr>
+  <tr>
+    <td><strong>Distrito</strong></td>
+    <td>San Miguel</td>
+  </tr>
+  <tr>
+    <td><strong>Timing</strong></td>
+    <td>30:15 - 38:57</td>
+  </tr>
+  <tr>
+    <td><strong>URL</strong></td>
+    <td><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a500_upc_edu_pe/ESo5zHrrdaJGoCemsZ-n9rAB7GbfhQukPN2nsoXDKGw34A?nav=eyJwbGF5YmFja09wdGlvbnMiOnsic3RhcnRUaW1lSW5TZWNvbmRzIjoxODE1LCJ0aW1lc3RhbXBlZExpbmtSZWZlcnJlckluZm8iOnsic2NlbmFyaW8iOiJDaGFwdGVyU2hhcmUiLCJhZGRpdGlvbmFsSW5mbyI6eyJpc1NoYXJlZENoYXB0ZXJBdXRvIjpmYWxzZX19fSwicmVmZXJyYWxJbmZvIjp7InJlZmVycmFsQXBwIjoiU3RyZWFtV2ViQXBwIiwicmVmZXJyYWxWaWV3IjoiU2hhcmVDaGFwdGVyTGluayIsInJlZmVycmFsQXBwUGxhdGZvcm0iOiJXZWIiLCJyZWZlcnJhbE1vZGUiOiJ2aWV3In19&e=I0rgoM" target="_blank">https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a500_upc_edu_pe/ESo5zHrrdaJGoCemsZ-n9rAB7GbfhQukPN2nsoXDKGw34A?nav=eyJwbGF5YmFja09wdGlvbnMiOnsic3RhcnRUaW1lSW5TZWNvbmRzIjoxODE1LCJ0aW1lc3RhbXBlZExpbmtSZWZlcnJlckluZm8iOnsic2NlbmFyaW8iOiJDaGFwdGVyU2hhcmUiLCJhZGRpdGlvbmFsSW5mbyI6eyJpc1NoYXJlZENoYXB0ZXJBdXRvIjpmYWxzZX19fSwicmVmZXJyYWxJbmZvIjp7InJlZmVycmFsQXBwIjoiU3RyZWFtV2ViQXBwIiwicmVmZXJyYWxWaWV3IjoiU2hhcmVDaGFwdGVyTGluayIsInJlZmVycmFsQXBwUGxhdGZvcm0iOiJXZWIiLCJyZWZlcnJhbE1vZGUiOiJ2aWV3In19&e=I0rgoM</a></td>
+  </tr>
+  <tr>
+    <td colspan="2" style="text-align:justify">
+      Resumen:<br>
+      Guadalupe Alvarado Ramos es una usuaria previamente entrevistada como parte del segmento con experiencia en el cuidado de plantas. Durante la prueba de la aplicación PlantSync, pudo navegar de forma correcta por todas las secciones y no presentó conflictos significativos con la interfaz ni con el flujo general de la aplicación. Consideró especialmente útil el acceso a las características principales de las plantas, como la humedad y la temperatura, y destacó la facilidad para registrar nuevas plantas en su perfil. Le agradó el apartado de tareas, aunque observó que no resulta cómodo tener que ingresar manualmente los eventos como riego, poda o fertilización, y sugirió mejorar esa funcionalidad. Respecto a las guías, mencionó que deberían enriquecerse con información más relevante para personas con experiencia, ya que las existentes le resultaron limitadas para su nivel. Guadalupe valoró de forma positiva el uso del RootBot y consideró que su utilidad aplica para usuarios de todos los niveles. Finalmente, aunque reconoció las funciones útiles de la aplicación, expresó que le gustaría que los cuidados se adaptaran automáticamente a las estaciones del año para hacerlos más precisos y personalizados.
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      <img src="images/validation-interview-guadalupe.png" alt="Screenshot Entrevista 3" width="1000">
+    </td>
+  </tr>
+</table>
+
+<br>
+
+## _Principiantes cuidadores de plantas:_
+
+<br>
+
+<table align="center">
+  <tr>
+    <th colspan="2" style="text-align:center">Entrevista 1</th>
+  </tr>
+  <tr>
+    <td><strong>Entrevistado</strong></td>
+    <td>Estefano Solis</td></td>
+  </tr>
+  <tr>
+    <td><strong>Edad</strong></td>
+    <td>19 años</td>
+  </tr>
+  <tr>
+    <td><strong>Distrito</strong></td>
+    <td>Cercado de Lima</td></td>
+  </tr>
+  <tr>
+    <td><strong>Timing</strong></td>
+    <td>38:57 - 51:10</td>
+  </tr>
+  <tr>
+    <td><strong>URL</strong></td>
+    <td><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a500_upc_edu_pe/ESo5zHrrdaJGoCemsZ-n9rAB7GbfhQukPN2nsoXDKGw34A?nav=eyJwbGF5YmFja09wdGlvbnMiOnsic3RhcnRUaW1lSW5TZWNvbmRzIjoyMzM3LCJ0aW1lc3RhbXBlZExpbmtSZWZlcnJlckluZm8iOnsic2NlbmFyaW8iOiJDaGFwdGVyU2hhcmUiLCJhZGRpdGlvbmFsSW5mbyI6eyJpc1NoYXJlZENoYXB0ZXJBdXRvIjpmYWxzZX19fSwicmVmZXJyYWxJbmZvIjp7InJlZmVycmFsQXBwIjoiU3RyZWFtV2ViQXBwIiwicmVmZXJyYWxWaWV3IjoiU2hhcmVDaGFwdGVyTGluayIsInJlZmVycmFsQXBwUGxhdGZvcm0iOiJXZWIiLCJyZWZlcnJhbE1vZGUiOiJ2aWV3In19&e=UvgcXa" target="_blank">https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a500_upc_edu_pe/ESo5zHrrdaJGoCemsZ-n9rAB7GbfhQukPN2nsoXDKGw34A?nav=eyJwbGF5YmFja09wdGlvbnMiOnsic3RhcnRUaW1lSW5TZWNvbmRzIjoyMzM3LCJ0aW1lc3RhbXBlZExpbmtSZWZlcnJlckluZm8iOnsic2NlbmFyaW8iOiJDaGFwdGVyU2hhcmUiLCJhZGRpdGlvbmFsSW5mbyI6eyJpc1NoYXJlZENoYXB0ZXJBdXRvIjpmYWxzZX19fSwicmVmZXJyYWxJbmZvIjp7InJlZmVycmFsQXBwIjoiU3RyZWFtV2ViQXBwIiwicmVmZXJyYWxWaWV3IjoiU2hhcmVDaGFwdGVyTGluayIsInJlZmVycmFsQXBwUGxhdGZvcm0iOiJXZWIiLCJyZWZlcnJhbE1vZGUiOiJ2aWV3In19&e=UvgcXa</a></td>
+  </tr>
+  <tr>
+    <td colspan="2" style="text-align:justify">
+      Resumen: Estefano Solis expresó que la función principal de la app fue clara desde el inicio y que el proceso de registrar plantas fue sencillo, destacando la utilidad de identificar plantas con fotos. Consideró muy útil el historial para evitar errores de riego y valoró positivamente la sección de guías, ya que le evita buscar en Google. Las tareas y recordatorios fueron lo más útil para él como principiante, pues lo ayudaron a establecer hábitos de cuidado. Le sorprendió gratamente Rootbot, al permitirle resolver dudas rápidamente, y opinó que el dashboard está bien diseñado y es fácil de navegar. La app le dio confianza y alivio al facilitar el cuidado de plantas, motivándolo a tener más. Como sugerencia, propuso una función de diagnóstico por foto para detectar problemas visuales en las plantas, aunque en general considera que la app ya está bastante completa.
+<br>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      <img src="images/evidencia-sprint3/entrevistavalidacion2-estefano.jpg" alt="screenshot entrevista estefano" width="1000">
+    </td>
+  </tr>
+</table>
+
+<table align="center">
+  <tr>
+    <th colspan="2" style="text-align:center">Entrevista 2</th>
+  </tr>
+  <tr>
+    <td><strong>Entrevistado</strong></td>
+    <td>Andrea Elizabeth Santur Tello</td></td>
+  </tr>
+  <tr>
+    <td><strong>Edad</strong></td>
+    <td>18 años</td>
+  </tr>
+  <tr>
+    <td><strong>Distrito</strong></td>
+    <td>Los Olivos</td></td>
+  </tr>
+  <tr>
+    <td><strong>Timing</strong></td>
+    <td>51:10 - 56:44</td>
+  </tr>
+  <tr>
+    <td><strong>URL</strong></td>
+    <td><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a500_upc_edu_pe/ESo5zHrrdaJGoCemsZ-n9rAB7GbfhQukPN2nsoXDKGw34A?nav=eyJwbGF5YmFja09wdGlvbnMiOnsic3RhcnRUaW1lSW5TZWNvbmRzIjozMDcwLCJ0aW1lc3RhbXBlZExpbmtSZWZlcnJlckluZm8iOnsic2NlbmFyaW8iOiJDaGFwdGVyU2hhcmUiLCJhZGRpdGlvbmFsSW5mbyI6eyJpc1NoYXJlZENoYXB0ZXJBdXRvIjpmYWxzZX19fSwicmVmZXJyYWxJbmZvIjp7InJlZmVycmFsQXBwIjoiU3RyZWFtV2ViQXBwIiwicmVmZXJyYWxWaWV3IjoiU2hhcmVDaGFwdGVyTGluayIsInJlZmVycmFsQXBwUGxhdGZvcm0iOiJXZWIiLCJyZWZlcnJhbE1vZGUiOiJ2aWV3In19&e=XJ5P7X" target="_blank">https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a500_upc_edu_pe/ESo5zHrrdaJGoCemsZ-n9rAB7GbfhQukPN2nsoXDKGw34A?nav=eyJwbGF5YmFja09wdGlvbnMiOnsic3RhcnRUaW1lSW5TZWNvbmRzIjozMDcwLCJ0aW1lc3RhbXBlZExpbmtSZWZlcnJlckluZm8iOnsic2NlbmFyaW8iOiJDaGFwdGVyU2hhcmUiLCJhZGRpdGlvbmFsSW5mbyI6eyJpc1NoYXJlZENoYXB0ZXJBdXRvIjpmYWxzZX19fSwicmVmZXJyYWxJbmZvIjp7InJlZmVycmFsQXBwIjoiU3RyZWFtV2ViQXBwIiwicmVmZXJyYWxWaWV3IjoiU2hhcmVDaGFwdGVyTGluayIsInJlZmVycmFsQXBwUGxhdGZvcm0iOiJXZWIiLCJyZWZlcnJhbE1vZGUiOiJ2aWV3In19&e=XJ5P7X</a></td>
+  </tr>
+  <tr>
+    <td colspan="2" style="text-align:justify">
+      Resumen: Elizabeth Santur dijo que la función principal de la app fue clara desde el inicio y que el proceso de registrar plantas fue sencillo, como tambien el proceso de registro como nuevo usuario fue rapido y facil de entender, ella destacp la utilidad de identificar plantas con fotos. Consideró muy útil el historial para evitar errores de riego y ayudarse con ello para crear como una rutina de cuidado para sus plantas y valoró positivamente la sección de guías. Las tareas y recordatorios fueron lo más útil para él como principiante. Le sorprendió gratamente Rootbot, al permitirle resolver dudas rápidamente, mostrando gran sorpresa con al interactuar con este, y opinó que el dashboard está bien diseñado y es fácil de navegar entre los distintos apartados de la App Web. La app le dio confianza y alivio al facilitar el cuidado de plantas, motivándolo a tener más. Como sugerencia, propuso una función de personalizacion para el diseño como lo son los colores o el color de fondo, aunque en general considera que la app ya está bastante completa.
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      <img src="images/evidencia-sprint3/entrevistavalidacion-andrea.jpg" alt="screenshot andrea santur" width="1000">
+    </td>
+  </tr>
+</table>
+
+### 8.4. Experiment Aftermath & Analysis
+
+#### 8.4.1. Analysis and Interpretation of Results
+
+En esta sección se presentan los resultados obtenidos tras el despliegue del prototipo funcional de la plataforma web de PlantSync. Los experimentos se centraron en evaluar la adopción de planes de suscripción y la fricción (medida en tiempo) del nuevo formulario de perfilamiento de usuarios.
+
+<img src="images/evidencia-TF/Grafica 1.png" alt="screenshot Grafica 1" width="1000">
+
+En el gráfico de líneas superior, se visualiza la distribución porcentual y la tendencia de adopción de los planes de suscripción (Básico, Premium y Pro). Durante un periodo de prueba de 7 días, se monitoreó el comportamiento de un grupo de 30 usuarios beta al momento de crear su cuenta en PlantSync. El resultado numérico muestra una curva descendente lógica: el 60% de los usuarios optó por el plan "Básico", el 30% se registró en el plan "Premium" y un 10% seleccionó el plan "Pro".
+
+El hecho de que el 40% de los usuarios haya mostrado disposición inicial para optar por planes de pago (Premium y Pro) en una etapa temprana de registro, demuestra que la propuesta de valor comunicada en la Landing Page y en las vistas de Sign Up genera suficiente interés y percepción de utilidad (especialmente en funcionalidades como el ChatBot y el historial de cuidados).
+
+Dado este resultado, se recomienda mantener la estructura actual de Pricing en el frontend, pero implementar una campaña de onboarding por correo electrónico dirigida a los usuarios del plan Básico. El objetivo será incentivar el upselling mostrándoles el valor real del monitoreo inteligente y las notificaciones automatizadas que ofrecen los planes superiores, con el fin de aplanar la curva del gráfico y elevar la conversión en el próximo trimestre.
+
+<img src="images/evidencia-TF/Grafica 2.png" alt="screenshot Grafica 2" width="1000">
+
+En el segundo gráfico, se analizó el impacto en tiempo real de la inclusión de nuevos campos demográficos obligatorios (Edad y Género) en el formulario de "Crear Cuenta". El objetivo del experimento era medir en segundos la fricción generada por solicitar esta información adicional, la cual es necesaria para la persistencia en la base de datos SQL y la personalización de guías botánicas.
+
+Tras el análisis del conjunto de datos de 15 usuarios de prueba, la línea de tendencia muestra que el tiempo de llenado se mantiene en un rango estable, con un pico máximo de 60 segundos y un mínimo de 38 segundos. El tiempo promedio para completar el registro fue de aproximadamente 45 segundos. Este resultado indica un nivel de fricción bajo y altamente satisfactorio para un proceso de Onboarding.
+
+El resultado revela que solicitar datos básicos de perfilamiento desde el inicio no ralentiza significativamente el proceso ni disuade a los usuarios interesados en el cuidado de plantas. Con esta información validada en la base de datos SQL, se sugiere avanzar con el desarrollo del algoritmo de recomendaciones personalizadas de PlantSync (basado en el perfil del usuario y las condiciones climáticas), asegurando una experiencia óptima y adaptada a cada segmento de edad.
+
+#### 8.4.2. Re-scored and Re-prioritized Question Backlog
+
+Según los resultados obtenidos en la validación del registro y la selección de planes en la plataforma web de PlantSync, hemos asignado nuevos puntajes a las preguntas de nuestro Question Backlog. El impacto de validar la captura de datos demográficos y el interés en planes Premium nos permite reajustar nuestras prioridades de desarrollo, tal como se muestra en el siguiente cuadro:
+
+| Question | Confidence | Risk | Impact | Interest | Total Score |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| ¿Qué tan dispuestos están los usuarios a proporcionar datos demográficos (edad/género) al registrarse para obtener guías personalizadas? | 9 | 2 | 8 | 7 | 26 |
+| ¿Cuál es la tasa de interés inicial en los planes de suscripción de pago (Premium/Pro) frente al plan Básico gratuito? | 8 | 4 | 7 | 8 | 27 |
+| ¿Cómo afecta la interfaz de "Mis Plantas" a la frecuencia con la que los usuarios revisan el estado de humedad y próximos riegos? | 5 | 3 | 9 | 6 | 23 |
+| ¿Qué tan intuitivo es el módulo de "Tareas" para comprender las acciones pendientes (regar, podar) a corto plazo? | 6 | 2 | 8 | 7 | 23 |
+| ¿El acceso directo a las "Guías de Cuidado Botánico" disminuye la dependencia de soporte externo por parte de los usuarios nuevos? | 4 | 4 | 7 | 8 | 23 |
+
+<br>
+
+A partir de la puntuación total obtenida, se ha aplicado la secuencia de Fibonacci para establecer el orden de prioridad en el desarrollo de las siguientes iteraciones del producto:
+
+| Prioridad (1/2/3/5/8) | Pregunta |
+| :---: | :--- |
+| **8** | ¿Cuál es la tasa de interés inicial en los planes de suscripción de pago (Premium/Pro) frente al plan Básico gratuito? |
+| **8** | ¿Qué tan dispuestos están los usuarios a proporcionar datos demográficos (edad/género) al registrarse para obtener guías personalizadas? |
+| **5** | ¿Cómo afecta la interfaz de "Mis Plantas" a la frecuencia con la que los usuarios revisan el estado de humedad y próximos riegos? |
+| **5** | ¿Qué tan intuitivo es el módulo de "Tareas" para comprender las acciones pendientes (regar, podar) a corto plazo? |
+| **3** | ¿El acceso directo a las "Guías de Cuidado Botánico" disminuye la dependencia de soporte externo por parte de los usuarios nuevos? |
+
+
+### 8.5. Continuous Learning
+
+#### 8.5.1. Shareback Session Artifacts: Learning Workflow
+
+El flujo de aprendizaje obtenido de los experimentos de monetización y perfilado demográfico nos demostró que existe un mercado claro y validado: adultos jóvenes (25-45 años) dispuestos a invertir en planes Premium y PRO. La alta tasa de clics e interés en el Landing Page hacia la funcionalidad de "Sensores IoT" y "Guías Avanzadas" nos indica que el usuario busca llevar el cuidado de sus plantas a un nivel más profesional y automatizado. Implementar la integración de hardware (sensores físicos) y la visualización de analíticas avanzadas representaría un salto importante en la retención y en la conversión directa hacia nuestros planes de pago.
+
+**New Raw Material**
+Gracias a los resultados obtenidos en el Landing Page y al registro de usuarios, vimos una excelente acogida en la propuesta de los planes de pago que incluyen kits físicos. Por ello, pensamos implementar la nueva funcionalidad de "Sincronización IoT y Analíticas Avanzadas", la cual permitirá a los usuarios conectar un sensor físico a la aplicación para monitorear en tiempo real los niveles exactos de humedad, temperatura y luz de sus plantas, dejando atrás el registro puramente manual.
+
+**Assumptions**
+
+**Business Outcomes**
+Como empresa buscamos:
+
+La integración con sensores IoT incrementará la conversión de usuarios gratuitos a planes Premium/PRO en un 15%.
+
+La venta de planes con hardware reducirá la tasa de abandono (churn rate), ya que el usuario genera un compromiso físico y a largo plazo con la plataforma.
+
+El conocimiento demográfico exacto (edad y género) permitirá optimizar el gasto en campañas de marketing (CAC) dirigidas al público que demostró mayor interés de compra.
+
+**Customer**
+
+Los usuarios (adultos jóvenes) están familiarizados y tienen afinidad con las tecnologías de "Smart Home" (Casas Inteligentes).
+
+Los usuarios desean delegar el monitoreo constante de sus plantas a un dispositivo inteligente para reducir su ansiedad por regar de más o de menos.
+
+Los usuarios valorarán tener gráficos y datos históricos precisos sobre la salud y el entorno de sus plantas.
+
+User Outcomes
+Tras la próxima experimentación con la integración IoT, esperamos que los usuarios logren los siguientes resultados:
+
+**Customer**
+
+Tranquilidad mental y reducción de estrés al saber que un sensor está monitoreando el estado real de sus plantas 24/7.
+
+Empoderamiento y satisfacción al ver datos objetivos (gráficos de mejora) de que están cuidando bien a sus plantas.
+
+Ahorro significativo de tiempo al no tener que revisar manualmente la tierra de cada maceta en su hogar.
+
+Mayor confianza en sus habilidades botánicas gracias al respaldo de datos en tiempo real.
+
+**Knowledge Gaps**
+
+¿Cómo aseguramos que el proceso de emparejamiento (pairing) entre el sensor IoT y la aplicación sea intuitivo y rápido para usuarios que no son expertos en tecnología?
+
+¿Qué sucede si el sensor físico se queda sin batería o pierde conexión Wi-Fi? ¿Cómo se lo comunicamos al usuario sin generar pánico o falsas alarmas?
+
+¿Estarán los usuarios dispuestos a pagar el costo de envío del hardware además de la suscripción mensual, o esperan que esté incluido?
+
+¿Cuántos sensores en promedio necesitará un usuario por hogar para sentir que el plan Premium vale la pena?
+
+**Ideas**
+
+Crear un flujo de "Onboarding" interactivo paso a paso en la app (con animaciones) para conectar el sensor IoT mediante Bluetooth/Wi-Fi en menos de 2 minutos.
+
+Implementar un panel de "Salud del Dispositivo" en el dashboard que notifique con antelación sobre el nivel de batería y conectividad del sensor.
+
+Ofrecer un modelo de "Hardware as a Service" (HaaS) donde el primer sensor viene incluido de forma gratuita al pagar el plan anual de la suscripción PRO.
+
+Añadir alertas climáticas (basadas en los datos del sensor) que notifiquen al usuario si la planta necesita ser movida a la sombra.
+
+**Claims**
+
+"Me anoté en la lista de espera del plan PRO en la página porque siempre riego mis plantas de más; necesito algo que me diga el nivel exacto de humedad en la tierra."
+
+"Tengo 28 años, trabajo todo el día fuera de casa y me encantaría que mis plantas también estuvieran conectadas al celular para revisarlas desde la oficina."
+
+"Me gusta la app, pero me olvido de registrar manualmente cuándo regué. Si hubiera un sensor que lo registre automáticamente por mí, pagaría la suscripción sin pensarlo."
+
+### 8.6. To-Be Software Platform Pre-launch
+
+#### 8.6.1. About-the-Product Intro Video
+
+A continuación, se presenta el link en Google Drive con el video About The Product con los experimentos integrados.
+
+Duración: 4 minutos y 14 segundos.
+
+<p align="center">
+  <img src="images/about-the-product.jpg" alt="About The Product Image" width="1000">
+</p>
+
+Enlace al video:
+https://drive.google.com/file/d/1cgSGgp_SkNYQiJvJMOF6MdzHztBXVWVL/view?usp=sharing
+
+## Matriz de Evaluación Ética y de Impacto
+
+| Dimensión / Criterio a Evaluar | Identificación de Riesgos e Impactos (Positivos y Negativos) | Evaluación del Impacto (¿A quién afecta y cuál es la magnitud?) | Estrategias de Mitigación y Acciones de Diseño |
+| :--- | :--- | :--- | :--- |
+| **1. Salud Pública y Seguridad** | **Negativo:** Recomendaciones automatizadas imprecisas por parte de la IA (RootBot) podrían sugerir el uso inadecuado de fertilizantes químicos o pesticidas comerciales, poniendo en riesgo la salud en el hogar.<br><br>**Positivo:** Promueve entornos interiores más saludables, purificando el aire y mejorando el bienestar y la salud mental del usuario al reducir la frustración. | **Afectados:** Los habitantes del hogar (especialmente niños y mascotas) que podrían estar expuestos a químicos por un mal manejo. Usuarios que puedan sufrir estrés por la muerte de sus plantas. | **Acciones:** Entrenar y configurar a RootBot para priorizar el uso de métodos ecológicos, orgánicos y seguros. Implementar advertencias (disclaimers) claras y visibles en la interfaz antes de sugerir el manejo de cualquier producto químico comercial. |
+| **2. Inclusión y Accesibilidad** | **Negativo:** El uso de identificación de plantas por cámara, integración IoT y notificaciones en tiempo real requiere dispositivos de gama media-alta y conexión a internet estable. No se han especificado opciones por voz.<br><br>**Positivo:** Democratiza el conocimiento botánico, haciéndolo fácil para principiantes sin conocimientos técnicos. | **Afectados:** Personas con desventajas económicas (sin acceso a smartphones modernos) y usuarios de la tercera edad o con discapacidades visuales que podrían tener problemas para interactuar con los formularios y gráficas. | **Acciones:** Desarrollar una interfaz de alto contraste con fuentes legibles (como Poppins y Nunito) y opciones de accesibilidad nativa como lectores de pantalla (VoiceOver/TalkBack). Mantener funciones core utilizables en versiones de gama baja sin depender 100% de la sincronización de hardware IoT. |
+| **3. Impacto Social y Cultural** | **Negativo:** Delegar el monitoreo de la naturaleza a sensores y automatización tecnológica podría desconectar al usuario del aprendizaje empírico y tradicional de la jardinería local.<br><br>**Positivo:** Fomenta la educación ambiental y el cuidado responsable de la naturaleza en entornos puramente urbanos. | **Afectados:** La cultura del cuidado tradicional y la cohesión comunitaria de jardineros, así como la pérdida de saberes locales (transmitidos de generación en generación). | **Acciones:** Incluir dentro de la plataforma (o en las respuestas de RootBot) el reconocimiento de prácticas y saberes tradicionales. Diseñar el sistema no solo para automatizar, sino para educar progresivamente al usuario, incentivando el contacto físico y consciente con sus plantas. |
+| **4. Impacto Económico** | **Negativo:** El modelo de suscripción (Premium de $10.99 y Pro de $16.99) restringe características de alto valor como las analíticas de clima y la atención del chatbot a usuarios que puedan costearlo.<br><br>**Positivo:** Evita el desperdicio de dinero en la compra de plantas que mueren de forma prematura. | **Afectados:** Usuarios aficionados con un presupuesto limitado (impacto negativo). La economía personal de los usuarios y pequeños viveros locales (impacto positivo). | **Acciones:** Asegurar que el plan "Básico" mantenga una funcionalidad robusta para garantizar la supervivencia de la planta sin presionar a un pago forzado. Explorar a futuro colaboraciones que den visibilidad a viveros y negocios verdes locales sin cobrarles comisiones perjudiciales. |
+| **5. Impacto Ambiental (Antrópico)** | **Negativo:** El alto volumen de procesamiento de IA para análisis de imágenes, bases de datos y alojamiento en Azure incrementan la huella de carbono digital. A futuro, los kits de sensores IoT generarán desechos electrónicos (e-waste).<br><br>**Positivo:** Salva la vida de múltiples plantas domésticas, reduciendo el consumo hídrico excesivo y el desecho orgánico. | **Afectados:** El medio ambiente global debido a la huella de carbono de los servidores cloud y la contaminación futura por hardware. | **Acciones:** Optimizar el código del backend en Azure y la integración continua (Jenkins/SonarQube) para reducir tiempos de cómputo inactivos. Establecer una política de "Hardware as a Service" sostenible, que contemple la recolección, reparación y reciclaje responsable de los sensores IoT. |
+| **6. Enfoque Global** | **Negativo:** La proyección de expansión de PlantSync a América Latina implicará alojar información climática de ubicación, fotos de interiores de hogares y rutinas de cuidado bajo legislaciones extranjeras que pueden variar por región. | **Afectados:** La privacidad y confidencialidad de la información personal de la base global de usuarios en un mercado internacionalizado. | **Acciones:** Adoptar desde las primeras fases normativas internacionales de protección de datos como el GDPR europeo. Garantizar el cifrado de extremo a extremo de las imágenes y la desvinculación de la ubicación exacta del usuario al procesar los datos de la API del clima. |
+| **7. Revelación de Peligros y Responsabilidad** | **Riesgo:** Posibilidad de que una vulnerabilidad en la base de datos o en la conexión con dispositivos IoT revele la ubicación en tiempo real o patrones de ausencia en el hogar (ej. cuándo los usuarios no riegan porque están de viaje). | **Afectados:** La seguridad física (riesgo de asaltos al hogar) y la seguridad digital de toda la base de usuarios. | **Acciones:** Siguiendo la ética del Ingeniero de Software, el equipo tomará completa responsabilidad de cualquier falla detectada en la plataforma. Se mitigarán los impactos revelando rápidamente cualquier brecha a las autoridades y usuarios pertinentes, y se suspenderán los servicios de recolección de datos hasta aislar y parchear la vulnerabilidad de la nube. |
 
 ## Conclusiones y Recomendaciones
 
 ### **TP**
 
 **Conclusiones:**
+- Durante el desarrollo del tercer hito se logró definir el estado To-Be del producto mediante la elaboración de artefactos de especificación de requisitos, tales como To-Be Scenario Mapping, User Stories, Product Backlog e Impact Mapping, permitiendo establecer una planificación clara y una adecuada trazabilidad entre las necesidades de los usuarios y las funcionalidades implementadas.
+
 - La implementación de un pipeline de CI/CD mediante Jenkins ha optimizado significativamente el ciclo de vida del desarrollo, permitiendo una detección temprana de errores y asegurando que cada incremento de software cumpla con los estándares de calidad definidos antes de su despliegue en entornos de Azure y Firebase.
+
 - El uso de Karate DSL para las pruebas de integración ha fortalecido la validación de las APIs del sistema, garantizando que la comunicación entre el frontend y el backend sea robusta y que las funcionalidades críticas del producto, como el monitoreo y alertas de plantas, operen correctamente bajo diversos escenarios de uso.
 
 **Recomendaciones:**
@@ -7906,16 +9587,41 @@ Google Analytics 4 es la mejor elección porque elimina las barreras de entrada 
 
 - La integración de procesos de calidad y despliegue continuo ha fortalecido la colaboración del equipo y la confiabilidad de las entregas. Estos estándares técnicos aseguran que PlantSync sea una solución escalable y mantenible a largo plazo.
 
+### **AV2**
+
+- La planificación, diseño y ejecución de los experimentos permitió validar las principales hipótesis del producto mediante la definición de métricas, indicadores, condiciones y mecanismos de seguimiento, facilitando la toma de decisiones basada en evidencia y priorizando funcionalidades de mayor valor para los usuarios.
+
+- La aplicación de prácticas de Static Testing & Verification, utilizando herramientas como Checkstyle, SonarQube y revisiones de código, permitió identificar oportunidades de mejora relacionadas con la calidad, mantenibilidad y cumplimiento de estándares de desarrollo, fortaleciendo la confiabilidad del producto antes de su despliegue.
+
+- La implementación de prácticas DevOps, incluyendo Continuous Integration, Continuous Delivery, Continuous Deployment y Continuous Monitoring, apoyadas por herramientas como Jenkins, Docker, Azure Monitor y GitHub, permitió automatizar gran parte del ciclo de vida del software, mejorando la trazabilidad, la integración continua y el proceso de entrega del producto.
+
+**Recomendaciones:**
+
+- Se recomienda fortalecer el proceso de análisis estático del código incorporando nuevas reglas de calidad y seguridad, además de mantener revisiones periódicas que aseguren el cumplimiento de los estándares establecidos por el equipo.
+
+- Se recomienda continuar optimizando el pipeline DevOps mediante la incorporación de nuevas etapas automatizadas, reduciendo la intervención manual durante los procesos de integración, validación y despliegue del software.
+
+- Se recomienda ampliar la participación de usuarios durante las entrevistas de validación y auditorías de experiencia de usuario para obtener una retroalimentación más representativa y fortalecer la toma de decisiones basada en evidencia.
+
 ### **TB2**
 
 **Conclusiones:**
 
 - La adopción de la metodología *Experiment-Driven Development* (Capítulo VIII) mediante el planteamiento de preguntas de experimento y matrices de priorización permite alinear el desarrollo de software directamente con los objetivos de negocio y el comportamiento real del usuario, mitigando el riesgo de implementar funcionalidades de bajo impacto.
+
 - La definición de métricas detalladas para experimentos críticos (como la tasa de resolución de Rootbot y el tiempo de respuesta a notificaciones) proporciona una base cuantificable de éxito técnico y de experiencia de usuario, facilitando la toma de decisiones basada en datos empíricos.
+
+- La integración de todos los componentes desarrollados permitió consolidar una plataforma funcional compuesta por el Landing Page, Frontend-Web, Backend RESTful y los procesos de automatización y monitoreo, evidenciando la aplicación de un ciclo de desarrollo completo basado en buenas prácticas de Ingeniería de Software.
+
+- La aplicación de principios de responsabilidad ética y profesional se reflejó en el uso de estándares de calidad, documentación técnica, pruebas automatizadas y herramientas de verificación que favorecen el desarrollo de software confiable, mantenible y orientado a las necesidades de los usuarios.
+
+- El proyecto permitió valorar el impacto de las soluciones de ingeniería de software desde una perspectiva tecnológica, social y ambiental, al proponer una plataforma que promueve el cuidado inteligente de plantas mediante el uso de tecnologías digitales, automatización e integración con servicios externos.
 
 **Recomendaciones:**
 
 - Es aconsejable establecer un flujo estructurado para el *Question Backlog* que permita revisar e iterar de manera ágil las suposiciones y brechas de conocimiento del producto conforme se recopila feedback de los usuarios en los experimentos en producción.
+
+- Se recomienda mantener la aplicación de principios éticos y profesionales durante la evolución del proyecto, promoviendo el desarrollo de soluciones seguras, sostenibles y orientadas a generar un impacto positivo en los usuarios y en la sociedad.
 
 ## Video about the Team
 
@@ -7924,20 +9630,20 @@ El video presenta un resumen del trabajo desarrollado por el equipo, donde cada 
 <table align="center">
   <tr>
     <td><strong>Duración</strong></td>
-    <td>7:30 min</td>
+    <td>5:22 min</td>
   </tr>
   <tr>
-    <td><strong>URL Microsoft</strong></td>
-    <td><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a500_upc_edu_pe/EQS_uiYanUhJvv6Wv_oHvW4B5k9uiWqUv_7wI-6dmnNbPA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=De3u2C" target="_blank">upc-pre-202510-1asi0729-4289-biopafi-about-the-team-sprint-3</a></td>
+    <td><strong>URL Google Drive</strong></td>
+    <td><a href="https://drive.google.com/file/d/1r_F0-puaI6ZUonitJZXSGYxH88fWGrAG/view?usp=sharing" target="_blank">upc-pre-202510-1asi0732-12289-plantsync-about-the-team</a></td>
   </tr>
   <tr>
     <td><strong>URL Youtube</strong></td>
-    <td><a href="https://www.youtube.com/watch?v=MF6QeQh2nEM" target="_blank">upc-pre-202510-1asi0729-4289-biopafi-about-the-team-sprint-3</a></td>
+    <td><a href="https://youtu.be/KvTFuXvqUik" target="_blank">upc-pre-202510-1asi0732-12289-plantsync-about-the-team</a></td>
   </tr>
   </tr>
   <tr>
 <td colspan="2">
-  <img src="images/abouttheteam 1.jpg" alt="screenshot about the team" width="1000">
+  <img src="images/about-the-team.jpg" alt="screenshot about the team" width="1000">
     </td>
   </tr>
 </table>
@@ -7956,29 +9662,26 @@ https://www.serpar.gob.pe/noticias/10-cosas-que-debes-aprender-sobre-el-cuidado-
 
 **Repositorio de Github**
 
-+ **Respositorio de la startup:** [Link Repositorio BioPafi](https://github.com/BioPafi-DisenoYExperimentos)
++ **Respositorio de la startup:** [https://github.com/BioPafi-DisenoYExperimentos](https://github.com/BioPafi-DisenoYExperimentos)
 
-+ **Repositorio de la landing page:** [Link Repositorio Landing Page](https://github.com/BioPafi-OpenSource/plantSync-LandingPage)
++ **Repositorio de la landing page:** [https://github.com/BioPafi-DisenoYExperimentos/landing_page](hhttps://github.com/BioPafi-DisenoYExperimentos/landing_page)
 
-+ **Repositorio del frontend:** [Link Repositorio Frontend](https://github.com/BioPafi-OpenSource/PlantSync_Frontend)
++ **Repositorio del frontend:** [https://github.com/BioPafi-DisenoYExperimentos/PlantSync_Frontend](https://github.com/BioPafi-DisenoYExperimentos/PlantSync_Frontend)
 
-+ **Repositorio del backend:** [Link Repositorio Backend](https://github.com/BioPafi-DisenoYExperimentos/Plantsync_Backend)
++ **Repositorio del backend:** [https://github.com/BioPafi-DisenoYExperimentos/Plantsync_Backend](https://github.com/BioPafi-DisenoYExperimentos/Plantsync_Backend)
 
 **Deploy de la aplicación**
 
-+ **Landing Page Deployado:** [Link Landing Page](https://biopafi-opensource.github.io/plantSync-LandingPage/)
++ **Landing Page Deployado:** [https://biopafi-disenoyexperimentos.github.io/landing_page/](https://biopafi-disenoyexperimentos.github.io/landing_page/)
 
-+ **Frontend Deployado:** [Link Frontend](https://polite-bay-0d4eadd10.1.azurestaticapps.net/)
++ **Frontend Deployado:** [https://plant-sync-frontend.vercel.app/login](https://plant-sync-frontend.vercel.app/login)
 
-+ **Backend Deployado:** [Link Backend](https://plantsync-platform.azurewebsites.net/swagger-ui/index.html#/)
++ **Backend Deployado:** [https://plantsync-backend-exp.azurewebsites.net/swagger-ui/index.html#/](https://plantsync-backend-exp.azurewebsites.net/swagger-ui/index.html#/)
 
 **Videos de Exposiciones**
-
-+ **TB1:** [Link Exposición TB1](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a500_upc_edu_pe/EQXTJiEwaBVMtM0ZB7FqT48BHhLEJHhZxA3HTmbBOQK8Kg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=DgFxBb)
 
 + **TP1:** [Link Exposición TP1](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a500_upc_edu_pe/ERme61BdAqRPhoKR7Ql5b2UB3ykeXWxgqbxTaeFgv0tVpg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=pwUKmL)
 
 + **TB2:** [Link Exposición TB2](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a500_upc_edu_pe/ETyYTrRvykdOpAWmi9HRZCEBqaVsI3bGLnxITA9sc8fZSw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=Yen1ES)
 
-+ **TF:** [Link Exposición TF1](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a500_upc_edu_pe/ETkjF2XWIxFMl8tzMLutMgsBuwEyJnal9rCGU5QPr8H0pw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=SVZdbB)
-
++ **About The Product Intro-Video:** [Link video About The Product](https://drive.google.com/file/d/1cgSGgp_SkNYQiJvJMOF6MdzHztBXVWVL/view?usp=sharing)
