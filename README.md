@@ -9541,6 +9541,13 @@ Añadir alertas climáticas (basadas en los datos del sensor) que notifiquen al 
 
 A continuación, se presenta el link en Google Drive con el video About The Product con los experimentos integrados.
 
+Duración: 4 minutos y 14 segundos.
+
+<p align="center">
+  <img src="images/about-the-product.jpg" alt="About The Product Image" width="1000">
+</p>
+
+Enlace al video:
 https://drive.google.com/file/d/1cgSGgp_SkNYQiJvJMOF6MdzHztBXVWVL/view?usp=sharing
 
 ## Matriz de Evaluación Ética y de Impacto
