@@ -46,10 +46,12 @@
 | 1.4 | 13/05/26 | Almerco, Castañeda, Palomino, Rivera, Coca | Creación de Checkstyle y SonarQube, y documentación de Jenkins y checklist. |
 | 2.1 | 09/06/26 | Almerco, Castañeda, Palomino, Rivera, Coca | Añadir nuevos items del TB2, experiment cards, question backlogs y experiment ready questions |
 | 3.1 | 06/07/26 | Castañeda Kevin | Añadir evidencias para los experimentos escogidos en la Landing Page y App Web. |
-| 3.2 | 07/07/26 | Almerco Rojas Jocelyn | Añadir Evidencias para los experimentos escogidos en el Backend |
-| 3.3 | 06/07/26 | Palomino Fiestas Erick | Añadir To-be User Stories y To-be product backlog |
-| 3.4 | 11/06/26 | Renzo Rivera  | Añadir  To-be User stories, entrevistas de validacion.
-| 4.1 | 11/06/26 | Carlos Coca | Añadir matriz de impacto ético, entrevistas de validación |
+| 3.2 | 06/07/26 | Palomino Fiestas Erick | Añadir To-be User Stories y To-be product backlog |
+| 3.3 | 06/07/26 | Renzo Rivera  | Añadir  To-be User stories, entrevistas de validacion.
+| 3.4 | 07/07/26 | Almerco Rojas Jocelyn | Añadir Evidencias para los experimentos escogidos en el Backend |
+| 3.5 | 07/07/26 | Carlos Coca | Añadir matriz de impacto ético, entrevistas de validación |
+| 3.6 | 08/07/26 | Kevin Castañeda  | Añadir video about-the-team.
+
 
 ---
 
@@ -57,7 +59,7 @@
 
 Link del documento en GitHub: https://github.com/BioPafi-DisenoYExperimentos/report
 
-## **TP**
+## **TB1**
 
 | **Integrante** | **Tareas Asignadas** |
 | :--- | :--- |
@@ -68,7 +70,7 @@ Link del documento en GitHub: https://github.com/BioPafi-DisenoYExperimentos/rep
 | Coca Lavado, Carlos Andres | Pruebas de integración y Karate. |
 
 
-## **TB2**
+## **AV2**
 | **Integrante** | **Tareas Asignadas** |
 | :--- | :--- |
 | Almerco Rojas, Jocelyn Damaly | Capítulo VII y dokcierización de sonarqube y jenkins. |
@@ -76,6 +78,9 @@ Link del documento en GitHub: https://github.com/BioPafi-DisenoYExperimentos/rep
 | Palomino Fiestas, Erick Leonardo | Capítulo VIII: Experiment-Driven Development |
 | Rivera Ratachi, Renzo Sebastian | Capítulo VIII: Experiment-Driven Development |
 | Coca Lavado, Carlos Andres | Capítulo VIII: Experiment-Driven Development |
+
+## *TB2*
+
 
 **GitHub Collaboration Insights**
 
@@ -86,6 +91,8 @@ Link del documento en GitHub: https://github.com/BioPafi-DisenoYExperimentos/rep
 + Rivera Ratachi, Renzo Sebastian
 + Coca Lavado, Carlos Andres
 
+### Evidencias TB1:
+
 <p align="center">
   <img src="images/insight-github/network-graph-insights.jpg" alt="evidencia-tp" width="1000">
 </p>
@@ -94,6 +101,15 @@ Link del documento en GitHub: https://github.com/BioPafi-DisenoYExperimentos/rep
   <img src="images/insight-github/test-backend-insights.jpg" alt="evidencia-tp" width="1000">
 </p>
 
+### Evidencias TB2:
+
+<p align="center">
+  <img src="images/insight-github/insghts-tf.jpg" alt="evidencia-tb2" width="1000">
+</p>
+
+<p align="center">
+  <img src="images/insight-github/contributors-tf.jpg" alt="evidencia-tb2" width="1000">
+</p>
 
 
 
@@ -6735,7 +6751,7 @@ Test: handleCreatePlantHistoryCommandShouldSaveHistoryAndReturnGeneratedId:
 
 Se realizo para verificar que los registros históricos de las plantas (como eventos de riego o lecturas de sensores) se guarden exitosamente, permitiendo el seguimiento temporal del cuidado.
 
-<img src="images/tests/plantprofile/unitest/PlantProfileUnit2.png alt="screenshot about the product" width="1000">
+<img src="images/tests/plantprofile/unitest/PlantProfileUnit2.png" alt="screenshot about the product" width="1000">
 
 Simulamos la llegada de un nuevo dato para el historial y comprobamos que el sistema lo reciba y lo registre asociado a la planta correcta sin alterar la información.
 
@@ -6745,7 +6761,7 @@ Test: handleGetPlantByIdQueryShouldReturnPlantWhenItExists:
 
 Se realizo para confirmar la precisión del sistema al consultar los detalles e información específica de una planta en particular desde el catálogo.
 
-<img src="images/tests/plantprofile/unitest/PlantProfileUnit3.png alt="screenshot about the product" width="1000">
+<img src="images/tests/plantprofile/unitest/PlantProfileUnit3.png" alt="screenshot about the product" width="1000">
 
 Simulamos la solicitud del estado de una planta mediante su número de identificación (ID) y verificamos que el sistema encuentre y entregue la información solicitada de forma íntegra.
 
@@ -6755,7 +6771,7 @@ Test: handleGetAllPlantHistoriesByPlantIdQueryShouldReturnHistoriesForPlant:
 
 Se realizo para validar que la aplicación pueda recuperar de manera conjunta todo el historial de eventos que le pertenece a una planta en específico.
 
-<img src="images/tests/plantprofile/unitest/PlantProfileUnit4.png alt="screenshot about the product" width="1000">
+<img src="images/tests/plantprofile/unitest/PlantProfileUnit4.png" alt="screenshot about the product" width="1000">
 
 Simulamos la consulta del historial vinculada al ID de una planta y verificamos que el sistema busque, liste y devuelva todos los eventos registrados para la misma.
 
@@ -6767,7 +6783,7 @@ Test: handleSeedRolesCommandShouldSaveMissingRoles:
 
 Se realizo para asegurar que el sistema pueda inicializar y guardar automáticamente los roles de seguridad necesarios (como el rol básico de usuario) si detecta que aún no existen en la base de datos.
 
-<img src="images/tests/IAM/unitest/IAMUnit1.png alt="screenshot about the product" width="1000">
+<img src="images/tests/IAM/unitest/IAMUnit1.png" alt="screenshot about the product" width="1000">
 
 Simulamos el arranque del sistema y verificamos que este detecte la ausencia de roles por defecto, procediendo a crearlos y guardarlos exitosamente sin generar duplicado
 
@@ -6777,7 +6793,7 @@ Test: handleSignUpCommandShouldCreateUserAndProfileWhenEmailIsAvailable:
 
 Se realizo para asegurarnos de que la lógica de registro procese credenciales nuevas de forma segura y se comunique correctamente con el módulo de perfiles para inicializar la cuenta completa del usuario.
 
-<img src="images/tests/IAM/unitest/IAMUnit2.png alt="screenshot about the product" width="1000">
+<img src="images/tests/IAM/unitest/IAMUnit2.png" alt="screenshot about the product" width="1000">
 
 Simulamos el envío de datos de un usuario nuevo y confirmamos que el sistema valide la disponibilidad del correo, encripte la contraseña y registre la cuenta exitosamente.
 
@@ -6787,7 +6803,7 @@ Test: handleGetRoleByNameQueryShouldReturnRoleWhenItExists:
 
 Se realizo para confirmar la precisión del sistema al buscar y recuperar niveles de permiso o roles de seguridad específicos que son requeridos para autorizar acciones dentro de la plataforma.
 
-<img src="images/tests/IAM/unitest/IAMUnit3.png alt="screenshot about the product" width="1000">
+<img src="images/tests/IAM/unitest/IAMUnit3.png" alt="screenshot about the product" width="1000">
 
 Simulamos la búsqueda de un rol de usuario por su nombre y comprobamos que el sistema lo encuentre y lo devuelva correctamente para su uso.
 
@@ -6797,7 +6813,7 @@ Test: handleGetUserByIdQueryShouldReturnUserWhenItExists:
 
 Se realizo para asegurar que la aplicación pueda localizar y exponer internamente los datos de seguridad de una cuenta específica mediante su código de identificación único.
 
-<img src="images/tests/IAM/unitest/IAMUnit4.png alt="screenshot about the product" width="1000">
+<img src="images/tests/IAM/unitest/IAMUnit4.png" alt="screenshot about the product" width="1000">
 
 Simulamos la búsqueda de un usuario mediante su ID y verificamos que la aplicación procese la solicitud y retorne los datos exactos de la cuenta.
 
@@ -9664,7 +9680,7 @@ https://www.serpar.gob.pe/noticias/10-cosas-que-debes-aprender-sobre-el-cuidado-
 
 + **Respositorio de la startup:** [https://github.com/BioPafi-DisenoYExperimentos](https://github.com/BioPafi-DisenoYExperimentos)
 
-+ **Repositorio de la landing page:** [https://github.com/BioPafi-DisenoYExperimentos/landing_page](hhttps://github.com/BioPafi-DisenoYExperimentos/landing_page)
++ **Repositorio de la landing page:** [https://github.com/BioPafi-DisenoYExperimentos/landing_page](https://github.com/BioPafi-DisenoYExperimentos/landing_page)
 
 + **Repositorio del frontend:** [https://github.com/BioPafi-DisenoYExperimentos/PlantSync_Frontend](https://github.com/BioPafi-DisenoYExperimentos/PlantSync_Frontend)
 
