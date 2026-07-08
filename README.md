@@ -8772,15 +8772,25 @@ Se ejecutó la validación de calidad de código mediante Checkstyle, verificand
 
 ### Tests
 
-Se ejecutó el conjunto completo de pruebas automatizadas del proyecto. Como resultado, las 70 pruebas fueron superadas satisfactoriamente (70 tests passed), validando el correcto funcionamiento de los componentes y servicios implementados.
+Se ejecutó el conjunto completo de pruebas automatizadas del proyecto. Como resultado, las 83 pruebas fueron superadas satisfactoriamente (83 tests passed), validando el correcto funcionamiento de los componentes y servicios implementados.
 
 <p align="center">
   <img src="images/testRun.png" alt="Insight" width="1000">
 </p>
 
-
-
 ### Jenkins
+
+Se observa el proyecto plantsync_backend, utilizado para la automatización del pipeline de Integración Continua. Este pipeline ejecuta la compilación del proyecto, las pruebas automatizadas, el análisis de calidad con SonarQube y la construcción de la imagen Docker, validando el correcto funcionamiento del backend antes de su despliegue
+
+<p align="center">
+  <img src="images/jenkinsF1.png" alt="Insight" width="1000">
+</p>
+
+Se configuró el proyecto plantsync_backend utilizando la opción Pipeline script from SCM, lo que permite que Jenkins obtenga automáticamente el archivo Jenkinsfile desde el repositorio GitHub Plantsync_Backend. Además, se definió la rama develop (*/develop) como fuente del proceso de integración continua, garantizando que cada ejecución del pipeline utilice la versión más reciente del código en desarrollo y automatice las etapas de compilación, pruebas y análisis de calidad.
+
+<p align="center">
+  <img src="images/jenkinsDevelop.png" alt="Insight" width="1000">
+</p>
 
 Se ejecutó el pipeline de integración continua en Jenkins, completando exitosamente todas las etapas definidas: obtención del código fuente, compilación, ejecución de pruebas unitarias, validación de cobertura, análisis con SonarQube y construcción de la imagen Docker, confirmando el correcto funcionamiento del proceso de integración continua.
 
@@ -8788,7 +8798,26 @@ Se ejecutó el pipeline de integración continua en Jenkins, completando exitosa
   <img src="images/jenkinsD.png" alt="Insight" width="1000">
 </p>
 
+La vista Stage View de Jenkins muestra el estado de cada ejecución del pipeline y el resultado de sus diferentes etapas, permitiendo identificar rápidamente compilaciones exitosas, tiempos de ejecución y posibles fallos durante el proceso de integración continua.
+
+<p align="center">
+  <img src="images/jenkinsF2.png" alt="Insight" width="1000">
+</p>
+
 ### Sonarqube
+
+Se configuró el proyecto PlantSync Backend en SonarQube y se generó el token de autenticación utilizado por Jenkins para ejecutar automáticamente los análisis de calidad durante el pipeline de integración continua.
+
+<p align="center">
+  <img src="images/global.png" alt="Insight" width="1000">
+</p>
+
+
+Una vez finalizado el análisis, SonarQube verificó el código nuevo del proyecto, confirmando que el Quality Gate fue superado exitosamente, con 100% de cobertura, sin vulnerabilidades, sin errores críticos y cumpliendo los estándares de calidad definidos.
+
+<p align="center">
+  <img src="images/sonarqubeF1.png" alt="Insight" width="1000">
+</p>
 
 Se ejecutó el análisis de calidad del código mediante SonarQube, verificando métricas como cobertura de pruebas, confiabilidad, mantenibilidad, seguridad y duplicación de código. Tras incrementar la cobertura de las pruebas unitarias, el proyecto superó satisfactoriamente el Quality Gate, alcanzando un estado Passed.
 
@@ -8796,13 +8825,15 @@ Se ejecutó el análisis de calidad del código mediante SonarQube, verificando 
   <img src="images/sonarqubeD.png" alt="Insight" width="1000">
 </p>
 
+<p align="center">
+  <img src="images/sonarqubeF2.png" alt="Insight" width="1000">
+</p>
 
 Se configuró un Webhook en SonarQube para notificar automáticamente a Jenkins el resultado del análisis de calidad del código. Esta integración permite que el pipeline espere la evaluación del Quality Gate antes de continuar con las siguientes etapas del proceso de integración continua.
 
 <p align="center">
   <img src="images/sonarqubeW.png" alt="Insight" width="1000">
 </p>
-
 
 ### Docker
 
@@ -9529,7 +9560,10 @@ https://drive.google.com/file/d/1cgSGgp_SkNYQiJvJMOF6MdzHztBXVWVL/view?usp=shari
 ### **TP**
 
 **Conclusiones:**
+- Durante el desarrollo del tercer hito se logró definir el estado To-Be del producto mediante la elaboración de artefactos de especificación de requisitos, tales como To-Be Scenario Mapping, User Stories, Product Backlog e Impact Mapping, permitiendo establecer una planificación clara y una adecuada trazabilidad entre las necesidades de los usuarios y las funcionalidades implementadas.
+
 - La implementación de un pipeline de CI/CD mediante Jenkins ha optimizado significativamente el ciclo de vida del desarrollo, permitiendo una detección temprana de errores y asegurando que cada incremento de software cumpla con los estándares de calidad definidos antes de su despliegue en entornos de Azure y Firebase.
+
 - El uso de Karate DSL para las pruebas de integración ha fortalecido la validación de las APIs del sistema, garantizando que la comunicación entre el frontend y el backend sea robusta y que las funcionalidades críticas del producto, como el monitoreo y alertas de plantas, operen correctamente bajo diversos escenarios de uso.
 
 **Recomendaciones:**
@@ -9540,16 +9574,41 @@ https://drive.google.com/file/d/1cgSGgp_SkNYQiJvJMOF6MdzHztBXVWVL/view?usp=shari
 
 - La integración de procesos de calidad y despliegue continuo ha fortalecido la colaboración del equipo y la confiabilidad de las entregas. Estos estándares técnicos aseguran que PlantSync sea una solución escalable y mantenible a largo plazo.
 
+### **AV2**
+
+- La planificación, diseño y ejecución de los experimentos permitió validar las principales hipótesis del producto mediante la definición de métricas, indicadores, condiciones y mecanismos de seguimiento, facilitando la toma de decisiones basada en evidencia y priorizando funcionalidades de mayor valor para los usuarios.
+
+- La aplicación de prácticas de Static Testing & Verification, utilizando herramientas como Checkstyle, SonarQube y revisiones de código, permitió identificar oportunidades de mejora relacionadas con la calidad, mantenibilidad y cumplimiento de estándares de desarrollo, fortaleciendo la confiabilidad del producto antes de su despliegue.
+
+- La implementación de prácticas DevOps, incluyendo Continuous Integration, Continuous Delivery, Continuous Deployment y Continuous Monitoring, apoyadas por herramientas como Jenkins, Docker, Azure Monitor y GitHub, permitió automatizar gran parte del ciclo de vida del software, mejorando la trazabilidad, la integración continua y el proceso de entrega del producto.
+
+**Recomendaciones:**
+
+- Se recomienda fortalecer el proceso de análisis estático del código incorporando nuevas reglas de calidad y seguridad, además de mantener revisiones periódicas que aseguren el cumplimiento de los estándares establecidos por el equipo.
+
+- Se recomienda continuar optimizando el pipeline DevOps mediante la incorporación de nuevas etapas automatizadas, reduciendo la intervención manual durante los procesos de integración, validación y despliegue del software.
+
+- Se recomienda ampliar la participación de usuarios durante las entrevistas de validación y auditorías de experiencia de usuario para obtener una retroalimentación más representativa y fortalecer la toma de decisiones basada en evidencia.
+
 ### **TB2**
 
 **Conclusiones:**
 
 - La adopción de la metodología *Experiment-Driven Development* (Capítulo VIII) mediante el planteamiento de preguntas de experimento y matrices de priorización permite alinear el desarrollo de software directamente con los objetivos de negocio y el comportamiento real del usuario, mitigando el riesgo de implementar funcionalidades de bajo impacto.
+
 - La definición de métricas detalladas para experimentos críticos (como la tasa de resolución de Rootbot y el tiempo de respuesta a notificaciones) proporciona una base cuantificable de éxito técnico y de experiencia de usuario, facilitando la toma de decisiones basada en datos empíricos.
+
+- La integración de todos los componentes desarrollados permitió consolidar una plataforma funcional compuesta por el Landing Page, Frontend-Web, Backend RESTful y los procesos de automatización y monitoreo, evidenciando la aplicación de un ciclo de desarrollo completo basado en buenas prácticas de Ingeniería de Software.
+
+- La aplicación de principios de responsabilidad ética y profesional se reflejó en el uso de estándares de calidad, documentación técnica, pruebas automatizadas y herramientas de verificación que favorecen el desarrollo de software confiable, mantenible y orientado a las necesidades de los usuarios.
+
+- El proyecto permitió valorar el impacto de las soluciones de ingeniería de software desde una perspectiva tecnológica, social y ambiental, al proponer una plataforma que promueve el cuidado inteligente de plantas mediante el uso de tecnologías digitales, automatización e integración con servicios externos.
 
 **Recomendaciones:**
 
 - Es aconsejable establecer un flujo estructurado para el *Question Backlog* que permita revisar e iterar de manera ágil las suposiciones y brechas de conocimiento del producto conforme se recopila feedback de los usuarios en los experimentos en producción.
+
+- Se recomienda mantener la aplicación de principios éticos y profesionales durante la evolución del proyecto, promoviendo el desarrollo de soluciones seguras, sostenibles y orientadas a generar un impacto positivo en los usuarios y en la sociedad.
 
 ## Video about the Team
 
