@@ -7435,11 +7435,55 @@ El proceso de despliegue automatizado en Jenkins se divide en las siguientes eta
 
 #### 7.4.1 Tools and Practices
 
+Para lograr una supervisión robusta y constante de nuestra plataforma, nos apoyaremos en el siguiente conjunto de tecnologías y metodologías:
+
+**Tools:**
+
+| Herramienta | Tipo | Descripción | Propósito |
+| :--- | :--- | :--- | :--- |
+| **Prometheus** | Gestor de métricas | Plataforma de código abierto encargada de recolectar y almacenar métricas de series temporales, óptima para arquitecturas basadas en contenedores. | Rastrear el comportamiento del backend alojado en Azure y el flujo de la base de datos MySQL. |
+| **Grafana** | Visualización de datos | Interfaz gráfica que se acopla a Prometheus para la creación de cuadros de mando dinámicos y personalizables. | Monitorear visualmente indicadores críticos como la latencia de las peticiones a la API, el estado de los contenedores y el consumo de recursos. |
+| **Vercel Analytics** | Analítica de frontend | Herramienta de diagnóstico nativa proporcionada por Vercel para evaluar la salud del entorno web. | Estudiar el tráfico, la velocidad y la interacción del usuario en la capa de presentación. |
+| **MySQL Exporter** | Integrador de métricas | Módulo de conexión que traduce y envía el estado de salud del motor de base de datos hacia el ecosistema de Prometheus. | Vigilar el estado de las conexiones, medir tiempos de consulta y evitar cuellos de botella en el servidor de datos. |
+
+<br>
+
+**Practices:**
+
+Centralización de la observabilidad: Toda la telemetría proveniente de los contenedores Docker en el backend y los registros de MySQL se consolidan en Grafana para ofrecer un panel de control unificado y accesible para el equipo.
+
+**Métricas clave:**
+
+- Tiempo de respuesta de la API: (Métrica prioritaria) Evaluación continua de la latencia para garantizar interacciones fluidas entre el cliente y el servidor.
+
+- Índice de errores HTTP emitidos por los servicios en Azure.
+
+- Consumo de memoria RAM y uso de CPU por parte de las instancias de Docker.
+
+- Velocidad de procesamiento de las consultas (queries) dentro de MySQL.
+
+- Métricas de rendimiento y tiempos de carga experimentados en el frontend alojado en Vercel.
+
 #### 7.4.2 Monitoring Pipeline Components
+
+El flujo de supervisión abarca distintas fases diseñadas para preservar el buen funcionamiento y la calidad del software, abarcando desde la escritura del código hasta su paso a producción. En nuestro esquema, la validación del código recae en SonarQube, que ejecuta revisiones estáticas de forma automática para detectar código duplicado, vulnerabilidades y fallos antes del proceso de integración.
+
+Posteriormente, cuando el sistema se empaqueta utilizando Docker y se despliega (con el backend operando en Azure y el frontend en Vercel), arranca la extracción de telemetría en tiempo real. Esta visibilidad operativa resulta crucial para que el equipo de desarrollo note inmediatamente cualquier caída en el rendimiento de los recursos o incrementos inusuales en el tiempo de respuesta de la API.
 
 #### 7.4.3 Alerting Pipeline Components
 
+El mecanismo de alertas es indispensable para reaccionar al instante frente a caídas o comportamientos inusuales, enviando avisos automáticos fundamentados en nuestras métricas prioritarias.
+
+| Componente | Descripción |
+| :--- | :--- |
+| **Prometheus Alertmanager** | Se encarga de gestionar y enrutar las alertas basándose en reglas predefinidas (por ejemplo, si la latencia de la API supera los 2 segundos o si un contenedor en Azure deja de responder), agrupando las notificaciones para no saturar los canales de comunicación. |
+| **Grafana Alerts** | Ofrece la capacidad de fijar umbrales de advertencia directamente sobre los gráficos de monitorización, disparando avisos al equipo en el momento exacto en que los KPIs muestran valores fuera de la normalidad. |
+
 #### 7.4.4 Notification Pipeline Components
+
+La automatización de las comunicaciones es vital para mantener a los desarrolladores informados sobre el éxito o fracaso de las integraciones y pases a producción. En este escenario, Jenkins actúa como el motor central de nuestro flujo CI/CD, encargándose de emitir reportes detallados en cada paso del proceso de construcción.
+
+Mediante Jenkins, se configuran avisos que se disparan de forma automática al finalizar la compilación de las imágenes en Docker, tras obtener el diagnóstico de código de SonarQube, o una vez concluido el despliegue hacia los entornos de Vercel y Azure. Esto propicia una intervención rápida si surge algún error de compilación. Por otro lado, para el sistema que ya se encuentra en ejecución, Grafana y Alertmanager asumen el rol de reportar las alarmas operativas, cerrando así el círculo de visibilidad integral tanto en la etapa de desarrollo continuo como en la disponibilidad del servicio.
 
 ## Capítulo VIII: Experiment-Driven Development
 
@@ -7913,7 +7957,61 @@ Google Analytics 4 es la mejor elección porque elimina las barreras de entrada 
 
 #### 8.2.7. Data Analytics: Goals, KPIs and Metrics Selection
 
+Al haber optado por Google Analytics 4 (GA4) guiados por el principio del Simplest Useful Thing, el paso siguiente consiste en establecer los indicadores de rendimiento que nos permitirán cuantificar el impacto de nuestras decisiones de diseño. El monitoreo constante de estas variables es vital para confirmar si nuestras hipótesis son correctas y garantizar la viabilidad del proyecto. Las métricas primordiales a evaluar son:
+
+- Monitoreo de la fidelidad del usuario (Retención): Rastrearemos acciones críticas continuas, tales como la creación de perfiles para nuevas plantas y la lectura de notificaciones. La finalidad es contrastar el rendimiento de las alertas inteligentes; específicamente, buscamos que la cohorte expuesta a notificaciones basadas en el clima logre una retención semanal al menos un 15% mayor que el grupo estándar.
+
+- Proporción de conversión hacia planes premium: Emplearemos embudos de navegación en nuestra Landing Page para estimar la intención real de compra. La meta central de este experimento es conseguir que un mínimo del 5% de los visitantes únicos exploren activamente y seleccionen las opciones de suscripción de pago (plan Premium de $10.99 o plan PRO de $16.99).
+
+- Agilidad y completitud en rutinas de cuidado: Se añadirán mediciones temporales a las interacciones dentro de los módulos de riego y fertilización. Nuestra proyección apunta a evidenciar que la automatización de recordatorios facilita significativamente el uso de la aplicación, incrementando la tasa de tareas completadas diariamente en un 25% respecto al método de registro manual.
+
+- Desempeño del asistente conversacional (Rootbot): A través de la configuración de eventos personalizados, evaluaremos la efectividad de los diagnósticos botánicos generados por inteligencia artificial. El escenario ideal proyecta que más del 80% de las consultas se resuelvan en un tiempo inferior a 2 minutos, alcanzando una calificación de satisfacción del cliente (CSAT) por encima del 85%.
+
+La instrumentación de GA4 nos otorgará la visibilidad técnica necesaria para validar empíricamente nuestras suposiciones iniciales. De este modo, contaremos con respaldo numérico para confirmar desde el perfil de nuestro buyer persona (adultos jóvenes de 25 a 45 años) hasta el nivel de lealtad hacia nuestra plataforma frente a los buscadores tradicionales, aspirando a consolidar un Net Promoter Score (NPS) superior a los 40 puntos.
+
 #### 8.2.8. Web and Mobile Tracking Plan
+
+A continuación, se presentan las evidencias gráficas que certifican la instalación y el funcionamiento del sistema de analítica web:
+
+
+
+<p align="center">
+  <img src="images/analytics/1.png" alt="Insight" width="1000">
+</p>
+
+Imagen del landing page donde se implemento
+
+<br>
+
+<p align="center">
+  <img src="images/analytics/2.jpeg" alt="Insight" width="1000">
+</p>
+
+Imagen de configuracion Google Analytics 1
+
+<br>
+
+<p align="center">
+  <img src="images/analytics/3.jpeg" alt="Insight" width="1000">
+</p>
+
+Imagen de configuracion de Google Analytics 2
+
+<br>
+
+<p align="center">
+  <img src="images/analytics/4.jpeg" alt="Insight" width="1000">
+</p>
+
+Imagen de codigo implementado en para la integracion
+
+<br>
+
+<p align="center">
+  <img src="images/analytics/5.jpeg" alt="Insight" width="1000">
+</p>
+
+Imagen del informe de Google Analytics
 
 ### 8.3. Experimentation
 
