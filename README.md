@@ -9630,20 +9630,20 @@ El video presenta un resumen del trabajo desarrollado por el equipo, donde cada 
 <table align="center">
   <tr>
     <td><strong>Duración</strong></td>
-    <td>7:30 min</td>
+    <td>5:22 min</td>
   </tr>
   <tr>
-    <td><strong>URL Microsoft</strong></td>
-    <td><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a500_upc_edu_pe/EQS_uiYanUhJvv6Wv_oHvW4B5k9uiWqUv_7wI-6dmnNbPA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=De3u2C" target="_blank">upc-pre-202510-1asi0729-4289-biopafi-about-the-team-sprint-3</a></td>
+    <td><strong>URL Google Drive</strong></td>
+    <td><a href="https://drive.google.com/file/d/1r_F0-puaI6ZUonitJZXSGYxH88fWGrAG/view?usp=sharing" target="_blank">upc-pre-202510-1asi0732-12289-plantsync-about-the-team</a></td>
   </tr>
   <tr>
     <td><strong>URL Youtube</strong></td>
-    <td><a href="https://www.youtube.com/watch?v=MF6QeQh2nEM" target="_blank">upc-pre-202510-1asi0729-4289-biopafi-about-the-team-sprint-3</a></td>
+    <td><a href="https://youtu.be/KvTFuXvqUik" target="_blank">upc-pre-202510-1asi0732-12289-plantsync-about-the-team</a></td>
   </tr>
   </tr>
   <tr>
 <td colspan="2">
-  <img src="images/abouttheteam 1.jpg" alt="screenshot about the team" width="1000">
+  <img src="images/about-the-team.jpg" alt="screenshot about the team" width="1000">
     </td>
   </tr>
 </table>
