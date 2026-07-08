@@ -6751,7 +6751,7 @@ Test: handleCreatePlantHistoryCommandShouldSaveHistoryAndReturnGeneratedId:
 
 Se realizo para verificar que los registros históricos de las plantas (como eventos de riego o lecturas de sensores) se guarden exitosamente, permitiendo el seguimiento temporal del cuidado.
 
-<img src="images/tests/plantprofile/unitest/PlantProfileUnit2.png alt="screenshot about the product" width="1000">
+<img src="images/tests/plantprofile/unitest/PlantProfileUnit2.png" alt="screenshot about the product" width="1000">
 
 Simulamos la llegada de un nuevo dato para el historial y comprobamos que el sistema lo reciba y lo registre asociado a la planta correcta sin alterar la información.
 
@@ -6761,7 +6761,7 @@ Test: handleGetPlantByIdQueryShouldReturnPlantWhenItExists:
 
 Se realizo para confirmar la precisión del sistema al consultar los detalles e información específica de una planta en particular desde el catálogo.
 
-<img src="images/tests/plantprofile/unitest/PlantProfileUnit3.png alt="screenshot about the product" width="1000">
+<img src="images/tests/plantprofile/unitest/PlantProfileUnit3.png" alt="screenshot about the product" width="1000">
 
 Simulamos la solicitud del estado de una planta mediante su número de identificación (ID) y verificamos que el sistema encuentre y entregue la información solicitada de forma íntegra.
 
@@ -6771,7 +6771,7 @@ Test: handleGetAllPlantHistoriesByPlantIdQueryShouldReturnHistoriesForPlant:
 
 Se realizo para validar que la aplicación pueda recuperar de manera conjunta todo el historial de eventos que le pertenece a una planta en específico.
 
-<img src="images/tests/plantprofile/unitest/PlantProfileUnit4.png alt="screenshot about the product" width="1000">
+<img src="images/tests/plantprofile/unitest/PlantProfileUnit4.png" alt="screenshot about the product" width="1000">
 
 Simulamos la consulta del historial vinculada al ID de una planta y verificamos que el sistema busque, liste y devuelva todos los eventos registrados para la misma.
 
@@ -6783,7 +6783,7 @@ Test: handleSeedRolesCommandShouldSaveMissingRoles:
 
 Se realizo para asegurar que el sistema pueda inicializar y guardar automáticamente los roles de seguridad necesarios (como el rol básico de usuario) si detecta que aún no existen en la base de datos.
 
-<img src="images/tests/IAM/unitest/IAMUnit1.png alt="screenshot about the product" width="1000">
+<img src="images/tests/IAM/unitest/IAMUnit1.png" alt="screenshot about the product" width="1000">
 
 Simulamos el arranque del sistema y verificamos que este detecte la ausencia de roles por defecto, procediendo a crearlos y guardarlos exitosamente sin generar duplicado
 
@@ -6793,7 +6793,7 @@ Test: handleSignUpCommandShouldCreateUserAndProfileWhenEmailIsAvailable:
 
 Se realizo para asegurarnos de que la lógica de registro procese credenciales nuevas de forma segura y se comunique correctamente con el módulo de perfiles para inicializar la cuenta completa del usuario.
 
-<img src="images/tests/IAM/unitest/IAMUnit2.png alt="screenshot about the product" width="1000">
+<img src="images/tests/IAM/unitest/IAMUnit2.png" alt="screenshot about the product" width="1000">
 
 Simulamos el envío de datos de un usuario nuevo y confirmamos que el sistema valide la disponibilidad del correo, encripte la contraseña y registre la cuenta exitosamente.
 
@@ -6803,7 +6803,7 @@ Test: handleGetRoleByNameQueryShouldReturnRoleWhenItExists:
 
 Se realizo para confirmar la precisión del sistema al buscar y recuperar niveles de permiso o roles de seguridad específicos que son requeridos para autorizar acciones dentro de la plataforma.
 
-<img src="images/tests/IAM/unitest/IAMUnit3.png alt="screenshot about the product" width="1000">
+<img src="images/tests/IAM/unitest/IAMUnit3.png" alt="screenshot about the product" width="1000">
 
 Simulamos la búsqueda de un rol de usuario por su nombre y comprobamos que el sistema lo encuentre y lo devuelva correctamente para su uso.
 
@@ -6813,7 +6813,7 @@ Test: handleGetUserByIdQueryShouldReturnUserWhenItExists:
 
 Se realizo para asegurar que la aplicación pueda localizar y exponer internamente los datos de seguridad de una cuenta específica mediante su código de identificación único.
 
-<img src="images/tests/IAM/unitest/IAMUnit4.png alt="screenshot about the product" width="1000">
+<img src="images/tests/IAM/unitest/IAMUnit4.png" alt="screenshot about the product" width="1000">
 
 Simulamos la búsqueda de un usuario mediante su ID y verificamos que la aplicación procese la solicitud y retorne los datos exactos de la cuenta.
 
