@@ -8682,7 +8682,359 @@ Se ejecutó el conjunto completo de pruebas automatizadas del proyecto. Como res
 
 
 
+### Jenkins
 
+Se ejecutó el pipeline de integración continua en Jenkins, completando exitosamente todas las etapas definidas: obtención del código fuente, compilación, ejecución de pruebas unitarias, validación de cobertura, análisis con SonarQube y construcción de la imagen Docker, confirmando el correcto funcionamiento del proceso de integración continua.
+
+<p align="center">
+  <img src="images/jenkinsD.png" alt="Insight" width="1000">
+</p>
+
+### Sonarqube
+
+Se ejecutó el análisis de calidad del código mediante SonarQube, verificando métricas como cobertura de pruebas, confiabilidad, mantenibilidad, seguridad y duplicación de código. Tras incrementar la cobertura de las pruebas unitarias, el proyecto superó satisfactoriamente el Quality Gate, alcanzando un estado Passed.
+
+<p align="center">
+  <img src="images/sonarqubeD.png" alt="Insight" width="1000">
+</p>
+
+
+Se configuró un Webhook en SonarQube para notificar automáticamente a Jenkins el resultado del análisis de calidad del código. Esta integración permite que el pipeline espere la evaluación del Quality Gate antes de continuar con las siguientes etapas del proceso de integración continua.
+
+<p align="center">
+  <img src="images/sonarqubeW.png" alt="Insight" width="1000">
+</p>
+
+
+### Docker
+
+Se desplegaron los servicios de Jenkins y SonarQube mediante contenedores Docker, verificando su correcta ejecución y disponibilidad. Ambos servicios se ejecutan de manera independiente y se comunican a través de una red Docker para soportar el proceso de integración continua.
+
+<p align="center">
+  <img src="images/dockerF.png" alt="Insight" width="1000">
+</p>
+
+Como resultado del pipeline de Jenkins, se generaron automáticamente las imágenes Docker de la aplicación, etiquetadas tanto con el número de la compilación como con la versión latest, facilitando su reutilización y posterior despliegue en diferentes entornos.
+
+<p align="center">
+  <img src="images/dockerFI.png" alt="Insight" width="1000">
+</p>
+
+# Experimentos
+
+**Experimento 1 — Perfil Demográfico de Adopción**
+
+**Archivo:** `src/main/java/.../profiles/domain/model/valueobjects/Gender.java`
+
+```java
+public enum Gender {
+  MALE,
+  FEMALE,
+  OTHER,
+  PREFER_NOT_TO_SAY;
+
+  public static Gender fromString(String value) {
+    try {
+      return Gender.valueOf(value.toUpperCase());
+    } catch (IllegalArgumentException ex) {
+      throw new IllegalArgumentException("Invalid gender: " + value);
+    }
+  }
+}
+```
+
+**Archivo:** `src/main/java/.../profiles/domain/model/aggregates/Profile.java`
+
+```java
+@Column(name = "age")
+private Integer age;
+
+@Enumerated(EnumType.STRING)
+@Column(name = "gender")
+private Gender gender;
+
+public Profile(CreateProfileCommand command) {
+    this.personName = command.personName();
+    this.subscriptionPlan = command.subscriptionPlan();
+    this.userId = command.userId();
+    this.paymentStatus = PaymentStatus.PENDING;
+    this.age = command.age();
+    this.gender = command.gender();
+}
+```
+
+**Archivo:** `src/main/java/.../profiles/domain/model/commands/CreateProfileCommand.java`
+
+```java
+public record CreateProfileCommand(
+    PersonName personName,
+    SubscriptionPlan subscriptionPlan,
+    UserId userId,
+    Integer age,
+    Gender gender
+) {}
+```
+
+**Archivo:** `src/main/java/.../profiles/infrastructure/persistence/jpa/repositories/ProfileRepository.java`
+
+```java
+public interface ProfileRepository extends JpaRepository<Profile, Long> {
+  Optional<Profile> findByUserId(UserId userId);
+}
+```
+
+**Análisis**
+
+La implementación permite registrar y validar la información demográfica de los usuarios mediante el almacenamiento de la edad y el género dentro del perfil. Esto proporciona la información necesaria para caracterizar el perfil de adopción de PlantSync y realizar la segmentación demográfica de los usuarios durante la ejecución del experimento.
+
+---
+
+**Experimento 2 — Sincronización Climática de Alertas**
+
+**Archivo:** `src/main/java/.../plantprofiles/interfaces/rest/WeatherQueryController.java`
+
+```java
+@RestController
+@RequestMapping("/api/v1/weather")
+public class WeatherQueryController {
+
+  private final RestTemplate restTemplate = new RestTemplate();
+
+  @Value("${weather.api.key}")
+  private String apiKey;
+
+  @GetMapping("/city")
+  public ResponseEntity<String> getWeatherByCity(@RequestParam String city) {
+    String url = "https://api.openweathermap.org/data/2.5/weather?q="
+        + city + "&appid=" + apiKey + "&units=metric";
+    try {
+      ResponseEntity<String> response = restTemplate.getForEntity(url, String.class);
+      return ResponseEntity.ok().body(response.getBody());
+    } catch (Exception e) {
+      return ResponseEntity.status(HttpStatus.BAD_GATEWAY)
+          .body("Weather API error: " + e.getMessage());
+    }
+  }
+}
+```
+
+**Análisis**
+
+La implementación integra la API de OpenWeather para obtener información climática en tiempo real según la ubicación indicada por el usuario. Esta funcionalidad permite disponer de datos actualizados del clima que sirven como base para sincronizar las recomendaciones y alertas de cuidado de las plantas.
+
+---
+
+**Experimento 3 — Monetización Premium**
+
+**Archivo:** `src/main/java/.../profiles/domain/model/valueobjects/SubscriptionPlan.java`
+
+```java
+public enum SubscriptionPlan {
+  BASIC,
+  PREMIUM,
+  PRO;
+
+  public static SubscriptionPlan fromString(String value) {
+    try {
+      return SubscriptionPlan.valueOf(value.toUpperCase());
+    } catch (IllegalArgumentException ex) {
+      throw new IllegalArgumentException("Invalid subscription plan: " + value);
+    }
+  }
+}
+```
+
+**Archivo:** `src/main/java/.../profiles/domain/model/valueobjects/PaymentStatus.java`
+
+```java
+public enum PaymentStatus {
+  PENDING,
+  PAID
+}
+```
+
+**Archivo:** `src/main/java/.../profiles/domain/model/aggregates/Profile.java`
+
+```java
+@Enumerated(EnumType.STRING)
+private SubscriptionPlan subscriptionPlan;
+
+@Enumerated(EnumType.STRING)
+private PaymentStatus paymentStatus = PaymentStatus.PENDING;
+```
+
+**Archivo:** `src/main/java/.../shared/infrastructure/security/WebSecurityConfiguration.java`
+
+```java
+.requestMatchers(
+    "/api/v1/authentication/**",
+    "/v3/api-docs/**",
+    "/swagger-ui.html",
+    "/swagger-ui/**",
+    "/swagger-resources/**",
+    "/api/payments/create-session",
+    "/webjars/**").permitAll()
+```
+
+**Frontend — Landing Page**
+
+```javascript
+document.querySelectorAll('.waitlist-trigger').forEach(button => {
+  button.addEventListener('click', () => {
+    const planName = button.getAttribute('data-plan');
+    planInput.value = planName;
+    displayPlanInput.value = planName;
+
+    waitlistForm.reset();
+    waitlistForm.style.display = 'block';
+    successMsg.style.display = 'none';
+
+    modal.style.display = 'flex';
+  });
+});
+
+waitlistForm.addEventListener('submit', (e) => {
+  e.preventDefault();
+
+  const name = document.getElementById('waitlist-name').value;
+  const email = document.getElementById('waitlist-email').value;
+  const plan = planInput.value;
+
+  const key = `waitlist_${Date.now()}`;
+
+  localStorage.setItem(
+    key,
+    JSON.stringify({
+      name,
+      email,
+      plan,
+      timestamp: new Date().toISOString()
+    })
+  );
+
+  waitlistForm.style.display = 'none';
+  successMsg.style.display = 'block';
+});
+```
+
+**Análisis**
+
+La implementación permite gestionar los planes de suscripción (Básico, Premium y Pro), registrar el interés de los usuarios mediante el Landing Page y administrar el estado del plan asociado al perfil. Con ello se valida la propuesta de monetización y el interés de los usuarios por las funcionalidades premium de PlantSync.
+
+---
+
+**Experimento 4 — Recordatorios Automáticos de Riego**
+
+**Archivo:** `src/main/java/.../plantprofiles/domain/model/aggregates/Plant.java`
+
+```java
+private String species;
+private LocalDate nextWateringDate;
+private Boolean notificationsEnabled;
+```
+
+**Archivo:** `src/main/java/.../tasks/domain/model/aggregates/Task.java`
+
+```java
+public class Task extends AuditableAbstractAggregateRoot<Task> {
+  private LocalDate date;
+  private String action;
+  private Boolean completed;
+  private PlantId plantId;
+  private ProfileId profileId;
+}
+```
+
+**Análisis**
+
+La implementación permite gestionar las tareas de cuidado de las plantas mediante el registro de fechas de riego, configuración de notificaciones y administración de tareas asociadas al usuario. Esto proporciona la base para automatizar el seguimiento de las actividades de mantenimiento de las plantas.
+
+---
+
+**Experimento 5 — Propuesta de Valor Centralizada**
+
+**Frontend — Landing Page**
+
+```html
+<div class="hero-content">
+
+    <div class="hero-badge">
+        🌱 Cuidado inteligente de plantas
+    </div>
+
+    <h1>
+        Tu planta siempre
+        <span class="highlight">bien cuidada</span>,
+        sin complicaciones
+    </h1>
+
+    <p>
+        Monitorea su estado de forma inteligente, recibe alertas automáticas
+        y accede a guías de cuidado premium sin ser un experto.
+    </p>
+
+    <a href="http://localhost:4200/register" class="cta-button">
+        Empieza ahora
+    </a>
+
+</div>
+```
+
+**Análisis**
+
+La implementación comunica de manera clara la propuesta de valor de PlantSync mediante el Landing Page, presentando los beneficios principales de la plataforma, las funcionalidades disponibles y el acceso a los distintos planes de suscripción, facilitando que los usuarios comprendan el valor ofrecido por la solución.
+
+---
+
+**Experimento 6 — Optimización de Horarios de Notificaciones**
+
+**Archivo:** `src/main/java/.../plantprofiles/domain/model/aggregates/Plant.java`
+
+```java
+private LocalDate nextWateringDate;
+private Boolean notificationsEnabled;
+```
+
+**Archivo:** `src/main/java/.../plantprofiles/domain/model/aggregates/PlantHistory.java`
+
+```java
+public class PlantHistory extends AuditableAbstractAggregateRoot<PlantHistory> {
+  private PlantId plantId;
+  private String type;
+  private LocalDate date;
+  private LocalTime time;
+  private Integer humidity;
+}
+```
+
+**Análisis**
+
+La implementación registra la fecha, hora y tipo de actividad realizada sobre cada planta, permitiendo analizar los momentos de interacción de los usuarios con la plataforma y proporcionando la información necesaria para optimizar el envío de futuras notificaciones.
+
+---
+
+**Experimento 7 — Rootbot Conversacional**
+
+**Archivo:** `src/main/java/.../plantprofiles/domain/model/aggregates/Plant.java`
+
+```java
+@Column(name = "image_url", columnDefinition = "LONGTEXT")
+private String imageUrl;
+```
+
+**Archivo:** `src/main/java/.../plantprofiles/domain/model/aggregates/PlantHistory.java`
+
+```java
+private PlantId plantId;
+private String type;
+private LocalDate date;
+private LocalTime time;
+private Integer humidity;
+```
+
+**Análisis**
+
+La implementación permite almacenar la imagen de cada planta y mantener un historial de información relacionada con su estado y cuidado. Esta información constituye la base para asistir al usuario durante el proceso de identificación y seguimiento de sus plantas dentro de la plataforma.
 
 ##### 8.3.3.6. Team Collaboration Insights
 
