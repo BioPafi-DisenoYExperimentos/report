@@ -9508,6 +9508,10 @@ Añadir alertas climáticas (basadas en los datos del sensor) que notifiquen al 
 
 #### 8.6.1. About-the-Product Intro Video
 
+A continuación, se presenta el link en Google Drive con el video About The Product con los experimentos integrados.
+
+https://drive.google.com/file/d/1cgSGgp_SkNYQiJvJMOF6MdzHztBXVWVL/view?usp=sharing
+
 ## Matriz de Evaluación Ética y de Impacto
 
 | Dimensión / Criterio a Evaluar | Identificación de Riesgos e Impactos (Positivos y Negativos) | Evaluación del Impacto (¿A quién afecta y cuál es la magnitud?) | Estrategias de Mitigación y Acciones de Diseño |
@@ -9604,11 +9608,8 @@ https://www.serpar.gob.pe/noticias/10-cosas-que-debes-aprender-sobre-el-cuidado-
 
 **Videos de Exposiciones**
 
-+ **TB1:** [Link Exposición TB1](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a500_upc_edu_pe/EQXTJiEwaBVMtM0ZB7FqT48BHhLEJHhZxA3HTmbBOQK8Kg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=DgFxBb)
-
 + **TP1:** [Link Exposición TP1](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a500_upc_edu_pe/ERme61BdAqRPhoKR7Ql5b2UB3ykeXWxgqbxTaeFgv0tVpg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=pwUKmL)
 
 + **TB2:** [Link Exposición TB2](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a500_upc_edu_pe/ETyYTrRvykdOpAWmi9HRZCEBqaVsI3bGLnxITA9sc8fZSw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=Yen1ES)
 
-+ **TF:** [Link Exposición TF1](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231a500_upc_edu_pe/ETkjF2XWIxFMl8tzMLutMgsBuwEyJnal9rCGU5QPr8H0pw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=SVZdbB)
-
++ **About The Product Intro-Video:** [Link video About The Product](https://drive.google.com/file/d/1cgSGgp_SkNYQiJvJMOF6MdzHztBXVWVL/view?usp=sharing)
