@@ -8942,7 +8942,48 @@ Entrevista para personas con poca experiencia en el cuidado de plantas:
 
 #### 8.4.1. Analysis and Interpretation of Results
 
+En esta sección se presentan los resultados obtenidos tras el despliegue del prototipo funcional de la plataforma web de PlantSync. Los experimentos se centraron en evaluar la adopción de planes de suscripción y la fricción (medida en tiempo) del nuevo formulario de perfilamiento de usuarios.
+
+<img src="images/evidencia-TF/Grafica 1.png" alt="screenshot Grafica 1" width="1000">
+
+En el gráfico de líneas superior, se visualiza la distribución porcentual y la tendencia de adopción de los planes de suscripción (Básico, Premium y Pro). Durante un periodo de prueba de 7 días, se monitoreó el comportamiento de un grupo de 30 usuarios beta al momento de crear su cuenta en PlantSync. El resultado numérico muestra una curva descendente lógica: el 60% de los usuarios optó por el plan "Básico", el 30% se registró en el plan "Premium" y un 10% seleccionó el plan "Pro".
+
+El hecho de que el 40% de los usuarios haya mostrado disposición inicial para optar por planes de pago (Premium y Pro) en una etapa temprana de registro, demuestra que la propuesta de valor comunicada en la Landing Page y en las vistas de Sign Up genera suficiente interés y percepción de utilidad (especialmente en funcionalidades como el ChatBot y el historial de cuidados).
+
+Dado este resultado, se recomienda mantener la estructura actual de Pricing en el frontend, pero implementar una campaña de onboarding por correo electrónico dirigida a los usuarios del plan Básico. El objetivo será incentivar el upselling mostrándoles el valor real del monitoreo inteligente y las notificaciones automatizadas que ofrecen los planes superiores, con el fin de aplanar la curva del gráfico y elevar la conversión en el próximo trimestre.
+
+<img src="images/evidencia-TF/Grafica 2.png" alt="screenshot Grafica 2" width="1000">
+
+En el segundo gráfico, se analizó el impacto en tiempo real de la inclusión de nuevos campos demográficos obligatorios (Edad y Género) en el formulario de "Crear Cuenta". El objetivo del experimento era medir en segundos la fricción generada por solicitar esta información adicional, la cual es necesaria para la persistencia en la base de datos SQL y la personalización de guías botánicas.
+
+Tras el análisis del conjunto de datos de 15 usuarios de prueba, la línea de tendencia muestra que el tiempo de llenado se mantiene en un rango estable, con un pico máximo de 60 segundos y un mínimo de 38 segundos. El tiempo promedio para completar el registro fue de aproximadamente 45 segundos. Este resultado indica un nivel de fricción bajo y altamente satisfactorio para un proceso de Onboarding.
+
+El resultado revela que solicitar datos básicos de perfilamiento desde el inicio no ralentiza significativamente el proceso ni disuade a los usuarios interesados en el cuidado de plantas. Con esta información validada en la base de datos SQL, se sugiere avanzar con el desarrollo del algoritmo de recomendaciones personalizadas de PlantSync (basado en el perfil del usuario y las condiciones climáticas), asegurando una experiencia óptima y adaptada a cada segmento de edad.
+
 #### 8.4.2. Re-scored and Re-prioritized Question Backlog
+
+Según los resultados obtenidos en la validación del registro y la selección de planes en la plataforma web de PlantSync, hemos asignado nuevos puntajes a las preguntas de nuestro Question Backlog. El impacto de validar la captura de datos demográficos y el interés en planes Premium nos permite reajustar nuestras prioridades de desarrollo, tal como se muestra en el siguiente cuadro:
+
+| Question | Confidence | Risk | Impact | Interest | Total Score |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| ¿Qué tan dispuestos están los usuarios a proporcionar datos demográficos (edad/género) al registrarse para obtener guías personalizadas? | 9 | 2 | 8 | 7 | 26 |
+| ¿Cuál es la tasa de interés inicial en los planes de suscripción de pago (Premium/Pro) frente al plan Básico gratuito? | 8 | 4 | 7 | 8 | 27 |
+| ¿Cómo afecta la interfaz de "Mis Plantas" a la frecuencia con la que los usuarios revisan el estado de humedad y próximos riegos? | 5 | 3 | 9 | 6 | 23 |
+| ¿Qué tan intuitivo es el módulo de "Tareas" para comprender las acciones pendientes (regar, podar) a corto plazo? | 6 | 2 | 8 | 7 | 23 |
+| ¿El acceso directo a las "Guías de Cuidado Botánico" disminuye la dependencia de soporte externo por parte de los usuarios nuevos? | 4 | 4 | 7 | 8 | 23 |
+
+<br>
+
+A partir de la puntuación total obtenida, se ha aplicado la secuencia de Fibonacci para establecer el orden de prioridad en el desarrollo de las siguientes iteraciones del producto:
+
+| Prioridad (1/2/3/5/8) | Pregunta |
+| :---: | :--- |
+| **8** | ¿Cuál es la tasa de interés inicial en los planes de suscripción de pago (Premium/Pro) frente al plan Básico gratuito? |
+| **8** | ¿Qué tan dispuestos están los usuarios a proporcionar datos demográficos (edad/género) al registrarse para obtener guías personalizadas? |
+| **5** | ¿Cómo afecta la interfaz de "Mis Plantas" a la frecuencia con la que los usuarios revisan el estado de humedad y próximos riegos? |
+| **5** | ¿Qué tan intuitivo es el módulo de "Tareas" para comprender las acciones pendientes (regar, podar) a corto plazo? |
+| **3** | ¿El acceso directo a las "Guías de Cuidado Botánico" disminuye la dependencia de soporte externo por parte de los usuarios nuevos? |
+
 
 ### 8.5. Continuous Learning
 
