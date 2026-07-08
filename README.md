@@ -8352,6 +8352,8 @@ Imagen del informe de Google Analytics
 
 Se presentan capturas de pantalla de la Landing Page implementada y adaptada para el experimento, donde se muestran los cambios en el diseño de la interfaz y las llamadas a la acción (CTA) para medir el interés de los usuarios:
 
+**Link landing page:** [https://biopafi-disenoyexperimentos.github.io/landing_page/](https://biopafi-disenoyexperimentos.github.io/landing_page/)
+
 ###### Evidencia de la sección principal (Hero Section) y CTA
 <p align="center">
   <img src="images/experimentos/landing1.jpg" alt="Landing Page Hero Section" width="1000">
@@ -8376,6 +8378,8 @@ Muestra el seguimiento analítico y de almacenamiento local (Local Storage) al i
 ##### 8.3.3.3. Implemented To-Be Frontend-Web Application Evidence
 
 Se presentan capturas de la aplicación web frontend que evidencian la implementación del sistema "To-Be", abarcando el flujo completo de autenticación y las vistas principales de la plataforma:
+
+**Link Frontend:** [https://plant-sync-frontend.vercel.app/login](https://plant-sync-frontend.vercel.app/login)
 
 ###### Inicio de Sesión (Login) y Registro de Usuario (Sign Up)
 <p align="center">
@@ -8426,6 +8430,8 @@ Captura de la base de datos SQL que valida que los campos de edad y género se a
 </p>
 
 ##### 8.3.3.4. Implemented To-Be RESTful API and/or Serverless Backend Evidence
+
+**Link Backend:** [https://plantsync-backend-exp.azurewebsites.net/swagger-ui/index.html#/](https://plantsync-backend-exp.azurewebsites.net/swagger-ui/index.html#/)
 
 **Implementación en Swagger**
 
@@ -9656,21 +9662,21 @@ https://www.serpar.gob.pe/noticias/10-cosas-que-debes-aprender-sobre-el-cuidado-
 
 **Repositorio de Github**
 
-+ **Respositorio de la startup:** [Link Repositorio BioPafi](https://github.com/BioPafi-DisenoYExperimentos)
++ **Respositorio de la startup:** [https://github.com/BioPafi-DisenoYExperimentos](https://github.com/BioPafi-DisenoYExperimentos)
 
-+ **Repositorio de la landing page:** [Link Repositorio Landing Page](https://github.com/BioPafi-OpenSource/plantSync-LandingPage)
++ **Repositorio de la landing page:** [https://github.com/BioPafi-DisenoYExperimentos/landing_page](hhttps://github.com/BioPafi-DisenoYExperimentos/landing_page)
 
-+ **Repositorio del frontend:** [Link Repositorio Frontend](https://github.com/BioPafi-OpenSource/PlantSync_Frontend)
++ **Repositorio del frontend:** [https://github.com/BioPafi-DisenoYExperimentos/PlantSync_Frontend](https://github.com/BioPafi-DisenoYExperimentos/PlantSync_Frontend)
 
-+ **Repositorio del backend:** [Link Repositorio Backend](https://github.com/BioPafi-DisenoYExperimentos/Plantsync_Backend)
++ **Repositorio del backend:** [https://github.com/BioPafi-DisenoYExperimentos/Plantsync_Backend](https://github.com/BioPafi-DisenoYExperimentos/Plantsync_Backend)
 
 **Deploy de la aplicación**
 
-+ **Landing Page Deployado:** [Link Landing Page](https://biopafi-opensource.github.io/plantSync-LandingPage/)
++ **Landing Page Deployado:** [https://biopafi-disenoyexperimentos.github.io/landing_page/](https://biopafi-disenoyexperimentos.github.io/landing_page/)
 
-+ **Frontend Deployado:** [Link Frontend](https://polite-bay-0d4eadd10.1.azurestaticapps.net/)
++ **Frontend Deployado:** [https://plant-sync-frontend.vercel.app/login](https://plant-sync-frontend.vercel.app/login)
 
-+ **Backend Deployado:** [Link Backend](https://plantsync-platform.azurewebsites.net/swagger-ui/index.html#/)
++ **Backend Deployado:** [https://plantsync-backend-exp.azurewebsites.net/swagger-ui/index.html#/](https://plantsync-backend-exp.azurewebsites.net/swagger-ui/index.html#/)
 
 **Videos de Exposiciones**
 
